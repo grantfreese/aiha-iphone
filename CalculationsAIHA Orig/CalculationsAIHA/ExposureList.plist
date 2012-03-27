@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>name</key>
+		<string>PEL(Respirable Fraction)</string>
+		<key>formula</key>
+		<string>PEL(Respirable Fraction) = 10/(%Qrtz + (%crist * 2) + (%trid * 2) + 2)</string>
+		<key>count</key>
+		<string>3</string>
+		<key>variable1</key>
+		<string>%qrtz</string>
+		<key>variable2</key>
+		<string>%crist</string>
+		<key>variable3</key>
+		<string>%trid</string>
+		<key>unit1</key>
+		<string>unit1</string>
+		<key>unit2</key>
+		<string>unit2</string>
+		<key>unit3</key>
+		<string>unit3</string>
+		<key>resultUnit</key>
+		<string>unit4</string>
+		<key>imageName</key>
+		<string>PEL(Respirable Fraction).PNG</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>PEL(Total Dust)</string>
+		<key>formula</key>
+		<string>PEL(Total Dust) = 30/(%Qrtz + (%crist * 2) + (%trid * 2) + 2)</string>
+		<key>count</key>
+		<string>3</string>
+		<key>variable1</key>
+		<string>%qrtz</string>
+		<key>variable2</key>
+		<string>%crist</string>
+		<key>variable3</key>
+		<string>%trid</string>
+		<key>unit1</key>
+		<string>unit1</string>
+		<key>unit2</key>
+		<string>unit2</string>
+		<key>unit3</key>
+		<string>unit3</string>
+		<key>resultUnit</key>
+		<string>unit4</string>
+		<key>imageName</key>
+		<string>PEL(Total Dust).PNG</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>TLV of mixture - Airborne Concentration</string>
+		<key>formula</key>
+		<string>TLVmix = (c1/TLV1)+ (C2/TLV2) +... + (Cn/TLVn)</string>
+		<key>count</key>
+		<string>n</string>
+		<key>imageName</key>
+		<string>TLVmix.PNG</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Calculating TWAs x</string>
+		<key>formula</key>
+		<string>TWA = (CaTa + CbTb + .. + CnTn)/ (Ta + Tb + ... + Tn)</string>
+		<key>count</key>
+		<string>n</string>
+		<key>imageName</key>
+		<string>TWA.PNG</string>
+	</dict>
+</array>
+</plist>

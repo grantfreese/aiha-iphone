@@ -1,0 +1,520 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		023421731506BA930075260F /* formulas.m in Sources */ = {isa = PBXBuildFile; fileRef = 023421721506BA930075260F /* formulas.m */; };
+		02622C6A1505253B003727E1 /* HeatStressTableImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 02622C691505253B003727E1 /* HeatStressTableImageViewController.m */; };
+		02622C6D150525BC003727E1 /* Screen Shot 2012-03-05 at 9.46.48 AM.png in Resources */ = {isa = PBXBuildFile; fileRef = 02622C6C150525BC003727E1 /* Screen Shot 2012-03-05 at 9.46.48 AM.png */; };
+		02622C761505356D003727E1 /* ConversionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 02622C751505356D003727E1 /* ConversionManager.m */; };
+		02622C79150535A0003727E1 /* ConversionListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 02622C78150535A0003727E1 /* ConversionListViewController.m */; };
+		02838EA7150E50940080CC57 /* FiveVariableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 02838EA6150E50940080CC57 /* FiveVariableViewController.m */; };
+		02DF6E4714FD78AF0016ABD6 /* TwoVariableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 02DF6E4614FD78AF0016ABD6 /* TwoVariableViewController.m */; };
+		02DF6E4A14FD798C0016ABD6 /* FourVariableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 02DF6E4914FD798C0016ABD6 /* FourVariableViewController.m */; };
+		02F8301B14FBD83200A240EE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02F8301A14FBD83200A240EE /* UIKit.framework */; };
+		02F8301D14FBD83200A240EE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02F8301C14FBD83200A240EE /* Foundation.framework */; };
+		02F8301F14FBD83200A240EE /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02F8301E14FBD83200A240EE /* CoreGraphics.framework */; };
+		02F8302514FBD83200A240EE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 02F8302314FBD83200A240EE /* InfoPlist.strings */; };
+		02F8302714FBD83200A240EE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 02F8302614FBD83200A240EE /* main.m */; };
+		02F8302B14FBD83200A240EE /* AIHAAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 02F8302A14FBD83200A240EE /* AIHAAppDelegate.m */; };
+		02F8302E14FBD83200A240EE /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 02F8302C14FBD83200A240EE /* MainStoryboard.storyboard */; };
+		02F8303114FBD83200A240EE /* AIHAViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 02F8303014FBD83200A240EE /* AIHAViewController.m */; };
+		02F8303E14FBD8BE00A240EE /* HeatStressListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 02F8303D14FBD8BE00A240EE /* HeatStressListViewController.m */; };
+		02F8304414FBD96C00A240EE /* AIHA_Final.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 02F8304314FBD96C00A240EE /* AIHA_Final.jpg */; };
+		02F8304614FBDA3700A240EE /* HeatStress.plist in Resources */ = {isa = PBXBuildFile; fileRef = 02F8304514FBDA3700A240EE /* HeatStress.plist */; };
+		02F8304D14FBDBE900A240EE /* HeatStressManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 02F8304C14FBDBE900A240EE /* HeatStressManager.m */; };
+		02F8305014FBDF1100A240EE /* ThreeVariableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 02F8304F14FBDF1100A240EE /* ThreeVariableViewController.m */; };
+		0F15D557150020BC009E11EC /* NoiseEquations.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0F15D556150020BC009E11EC /* NoiseEquations.plist */; };
+		0F2E9B1815003DC700A4FB1D /* NoiseManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F2E9B1715003DC700A4FB1D /* NoiseManager.m */; };
+		0F2E9B1B15003FAC00A4FB1D /* NoiseListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F2E9B1A15003FAC00A4FB1D /* NoiseListViewController.m */; };
+		0F2E9B1E15004DFD00A4FB1D /* ExposureManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F2E9B1D15004DFD00A4FB1D /* ExposureManager.m */; };
+		0F2E9B2115004E1800A4FB1D /* ExposureListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F2E9B2015004E1800A4FB1D /* ExposureListViewController.m */; };
+		0F2E9B2315004E3700A4FB1D /* ExposureList.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0F2E9B2215004E3700A4FB1D /* ExposureList.plist */; };
+		0F377032150FEEBA00192044 /* UIView+FindFirstResponder.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F377031150FEEBA00192044 /* UIView+FindFirstResponder.m */; };
+		0F377049150FF43E00192044 /* 85dBA reached.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F377035150FF43E00192044 /* 85dBA reached.png */; };
+		0F37704A150FF43E00192044 /* AddingSoundPressure.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F377036150FF43E00192044 /* AddingSoundPressure.png */; };
+		0F37704B150FF43E00192044 /* AIHA.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F377037150FF43E00192044 /* AIHA.png */; };
+		0F37704C150FF43E00192044 /* Area of circle.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F377038150FF43E00192044 /* Area of circle.png */; };
+		0F37704D150FF43E00192044 /* Flow rate adjustment.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F377039150FF43E00192044 /* Flow rate adjustment.png */; };
+		0F37704E150FF43E00192044 /* From ppm.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F37703A150FF43E00192044 /* From ppm.png */; };
+		0F37704F150FF43E00192044 /* Inverse Square Law.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F37703B150FF43E00192044 /* Inverse Square Law.png */; };
+		0F377050150FF43E00192044 /* Oxygen Level of Room va.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F37703C150FF43E00192044 /* Oxygen Level of Room va.png */; };
+		0F377051150FF43E00192044 /* PEL(Respirable Fraction).png in Resources */ = {isa = PBXBuildFile; fileRef = 0F37703D150FF43E00192044 /* PEL(Respirable Fraction).png */; };
+		0F377052150FF43E00192044 /* PEL(Total Dust).png in Resources */ = {isa = PBXBuildFile; fileRef = 0F37703E150FF43E00192044 /* PEL(Total Dust).png */; };
+		0F377053150FF43E00192044 /* PercentDose.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F37703F150FF43E00192044 /* PercentDose.png */; };
+		0F377054150FF43E00192044 /* Room Air changes per hour.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F377040150FF43E00192044 /* Room Air changes per hour.png */; };
+		0F377055150FF43E00192044 /* TLVmix.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F377041150FF43E00192044 /* TLVmix.png */; };
+		0F377056150FF43E00192044 /* To ppm.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F377042150FF43E00192044 /* To ppm.png */; };
+		0F377057150FF43E00192044 /* Total Pressure.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F377043150FF43E00192044 /* Total Pressure.png */; };
+		0F377058150FF43E00192044 /* TWA from %Dose.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F377044150FF43E00192044 /* TWA from %Dose.png */; };
+		0F377059150FF43E00192044 /* TWA.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F377045150FF43E00192044 /* TWA.png */; };
+		0F37705A150FF43E00192044 /* Volume Of Displaced Air.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F377046150FF43E00192044 /* Volume Of Displaced Air.png */; };
+		0F37705B150FF43E00192044 /* WBGT_Indoor.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F377047150FF43E00192044 /* WBGT_Indoor.png */; };
+		0F37705C150FF43E00192044 /* WBGT_Outdoor.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F377048150FF43E00192044 /* WBGT_Outdoor.png */; };
+		0F37705E150FF4D300192044 /* AIHA.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F37705D150FF4D300192044 /* AIHA.png */; };
+		0F65F10915095B050028A6D7 /* OneVariableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F65F10815095B050028A6D7 /* OneVariableViewController.m */; };
+		0F704A5B150979370055CC32 /* CategoryManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F704A5A150979370055CC32 /* CategoryManager.m */; };
+		227E52E715205FD6008F7790 /* Oxygen Level of Room.png in Resources */ = {isa = PBXBuildFile; fileRef = 227E52E615205FD6008F7790 /* Oxygen Level of Room.png */; };
+		32BCE4B71504809A002F1C52 /* VentilationListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 32BCE4B61504809A002F1C52 /* VentilationListViewController.m */; };
+		32BCE4BA1504812E002F1C52 /* VentilationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 32BCE4B91504812E002F1C52 /* VentilationManager.m */; };
+		32BCE4C0150493FA002F1C52 /* Ventilation.plist in Resources */ = {isa = PBXBuildFile; fileRef = 32BCE4BF150493F9002F1C52 /* Ventilation.plist */; };
+		95D86E1A151ECEB5000438E8 /* AIHA_LongFinal.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 95D86E19151ECEB5000438E8 /* AIHA_LongFinal.jpg */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		023421721506BA930075260F /* formulas.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = formulas.m; sourceTree = "<group>"; };
+		0254A7501507B3290069897B /* formulas.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = formulas.h; sourceTree = "<group>"; };
+		02622C681505253B003727E1 /* HeatStressTableImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeatStressTableImageViewController.h; sourceTree = "<group>"; };
+		02622C691505253B003727E1 /* HeatStressTableImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeatStressTableImageViewController.m; sourceTree = "<group>"; };
+		02622C6C150525BC003727E1 /* Screen Shot 2012-03-05 at 9.46.48 AM.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screen Shot 2012-03-05 at 9.46.48 AM.png"; sourceTree = "<group>"; };
+		02622C741505356D003727E1 /* ConversionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConversionManager.h; sourceTree = "<group>"; };
+		02622C751505356D003727E1 /* ConversionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConversionManager.m; sourceTree = "<group>"; };
+		02622C77150535A0003727E1 /* ConversionListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConversionListViewController.h; sourceTree = "<group>"; };
+		02622C78150535A0003727E1 /* ConversionListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConversionListViewController.m; sourceTree = "<group>"; };
+		02838EA5150E50940080CC57 /* FiveVariableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FiveVariableViewController.h; sourceTree = "<group>"; };
+		02838EA6150E50940080CC57 /* FiveVariableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FiveVariableViewController.m; sourceTree = "<group>"; };
+		02DF6E4514FD78AF0016ABD6 /* TwoVariableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TwoVariableViewController.h; sourceTree = "<group>"; };
+		02DF6E4614FD78AF0016ABD6 /* TwoVariableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TwoVariableViewController.m; sourceTree = "<group>"; };
+		02DF6E4814FD798C0016ABD6 /* FourVariableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FourVariableViewController.h; sourceTree = "<group>"; };
+		02DF6E4914FD798C0016ABD6 /* FourVariableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FourVariableViewController.m; sourceTree = "<group>"; };
+		02F8301614FBD83200A240EE /* CalculationsAIHA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CalculationsAIHA.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		02F8301A14FBD83200A240EE /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		02F8301C14FBD83200A240EE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		02F8301E14FBD83200A240EE /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		02F8302214FBD83200A240EE /* CalculationsAIHA-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CalculationsAIHA-Info.plist"; sourceTree = "<group>"; };
+		02F8302414FBD83200A240EE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		02F8302614FBD83200A240EE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		02F8302814FBD83200A240EE /* CalculationsAIHA-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CalculationsAIHA-Prefix.pch"; sourceTree = "<group>"; };
+		02F8302914FBD83200A240EE /* AIHAAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AIHAAppDelegate.h; sourceTree = "<group>"; };
+		02F8302A14FBD83200A240EE /* AIHAAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AIHAAppDelegate.m; sourceTree = "<group>"; };
+		02F8302D14FBD83200A240EE /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		02F8302F14FBD83200A240EE /* AIHAViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AIHAViewController.h; sourceTree = "<group>"; };
+		02F8303014FBD83200A240EE /* AIHAViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AIHAViewController.m; sourceTree = "<group>"; };
+		02F8303C14FBD8BE00A240EE /* HeatStressListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeatStressListViewController.h; sourceTree = "<group>"; };
+		02F8303D14FBD8BE00A240EE /* HeatStressListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeatStressListViewController.m; sourceTree = "<group>"; };
+		02F8304314FBD96C00A240EE /* AIHA_Final.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = AIHA_Final.jpg; sourceTree = "<group>"; };
+		02F8304514FBDA3700A240EE /* HeatStress.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = HeatStress.plist; sourceTree = "<group>"; };
+		02F8304B14FBDBE900A240EE /* HeatStressManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeatStressManager.h; sourceTree = "<group>"; };
+		02F8304C14FBDBE900A240EE /* HeatStressManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeatStressManager.m; sourceTree = "<group>"; };
+		02F8304E14FBDF1100A240EE /* ThreeVariableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThreeVariableViewController.h; sourceTree = "<group>"; };
+		02F8304F14FBDF1100A240EE /* ThreeVariableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThreeVariableViewController.m; sourceTree = "<group>"; };
+		0F15D556150020BC009E11EC /* NoiseEquations.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = NoiseEquations.plist; sourceTree = "<group>"; };
+		0F2E9B1615003DC700A4FB1D /* NoiseManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NoiseManager.h; sourceTree = "<group>"; };
+		0F2E9B1715003DC700A4FB1D /* NoiseManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NoiseManager.m; sourceTree = "<group>"; };
+		0F2E9B1915003FAC00A4FB1D /* NoiseListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NoiseListViewController.h; sourceTree = "<group>"; };
+		0F2E9B1A15003FAC00A4FB1D /* NoiseListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NoiseListViewController.m; sourceTree = "<group>"; };
+		0F2E9B1C15004DFD00A4FB1D /* ExposureManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExposureManager.h; sourceTree = "<group>"; };
+		0F2E9B1D15004DFD00A4FB1D /* ExposureManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExposureManager.m; sourceTree = "<group>"; };
+		0F2E9B1F15004E1800A4FB1D /* ExposureListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExposureListViewController.h; sourceTree = "<group>"; };
+		0F2E9B2015004E1800A4FB1D /* ExposureListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExposureListViewController.m; sourceTree = "<group>"; };
+		0F2E9B2215004E3700A4FB1D /* ExposureList.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ExposureList.plist; sourceTree = "<group>"; };
+		0F377030150FEEBA00192044 /* UIView+FindFirstResponder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+FindFirstResponder.h"; sourceTree = "<group>"; };
+		0F377031150FEEBA00192044 /* UIView+FindFirstResponder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+FindFirstResponder.m"; sourceTree = "<group>"; };
+		0F377035150FF43E00192044 /* 85dBA reached.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "85dBA reached.png"; sourceTree = "<group>"; };
+		0F377036150FF43E00192044 /* AddingSoundPressure.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AddingSoundPressure.png; sourceTree = "<group>"; };
+		0F377037150FF43E00192044 /* AIHA.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AIHA.png; sourceTree = "<group>"; };
+		0F377038150FF43E00192044 /* Area of circle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Area of circle.png"; sourceTree = "<group>"; };
+		0F377039150FF43E00192044 /* Flow rate adjustment.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Flow rate adjustment.png"; sourceTree = "<group>"; };
+		0F37703A150FF43E00192044 /* From ppm.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "From ppm.png"; sourceTree = "<group>"; };
+		0F37703B150FF43E00192044 /* Inverse Square Law.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Inverse Square Law.png"; sourceTree = "<group>"; };
+		0F37703C150FF43E00192044 /* Oxygen Level of Room va.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Oxygen Level of Room va.png"; sourceTree = "<group>"; };
+		0F37703D150FF43E00192044 /* PEL(Respirable Fraction).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "PEL(Respirable Fraction).png"; sourceTree = "<group>"; };
+		0F37703E150FF43E00192044 /* PEL(Total Dust).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "PEL(Total Dust).png"; sourceTree = "<group>"; };
+		0F37703F150FF43E00192044 /* PercentDose.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PercentDose.png; sourceTree = "<group>"; };
+		0F377040150FF43E00192044 /* Room Air changes per hour.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Room Air changes per hour.png"; sourceTree = "<group>"; };
+		0F377041150FF43E00192044 /* TLVmix.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TLVmix.png; sourceTree = "<group>"; };
+		0F377042150FF43E00192044 /* To ppm.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "To ppm.png"; sourceTree = "<group>"; };
+		0F377043150FF43E00192044 /* Total Pressure.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Total Pressure.png"; sourceTree = "<group>"; };
+		0F377044150FF43E00192044 /* TWA from %Dose.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "TWA from %Dose.png"; sourceTree = "<group>"; };
+		0F377045150FF43E00192044 /* TWA.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TWA.png; sourceTree = "<group>"; };
+		0F377046150FF43E00192044 /* Volume Of Displaced Air.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Volume Of Displaced Air.png"; sourceTree = "<group>"; };
+		0F377047150FF43E00192044 /* WBGT_Indoor.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = WBGT_Indoor.png; sourceTree = "<group>"; };
+		0F377048150FF43E00192044 /* WBGT_Outdoor.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = WBGT_Outdoor.png; sourceTree = "<group>"; };
+		0F37705D150FF4D300192044 /* AIHA.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AIHA.png; sourceTree = "<group>"; };
+		0F65F10715095B050028A6D7 /* OneVariableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OneVariableViewController.h; sourceTree = "<group>"; };
+		0F65F10815095B050028A6D7 /* OneVariableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OneVariableViewController.m; sourceTree = "<group>"; };
+		0F704A59150979370055CC32 /* CategoryManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CategoryManager.h; sourceTree = "<group>"; };
+		0F704A5A150979370055CC32 /* CategoryManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CategoryManager.m; sourceTree = "<group>"; };
+		227E52E615205FD6008F7790 /* Oxygen Level of Room.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Oxygen Level of Room.png"; sourceTree = "<group>"; };
+		32BCE4B51504809A002F1C52 /* VentilationListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VentilationListViewController.h; sourceTree = "<group>"; };
+		32BCE4B61504809A002F1C52 /* VentilationListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VentilationListViewController.m; sourceTree = "<group>"; };
+		32BCE4B81504812E002F1C52 /* VentilationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VentilationManager.h; sourceTree = "<group>"; };
+		32BCE4B91504812E002F1C52 /* VentilationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VentilationManager.m; sourceTree = "<group>"; };
+		32BCE4BF150493F9002F1C52 /* Ventilation.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Ventilation.plist; sourceTree = "<group>"; };
+		95D86E19151ECEB5000438E8 /* AIHA_LongFinal.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = AIHA_LongFinal.jpg; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		02F8301314FBD83200A240EE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				02F8301B14FBD83200A240EE /* UIKit.framework in Frameworks */,
+				02F8301D14FBD83200A240EE /* Foundation.framework in Frameworks */,
+				02F8301F14FBD83200A240EE /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		02F8300B14FBD83200A240EE = {
+			isa = PBXGroup;
+			children = (
+				0F37705D150FF4D300192044 /* AIHA.png */,
+				02F8302014FBD83200A240EE /* CalculationsAIHA */,
+				02F8301914FBD83200A240EE /* Frameworks */,
+				02F8301714FBD83200A240EE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		02F8301714FBD83200A240EE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				02F8301614FBD83200A240EE /* CalculationsAIHA.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		02F8301914FBD83200A240EE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				02F8301A14FBD83200A240EE /* UIKit.framework */,
+				02F8301C14FBD83200A240EE /* Foundation.framework */,
+				02F8301E14FBD83200A240EE /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		02F8302014FBD83200A240EE /* CalculationsAIHA */ = {
+			isa = PBXGroup;
+			children = (
+				0F377030150FEEBA00192044 /* UIView+FindFirstResponder.h */,
+				0F377031150FEEBA00192044 /* UIView+FindFirstResponder.m */,
+				02F8302914FBD83200A240EE /* AIHAAppDelegate.h */,
+				02F8302A14FBD83200A240EE /* AIHAAppDelegate.m */,
+				02F8302C14FBD83200A240EE /* MainStoryboard.storyboard */,
+				02F8302F14FBD83200A240EE /* AIHAViewController.h */,
+				02F8303014FBD83200A240EE /* AIHAViewController.m */,
+				0F704A59150979370055CC32 /* CategoryManager.h */,
+				0F704A5A150979370055CC32 /* CategoryManager.m */,
+				0F2E9B1615003DC700A4FB1D /* NoiseManager.h */,
+				0F2E9B1715003DC700A4FB1D /* NoiseManager.m */,
+				02F8304B14FBDBE900A240EE /* HeatStressManager.h */,
+				02F8304C14FBDBE900A240EE /* HeatStressManager.m */,
+				32BCE4B81504812E002F1C52 /* VentilationManager.h */,
+				32BCE4B91504812E002F1C52 /* VentilationManager.m */,
+				0F2E9B1C15004DFD00A4FB1D /* ExposureManager.h */,
+				0F2E9B1D15004DFD00A4FB1D /* ExposureManager.m */,
+				0F2E9B1915003FAC00A4FB1D /* NoiseListViewController.h */,
+				0F2E9B1A15003FAC00A4FB1D /* NoiseListViewController.m */,
+				02F8303C14FBD8BE00A240EE /* HeatStressListViewController.h */,
+				02F8303D14FBD8BE00A240EE /* HeatStressListViewController.m */,
+				32BCE4B51504809A002F1C52 /* VentilationListViewController.h */,
+				32BCE4B61504809A002F1C52 /* VentilationListViewController.m */,
+				0F2E9B1F15004E1800A4FB1D /* ExposureListViewController.h */,
+				0F2E9B2015004E1800A4FB1D /* ExposureListViewController.m */,
+				0F65F10715095B050028A6D7 /* OneVariableViewController.h */,
+				0F65F10815095B050028A6D7 /* OneVariableViewController.m */,
+				02DF6E4514FD78AF0016ABD6 /* TwoVariableViewController.h */,
+				02DF6E4614FD78AF0016ABD6 /* TwoVariableViewController.m */,
+				02F8304E14FBDF1100A240EE /* ThreeVariableViewController.h */,
+				02F8304F14FBDF1100A240EE /* ThreeVariableViewController.m */,
+				02DF6E4814FD798C0016ABD6 /* FourVariableViewController.h */,
+				02DF6E4914FD798C0016ABD6 /* FourVariableViewController.m */,
+				02838EA5150E50940080CC57 /* FiveVariableViewController.h */,
+				02838EA6150E50940080CC57 /* FiveVariableViewController.m */,
+				02622C681505253B003727E1 /* HeatStressTableImageViewController.h */,
+				02622C691505253B003727E1 /* HeatStressTableImageViewController.m */,
+				02622C741505356D003727E1 /* ConversionManager.h */,
+				02622C751505356D003727E1 /* ConversionManager.m */,
+				02622C77150535A0003727E1 /* ConversionListViewController.h */,
+				02622C78150535A0003727E1 /* ConversionListViewController.m */,
+				023421721506BA930075260F /* formulas.m */,
+				0254A7501507B3290069897B /* formulas.h */,
+				02F8302114FBD83200A240EE /* Supporting Files */,
+			);
+			path = CalculationsAIHA;
+			sourceTree = "<group>";
+		};
+		02F8302114FBD83200A240EE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0F377034150FF43E00192044 /* Equation Images */,
+				02F8304314FBD96C00A240EE /* AIHA_Final.jpg */,
+				95D86E19151ECEB5000438E8 /* AIHA_LongFinal.jpg */,
+				02622C6C150525BC003727E1 /* Screen Shot 2012-03-05 at 9.46.48 AM.png */,
+				02F8302214FBD83200A240EE /* CalculationsAIHA-Info.plist */,
+				02F8302314FBD83200A240EE /* InfoPlist.strings */,
+				02F8302614FBD83200A240EE /* main.m */,
+				02F8302814FBD83200A240EE /* CalculationsAIHA-Prefix.pch */,
+				0F15D556150020BC009E11EC /* NoiseEquations.plist */,
+				02F8304514FBDA3700A240EE /* HeatStress.plist */,
+				32BCE4BF150493F9002F1C52 /* Ventilation.plist */,
+				0F2E9B2215004E3700A4FB1D /* ExposureList.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0F377034150FF43E00192044 /* Equation Images */ = {
+			isa = PBXGroup;
+			children = (
+				0F377035150FF43E00192044 /* 85dBA reached.png */,
+				0F377036150FF43E00192044 /* AddingSoundPressure.png */,
+				0F377037150FF43E00192044 /* AIHA.png */,
+				0F377038150FF43E00192044 /* Area of circle.png */,
+				0F377039150FF43E00192044 /* Flow rate adjustment.png */,
+				0F37703A150FF43E00192044 /* From ppm.png */,
+				0F37703B150FF43E00192044 /* Inverse Square Law.png */,
+				0F37703C150FF43E00192044 /* Oxygen Level of Room va.png */,
+				227E52E615205FD6008F7790 /* Oxygen Level of Room.png */,
+				0F37703D150FF43E00192044 /* PEL(Respirable Fraction).png */,
+				0F37703E150FF43E00192044 /* PEL(Total Dust).png */,
+				0F37703F150FF43E00192044 /* PercentDose.png */,
+				0F377040150FF43E00192044 /* Room Air changes per hour.png */,
+				0F377041150FF43E00192044 /* TLVmix.png */,
+				0F377042150FF43E00192044 /* To ppm.png */,
+				0F377043150FF43E00192044 /* Total Pressure.png */,
+				0F377044150FF43E00192044 /* TWA from %Dose.png */,
+				0F377045150FF43E00192044 /* TWA.png */,
+				0F377046150FF43E00192044 /* Volume Of Displaced Air.png */,
+				0F377047150FF43E00192044 /* WBGT_Indoor.png */,
+				0F377048150FF43E00192044 /* WBGT_Outdoor.png */,
+			);
+			path = "Equation Images";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		02F8301514FBD83200A240EE /* CalculationsAIHA */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 02F8303414FBD83200A240EE /* Build configuration list for PBXNativeTarget "CalculationsAIHA" */;
+			buildPhases = (
+				02F8301214FBD83200A240EE /* Sources */,
+				02F8301314FBD83200A240EE /* Frameworks */,
+				02F8301414FBD83200A240EE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CalculationsAIHA;
+			productName = CalculationsAIHA;
+			productReference = 02F8301614FBD83200A240EE /* CalculationsAIHA.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		02F8300D14FBD83200A240EE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
+			buildConfigurationList = 02F8301014FBD83200A240EE /* Build configuration list for PBXProject "CalculationsAIHA" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 02F8300B14FBD83200A240EE;
+			productRefGroup = 02F8301714FBD83200A240EE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				02F8301514FBD83200A240EE /* CalculationsAIHA */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		02F8301414FBD83200A240EE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				02F8302514FBD83200A240EE /* InfoPlist.strings in Resources */,
+				02F8302E14FBD83200A240EE /* MainStoryboard.storyboard in Resources */,
+				02F8304414FBD96C00A240EE /* AIHA_Final.jpg in Resources */,
+				02F8304614FBDA3700A240EE /* HeatStress.plist in Resources */,
+				0F15D557150020BC009E11EC /* NoiseEquations.plist in Resources */,
+				0F2E9B2315004E3700A4FB1D /* ExposureList.plist in Resources */,
+				32BCE4C0150493FA002F1C52 /* Ventilation.plist in Resources */,
+				02622C6D150525BC003727E1 /* Screen Shot 2012-03-05 at 9.46.48 AM.png in Resources */,
+				0F377049150FF43E00192044 /* 85dBA reached.png in Resources */,
+				0F37704A150FF43E00192044 /* AddingSoundPressure.png in Resources */,
+				0F37704B150FF43E00192044 /* AIHA.png in Resources */,
+				0F37704C150FF43E00192044 /* Area of circle.png in Resources */,
+				0F37704D150FF43E00192044 /* Flow rate adjustment.png in Resources */,
+				0F37704E150FF43E00192044 /* From ppm.png in Resources */,
+				0F37704F150FF43E00192044 /* Inverse Square Law.png in Resources */,
+				0F377050150FF43E00192044 /* Oxygen Level of Room va.png in Resources */,
+				0F377051150FF43E00192044 /* PEL(Respirable Fraction).png in Resources */,
+				0F377052150FF43E00192044 /* PEL(Total Dust).png in Resources */,
+				0F377053150FF43E00192044 /* PercentDose.png in Resources */,
+				0F377054150FF43E00192044 /* Room Air changes per hour.png in Resources */,
+				0F377055150FF43E00192044 /* TLVmix.png in Resources */,
+				0F377056150FF43E00192044 /* To ppm.png in Resources */,
+				0F377057150FF43E00192044 /* Total Pressure.png in Resources */,
+				0F377058150FF43E00192044 /* TWA from %Dose.png in Resources */,
+				0F377059150FF43E00192044 /* TWA.png in Resources */,
+				0F37705A150FF43E00192044 /* Volume Of Displaced Air.png in Resources */,
+				0F37705B150FF43E00192044 /* WBGT_Indoor.png in Resources */,
+				0F37705C150FF43E00192044 /* WBGT_Outdoor.png in Resources */,
+				0F37705E150FF4D300192044 /* AIHA.png in Resources */,
+				95D86E1A151ECEB5000438E8 /* AIHA_LongFinal.jpg in Resources */,
+				227E52E715205FD6008F7790 /* Oxygen Level of Room.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		02F8301214FBD83200A240EE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				02F8302714FBD83200A240EE /* main.m in Sources */,
+				02F8302B14FBD83200A240EE /* AIHAAppDelegate.m in Sources */,
+				02F8303114FBD83200A240EE /* AIHAViewController.m in Sources */,
+				02F8303E14FBD8BE00A240EE /* HeatStressListViewController.m in Sources */,
+				02F8304D14FBDBE900A240EE /* HeatStressManager.m in Sources */,
+				02F8305014FBDF1100A240EE /* ThreeVariableViewController.m in Sources */,
+				02DF6E4714FD78AF0016ABD6 /* TwoVariableViewController.m in Sources */,
+				02DF6E4A14FD798C0016ABD6 /* FourVariableViewController.m in Sources */,
+				0F2E9B1815003DC700A4FB1D /* NoiseManager.m in Sources */,
+				0F2E9B1B15003FAC00A4FB1D /* NoiseListViewController.m in Sources */,
+				0F2E9B1E15004DFD00A4FB1D /* ExposureManager.m in Sources */,
+				0F2E9B2115004E1800A4FB1D /* ExposureListViewController.m in Sources */,
+				32BCE4B71504809A002F1C52 /* VentilationListViewController.m in Sources */,
+				32BCE4BA1504812E002F1C52 /* VentilationManager.m in Sources */,
+				02622C6A1505253B003727E1 /* HeatStressTableImageViewController.m in Sources */,
+				02622C761505356D003727E1 /* ConversionManager.m in Sources */,
+				02622C79150535A0003727E1 /* ConversionListViewController.m in Sources */,
+				023421731506BA930075260F /* formulas.m in Sources */,
+				0F65F10915095B050028A6D7 /* OneVariableViewController.m in Sources */,
+				0F704A5B150979370055CC32 /* CategoryManager.m in Sources */,
+				02838EA7150E50940080CC57 /* FiveVariableViewController.m in Sources */,
+				0F377032150FEEBA00192044 /* UIView+FindFirstResponder.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		02F8302314FBD83200A240EE /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				02F8302414FBD83200A240EE /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		02F8302C14FBD83200A240EE /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				02F8302D14FBD83200A240EE /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		02F8303214FBD83200A240EE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		02F8303314FBD83200A240EE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		02F8303514FBD83200A240EE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CalculationsAIHA/CalculationsAIHA-Prefix.pch";
+				INFOPLIST_FILE = "CalculationsAIHA/CalculationsAIHA-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		02F8303614FBD83200A240EE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CalculationsAIHA/CalculationsAIHA-Prefix.pch";
+				INFOPLIST_FILE = "CalculationsAIHA/CalculationsAIHA-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		02F8301014FBD83200A240EE /* Build configuration list for PBXProject "CalculationsAIHA" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				02F8303214FBD83200A240EE /* Debug */,
+				02F8303314FBD83200A240EE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		02F8303414FBD83200A240EE /* Build configuration list for PBXNativeTarget "CalculationsAIHA" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				02F8303514FBD83200A240EE /* Debug */,
+				02F8303614FBD83200A240EE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 02F8300D14FBD83200A240EE /* Project object */;
+}
