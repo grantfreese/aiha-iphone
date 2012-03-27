@@ -23,6 +23,8 @@
 		<string>unit3</string>
 		<key>resultUnit</key>
 		<string>unit4</string>
+		<key>method</key>
+		<string>silica:Respirable:Fraction:</string>
 		<key>imageName</key>
 		<string>PEL(Respirable Fraction).PNG</string>
 	</dict>
@@ -47,6 +49,8 @@
 		<string>unit3</string>
 		<key>resultUnit</key>
 		<string>unit4</string>
+		<key>method</key>
+		<string>silica:Total:Dust:</string>
 		<key>imageName</key>
 		<string>PEL(Total Dust).PNG</string>
 	</dict>
@@ -57,6 +61,8 @@
 		<string>TLVmix = (c1/TLV1)+ (C2/TLV2) +... + (Cn/TLVn)</string>
 		<key>count</key>
 		<string>n</string>
+		<key>method</key>
+		<string></string>
 		<key>imageName</key>
 		<string>TLVmix.PNG</string>
 	</dict>
@@ -67,6 +73,8 @@
 		<string>TWA = (CaTa + CbTb + .. + CnTn)/ (Ta + Tb + ... + Tn)</string>
 		<key>count</key>
 		<string>n</string>
+		<key>method</key>
+		<string></string>
 		<key>imageName</key>
 		<string>TWA.PNG</string>
 	</dict>

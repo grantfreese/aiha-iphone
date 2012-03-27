@@ -19,6 +19,8 @@
 		<string>unit2</string>
 		<key>resultUnit</key>
 		<string>unit3</string>
+		<key>method</key>
+		<string>oxygen:Deficiency:Formula:One:</string>
 		<key>imageName</key>
 		<string>Oxygen Level of Room.PNG</string>
 	</dict>
@@ -37,6 +39,8 @@
 		<string>Q&apos;s</string>
 		<key>unit2</key>
 		<string>volume</string>
+		<key>method</key>
+		<string>roomAirChanges:PerHour:</string>
 		<key>resultUnit</key>
 		<string>?</string>
 		<key>imageName</key>
@@ -57,6 +61,8 @@
 		<string>?</string>
 		<key>unit2</key>
 		<string>?</string>
+		<key>method</key>
+		<string>total:Pressure:</string>
 		<key>resultUnit</key>
 		<string>?</string>
 		<key>imageName</key>
@@ -89,6 +95,8 @@
 		<string>?</string>
 		<key>unit5</key>
 		<string>?</string>
+		<key>method</key>
+		<string>flow:Rate:Adjustment:Formula:One:</string>
 		<key>resultUnit</key>
 		<string>unit1</string>
 		<key>imageName</key>
