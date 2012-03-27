@@ -16,13 +16,13 @@
 		<key>variable3</key>
 		<string>%trid</string>
 		<key>unit1</key>
-		<string>unit1</string>
+		<string>%</string>
 		<key>unit2</key>
-		<string>unit2</string>
+		<string>%</string>
 		<key>unit3</key>
-		<string>unit3</string>
+		<string>%</string>
 		<key>resultUnit</key>
-		<string>unit4</string>
+		<string>PEL</string>
 		<key>method</key>
 		<string>silica:Respirable:Fraction:</string>
 		<key>imageName</key>
@@ -42,13 +42,13 @@
 		<key>variable3</key>
 		<string>%trid</string>
 		<key>unit1</key>
-		<string>unit1</string>
+		<string>%</string>
 		<key>unit2</key>
-		<string>unit2</string>
+		<string>%</string>
 		<key>unit3</key>
-		<string>unit3</string>
+		<string>%</string>
 		<key>resultUnit</key>
-		<string>unit4</string>
+		<string>PEL</string>
 		<key>method</key>
 		<string>silica:Total:Dust:</string>
 		<key>imageName</key>
@@ -60,9 +60,25 @@
 		<key>formula</key>
 		<string>TLVmix = (c1/TLV1)+ (C2/TLV2) +... + (Cn/TLVn)</string>
 		<key>count</key>
-		<string>n</string>
+		<string>4</string>
+		<key>variable1</key>
+		<string>c1_o</string>
+		<key>variable2</key>
+		<string>t1_o</string>
+		<key>variable3</key>
+		<string>c2_o</string>
+		<key>variable4</key>
+		<string>t2_o</string>
+		<key>unit1</key>
+		<string>ppm</string>
+		<key>unit2</key>
+		<string>ppm</string>
+		<key>unit3</key>
+		<string>ppm</string>
+		<key>unit4</key>
+		<string>ppm</string>
 		<key>method</key>
-		<string></string>
+		<string>TLV:of:Mixture:MultiVar:</string>
 		<key>imageName</key>
 		<string>TLVmix.PNG</string>
 	</dict>
@@ -73,8 +89,24 @@
 		<string>TWA = (CaTa + CbTb + .. + CnTn)/ (Ta + Tb + ... + Tn)</string>
 		<key>count</key>
 		<string>n</string>
+		<key>variable1</key>
+		<string>c1_o</string>
+		<key>variable2</key>
+		<string>t1_o</string>
+		<key>variable3</key>
+		<string>c2_o</string>
+		<key>variable4</key>
+		<string>t2_o</string>
+		<key>unit1</key>
+		<string>ppm</string>
+		<key>unit2</key>
+		<string>ppm</string>
+		<key>unit3</key>
+		<string>ppm</string>
+		<key>unit4</key>
+		<string>ppm</string>
 		<key>method</key>
-		<string></string>
+		<string>TWA:MultiVar:Var2a:Var2b:</string>
 		<key>imageName</key>
 		<string>TWA.PNG</string>
 	</dict>

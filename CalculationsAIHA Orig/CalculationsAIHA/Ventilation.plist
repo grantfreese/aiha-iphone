@@ -6,19 +6,27 @@
 		<key>name</key>
 		<string>Oxygen Deficiency Calculation</string>
 		<key>formula</key>
-		<string>To be added later</string>
+		<string>????</string>
 		<key>number</key>
-		<string>2</string>
+		<string>4</string>
 		<key>variable1</key>
-		<string>N</string>
+		<string>cryogen</string>
 		<key>variable2</key>
-		<string>SPLi</string>
+		<string>density</string>
+		<key>variable3</key>
+		<string>MW</string>
+		<key>variable4</key>
+		<string>roomVolume</string>
 		<key>unit1</key>
-		<string>unit1</string>
+		<string>L</string>
 		<key>unit2</key>
-		<string>unit2</string>
+		<string>g/cm^3</string>
+		<key>unit3</key>
+		<string>g</string>
+		<key>unit4</key>
+		<string>ft^3</string>
 		<key>resultUnit</key>
-		<string>unit3</string>
+		<string>%</string>
 		<key>method</key>
 		<string>oxygen:Deficiency:Formula:One:</string>
 		<key>imageName</key>
@@ -32,17 +40,17 @@
 		<key>number</key>
 		<string>2</string>
 		<key>variable1</key>
-		<string>Q</string>
+		<string>Q_o</string>
 		<key>variable2</key>
-		<string>Vroom</string>
+		<string>volume_o</string>
 		<key>unit1</key>
-		<string>Q&apos;s</string>
+		<string>cfm</string>
 		<key>unit2</key>
-		<string>volume</string>
+		<string>ft^3</string>
 		<key>method</key>
 		<string>roomAirChanges:PerHour:</string>
 		<key>resultUnit</key>
-		<string>?</string>
+		<string></string>
 		<key>imageName</key>
 		<string>Room Air changes per hour.PNG</string>
 	</dict>
@@ -54,17 +62,17 @@
 		<key>number</key>
 		<string>2</string>
 		<key>variable1</key>
-		<string>VP</string>
+		<string>vp_o</string>
 		<key>variable2</key>
-		<string>SP</string>
+		<string>sp_o</string>
 		<key>unit1</key>
-		<string>?</string>
+		<string></string>
 		<key>unit2</key>
-		<string>?</string>
+		<string></string>
 		<key>method</key>
 		<string>total:Pressure:</string>
 		<key>resultUnit</key>
-		<string>?</string>
+		<string></string>
 		<key>imageName</key>
 		<string>Total Pressure.PNG</string>
 	</dict>
@@ -76,7 +84,7 @@
 		<key>number</key>
 		<string>5</string>
 		<key>variable1</key>
-		<string>Qindicated</string>
+		<string>Qind</string>
 		<key>variable2</key>
 		<string>Pc</string>
 		<key>variable3</key>
@@ -86,19 +94,19 @@
 		<key>variable5</key>
 		<string>Tc</string>
 		<key>unit1</key>
-		<string>?</string>
+		<string>L/min</string>
 		<key>unit2</key>
-		<string>?</string>
+		<string>kPa</string>
 		<key>unit3</key>
-		<string>?</string>
+		<string>kPa</string>
 		<key>unit4</key>
-		<string>?</string>
+		<string>deg K</string>
 		<key>unit5</key>
-		<string>?</string>
+		<string>deg K</string>
 		<key>method</key>
 		<string>flow:Rate:Adjustment:Formula:One:</string>
 		<key>resultUnit</key>
-		<string>unit1</string>
+		<string>L/min</string>
 		<key>imageName</key>
 		<string>Flow rate adjustment.PNG</string>
 	</dict>
