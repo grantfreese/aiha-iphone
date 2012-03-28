@@ -54,12 +54,12 @@ SoundPressureLevels:(NSNumber*)n_o;
 //EXPOSURE EQUATIONS
 
 //silicaRespirableFraction
-+(float) silica:(float)qrtz
+-(float) silica:(float)qrtz
      Respirable:(float)crist
        Fraction:(float)trid;
 
 //silicaTotalDust
-+(float) silica:(float)qrtz
+-(float) silica:(float)qrtz
           Total:(float)crist
            Dust:(float)trid;
 
@@ -89,7 +89,7 @@ SoundPressureLevels:(NSNumber*)n_o;
 
 //QUESTION: WHERE DOES DISPLACED OXYGEN COME FROM?
 //oxygenDeficiencyFormulaOne
-+(float) oxygen:(float)cryogen
+-(float) oxygen:(float)cryogen
      Deficiency:(float)density
         Formula:(float)MW
             One:(float)roomVolume;
@@ -102,7 +102,7 @@ SoundPressureLevels:(NSNumber*)n_o;
       Pressure: (NSNumber*) sp;
 
 //flowRateAdjustmentFormulaOne
-+(float) flow:(float)Qind
+-(float) flow:(float)Qind
          Rate:(float)Pc 
    Adjustment:(float)Ts 
       Formula:(float)Ps 

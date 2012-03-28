@@ -154,7 +154,7 @@ SoundPressureLevels:(NSNumber*)n_o
 //EXPOSURE EQUATIONS
 
 //silicaRespirableFraction
-+(float) silica:(float)qrtz
+-(float) silica:(float)qrtz
      Respirable:(float)crist
        Fraction:(float)trid
 {
@@ -166,7 +166,7 @@ SoundPressureLevels:(NSNumber*)n_o
 }
 
 //silicaTotalDust
-+(float) silica:(float)qrtz
+-(float) silica:(float)qrtz
           Total:(float)crist
            Dust:(float)trid
 {
@@ -263,7 +263,7 @@ SoundPressureLevels:(NSNumber*)n_o
 
 //FIX ME FIX ME FIX ME
 //oxygenDeficiencyFormulaOne
-+(float) oxygen:(float)cryogen
+-(float) oxygen:(float)cryogen
      Deficiency:(float)density
         Formula:(float)MW
             One:(float)roomVolume
@@ -312,7 +312,7 @@ SoundPressureLevels:(NSNumber*)n_o
 }
 
 //flowRateAdjustmentFormulaOne
-+(float) flow:(float)Qind
+-(float) flow:(float)Qind
          Rate:(float)Pc 
    Adjustment:(float)Ts 
       Formula:(float)Ps 
