@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Item 0</key>
+	<dict>
+		<key>name</key>
+		<string>msToFtm</string>
+		<key>formula</key>
+		<string>temp = ms * 2120.0</string>
+		<key>number</key>
+		<string>1</string>
+		<key>unit1</key>
+		<string>ms</string>
+		<key>resultUnit</key>
+		<string>Ftm</string>
+		<key>method</key>
+		<string>msToFtm:</string>
+	</dict>
+	<key>Item 1</key>
+	<dict>
+		<key>name</key>
+		<string>ftmToms</string>
+		<key>formula</key>
+		<string>temp = ftm / 2120.0</string>
+		<key>number</key>
+		<string>1</string>
+		<key>unit1</key>
+		<string>ftm</string>
+		<key>resultUnit</key>
+		<string>ms</string>
+		<key>method</key>
+		<string>ftmToms:</string>
+	</dict>
+	<key>Item 2</key>
+	<dict>
+		<key>name</key>
+		<string>ftmToCps</string>
+		<key>formula</key>
+		<string>temp = ftm * 16.4</string>
+		<key>number</key>
+		<string>1</string>
+		<key>unit1</key>
+		<string>ftm</string>
+		<key>resultUnit</key>
+		<string>Cps</string>
+		<key>method</key>
+		<string>ftmToCps:</string>
+	</dict>
+	<key>Item 3</key>
+	<dict>
+		<key>name</key>
+		<string>cpsToFtm</string>
+		<key>formula</key>
+		<string>temp = cps / 16.4</string>
+		<key>number</key>
+		<string>1</string>
+		<key>unit1</key>
+		<string>cps</string>
+		<key>resultUnit</key>
+		<string>Ftm</string>
+		<key>method</key>
+		<string>cpsToFtm:</string>
+	</dict>
+	<key>Item 4</key>
+	<dict>
+		<key>name</key>
+		<string>fthToLMin</string>
+		<key>formula</key>
+		<string>temp = fth * 0.47</string>
+		<key>number</key>
+		<string>1</string>
+		<key>unit1</key>
+		<string>fth</string>
+		<key>resultUnit</key>
+		<string>LMin</string>
+		<key>method</key>
+		<string>fthToLMin:</string>
+	</dict>
+	<key>Item 5</key>
+	<dict>
+		<key>name</key>
+		<string>lmToFth</string>
+		<key>formula</key>
+		<string>temp = lm / 0.47</string>
+		<key>number</key>
+		<string>1</string>
+		<key>unit1</key>
+		<string>lm</string>
+		<key>resultUnit</key>
+		<string>Fth</string>
+		<key>method</key>
+		<string>lmToFth:</string>
+	</dict>
+</dict>
+</plist>

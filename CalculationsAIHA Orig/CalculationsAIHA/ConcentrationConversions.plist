@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Item 0</key>
+	<dict>
+		<key>name</key>
+		<string>gToM</string>
+		<key>formula</key>
+		<string>temp = g * 2.29</string>
+		<key>number</key>
+		<string>1</string>
+		<key>unit1</key>
+		<string>g</string>
+		<key>resultUnit</key>
+		<string>M</string>
+		<key>method</key>
+		<string>gToM:</string>
+	</dict>
+	<key>Item 1</key>
+	<dict>
+		<key>name</key>
+		<string>mToG</string>
+		<key>formula</key>
+		<string>temp = m / 2.29</string>
+		<key>number</key>
+		<string>1</string>
+		<key>unit1</key>
+		<string>m</string>
+		<key>resultUnit</key>
+		<string>G</string>
+		<key>method</key>
+		<string>mToG:</string>
+	</dict>
+	<key>Item 2</key>
+	<dict>
+		<key>name</key>
+		<string>mppcfToParticles</string>
+		<key>formula</key>
+		<string>temp = mppcf * 35.3</string>
+		<key>number</key>
+		<string>1</string>
+		<key>unit1</key>
+		<string>mppcf</string>
+		<key>resultUnit</key>
+		<string>particles</string>
+		<key>method</key>
+		<string>mppcfToParticles:</string>
+	</dict>
+	<key>Item 3</key>
+	<dict>
+		<key>name</key>
+		<string>particlesToMppcf</string>
+		<key>formula</key>
+		<string>temp = particles / 35.3</string>
+		<key>number</key>
+		<string>1</string>
+		<key>unit1</key>
+		<string>particles</string>
+		<key>resultUnit</key>
+		<string>Mppcf</string>
+		<key>method</key>
+		<string>particlesToMppcf:</string>
+	</dict>
+</dict>
+</plist>
