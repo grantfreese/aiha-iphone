@@ -41,7 +41,6 @@
 		0F37704D150FF43E00192044 /* Flow rate adjustment.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F377039150FF43E00192044 /* Flow rate adjustment.png */; };
 		0F37704E150FF43E00192044 /* From ppm.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F37703A150FF43E00192044 /* From ppm.png */; };
 		0F37704F150FF43E00192044 /* Inverse Square Law.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F37703B150FF43E00192044 /* Inverse Square Law.png */; };
-		0F377050150FF43E00192044 /* Oxygen Level of Room va.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F37703C150FF43E00192044 /* Oxygen Level of Room va.png */; };
 		0F377051150FF43E00192044 /* PEL(Respirable Fraction).png in Resources */ = {isa = PBXBuildFile; fileRef = 0F37703D150FF43E00192044 /* PEL(Respirable Fraction).png */; };
 		0F377052150FF43E00192044 /* PEL(Total Dust).png in Resources */ = {isa = PBXBuildFile; fileRef = 0F37703E150FF43E00192044 /* PEL(Total Dust).png */; };
 		0F377053150FF43E00192044 /* PercentDose.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F37703F150FF43E00192044 /* PercentDose.png */; };
@@ -57,7 +56,15 @@
 		0F37705E150FF4D300192044 /* AIHA.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F37705D150FF4D300192044 /* AIHA.png */; };
 		0F65F10915095B050028A6D7 /* OneVariableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F65F10815095B050028A6D7 /* OneVariableViewController.m */; };
 		0F704A5B150979370055CC32 /* CategoryManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F704A5A150979370055CC32 /* CategoryManager.m */; };
-		227E52E715205FD6008F7790 /* Oxygen Level of Room.png in Resources */ = {isa = PBXBuildFile; fileRef = 227E52E615205FD6008F7790 /* Oxygen Level of Room.png */; };
+		222E4A4F1523CAFD0050E168 /* AllowableExposureTime.png in Resources */ = {isa = PBXBuildFile; fileRef = 222E4A461523CAFD0050E168 /* AllowableExposureTime.png */; };
+		222E4A501523CAFD0050E168 /* diltutionVentilation.png in Resources */ = {isa = PBXBuildFile; fileRef = 222E4A471523CAFD0050E168 /* diltutionVentilation.png */; };
+		222E4A511523CAFD0050E168 /* dilutionToControlEvaporation.png in Resources */ = {isa = PBXBuildFile; fileRef = 222E4A481523CAFD0050E168 /* dilutionToControlEvaporation.png */; };
+		222E4A521523CAFD0050E168 /* fanLaws.png in Resources */ = {isa = PBXBuildFile; fileRef = 222E4A491523CAFD0050E168 /* fanLaws.png */; };
+		222E4A531523CAFD0050E168 /* fanLaws2.png in Resources */ = {isa = PBXBuildFile; fileRef = 222E4A4A1523CAFD0050E168 /* fanLaws2.png */; };
+		222E4A541523CAFD0050E168 /* fanTotalPressure.png in Resources */ = {isa = PBXBuildFile; fileRef = 222E4A4B1523CAFD0050E168 /* fanTotalPressure.png */; };
+		222E4A551523CAFD0050E168 /* HoodStaticPressure.png in Resources */ = {isa = PBXBuildFile; fileRef = 222E4A4C1523CAFD0050E168 /* HoodStaticPressure.png */; };
+		222E4A571523CAFD0050E168 /* velocity.png in Resources */ = {isa = PBXBuildFile; fileRef = 222E4A4E1523CAFD0050E168 /* velocity.png */; };
+		222E4A591523CBBF0050E168 /* Oxygen Level of Room.PNG in Resources */ = {isa = PBXBuildFile; fileRef = 222E4A581523CBBF0050E168 /* Oxygen Level of Room.PNG */; };
 		32BCE4B71504809A002F1C52 /* VentilationListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 32BCE4B61504809A002F1C52 /* VentilationListViewController.m */; };
 		32BCE4BA1504812E002F1C52 /* VentilationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 32BCE4B91504812E002F1C52 /* VentilationManager.m */; };
 		32BCE4C0150493FA002F1C52 /* Ventilation.plist in Resources */ = {isa = PBXBuildFile; fileRef = 32BCE4BF150493F9002F1C52 /* Ventilation.plist */; };
@@ -120,7 +127,6 @@
 		0F377039150FF43E00192044 /* Flow rate adjustment.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Flow rate adjustment.png"; sourceTree = "<group>"; };
 		0F37703A150FF43E00192044 /* From ppm.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "From ppm.png"; sourceTree = "<group>"; };
 		0F37703B150FF43E00192044 /* Inverse Square Law.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Inverse Square Law.png"; sourceTree = "<group>"; };
-		0F37703C150FF43E00192044 /* Oxygen Level of Room va.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Oxygen Level of Room va.png"; sourceTree = "<group>"; };
 		0F37703D150FF43E00192044 /* PEL(Respirable Fraction).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "PEL(Respirable Fraction).png"; sourceTree = "<group>"; };
 		0F37703E150FF43E00192044 /* PEL(Total Dust).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "PEL(Total Dust).png"; sourceTree = "<group>"; };
 		0F37703F150FF43E00192044 /* PercentDose.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PercentDose.png; sourceTree = "<group>"; };
@@ -138,7 +144,15 @@
 		0F65F10815095B050028A6D7 /* OneVariableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OneVariableViewController.m; sourceTree = "<group>"; };
 		0F704A59150979370055CC32 /* CategoryManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CategoryManager.h; sourceTree = "<group>"; };
 		0F704A5A150979370055CC32 /* CategoryManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CategoryManager.m; sourceTree = "<group>"; };
-		227E52E615205FD6008F7790 /* Oxygen Level of Room.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Oxygen Level of Room.png"; sourceTree = "<group>"; };
+		222E4A461523CAFD0050E168 /* AllowableExposureTime.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AllowableExposureTime.png; sourceTree = "<group>"; };
+		222E4A471523CAFD0050E168 /* diltutionVentilation.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = diltutionVentilation.png; sourceTree = "<group>"; };
+		222E4A481523CAFD0050E168 /* dilutionToControlEvaporation.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dilutionToControlEvaporation.png; sourceTree = "<group>"; };
+		222E4A491523CAFD0050E168 /* fanLaws.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fanLaws.png; sourceTree = "<group>"; };
+		222E4A4A1523CAFD0050E168 /* fanLaws2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fanLaws2.png; sourceTree = "<group>"; };
+		222E4A4B1523CAFD0050E168 /* fanTotalPressure.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fanTotalPressure.png; sourceTree = "<group>"; };
+		222E4A4C1523CAFD0050E168 /* HoodStaticPressure.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = HoodStaticPressure.png; sourceTree = "<group>"; };
+		222E4A4E1523CAFD0050E168 /* velocity.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = velocity.png; sourceTree = "<group>"; };
+		222E4A581523CBBF0050E168 /* Oxygen Level of Room.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Oxygen Level of Room.PNG"; sourceTree = "<group>"; };
 		32BCE4B51504809A002F1C52 /* VentilationListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VentilationListViewController.h; sourceTree = "<group>"; };
 		32BCE4B61504809A002F1C52 /* VentilationListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VentilationListViewController.m; sourceTree = "<group>"; };
 		32BCE4B81504812E002F1C52 /* VentilationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VentilationManager.h; sourceTree = "<group>"; };
@@ -270,8 +284,15 @@
 				0F377039150FF43E00192044 /* Flow rate adjustment.png */,
 				0F37703A150FF43E00192044 /* From ppm.png */,
 				0F37703B150FF43E00192044 /* Inverse Square Law.png */,
-				0F37703C150FF43E00192044 /* Oxygen Level of Room va.png */,
-				227E52E615205FD6008F7790 /* Oxygen Level of Room.png */,
+				222E4A461523CAFD0050E168 /* AllowableExposureTime.png */,
+				222E4A471523CAFD0050E168 /* diltutionVentilation.png */,
+				222E4A481523CAFD0050E168 /* dilutionToControlEvaporation.png */,
+				222E4A491523CAFD0050E168 /* fanLaws.png */,
+				222E4A4A1523CAFD0050E168 /* fanLaws2.png */,
+				222E4A4B1523CAFD0050E168 /* fanTotalPressure.png */,
+				222E4A581523CBBF0050E168 /* Oxygen Level of Room.PNG */,
+				222E4A4C1523CAFD0050E168 /* HoodStaticPressure.png */,
+				222E4A4E1523CAFD0050E168 /* velocity.png */,
 				0F37703D150FF43E00192044 /* PEL(Respirable Fraction).png */,
 				0F37703E150FF43E00192044 /* PEL(Total Dust).png */,
 				0F37703F150FF43E00192044 /* PercentDose.png */,
@@ -352,7 +373,6 @@
 				0F37704D150FF43E00192044 /* Flow rate adjustment.png in Resources */,
 				0F37704E150FF43E00192044 /* From ppm.png in Resources */,
 				0F37704F150FF43E00192044 /* Inverse Square Law.png in Resources */,
-				0F377050150FF43E00192044 /* Oxygen Level of Room va.png in Resources */,
 				0F377051150FF43E00192044 /* PEL(Respirable Fraction).png in Resources */,
 				0F377052150FF43E00192044 /* PEL(Total Dust).png in Resources */,
 				0F377053150FF43E00192044 /* PercentDose.png in Resources */,
@@ -367,8 +387,16 @@
 				0F37705C150FF43E00192044 /* WBGT_Outdoor.png in Resources */,
 				0F37705E150FF4D300192044 /* AIHA.png in Resources */,
 				95D86E1A151ECEB5000438E8 /* AIHA_LongFinal.jpg in Resources */,
-				227E52E715205FD6008F7790 /* Oxygen Level of Room.png in Resources */,
 				8EC7AABC1522BB5800DAFABA /* HeatExposureTable.png in Resources */,
+				222E4A4F1523CAFD0050E168 /* AllowableExposureTime.png in Resources */,
+				222E4A501523CAFD0050E168 /* diltutionVentilation.png in Resources */,
+				222E4A511523CAFD0050E168 /* dilutionToControlEvaporation.png in Resources */,
+				222E4A521523CAFD0050E168 /* fanLaws.png in Resources */,
+				222E4A531523CAFD0050E168 /* fanLaws2.png in Resources */,
+				222E4A541523CAFD0050E168 /* fanTotalPressure.png in Resources */,
+				222E4A551523CAFD0050E168 /* HoodStaticPressure.png in Resources */,
+				222E4A571523CAFD0050E168 /* velocity.png in Resources */,
+				222E4A591523CBBF0050E168 /* Oxygen Level of Room.PNG in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
