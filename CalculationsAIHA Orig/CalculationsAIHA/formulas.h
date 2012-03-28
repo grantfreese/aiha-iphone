@@ -42,6 +42,8 @@ SoundPressureLevels:(NSNumber*)n_o;
 //Returns amount of time to reach 85dBA
 +(NSNumber*) eightHourTWSof85dBa: (NSNumber*) soundPressure;
 
++(NSNumber*) OSHAEquation: (NSNumber*) SPL_o;
+
 //InverseSquareLaw
 -(float)inverse:(float)i1 
         Square:(float)d1

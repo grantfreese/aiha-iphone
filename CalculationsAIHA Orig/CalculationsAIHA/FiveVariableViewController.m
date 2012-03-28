@@ -58,27 +58,27 @@
     {
         chosenFormula = heatManager.selectedFormula;
         calculationResult =[formulas runFunction:[chosenFormula objectForKey:@"method"]
-                                      numAndArgs:3, (double)variable1, (double)variable2, (double)variable3, (double)variable4, (double)variable5];
+                                      numAndArgs:5, (double)variable1, (double)variable2, (double)variable3, (double)variable4, (double)variable5];
     }
     
     else if (check == NOISE)
     {
         chosenFormula = noiseManager.selectedFormula;
         calculationResult =[formulas runFunction:[chosenFormula objectForKey:@"method"]
-                                      numAndArgs:3, (double)variable1, (double)variable2, (double)variable3, (double)variable4, (double)variable5];
+                                      numAndArgs:5, (double)variable1, (double)variable2, (double)variable3, (double)variable4, (double)variable5];
     }
     
     else if (check == EXPOSUREASSESSMENT)
     {
         chosenFormula = exposureManager.selectedFormula;
         calculationResult =[formulas runFunction:[chosenFormula objectForKey:@"method"]
-                                      numAndArgs:3, (double)variable1, (double)variable2, (double)variable3, (double)variable4, (double)variable5];
+                                      numAndArgs:5, (double)variable1, (double)variable2, (double)variable3, (double)variable4, (double)variable5];
     }
     else if (check == VENTILATION)
     {
         chosenFormula = ventilationManager.selectedFormula;
         calculationResult =[formulas runFunction:[chosenFormula objectForKey:@"method"]
-                                      numAndArgs:3, (double)variable1, (double)variable2, (double)variable3, (double)variable4, (double)variable5];
+                                      numAndArgs:5, (double)variable1, (double)variable2, (double)variable3, (double)variable4, (double)variable5];
     }
     
     

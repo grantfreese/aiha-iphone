@@ -69,7 +69,7 @@ SoundPressureLevels:(NSNumber*)n_o
     return retVal;
 }
 
-+(NSNumber*) noise: (NSNumber*)c1_o
+/*+(NSNumber*) noise: (NSNumber*)c1_o
               Dose: (NSNumber*)t1_o
           MultiVar: (NSNumber*)c2_o
              Var2b:(NSNumber*)t2_o
@@ -107,7 +107,7 @@ SoundPressureLevels:(NSNumber*)n_o
     
     NSNumber *retval = [NSNumber numberWithFloat:temp];
     return retval;
-}
+}*/
 
 
 //eightHourTWSof85dBa
@@ -115,9 +115,27 @@ SoundPressureLevels:(NSNumber*)n_o
 +(NSNumber*) eightHourTWSof85dBa: (NSNumber*) soundPressure_o
 {
     float soundPressure = [soundPressure_o floatValue];
-    //T = 82* (L - 853)
+    //T = 8/((L - 85)/3)2)
     //Assumes a 3dB doubling rate.
-    float temp = 82.0 * (soundPressure - 853.0);
+    float temp = (soundPressure - 85.0);
+    temp = temp/3;
+    temp = temp * 2;
+    temp = 8 / temp;
+    NSNumber *retval = [NSNumber numberWithFloat:temp];
+    return retval;
+}
+
+//OSHAEquation
+//Returns T
++(NSNumber*) OSHAEquation: (NSNumber*) SPL_o
+{
+    float SPL = [SPL_o floatValue];
+    //T = 8/((SPL - 90)/5)2)
+    //Assumes a 5dB doubling rate.
+    float temp = (SPL - 90.0);
+    temp = temp/5;
+    temp = temp * 2;
+    temp = 8 / temp;
     NSNumber *retval = [NSNumber numberWithFloat:temp];
     return retval;
 }

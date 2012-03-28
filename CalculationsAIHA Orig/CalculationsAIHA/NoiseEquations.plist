@@ -30,7 +30,7 @@
 		<key>formula</key>
 		<string>%D = 100[(C1/T1)+(C2/T2)+...+(Ci/Ti)]</string>
 		<key>number</key>
-		<string>n</string>
+		<string>5</string>
 		<key>variable1</key>
 		<string>C1</string>
 		<key>variable2</key>
@@ -60,7 +60,7 @@
 		<key>variable1</key>
 		<string>L</string>
 		<key>unit1</key>
-		<string>dBA</string>
+		<string>&apos;dBA&apos; decibles</string>
 		<key>resultUnit</key>
 		<string>minutes</string>
 		<key>method</key>
@@ -113,6 +113,24 @@
 		<string>dBA</string>
 		<key>method</key>
 		<string>percentDosetoTWA:</string>
+		<key>imageName</key>
+		<string>TWA from %Dose.PNG</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>OSHA Eqation</string>
+		<key>formula</key>
+		<string>T=(8/(2*(SPL-90)/5))</string>
+		<key>number</key>
+		<string>1</string>
+		<key>variable1</key>
+		<string>SPL</string>
+		<key>unit1</key>
+		<string>&apos;dBA&apos; decibles</string>
+		<key>resultUnit</key>
+		<string>Hours</string>
+		<key>method</key>
+		<string>OSHAEquation:</string>
 		<key>imageName</key>
 		<string>TWA from %Dose.PNG</string>
 	</dict>
