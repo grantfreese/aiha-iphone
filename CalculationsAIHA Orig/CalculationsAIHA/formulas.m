@@ -125,9 +125,9 @@ SoundPressureLevels:(NSNumber*)n_o
     return retval;
 }
 
-//OSHAEquation
+//allowableExposureTime
 //Returns T
-+(NSNumber*) OSHAEquation: (NSNumber*) SPL_o
++(NSNumber*) allowableExposureTime: (NSNumber*) SPL_o
 {
     float SPL = [SPL_o floatValue];
     //T = 8/((SPL - 90)/5)2)

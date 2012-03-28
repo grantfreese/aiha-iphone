@@ -118,7 +118,7 @@
 	</dict>
 	<dict>
 		<key>name</key>
-		<string>OSHA Eqation</string>
+		<string>AllowableExposureTime</string>
 		<key>formula</key>
 		<string>T=(8/(2*(SPL-90)/5))</string>
 		<key>number</key>
@@ -130,9 +130,9 @@
 		<key>resultUnit</key>
 		<string>Hours</string>
 		<key>method</key>
-		<string>OSHAEquation:</string>
+		<string>allowableExposureTime</string>
 		<key>imageName</key>
-		<string>TWA from %Dose.PNG</string>
+		<string>allowableExposureTime.PNG</string>
 	</dict>
 </array>
 </plist>
