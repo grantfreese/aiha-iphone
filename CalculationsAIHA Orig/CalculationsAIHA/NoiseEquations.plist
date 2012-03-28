@@ -20,7 +20,7 @@
 		<key>resultUnit</key>
 		<string>dBA</string>
 		<key>method</key>
-		<string>addingSoundPressureLevel</string>
+		<string>adding:SoundPressureLevels:</string>
 		<key>imageName</key>
 		<string>AddingSoundPressure.PNG</string>
 	</dict>
@@ -46,7 +46,7 @@
 		<key>resultUnit</key>
 		<string>%</string>
 		<key>method</key>
-		<string></string>
+		<string>noise:Dose:MultiVar:Var2b:Var3a:Var3b:Var4a:Var4b:Var5a:Var5b:</string>
 		<key>imageName</key>
 		<string>PercentDose.PNG</string>
 	</dict>

@@ -78,7 +78,7 @@
 		<key>unit4</key>
 		<string>ppm</string>
 		<key>method</key>
-		<string>TLV:of:Mixture:MultiVar:</string>
+		<string>TLV:of:Mixture:MultiVar:Var3a:Var3b:Var4a:Var4b:Var5a:Var5b:</string>
 		<key>imageName</key>
 		<string>TLVmix.PNG</string>
 	</dict>
@@ -106,7 +106,7 @@
 		<key>unit4</key>
 		<string>ppm</string>
 		<key>method</key>
-		<string>TWA:MultiVar:Var2a:Var2b:</string>
+		<string>TWA:MultiVar:Var2a:Var2b:Var3a:Var3b:Var4a:Var4b:Var5a:Var5b</string>
 		<key>imageName</key>
 		<string>TWA.PNG</string>
 	</dict>

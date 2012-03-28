@@ -22,18 +22,9 @@
 //NOISE EQUATIONS
 
 
- //adding:Sound:Pressure:Levels:Var3a:Var3b:Var4a:Var4b:Var5a:Var5b:VarX
- +(NSNumber*) adding:(NSNumber*)c1
- Sound:(NSNumber*)t1
- Pressure:(NSNumber*)c2
- Levels:(NSNumber*)t2
- Var3a:(NSNumber*)c3
- Var3b:(NSNumber*)t3
- Var4a:(NSNumber*)c4
- Var4b:(NSNumber*)t4
- Var5a:(NSNumber*)c5
- Var5b:(NSNumber*)t5
- VarX:(NSNumber*)numOfVars;
+ //adding:Sound:Pressure:Levels:
++(NSNumber*) adding:(NSNumber*)SPLi_o
+SoundPressureLevels:(NSNumber*)n_o;
  
  //noise:Dose:MultiVar:Var2b:Var3a:Var3b:Var4a:Var4b:Var5a:Var5b:VarX
  +(NSNumber*) noise: (NSNumber*)c1
@@ -45,8 +36,7 @@
  Var4a:(NSNumber*)c4
  Var4b:(NSNumber*)t4
  Var5a:(NSNumber*)c5
- Var5b:(NSNumber*)t5
- VarX:(NSNumber*)numOfVars;
+ Var5b:(NSNumber*)t5;
 
 //eightHourTWSof85dBa
 //Returns amount of time to reach 85dBA
@@ -83,8 +73,7 @@
            Var4a:(NSNumber*)c4
            Var4b:(NSNumber*)t4
            Var5a:(NSNumber*)c5
-           Var5b:(NSNumber*)t5
-            VarX:(NSNumber*)numOfVars;
+           Var5b:(NSNumber*)t5;
 
 //TWA:MultiVar:Var2a:Var2b:Var3a:Var3b:Var4a:Var4b:Var5a:Var5b:VarX
 +(NSNumber*) TWA:(NSNumber*)c1
@@ -96,8 +85,7 @@
            Var4a:(NSNumber*)c4
            Var4b:(NSNumber*)t4
            Var5a:(NSNumber*)c5
-           Var5b:(NSNumber*)t5
-            VarX:(NSNumber*)numOfVars;
+           Var5b:(NSNumber*)t5;
 
 //QUESTION: WHERE DOES DISPLACED OXYGEN COME FROM?
 //oxygenDeficiencyFormulaOne

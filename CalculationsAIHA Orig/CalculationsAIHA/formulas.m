@@ -41,74 +41,73 @@
     // box up the return value
     NSNumber *retVal = [NSNumber numberWithFloat:temp];
     return retVal;
-    //return (.7*tnwb + .3*tg);
 }
 
 //NOISE EQUATIONS
 
-/*
- +(NSNumber*) adding:(NSNumber*)c1
- Sound:(NSNumber*)t1
- Pressure:(NSNumber*)c2
- Levels:(NSNumber*)t2
- Var3a:(NSNumber*)c3
- Var3b:(NSNumber*)t3
- Var4a:(NSNumber*)c4
- Var4b:(NSNumber*)t4
- Var5a:(NSNumber*)c5
- Var5b:(NSNumber*)t5
- VarX:(NSNumber*)numOfVars
- {
- //Note: Uses sum
- }
-*/
-
- //TODO
- +(NSNumber*) noise: (NSNumber*)c1_o
- Dose: (NSNumber*)t1_o
- MultiVar: (NSNumber*)c2_o
- Var2b:(NSNumber*)t2_o
- Var3a:(NSNumber*)c3_o
- Var3b:(NSNumber*)t3_o
- Var4a:(NSNumber*)c4_o
- Var4b:(NSNumber*)t4_o
- Var5a:(NSNumber*)c5_o
- Var5b:(NSNumber*)t5_o
- VarX:(NSNumber*)numOfVars_o
- {
-     float c1 = [c1_o floatValue];
-     float t1 = [t1_o floatValue];
-     float c2 = [c2_o floatValue];
-     float t2 = [t2_o floatValue];
-     float c3 = [c3_o floatValue];
-     float t3 = [t3_o floatValue];
-     float c4 = [c4_o floatValue];
-     float t4 = [t4_o floatValue];
-     float c5 = [c5_o floatValue];
-     float t5 = [t5_o floatValue];
-     float numOfVars = [numOfVars_o floatValue];
-     
-     float temp;
-     
-     //Prevent division by 0.
-     if(t1 == 0.0 || t2 == 0.0 || t3 == 0.0 || t4 == 0.0 || t5 == 0.0)
-         temp = -1.0;
+//adding:SoundPressureLevels
++(NSNumber*) adding:(NSNumber*)SPLi_o
+SoundPressureLevels:(NSNumber*)n_o
+{
+    float SPLi = [SPLi_o floatValue];
+    float n = [n_o floatValue];
     
-     //% = 100*( (C1/T1) + (C2/T2) + (Ci / Ti))
-     if(numOfVars == 1)
-         temp = 100 * ((c1/t1));
-     else if (numOfVars == 2)
-         temp = 100 * ((c1/t1)+(c2/t2));
-     else if (numOfVars == 3)
-         temp = 100 * ((c1/t1)+(c2/t2)+(c3/t3));
-     else if (numOfVars == 4)
-         temp = 100 * ((c1/t1)+(c2/t2)+(c3/t3)+(c4/t4));
-     else if (numOfVars == 5)
-         temp = 100 * ((c1/t1)+(c2/t2)+(c3/t3)+(c4/t4)+(c5/t5));
-     
-     NSNumber *retval = [NSNumber numberWithFloat:temp];
-     return retval;
- }
+    float sum = 0.0;
+    int i =1;
+    
+    for(i=1; i <= n; i++)
+    {
+        float temp1 = SPLi / 10.0;
+        float temp2 = pow(10, temp1);
+        
+        sum += temp2;
+    }
+    
+    sum = 10 * logf(sum);
+    
+    NSNumber *retVal = [NSNumber numberWithFloat:sum];
+    return retVal;
+}
+
++(NSNumber*) noise: (NSNumber*)c1_o
+              Dose: (NSNumber*)t1_o
+          MultiVar: (NSNumber*)c2_o
+             Var2b:(NSNumber*)t2_o
+             Var3a:(NSNumber*)c3_o
+             Var3b:(NSNumber*)t3_o
+             Var4a:(NSNumber*)c4_o
+             Var4b:(NSNumber*)t4_o
+             Var5a:(NSNumber*)c5_o
+             Var5b:(NSNumber*)t5_o
+{
+    float c1 = [c1_o floatValue];
+    float t1 = [t1_o floatValue];
+    float c2 = [c2_o floatValue];
+    float t2 = [t2_o floatValue];
+    float c3 = [c3_o floatValue];
+    float t3 = [t3_o floatValue];
+    float c4 = [c4_o floatValue];
+    float t4 = [t4_o floatValue];
+    float c5 = [c5_o floatValue];
+    float t5 = [t5_o floatValue];
+    
+    float temp;
+    
+    //% = 100*( (C1/T1) + (C2/T2) + (Ci / Ti))
+    if(c2 == 0.0 || t2 == 0.0)
+        temp = 100 * ((c1/t1));
+    else if (c3== 0.0 || t3 == 0.0)
+        temp = 100 * ((c1/t1)+(c2/t2));
+    else if (c4 == 0.0 || t4 == 0.0)
+        temp = 100 * ((c1/t1)+(c2/t2)+(c3/t3));
+    else if (c5 == 0.0 || t5 == 0.0)
+        temp = 100 * ((c1/t1)+(c2/t2)+(c3/t3)+(c4/t4));
+    else
+        temp = 100 * ((c1/t1)+(c2/t2)+(c3/t3)+(c4/t4)+(c5/t5));
+    
+    NSNumber *retval = [NSNumber numberWithFloat:temp];
+    return retval;
+}
 
 
 //eightHourTWSof85dBa
@@ -179,17 +178,16 @@
 }
 
 
- +(NSNumber*) TLV: (NSNumber*)c1_o
- of: (NSNumber*)t1_o
- Mixture: (NSNumber*)c2_o
- MultiVar:(NSNumber*)t2_o
- Var3a:(NSNumber*)c3_o
- Var3b:(NSNumber*)t3_o
- Var4a:(NSNumber*)c4_o
- Var4b:(NSNumber*)t4_o
- Var5a:(NSNumber*)c5_o
- Var5b:(NSNumber*)t5_o
- VarX:(NSNumber*)numOfVars_o
++(NSNumber*) TLV: (NSNumber*)c1_o
+              of: (NSNumber*)t1_o
+         Mixture: (NSNumber*)c2_o
+        MultiVar:(NSNumber*)t2_o
+           Var3a:(NSNumber*)c3_o
+           Var3b:(NSNumber*)t3_o
+           Var4a:(NSNumber*)c4_o
+           Var4b:(NSNumber*)t4_o
+           Var5a:(NSNumber*)c5_o
+           Var5b:(NSNumber*)t5_o
 {
     float c1 = [c1_o floatValue];
     float t1 = [t1_o floatValue];
@@ -201,80 +199,69 @@
     float t4 = [t4_o floatValue];
     float c5 = [c5_o floatValue];
     float t5 = [t5_o floatValue];
-    float numOfVars = [numOfVars_o floatValue];
-     
+    
     float temp;
-     
-    //Prevent division by 0.
-    if(t1 == 0.0 || t2 == 0.0 || t3 == 0.0 || t4 == 0.0 || t5 == 0.0)
-        temp =  -1.0;
- 
+    
     //% = ( (C1/TLV1) + (C2/TLV2) + (Ci / TLVi))
-    if(numOfVars == 1)
+    if(c2 == 0.0 || t2 == 0.0)
         temp =  ((c1/t1));
-    else if (numOfVars == 2)
+    else if (c3 == 0.0 || t3 == 0.0)
         temp =  ((c1/t1)+(c2/t2));
-    else if (numOfVars == 3)
+    else if (c4 == 0.0 || t4 == 0.0)
         temp =  ((c1/t1)+(c2/t2)+(c3/t3));
-    else if (numOfVars == 4)
+    else if (c5 == 0.0 || t5 == 0.0)
         temp =  ((c1/t1)+(c2/t2)+(c3/t3)+(c4/t4));
-    else if (numOfVars == 5)
+    else
         temp =  ((c1/t1)+(c2/t2)+(c3/t3)+(c4/t4)+(c5/t5));
     
     NSNumber *retVal = [NSNumber numberWithFloat:temp];
     return retVal;
- }
+}
   
 
  //returns -1.0 if attempt to divide by 0.
- +(NSNumber*) TWA:(NSNumber*)c1_o
- MultiVar:(NSNumber*)t1_o
- Var2a:(NSNumber*)c2_o
- Var2b:(NSNumber*)t2_o
- Var3a:(NSNumber*)c3_o
- Var3b:(NSNumber*)t3_o
- Var4a:(NSNumber*)c4_o
- Var4b:(NSNumber*)t4_o
- Var5a:(NSNumber*)c5_o
- Var5b:(NSNumber*)t5_o
- VarX:(NSNumber*)numOfVars_o
- {
-     float c1 = [c1_o floatValue];
-     float t1 = [t1_o floatValue];
-     float c2 = [c2_o floatValue];
-     float t2 = [t2_o floatValue];
-     float c3 = [c3_o floatValue];
-     float t3 = [t3_o floatValue];
-     float c4 = [c4_o floatValue];
-     float t4 = [t4_o floatValue];
-     float c5 = [c5_o floatValue];
-     float t5 = [t5_o floatValue];
-     float numOfVars = [numOfVars_o floatValue];
-     
-     float temp;
- 
-     //Prevent division by 0.
-     if(t1 == 0.0 && t2 == 0.0 && t3 == 0.0 && t4 == 0.0 && t5 == 0.0)
-         temp = -1.0;
- 
-     //TWA = (Ca*Ta + Cb*Tb +Cn*Tn) / (Ta + Tb + Tn)
-     if(numOfVars == 1)
-         temp = ((c1*t1) / t1);
-     else if (numOfVars == 2)
-         temp = (((c1*t1)+(c2*t2)) / (t1 + t2));
-     else if (numOfVars == 3)
-         temp = (((c1*t1)+(c2*t2)+(c3*t3)) / (t1 + t2 + t3));
-     else if (numOfVars == 4)
-         temp = (((c1*t1)+(c2*t2)+(c3*t3)+(c4*t4)) / (t1 + t2 + t3 + t4));
-     else if (numOfVars == 5)
-         temp = (((c1*t1)+(c2*t2)+(c3*t3)+(c4*t4)+(c5*t5)) / (t1 + t2 + t3 + t4 + t5));
-     
-     NSNumber *retVal = [NSNumber numberWithFloat:temp];
-     return retVal;
- }
++(NSNumber*) TWA:(NSNumber*)c1_o
+        MultiVar:(NSNumber*)t1_o
+           Var2a:(NSNumber*)c2_o
+           Var2b:(NSNumber*)t2_o
+           Var3a:(NSNumber*)c3_o
+           Var3b:(NSNumber*)t3_o
+           Var4a:(NSNumber*)c4_o
+           Var4b:(NSNumber*)t4_o
+           Var5a:(NSNumber*)c5_o
+           Var5b:(NSNumber*)t5_o
+{
+    float c1 = [c1_o floatValue];
+    float t1 = [t1_o floatValue];
+    float c2 = [c2_o floatValue];
+    float t2 = [t2_o floatValue];
+    float c3 = [c3_o floatValue];
+    float t3 = [t3_o floatValue];
+    float c4 = [c4_o floatValue];
+    float t4 = [t4_o floatValue];
+    float c5 = [c5_o floatValue];
+    float t5 = [t5_o floatValue];
+    
+    float temp;
+    
+    //TWA = (Ca*Ta + Cb*Tb +Cn*Tn) / (Ta + Tb + Tn)
+    if(c2 == 0.0 || t2 == 0.0)
+        temp = ((c1*t1) / t1);
+    else if (c3 == 0.0 || t3 == 0.0)
+        temp = (((c1*t1)+(c2*t2)) / (t1 + t2));
+    else if (c4 == 0.0 || t4 == 0.0)
+        temp = (((c1*t1)+(c2*t2)+(c3*t3)) / (t1 + t2 + t3));
+    else if (c5 == 0.0 || t5 == 0.0)
+        temp = (((c1*t1)+(c2*t2)+(c3*t3)+(c4*t4)) / (t1 + t2 + t3 + t4));
+    else
+        temp = (((c1*t1)+(c2*t2)+(c3*t3)+(c4*t4)+(c5*t5)) / (t1 + t2 + t3 + t4 + t5));
+    
+    NSNumber *retVal = [NSNumber numberWithFloat:temp];
+    return retVal;
+}
 
 
-//QUESTION: WHERE DOES DISPLACED OXYGEN COME FROM?
+//FIX ME FIX ME FIX ME
 //oxygenDeficiencyFormulaOne
 +(float) oxygen:(float)cryogen
      Deficiency:(float)density
@@ -289,8 +276,8 @@
     float displacedAir = cryogen * (10.0*10.0*10.0) * density * (mol/MW) * (24.25/mol) * (1.0 / 28.31);
     
     //Part 2.
-    //%Oxygen in room = ((20.9%)*(room volume - volume of displaced air)*(volume of displaced oxygen)) / room volume.
-    float oxygenLevel = .209 * (roomVolume - displacedAir);// HERE? * displacedOxygen 
+    //%Oxygen in room = ((20.9%)*(room volume - volume of displaced air)) / room volume.
+    float oxygenLevel = .209 * (roomVolume - displacedAir);
     
     float finalAns = (oxygenLevel / roomVolume);
     return finalAns;
