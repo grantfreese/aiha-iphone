@@ -260,8 +260,6 @@ SoundPressureLevels:(NSNumber*)n_o
     return retVal;
 }
 
-
-//FIX ME FIX ME FIX ME
 //oxygenDeficiencyFormulaOne
 -(float) oxygen:(float)cryogen
      Deficiency:(float)density
@@ -273,7 +271,7 @@ SoundPressureLevels:(NSNumber*)n_o
     
     float temp = pow(10.0, 23.0);
     float mol = (6.02214179) * temp;
-    float displacedAir = cryogen * (10.0*10.0*10.0) * density * (mol/MW) * (24.25/mol) * (1.0 / 28.31);
+    float displacedAir = cryogen * (10.0*10.0*10.0) * density * (1/MW) * (24.25/mol) * (1.0 / 28.31);
     
     //Part 2.
     //%Oxygen in room = ((20.9%)*(room volume - volume of displaced air)) / room volume.
