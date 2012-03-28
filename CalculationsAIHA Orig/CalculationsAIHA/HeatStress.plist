@@ -64,9 +64,9 @@
 	</dict>
 	<dict>
 		<key>name</key>
-		<string>Osha Permissible Heat Exposure Threshold Limit Value Table</string>
+		<string>OSHA Permissible Heat Exposure Threshold Limit Value Table</string>
 		<key>formula</key>
-		<string>Osha Permissible Heat Exposure Threshold Limit Value Table</string>
+		<string>OSHA Permissible Heat Exposure TLV Table</string>
 		<key>number</key>
 		<string>0</string>
 		<key>variable1</key>

@@ -248,7 +248,7 @@
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Seu-tq-S3n" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <tableViewController id="cuN-9F-EP1" customClass="HeatStressListViewController" sceneMemberID="viewController">
-                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="center" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="73" sectionHeaderHeight="22" sectionFooterHeight="22" id="3qe-Fo-pv0">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="center" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="73" sectionHeaderHeight="22" sectionFooterHeight="22" id="3qe-Fo-pv0">
                         <rect key="frame" x="0.0" y="64" width="320" height="367"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -329,7 +329,7 @@
                                 <rect key="frame" x="112" y="184" width="97" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation"/>
                                 <connections>
                                     <outlet property="delegate" destination="ybZ-JN-lSU" id="1wN-nb-Vp3"/>
                                 </connections>
@@ -434,7 +434,7 @@
                                 <rect key="frame" x="112" y="142" width="97" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation"/>
                                 <connections>
                                     <outlet property="delegate" destination="QOy-69-ptC" id="hDd-8M-0QX"/>
                                 </connections>
@@ -443,7 +443,7 @@
                                 <rect key="frame" x="112" y="184" width="97" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation"/>
                                 <connections>
                                     <outlet property="delegate" destination="QOy-69-ptC" id="CfQ-fU-Q1T"/>
                                 </connections>
@@ -566,7 +566,7 @@
                                 <rect key="frame" x="112" y="130" width="97" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation"/>
                                 <connections>
                                     <outlet property="delegate" destination="6L6-lH-MRD" id="kHm-fl-TGh"/>
                                 </connections>
@@ -575,7 +575,7 @@
                                 <rect key="frame" x="112" y="172" width="97" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation"/>
                                 <connections>
                                     <outlet property="delegate" destination="6L6-lH-MRD" id="Egc-vM-pV2"/>
                                 </connections>
@@ -612,7 +612,7 @@
                                 <rect key="frame" x="112" y="212" width="97" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation"/>
                                 <connections>
                                     <outlet property="delegate" destination="6L6-lH-MRD" id="xqk-hq-WqF"/>
                                 </connections>
@@ -739,7 +739,7 @@
                                 <rect key="frame" x="112" y="127" width="97" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation"/>
                                 <connections>
                                     <outlet property="delegate" destination="HNx-EM-Lh5" id="En0-oq-R5I"/>
                                 </connections>
@@ -748,7 +748,7 @@
                                 <rect key="frame" x="112" y="169" width="97" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation"/>
                                 <connections>
                                     <outlet property="delegate" destination="HNx-EM-Lh5" id="ccq-J8-qiv"/>
                                 </connections>
@@ -785,7 +785,7 @@
                                 <rect key="frame" x="112" y="209" width="97" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation"/>
                                 <connections>
                                     <outlet property="delegate" destination="HNx-EM-Lh5" id="M9S-jh-hOs"/>
                                 </connections>
@@ -808,7 +808,7 @@
                                 <rect key="frame" x="112" y="247" width="97" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation"/>
                                 <connections>
                                     <outlet property="delegate" destination="HNx-EM-Lh5" id="R56-Wr-y5T"/>
                                 </connections>
@@ -965,7 +965,7 @@
                                 <rect key="frame" x="116" y="107" width="97" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation"/>
                                 <connections>
                                     <outlet property="delegate" destination="qZ6-qh-AZR" id="XEf-Wg-vaQ"/>
                                 </connections>
@@ -974,7 +974,7 @@
                                 <rect key="frame" x="116" y="144" width="97" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation"/>
                                 <connections>
                                     <outlet property="delegate" destination="qZ6-qh-AZR" id="Xla-Pj-TkC"/>
                                 </connections>
@@ -1011,7 +1011,7 @@
                                 <rect key="frame" x="116" y="183" width="97" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation"/>
                                 <connections>
                                     <outlet property="delegate" destination="qZ6-qh-AZR" id="JrS-ru-Q2v"/>
                                 </connections>
@@ -1034,7 +1034,7 @@
                                 <rect key="frame" x="116" y="222" width="97" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation"/>
                                 <connections>
                                     <outlet property="delegate" destination="qZ6-qh-AZR" id="tK4-8l-kVb"/>
                                 </connections>
@@ -1057,7 +1057,7 @@
                                 <rect key="frame" x="115" y="261" width="97" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation"/>
                                 <connections>
                                     <outlet property="delegate" destination="qZ6-qh-AZR" id="ZBx-XJ-Zjh"/>
                                 </connections>
