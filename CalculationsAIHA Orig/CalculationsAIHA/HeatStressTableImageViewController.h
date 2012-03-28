@@ -10,4 +10,5 @@
 
 @interface HeatStressTableImageViewController : UIViewController
 
+@property (nonatomic, strong) IBOutlet UIScrollView *scroll;
 @end

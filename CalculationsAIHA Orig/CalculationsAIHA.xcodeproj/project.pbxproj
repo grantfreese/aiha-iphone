@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		023421731506BA930075260F /* formulas.m in Sources */ = {isa = PBXBuildFile; fileRef = 023421721506BA930075260F /* formulas.m */; };
 		02622C6A1505253B003727E1 /* HeatStressTableImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 02622C691505253B003727E1 /* HeatStressTableImageViewController.m */; };
-		02622C6D150525BC003727E1 /* Screen Shot 2012-03-05 at 9.46.48 AM.png in Resources */ = {isa = PBXBuildFile; fileRef = 02622C6C150525BC003727E1 /* Screen Shot 2012-03-05 at 9.46.48 AM.png */; };
 		02622C761505356D003727E1 /* ConversionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 02622C751505356D003727E1 /* ConversionManager.m */; };
 		02622C79150535A0003727E1 /* ConversionListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 02622C78150535A0003727E1 /* ConversionListViewController.m */; };
 		02838EA7150E50940080CC57 /* FiveVariableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 02838EA6150E50940080CC57 /* FiveVariableViewController.m */; };
@@ -62,6 +61,7 @@
 		32BCE4B71504809A002F1C52 /* VentilationListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 32BCE4B61504809A002F1C52 /* VentilationListViewController.m */; };
 		32BCE4BA1504812E002F1C52 /* VentilationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 32BCE4B91504812E002F1C52 /* VentilationManager.m */; };
 		32BCE4C0150493FA002F1C52 /* Ventilation.plist in Resources */ = {isa = PBXBuildFile; fileRef = 32BCE4BF150493F9002F1C52 /* Ventilation.plist */; };
+		8EC7AABC1522BB5800DAFABA /* HeatExposureTable.png in Resources */ = {isa = PBXBuildFile; fileRef = 8EC7AABB1522BB5800DAFABA /* HeatExposureTable.png */; };
 		95D86E1A151ECEB5000438E8 /* AIHA_LongFinal.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 95D86E19151ECEB5000438E8 /* AIHA_LongFinal.jpg */; };
 /* End PBXBuildFile section */
 
@@ -70,7 +70,6 @@
 		0254A7501507B3290069897B /* formulas.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = formulas.h; sourceTree = "<group>"; };
 		02622C681505253B003727E1 /* HeatStressTableImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeatStressTableImageViewController.h; sourceTree = "<group>"; };
 		02622C691505253B003727E1 /* HeatStressTableImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeatStressTableImageViewController.m; sourceTree = "<group>"; };
-		02622C6C150525BC003727E1 /* Screen Shot 2012-03-05 at 9.46.48 AM.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screen Shot 2012-03-05 at 9.46.48 AM.png"; sourceTree = "<group>"; };
 		02622C741505356D003727E1 /* ConversionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConversionManager.h; sourceTree = "<group>"; };
 		02622C751505356D003727E1 /* ConversionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConversionManager.m; sourceTree = "<group>"; };
 		02622C77150535A0003727E1 /* ConversionListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConversionListViewController.h; sourceTree = "<group>"; };
@@ -145,6 +144,7 @@
 		32BCE4B81504812E002F1C52 /* VentilationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VentilationManager.h; sourceTree = "<group>"; };
 		32BCE4B91504812E002F1C52 /* VentilationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VentilationManager.m; sourceTree = "<group>"; };
 		32BCE4BF150493F9002F1C52 /* Ventilation.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Ventilation.plist; sourceTree = "<group>"; };
+		8EC7AABB1522BB5800DAFABA /* HeatExposureTable.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = HeatExposureTable.png; sourceTree = "<group>"; };
 		95D86E19151ECEB5000438E8 /* AIHA_LongFinal.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = AIHA_LongFinal.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -244,10 +244,10 @@
 		02F8302114FBD83200A240EE /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				8EC7AABB1522BB5800DAFABA /* HeatExposureTable.png */,
 				0F377034150FF43E00192044 /* Equation Images */,
 				02F8304314FBD96C00A240EE /* AIHA_Final.jpg */,
 				95D86E19151ECEB5000438E8 /* AIHA_LongFinal.jpg */,
-				02622C6C150525BC003727E1 /* Screen Shot 2012-03-05 at 9.46.48 AM.png */,
 				02F8302214FBD83200A240EE /* CalculationsAIHA-Info.plist */,
 				02F8302314FBD83200A240EE /* InfoPlist.strings */,
 				02F8302614FBD83200A240EE /* main.m */,
@@ -345,7 +345,6 @@
 				0F15D557150020BC009E11EC /* NoiseEquations.plist in Resources */,
 				0F2E9B2315004E3700A4FB1D /* ExposureList.plist in Resources */,
 				32BCE4C0150493FA002F1C52 /* Ventilation.plist in Resources */,
-				02622C6D150525BC003727E1 /* Screen Shot 2012-03-05 at 9.46.48 AM.png in Resources */,
 				0F377049150FF43E00192044 /* 85dBA reached.png in Resources */,
 				0F37704A150FF43E00192044 /* AddingSoundPressure.png in Resources */,
 				0F37704B150FF43E00192044 /* AIHA.png in Resources */,
@@ -369,6 +368,7 @@
 				0F37705E150FF4D300192044 /* AIHA.png in Resources */,
 				95D86E1A151ECEB5000438E8 /* AIHA_LongFinal.jpg in Resources */,
 				227E52E715205FD6008F7790 /* Oxygen Level of Room.png in Resources */,
+				8EC7AABC1522BB5800DAFABA /* HeatExposureTable.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
