@@ -69,45 +69,21 @@ SoundPressureLevels:(NSNumber*)n_o
     return retVal;
 }
 
-/*+(NSNumber*) noise: (NSNumber*)c1_o
-              Dose: (NSNumber*)t1_o
-          MultiVar: (NSNumber*)c2_o
-             Var2b:(NSNumber*)t2_o
-             Var3a:(NSNumber*)c3_o
-             Var3b:(NSNumber*)t3_o
-             Var4a:(NSNumber*)c4_o
-             Var4b:(NSNumber*)t4_o
-             Var5a:(NSNumber*)c5_o
-             Var5b:(NSNumber*)t5_o
+-(float) noise: (float)c1
+          Dose: (float)t1
+         Multi: (float)c2
+           Var: (float)t2
 {
-    float c1 = [c1_o floatValue];
-    float t1 = [t1_o floatValue];
-    float c2 = [c2_o floatValue];
-    float t2 = [t2_o floatValue];
-    float c3 = [c3_o floatValue];
-    float t3 = [t3_o floatValue];
-    float c4 = [c4_o floatValue];
-    float t4 = [t4_o floatValue];
-    float c5 = [c5_o floatValue];
-    float t5 = [t5_o floatValue];
-    
-    float temp;
+    float temp = 0;
     
     //% = 100*( (C1/T1) + (C2/T2) + (Ci / Ti))
     if(c2 == 0.0 || t2 == 0.0)
         temp = 100 * ((c1/t1));
-    else if (c3== 0.0 || t3 == 0.0)
-        temp = 100 * ((c1/t1)+(c2/t2));
-    else if (c4 == 0.0 || t4 == 0.0)
-        temp = 100 * ((c1/t1)+(c2/t2)+(c3/t3));
-    else if (c5 == 0.0 || t5 == 0.0)
-        temp = 100 * ((c1/t1)+(c2/t2)+(c3/t3)+(c4/t4));
     else
-        temp = 100 * ((c1/t1)+(c2/t2)+(c3/t3)+(c4/t4)+(c5/t5));
-    
-    NSNumber *retval = [NSNumber numberWithFloat:temp];
-    return retval;
-}*/
+        temp = 100 * ((c1/t1)+(c2/t2));
+
+    return temp;
+}
 
 
 //eightHourTWSof85dBa

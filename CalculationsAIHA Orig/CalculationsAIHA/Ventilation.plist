@@ -6,7 +6,7 @@
 		<key>name</key>
 		<string>Oxygen Deficiency Calculation</string>
 		<key>formula</key>
-		<string>????</string>
+		<string>(liters of cryogen)*(103 cm/liter)*(density of inert gas)*(1 mole/MW of gas)*(24.25 liters/mole)*(1 ft3/28.31 liters)</string>
 		<key>number</key>
 		<string>4</string>
 		<key>variable1</key>

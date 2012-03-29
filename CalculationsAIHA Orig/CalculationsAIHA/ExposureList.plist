@@ -110,5 +110,33 @@
 		<key>imageName</key>
 		<string>TWA.PNG</string>
 	</dict>
+	<dict>
+		<key>name</key>
+		<string>Oxygen Deficieny Formula</string>
+		<key>formula</key>
+		<string>(liters of cryogen)*(103 cm/liter)*(density of inert gas)*(1 mole/MW of gas)*(24.25 liters/mole)*(1 ft3/28.31 liters)</string>
+		<key>number</key>
+		<string>4</string>
+		<key>variable1</key>
+		<string>cryogen</string>
+		<key>variable2</key>
+		<string>density</string>
+		<key>variable3</key>
+		<string>MW</string>
+		<key>variable4</key>
+		<string>roomVolume</string>
+		<key>unit1</key>
+		<string>ppm</string>
+		<key>unit2</key>
+		<string>ppm</string>
+		<key>unit3</key>
+		<string>ppm</string>
+		<key>unit4</key>
+		<string>ppm</string>
+		<key>method</key>
+		<string>TWA:MultiVar:Var2a:Var2b:Var3a:Var3b:Var4a:Var4b:Var5a:Var5b</string>
+		<key>imageName</key>
+		<string>TWA.PNG</string>
+	</dict>
 </array>
 </plist>
