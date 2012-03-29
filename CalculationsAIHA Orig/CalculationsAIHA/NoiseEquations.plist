@@ -126,7 +126,7 @@
 		<key>resultUnit</key>
 		<string>Hours</string>
 		<key>method</key>
-		<string>allowableExposureTime</string>
+		<string>allowableExposureTime:</string>
 		<key>imageName</key>
 		<string>allowableExposureTime.PNG</string>
 	</dict>
