@@ -69,22 +69,16 @@ SoundPressureLevels:(NSNumber*)n_o
     return retVal;
 }
 
--(float) noise: (float)c1
-          Dose: (float)t1
-         Multi: (float)c2
-           Var: (float)t2
+//
++(NSNumber*) AllowableExposureTime:(NSNumber*) SPL_o
 {
-    float temp = 0;
+    float SPL = [SPL_o floatValue];
     
-    //% = 100*( (C1/T1) + (C2/T2) + (Ci / Ti))
-    if(c2 == 0.0 || t2 == 0.0)
-        temp = 100 * ((c1/t1));
-    else
-        temp = 100 * ((c1/t1)+(c2/t2));
-
-    return temp;
+    float temp = 8 / (2*((SPL-90)/5));
+    
+    NSNumber *retVal = [NSNumber numberWithFloat:temp];
+    return retVal;
 }
-
 
 //eightHourTWSof85dBa
 //Returns amount of time to reach 85dBA
@@ -117,7 +111,9 @@ SoundPressureLevels:(NSNumber*)n_o
 }
 
 //InverseSquareLaw
--(float)inverse:(float)i1 Square:(float)d1 Law:(float)d2
+-(float)inverse:(float)i1
+         Square:(float)d1
+            Law:(float)d2
 {
     //I2 = I1 (D1/D2)^2
     
@@ -172,86 +168,38 @@ SoundPressureLevels:(NSNumber*)n_o
 }
 
 
-+(NSNumber*) TLV: (NSNumber*)c1_o
-              of: (NSNumber*)t1_o
-         Mixture: (NSNumber*)c2_o
-        MultiVar:(NSNumber*)t2_o
-           Var3a:(NSNumber*)c3_o
-           Var3b:(NSNumber*)t3_o
-           Var4a:(NSNumber*)c4_o
-           Var4b:(NSNumber*)t4_o
-           Var5a:(NSNumber*)c5_o
-           Var5b:(NSNumber*)t5_o
+-(float) TLV: (float)c1
+          of: (float)t1
+     Mixture: (float)c2
+    MultiVar:(float)t2
 {
-    float c1 = [c1_o floatValue];
-    float t1 = [t1_o floatValue];
-    float c2 = [c2_o floatValue];
-    float t2 = [t2_o floatValue];
-    float c3 = [c3_o floatValue];
-    float t3 = [t3_o floatValue];
-    float c4 = [c4_o floatValue];
-    float t4 = [t4_o floatValue];
-    float c5 = [c5_o floatValue];
-    float t5 = [t5_o floatValue];
-    
     float temp;
     
     //% = ( (C1/TLV1) + (C2/TLV2) + (Ci / TLVi))
     if(c2 == 0.0 || t2 == 0.0)
         temp =  ((c1/t1));
-    else if (c3 == 0.0 || t3 == 0.0)
-        temp =  ((c1/t1)+(c2/t2));
-    else if (c4 == 0.0 || t4 == 0.0)
-        temp =  ((c1/t1)+(c2/t2)+(c3/t3));
-    else if (c5 == 0.0 || t5 == 0.0)
-        temp =  ((c1/t1)+(c2/t2)+(c3/t3)+(c4/t4));
     else
-        temp =  ((c1/t1)+(c2/t2)+(c3/t3)+(c4/t4)+(c5/t5));
-    
-    NSNumber *retVal = [NSNumber numberWithFloat:temp];
-    return retVal;
+        temp =  ((c1/t1)+(c2/t2));
+
+    return temp;
 }
   
 
  //returns -1.0 if attempt to divide by 0.
-+(NSNumber*) TWA:(NSNumber*)c1_o
-        MultiVar:(NSNumber*)t1_o
-           Var2a:(NSNumber*)c2_o
-           Var2b:(NSNumber*)t2_o
-           Var3a:(NSNumber*)c3_o
-           Var3b:(NSNumber*)t3_o
-           Var4a:(NSNumber*)c4_o
-           Var4b:(NSNumber*)t4_o
-           Var5a:(NSNumber*)c5_o
-           Var5b:(NSNumber*)t5_o
-{
-    float c1 = [c1_o floatValue];
-    float t1 = [t1_o floatValue];
-    float c2 = [c2_o floatValue];
-    float t2 = [t2_o floatValue];
-    float c3 = [c3_o floatValue];
-    float t3 = [t3_o floatValue];
-    float c4 = [c4_o floatValue];
-    float t4 = [t4_o floatValue];
-    float c5 = [c5_o floatValue];
-    float t5 = [t5_o floatValue];
-    
+-(float) Calculate:(float)c1
+        TWA:(float)t1
+          Multi:(float)c2
+           Var:(float)t2
+{    
     float temp;
     
     //TWA = (Ca*Ta + Cb*Tb +Cn*Tn) / (Ta + Tb + Tn)
     if(c2 == 0.0 || t2 == 0.0)
         temp = ((c1*t1) / t1);
-    else if (c3 == 0.0 || t3 == 0.0)
-        temp = (((c1*t1)+(c2*t2)) / (t1 + t2));
-    else if (c4 == 0.0 || t4 == 0.0)
-        temp = (((c1*t1)+(c2*t2)+(c3*t3)) / (t1 + t2 + t3));
-    else if (c5 == 0.0 || t5 == 0.0)
-        temp = (((c1*t1)+(c2*t2)+(c3*t3)+(c4*t4)) / (t1 + t2 + t3 + t4));
     else
-        temp = (((c1*t1)+(c2*t2)+(c3*t3)+(c4*t4)+(c5*t5)) / (t1 + t2 + t3 + t4 + t5));
-    
-    NSNumber *retVal = [NSNumber numberWithFloat:temp];
-    return retVal;
+        temp = (((c1*t1)+(c2*t2)) / (t1 + t2));
+   
+    return temp;
 }
 
 //oxygenDeficiencyFormulaOne
@@ -311,17 +259,101 @@ SoundPressureLevels:(NSNumber*)n_o
           One:(float)Tc
 {
     //Qcorrected  = Qindicated * sqrt( Pc*Ts / Ps * Tc )
-    //Qcorrected  = flow rate used for calculating volume.
-    //Qindicated  = flow rate indicated on rotameter.
-    //Pc = Pressure during calibration.
-    //Ps = Pressure during air sampling.
-    //Tc = absolute temperature during calibration.
-    //Ts = absolute pressure during sampling.
     
     float temp1 = ((Pc*Ts) / (Ps*Tc));
     float temp2 = sqrt(temp1);
     float finalAnswer = Qind * temp2;   
     return finalAnswer;
+}
+
+//totalPressure
++(NSNumber*) velocity: (NSNumber*) vp_o 
+{
+    //TotalPressure = VelocityPressure + StaticPressure.
+    //SP can be +/-.
+    float vp = [vp_o floatValue];
+
+    float temp = 4005.0 * sqrtf(vp);
+    
+    NSNumber *retVal = [NSNumber numberWithFloat:temp];
+    return retVal;
+}
+
++(NSNumber*) hood: (NSNumber*) VPd_o
+   StaticPressure: (NSNumber*) he_o
+{
+    //((gram molecular weight of substance) * (TLV in ppm)) / 24.45
+    float VPd = [VPd_o floatValue];
+    float he = [he_o floatValue];
+    
+    float temp = -VPd - he;
+    
+    NSNumber *retVal = [NSNumber numberWithFloat:temp];
+    return retVal;
+}
+
+//dilution:Ventilation:BasedOn:RoomAirChanges:
+-(float) dilution:(float)G
+      Ventilation:(float)Q 
+          BasedOn:(float)t
+             RoomAirChanges:(float)N
+{
+    float temp1 = (G / Q);
+    float retVal = -(N * (t/60.0));
+    retVal = powf(2.71828183, retVal);
+    retVal = 1 - retVal;
+    retVal = temp1 * retVal * powf(10.0, 6.0);
+    
+    return retVal;
+}
+
+//dilution:To:Control:Evaporation:Formula:
+-(float) dilution:(float)SG
+               To:(float)ER 
+          Control:(float)K
+      Evaporation:(float)MW
+          Formula:(float)C
+{
+    float retVal = 403.0 * SG * ER * K * powf(10.0, 6.0);
+    retVal = retVal / (MW * C);
+
+    return retVal;
+}
+
+//fan:Laws:Formula:
+-(float) fan:(float)SPout
+        Laws:(float)SPin
+     Formula:(float)VPin
+{
+    return (SPout - SPin - VPin);
+}
+
+//dilution:To:Control:Evaporation:Formula:
++(NSNumber*) fan: (NSNumber*) TPout_o
+   TotalPressure: (NSNumber*) TPin_o
+{
+    //((gram molecular weight of substance) * (TLV in ppm)) / 24.45
+    float TPout = [TPout_o floatValue];
+    float TPin = [TPin_o floatValue];
+    
+    float temp = (TPout - TPin);
+    
+    NSNumber *retVal = [NSNumber numberWithFloat:temp];
+    return retVal;
+}
+
+//fan:Laws:Formula:Five:Var:
+-(float) fan:(float)size1
+        Laws:(float)size2
+     Formula:(float)RPM1
+        Five:(float)RPM2
+         Var:(float)Q
+{
+    float retVal = (size2 / size1);
+    retVal = powf(retVal, 3.0);
+    retVal = Q * retVal * (RPM1 / RPM2);
+    
+    return retVal;
 }
 
 #pragma mark -

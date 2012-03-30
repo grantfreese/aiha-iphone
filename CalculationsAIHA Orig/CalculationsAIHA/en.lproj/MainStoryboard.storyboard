@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="1.0" toolsVersion="1938" systemVersion="11C74" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="2oC-uV-JM6">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="1.0" toolsVersion="1938" systemVersion="11D50d" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="2oC-uV-JM6">
     <dependencies>
         <deployment defaultVersion="1280" identifier="iOS"/>
         <development defaultVersion="4200" identifier="xcode"/>
@@ -926,28 +926,28 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Equation 1" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" id="vi1-7m-B15">
-                                <rect key="frame" x="94" y="51" width="138" height="32"/>
+                                <rect key="frame" x="94" y="44" width="138" height="32"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Variable 1" lineBreakMode="tailTruncation" minimumFontSize="10" id="f43-Bl-9Ni">
-                                <rect key="frame" x="36" y="117" width="77" height="21"/>
+                                <rect key="frame" x="36" y="110" width="77" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Variable 2" lineBreakMode="tailTruncation" minimumFontSize="10" id="pCa-pE-3D1">
-                                <rect key="frame" x="36" y="154" width="77" height="21"/>
+                                <rect key="frame" x="36" y="147" width="77" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="ZiR-Kl-T3Q">
-                                <rect key="frame" x="184" y="300" width="92" height="37"/>
+                                <rect key="frame" x="184" y="293" width="92" height="37"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" title="Calculate">
@@ -962,7 +962,7 @@
                                 </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="xjP-KS-9sg">
-                                <rect key="frame" x="116" y="107" width="97" height="31"/>
+                                <rect key="frame" x="116" y="100" width="97" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation"/>
@@ -971,7 +971,7 @@
                                 </connections>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="ZLt-mw-iW8">
-                                <rect key="frame" x="116" y="144" width="97" height="31"/>
+                                <rect key="frame" x="116" y="137" width="97" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation"/>
@@ -980,35 +980,35 @@
                                 </connections>
                             </textField>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Variable 3" lineBreakMode="tailTruncation" minimumFontSize="10" id="7GS-Lm-zI2">
-                                <rect key="frame" x="36" y="193" width="77" height="21"/>
+                                <rect key="frame" x="36" y="186" width="77" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Unit 1" lineBreakMode="tailTruncation" minimumFontSize="10" id="Rsl-Qa-3XB">
-                                <rect key="frame" x="220" y="117" width="77" height="21"/>
+                                <rect key="frame" x="220" y="110" width="77" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Unit 2" lineBreakMode="tailTruncation" minimumFontSize="10" id="Jv9-QW-pNx">
-                                <rect key="frame" x="220" y="154" width="77" height="21"/>
+                                <rect key="frame" x="220" y="147" width="77" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Unit 3" lineBreakMode="tailTruncation" minimumFontSize="10" id="IVg-vo-a4d">
-                                <rect key="frame" x="220" y="193" width="77" height="21"/>
+                                <rect key="frame" x="220" y="186" width="77" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="Yfi-S1-Meo">
-                                <rect key="frame" x="116" y="183" width="97" height="31"/>
+                                <rect key="frame" x="116" y="176" width="97" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation"/>
@@ -1017,21 +1017,21 @@
                                 </connections>
                             </textField>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Variable 4" lineBreakMode="tailTruncation" minimumFontSize="10" id="Z6T-zP-vwv">
-                                <rect key="frame" x="36" y="232" width="77" height="21"/>
+                                <rect key="frame" x="36" y="225" width="77" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Unit 4" lineBreakMode="tailTruncation" minimumFontSize="10" id="BWp-Ml-QvD">
-                                <rect key="frame" x="220" y="232" width="77" height="21"/>
+                                <rect key="frame" x="220" y="225" width="77" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="cAn-G0-vLz">
-                                <rect key="frame" x="116" y="222" width="97" height="31"/>
+                                <rect key="frame" x="116" y="215" width="97" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation"/>
@@ -1040,21 +1040,21 @@
                                 </connections>
                             </textField>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Variable 5" lineBreakMode="tailTruncation" minimumFontSize="10" id="5SL-sF-D28">
-                                <rect key="frame" x="36" y="271" width="77" height="21"/>
+                                <rect key="frame" x="36" y="264" width="77" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Unit 5" lineBreakMode="tailTruncation" minimumFontSize="10" id="e3h-lp-AXk">
-                                <rect key="frame" x="220" y="271" width="77" height="21"/>
+                                <rect key="frame" x="220" y="264" width="77" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="36F-3x-1Nj">
-                                <rect key="frame" x="115" y="261" width="97" height="31"/>
+                                <rect key="frame" x="115" y="254" width="97" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation"/>
@@ -1063,21 +1063,21 @@
                                 </connections>
                             </textField>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Result" lineBreakMode="tailTruncation" minimumFontSize="10" id="3aW-vT-2Wj">
-                                <rect key="frame" x="72" y="338" width="49" height="21"/>
+                                <rect key="frame" x="44" y="332" width="92" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Unit" lineBreakMode="tailTruncation" minimumFontSize="10" id="qRf-XH-eex">
-                                <rect key="frame" x="209" y="338" width="42" height="21"/>
+                                <rect key="frame" x="184" y="332" width="92" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="JeT-de-I4O">
-                                <rect key="frame" x="44" y="300" width="92" height="37"/>
+                                <rect key="frame" x="44" y="293" width="92" height="37"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" title="Clear">
@@ -1092,7 +1092,7 @@
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" id="ixC-U0-HC3">
-                                <rect key="frame" x="24" y="49" width="280" height="55"/>
+                                <rect key="frame" x="24" y="42" width="280" height="55"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
@@ -1145,128 +1145,6 @@
         <image name="AIHA_LongFinal.jpg" width="480" height="100"/>
         <image name="HeatExposureTable.png" width="658" height="234"/>
     </resources>
-    <classes>
-        <class className="AIHAViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/AIHAViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="ExposureAssessmentButton" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="HeatStressButton" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="NoiseButton" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="VentilationButton" candidateClass="UIButton"/>
-            </relationships>
-        </class>
-        <class className="ExposureListViewController" superclassName="UITableViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/ExposureListViewController.h"/>
-        </class>
-        <class className="FiveVariableViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/FiveVariableViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="formula" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="formulaImage" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="result" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="resultUnit" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="textField1" candidateClass="UITextField"/>
-                <relationship kind="outlet" name="textField2" candidateClass="UITextField"/>
-                <relationship kind="outlet" name="textField3" candidateClass="UITextField"/>
-                <relationship kind="outlet" name="textField4" candidateClass="UITextField"/>
-                <relationship kind="outlet" name="textField5" candidateClass="UITextField"/>
-                <relationship kind="outlet" name="unit1" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="unit2" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="unit3" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="unit4" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="unit5" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="variable1" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="variable2" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="variable3" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="variable4" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="variable5" candidateClass="UILabel"/>
-            </relationships>
-        </class>
-        <class className="FourVariableViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/FourVariableViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="formula" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="formulaImage" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="result" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="resultUnit" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="textField1" candidateClass="UITextField"/>
-                <relationship kind="outlet" name="textField2" candidateClass="UITextField"/>
-                <relationship kind="outlet" name="textField3" candidateClass="UITextField"/>
-                <relationship kind="outlet" name="textField4" candidateClass="UITextField"/>
-                <relationship kind="outlet" name="unit1" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="unit2" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="unit3" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="unit4" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="variable1" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="variable2" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="variable3" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="variable4" candidateClass="UILabel"/>
-            </relationships>
-        </class>
-        <class className="HeatStressListViewController" superclassName="UITableViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/HeatStressListViewController.h"/>
-        </class>
-        <class className="HeatStressTableImageViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/HeatStressTableImageViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="scroll" candidateClass="UIScrollView"/>
-            </relationships>
-        </class>
-        <class className="NoiseListViewController" superclassName="UITableViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/NoiseListViewController.h"/>
-        </class>
-        <class className="OneVariableViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/OneVariableViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="calcButton" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="clearButton" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="formula" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="formulaImage" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="result" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="resultUnit" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="textField1" candidateClass="UITextField"/>
-                <relationship kind="outlet" name="topImage" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="unit1" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="variable1" candidateClass="UILabel"/>
-            </relationships>
-        </class>
-        <class className="ThreeVariableViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/ThreeVariableViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="formula" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="formulaImage" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="result" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="resultUnit" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="textField1" candidateClass="UITextField"/>
-                <relationship kind="outlet" name="textField2" candidateClass="UITextField"/>
-                <relationship kind="outlet" name="textField3" candidateClass="UITextField"/>
-                <relationship kind="outlet" name="unit1" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="unit2" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="unit3" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="variable1" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="variable2" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="variable3" candidateClass="UILabel"/>
-            </relationships>
-        </class>
-        <class className="TwoVariableViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/TwoVariableViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="formula" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="formulaImage" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="result" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="resultUnit" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="textField1" candidateClass="UITextField"/>
-                <relationship kind="outlet" name="textField2" candidateClass="UITextField"/>
-                <relationship kind="outlet" name="unit1" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="unit2" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="variable1" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="variable2" candidateClass="UILabel"/>
-            </relationships>
-        </class>
-        <class className="VentilationListViewController" superclassName="UITableViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/VentilationListViewController.h"/>
-        </class>
-    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

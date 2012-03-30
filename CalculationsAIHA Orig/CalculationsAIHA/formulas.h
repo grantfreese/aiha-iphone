@@ -26,11 +26,7 @@
 +(NSNumber*) adding:(NSNumber*)SPLi_o
 SoundPressureLevels:(NSNumber*)n_o;
  
- //noise:Dose:Multi:Var
- -(float) noise: (float)c1
-          Dose: (float)t1
-         Multi: (float)c2
-           Var:(float)t2;
++(NSNumber*) AllowableExposureTime:(NSNumber*) SPL_o;
 
 //eightHourTWSof85dBa
 //Returns amount of time to reach 85dBA
@@ -59,29 +55,17 @@ SoundPressureLevels:(NSNumber*)n_o;
           Total:(float)crist
            Dust:(float)trid;
 
-//TLV:of:Mixture:MultiVar:Var3a:Var3b:Var4a:Var4b:Var5a:Var5b:VarX
+//TLV:of:Mixture:MultiVar:
 +(NSNumber*) TLV: (NSNumber*)c1
               of: (NSNumber*)t1
          Mixture: (NSNumber*)c2
-        MultiVar:(NSNumber*)t2
-           Var3a:(NSNumber*)c3
-           Var3b:(NSNumber*)t3
-           Var4a:(NSNumber*)c4
-           Var4b:(NSNumber*)t4
-           Var5a:(NSNumber*)c5
-           Var5b:(NSNumber*)t5;
+        MultiVar:(NSNumber*)t2;
 
-//TWA:MultiVar:Var2a:Var2b:Var3a:Var3b:Var4a:Var4b:Var5a:Var5b:VarX
-+(NSNumber*) TWA:(NSNumber*)c1
-        MultiVar:(NSNumber*)t1
-           Var2a:(NSNumber*)c2
-           Var2b:(NSNumber*)t2
-           Var3a:(NSNumber*)c3
-           Var3b:(NSNumber*)t3
-           Var4a:(NSNumber*)c4
-           Var4b:(NSNumber*)t4
-           Var5a:(NSNumber*)c5
-           Var5b:(NSNumber*)t5;
+//Calculate:TWA:Multi:Var:
++(NSNumber*) Calculate:(NSNumber*)c1
+        TWA:(NSNumber*)t1
+           Multi:(NSNumber*)c2
+           Var:(NSNumber*)t2;
 
 //QUESTION: WHERE DOES DISPLACED OXYGEN COME FROM?
 //oxygenDeficiencyFormulaOne
@@ -104,6 +88,34 @@ SoundPressureLevels:(NSNumber*)n_o;
       Formula:(float)Ps 
           One:(float)Tc;
 
++(NSNumber*) hood: (NSNumber*) VPd_o
+   StaticPressure: (NSNumber*) he_o;
+
++(NSNumber*) velocity: (NSNumber*) vp_o;
+
+-(float) dilution:(float)G
+      Ventilation:(float)Q 
+          BasedOn:(float)t
+   RoomAirChanges:(float)N;
+
+-(float) dilution:(float)SG
+               To:(float)ER 
+          Control:(float)K
+      Evaporation:(float)MW
+          Formula:(float)C;
+
+-(float) fan:(float)SPout
+        Laws:(float)SPin
+     Formula:(float)VPin;
+
++(NSNumber*) fan: (NSNumber*) TPout_o
+   TotalPressure: (NSNumber*) TPin_o;
+
+-(float) fan:(float)Q
+        Laws:(float)size1
+     Formula:(float)size2
+        Five:(float)RPM1
+         Var:(float)RPM2;
 
 //Conversion equations
 

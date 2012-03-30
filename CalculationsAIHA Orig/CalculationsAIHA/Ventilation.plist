@@ -42,7 +42,7 @@
 		<key>variable1</key>
 		<string>Q</string>
 		<key>variable2</key>
-		<string>V</string>
+		<string>volume</string>
 		<key>unit1</key>
 		<string>cfm</string>
 		<key>unit2</key>
@@ -50,7 +50,7 @@
 		<key>method</key>
 		<string>roomAirChanges:PerHour:</string>
 		<key>resultUnit</key>
-		<string></string>
+		<string> </string>
 		<key>imageName</key>
 		<string>Room Air changes per hour.PNG</string>
 	</dict>
@@ -66,13 +66,13 @@
 		<key>variable2</key>
 		<string>SP</string>
 		<key>unit1</key>
-		<string></string>
+		<string> </string>
 		<key>unit2</key>
-		<string></string>
+		<string> </string>
 		<key>method</key>
 		<string>total:Pressure:</string>
 		<key>resultUnit</key>
-		<string></string>
+		<string> </string>
 		<key>imageName</key>
 		<string>Total Pressure.PNG</string>
 	</dict>
@@ -109,6 +109,192 @@
 		<string>L/min</string>
 		<key>imageName</key>
 		<string>Flow rate adjustment.PNG</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>velocity</string>
+		<key>formula</key>
+		<string>4005 * sqrt(VP)</string>
+		<key>number</key>
+		<string>1</string>
+		<key>variable1</key>
+		<string>VP</string>
+		<key>unit1</key>
+		<string>in. wc</string>
+		<key>method</key>
+		<string>velocity:</string>
+		<key>resultUnit</key>
+		<string>ft/min</string>
+		<key>imageName</key>
+		<string>velocity.png</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Hood Static Pressure</string>
+		<key>formula</key>
+		<string>|SPh| = VPd + he</string>
+		<key>number</key>
+		<string>2</string>
+		<key>variable1</key>
+		<string>VPd</string>
+		<key>variable2</key>
+		<string>he</string>
+		<key>unit1</key>
+		<string>in. W.C.</string>
+		<key>unit2</key>
+		<string>in. W.C.</string>
+		<key>method</key>
+		<string>hood:StaticPressure:</string>
+		<key>resultUnit</key>
+		<string>in. W.C.</string>
+		<key>imageName</key>
+		<string>HoodStaticPressure.png</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Dilution Ventilation Based On Room Air Changes</string>
+		<key>formula</key>
+		<string>C = (G/Q) * (1-e^ -(N * (t/60)) * 10^6</string>
+		<key>number</key>
+		<string>4</string>
+		<key>variable1</key>
+		<string>G</string>
+		<key>variable2</key>
+		<string>Q</string>
+		<key>variable3</key>
+		<string>t</string>
+		<key>variable4</key>
+		<string>N</string>
+		<key>unit1</key>
+		<string>ft3/min</string>
+		<key>unit2</key>
+		<string>ft3/min</string>
+		<key>unit3</key>
+		<string>minutes</string>
+		<key>unit4</key>
+		<string>changes/hour</string>
+		<key>method</key>
+		<string>dilution:Ventilation:BasedOn:RoomAirChanges:</string>
+		<key>resultUnit</key>
+		<string>ppm</string>
+		<key>imageName</key>
+		<string>dilutionVentilation.png</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Dilution to Control Evaporation</string>
+		<key>formula</key>
+		<string>Q = (403*SG*ER*K*10^6) / (MW * C)</string>
+		<key>number</key>
+		<string>5</string>
+		<key>variable1</key>
+		<string>SG</string>
+		<key>variable2</key>
+		<string>ER</string>
+		<key>variable3</key>
+		<string>K</string>
+		<key>variable4</key>
+		<string>MW</string>
+		<key>variable5</key>
+		<string>C</string>
+		<key>unit1</key>
+		<string> </string>
+		<key>unit2</key>
+		<string>pints/min</string>
+		<key>unit3</key>
+		<string> </string>
+		<key>unit4</key>
+		<string>g</string>
+		<key>unit5</key>
+		<string>ppm</string>
+		<key>method</key>
+		<string>dilution:To:Control:Evaporation:Formula:</string>
+		<key>resultUnit</key>
+		<string>ft3/min</string>
+		<key>imageName</key>
+		<string>dilutionToControlEvaporation.png</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Fan Laws</string>
+		<key>formula</key>
+		<string>FSP = SPout - SPin - VPin</string>
+		<key>number</key>
+		<string>3</string>
+		<key>variable1</key>
+		<string>SPout</string>
+		<key>variable2</key>
+		<string>SPin</string>
+		<key>variable3</key>
+		<string>VPin</string>
+		<key>unit1</key>
+		<string>in. W.C.</string>
+		<key>unit2</key>
+		<string>in. W.C.</string>
+		<key>unit3</key>
+		<string>in. W.C.</string>
+		<key>resultUnit</key>
+		<string>in. W.C.</string>
+		<key>method</key>
+		<string>fan:Laws:Formula:</string>
+		<key>imageName</key>
+		<string>fanLaws.png</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Fan Total Pressure</string>
+		<key>formula</key>
+		<string>FTP = TPout - TPin</string>
+		<key>number</key>
+		<string>2</string>
+		<key>variable1</key>
+		<string>TPout</string>
+		<key>variable2</key>
+		<string>TPin</string>
+		<key>unit1</key>
+		<string>in. W.C.</string>
+		<key>unit2</key>
+		<string>in. W.C.</string>
+		<key>resultUnit</key>
+		<string>in. W.C.</string>
+		<key>method</key>
+		<string>fan:TotalPressure:</string>
+		<key>imageName</key>
+		<string>fanTotalPressure.png</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Fan Laws</string>
+		<key>formula</key>
+		<string>Q2 = (Q1 * (size2/size1)^3 * (RPM2/RPM1))</string>
+		<key>number</key>
+		<string>5</string>
+		<key>variable1</key>
+		<string>Q1</string>
+		<key>variable2</key>
+		<string>size1</string>
+		<key>variable3</key>
+		<string>size2</string>
+		<key>variable4</key>
+		<string>RPM1</string>
+		<key>variable5</key>
+		<string>RPM2</string>
+		<key>unit1</key>
+		<string>ft3/min</string>
+		<key>unit2</key>
+		<string>inches</string>
+		<key>unit3</key>
+		<string>inches</string>
+		<key>unit4</key>
+		<string>rpm</string>
+		<key>unit5</key>
+		<string>rpm</string>
+		<key>resultUnit</key>
+		<string>ft3/min</string>
+		<key>method</key>
+		<string>fan:Laws:Formula:Five:Var:</string>
+		<key>imageName</key>
+		<string>fanLaws2.png</string>
 	</dict>
 </array>
 </plist>
