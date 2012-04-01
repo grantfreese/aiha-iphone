@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+    <dict>	
+		<key>name</key>
+		<string>Avogadro&apos;s Number</string>
+		<key>formula</key>
+		<string>6.022*10^23</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Planck&apos;s Constant</string>
+		<key>formula</key>
+		<string>6.63*10^-34 m2 kg/s</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Speed of light</string>
+		<key>formula</key>
+		<string>3*10^8 m/s</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Speed of sound</string>
+		<key>formula</key>
+		<string>331 m/s</string>
+	</dict>
+</array>
+</plist>
