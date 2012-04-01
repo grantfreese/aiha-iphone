@@ -26,6 +26,8 @@
 @synthesize formula = _formula;
 @synthesize resultUnit = _resultUnit;
 @synthesize formulaImage = _formulaImage;
+@synthesize calcButton = _calcButton;
+@synthesize clearButton = _clearButton;
 - (IBAction) calculateButtonPressed{
     float variable1 = [_textField1.text floatValue]; //reads value of first text field and stores as a float value
     float variable2 = [_textField2.text floatValue]; //reads value of second text field and stores as a float value
@@ -142,6 +144,45 @@
 }
 */
 
+- (void)viewWillAppear:(BOOL)animated
+{  if (self.interfaceOrientation == UIInterfaceOrientationLandscapeLeft ||
+       self.interfaceOrientation == UIInterfaceOrientationLandscapeRight)
+{
+    _textField1.frame = CGRectMake(192, 80, 97, 31);
+    _variable1.frame = CGRectMake(92, 90, 77, 21);
+    _unit1.frame = CGRectMake(310, 90, 77, 21);
+    
+    _textField2.frame = CGRectMake(192, 130, 97, 31);
+    _variable2.frame = CGRectMake(92, 140, 77, 21);
+    _unit2.frame = CGRectMake(310, 140, 77, 21);
+    
+    _result.frame = CGRectMake(92, 194, 210, 21);
+    _resultUnit.frame = CGRectMake(315, 196, 85, 21);
+    
+    _calcButton.frame = CGRectMake(415, 162, 55, 55);
+    _clearButton.frame = CGRectMake(10, 162, 55, 55);
+    
+}
+else
+{
+    _textField1.frame = CGRectMake(112, 144, 97, 31);
+    _variable1.frame = CGRectMake(1, 154, 103, 21);
+    _unit1.frame = CGRectMake(220, 154, 99, 21);
+    
+    _textField2.frame = CGRectMake(112, 194, 97, 31);
+    _variable2.frame = CGRectMake(1, 204, 103, 21);
+    _unit2.frame = CGRectMake(220, 204, 99, 21);
+    
+    _result.frame = CGRectMake(12, 341, 210, 21);
+    _resultUnit.frame = CGRectMake(238, 343, 85, 21);
+    
+    _calcButton.frame = CGRectMake(253, 271, 55, 55);
+    _clearButton.frame = CGRectMake(12, 271, 55, 55);
+}
+    [super viewWillAppear:animated];
+}
+
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
@@ -202,4 +243,42 @@
     [[self.view findFirstResponder] resignFirstResponder];
 }
 
+- (void)willAnimateRotationToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation 
+                                         duration:(NSTimeInterval)duration
+{
+    if (toInterfaceOrientation == UIInterfaceOrientationLandscapeLeft ||
+        toInterfaceOrientation == UIInterfaceOrientationLandscapeRight)
+    {
+        _textField1.frame = CGRectMake(192, 80, 97, 31);
+        _variable1.frame = CGRectMake(92, 90, 77, 21);
+        _unit1.frame = CGRectMake(310, 90, 77, 21);
+        
+        _textField2.frame = CGRectMake(192, 130, 97, 31);
+        _variable2.frame = CGRectMake(92, 140, 77, 21);
+        _unit2.frame = CGRectMake(310, 140, 77, 21);
+        
+        _result.frame = CGRectMake(92, 194, 210, 21);
+        _resultUnit.frame = CGRectMake(315, 196, 85, 21);
+        
+        _calcButton.frame = CGRectMake(415, 162, 55, 55);
+        _clearButton.frame = CGRectMake(10, 162, 55, 55);
+        
+    }
+    else
+    {
+        _textField1.frame = CGRectMake(112, 144, 97, 31);
+        _variable1.frame = CGRectMake(1, 154, 103, 21);
+        _unit1.frame = CGRectMake(220, 154, 99, 21);
+        
+        _textField2.frame = CGRectMake(112, 194, 97, 31);
+        _variable2.frame = CGRectMake(1, 204, 103, 21);
+        _unit2.frame = CGRectMake(220, 204, 99, 21);
+        
+        _result.frame = CGRectMake(12, 341, 210, 21);
+        _resultUnit.frame = CGRectMake(238, 343, 85, 21);
+        
+        _calcButton.frame = CGRectMake(253, 271, 55, 55);
+        _clearButton.frame = CGRectMake(12, 271, 55, 55);
+    }
+}
 @end

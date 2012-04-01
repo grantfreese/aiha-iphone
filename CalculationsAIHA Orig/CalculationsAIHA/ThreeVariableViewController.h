@@ -30,6 +30,8 @@
 @property (nonatomic, strong) IBOutlet UILabel *resultUnit;
 @property (nonatomic, strong) IBOutlet UIImageView *formulaImage;
 @property (nonatomic, strong) formulas *theUselessFormulas;
+@property (nonatomic, strong) IBOutlet UIButton *calcButton;
+@property (nonatomic, strong) IBOutlet UIButton *clearButton;
 
 - (BOOL) textFieldShouldReturn:(UITextField *)textField;
 

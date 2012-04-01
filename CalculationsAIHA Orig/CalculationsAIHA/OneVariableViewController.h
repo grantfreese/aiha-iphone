@@ -22,7 +22,6 @@
 @property (nonatomic, strong) IBOutlet UILabel *formula;
 @property (nonatomic, strong) IBOutlet UILabel *resultUnit;
 @property (nonatomic, strong) IBOutlet UIImageView *formulaImage;
-@property (nonatomic, strong) IBOutlet UIImageView *topImage;
 @property (nonatomic, strong) IBOutlet UIButton *calcButton;
 @property (nonatomic, strong) IBOutlet UIButton *clearButton;
 -(BOOL)textFieldShouldReturn:(UITextField *)textField;

@@ -22,7 +22,6 @@
 @synthesize formula = _formula;
 @synthesize resultUnit = _resultUnit;
 @synthesize formulaImage = _formulaImage;
-@synthesize topImage = _topImage;
 @synthesize calcButton = _calcButton;
 @synthesize clearButton = _clearButton;
 - (IBAction) calculateButtonPressed{
@@ -128,6 +127,34 @@
 }
 */
 
+- (void)viewWillAppear:(BOOL)animated
+{  if (self.interfaceOrientation == UIInterfaceOrientationLandscapeLeft ||
+       self.interfaceOrientation == UIInterfaceOrientationLandscapeRight)
+{
+    _textField1.frame = CGRectMake(192, 110, 97, 31);
+    _variable1.frame = CGRectMake(92, 120, 77, 21);
+    _unit1.frame = CGRectMake(310, 120, 77, 21);
+    _result.frame = CGRectMake(92, 186, 210, 21);
+    _resultUnit.frame = CGRectMake(315, 188, 85, 21);
+    
+    _calcButton.frame = CGRectMake(415, 162, 55, 55);
+    _clearButton.frame = CGRectMake(10, 162, 55, 55);
+    
+}
+else
+{
+    _textField1.frame = CGRectMake(112, 184, 97, 31);
+    _variable1.frame = CGRectMake(12, 194, 77, 21);
+    _unit1.frame = CGRectMake(230, 194, 77, 21);
+    _result.frame = CGRectMake(12, 333, 210, 21);
+    _resultUnit.frame = CGRectMake(238, 335, 85, 21);
+    
+    _calcButton.frame = CGRectMake(253, 271, 55, 55);
+    _clearButton.frame = CGRectMake(12, 271, 55, 55);
+}
+    [super viewWillAppear:animated];
+}
+
 
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad
@@ -199,11 +226,11 @@
         _textField1.frame = CGRectMake(192, 110, 97, 31);
         _variable1.frame = CGRectMake(92, 120, 77, 21);
         _unit1.frame = CGRectMake(310, 120, 77, 21);
-        _result.frame = CGRectMake(140, 230, 49, 21);
-        _resultUnit.frame = CGRectMake(338, 230, 42, 21);
-      
-        _calcButton.frame = CGRectMake(128, 190, 92, 37);
-        _clearButton.frame = CGRectMake(260, 190, 92, 37);
+        _result.frame = CGRectMake(92, 186, 210, 21);
+        _resultUnit.frame = CGRectMake(315, 188, 85, 21);
+        
+        _calcButton.frame = CGRectMake(415, 162, 55, 55);
+        _clearButton.frame = CGRectMake(10, 162, 55, 55);
         
     }
     else
@@ -211,13 +238,14 @@
         _textField1.frame = CGRectMake(112, 184, 97, 31);
         _variable1.frame = CGRectMake(12, 194, 77, 21);
         _unit1.frame = CGRectMake(230, 194, 77, 21);
-        _result.frame = CGRectMake(40, 315, 49, 21);
-        _resultUnit.frame = CGRectMake(238, 315, 42, 21);
-
-        _calcButton.frame = CGRectMake(53, 246, 92, 37);
-        _clearButton.frame = CGRectMake(172, 246, 92, 37);
+        _result.frame = CGRectMake(12, 333, 210, 21);
+        _resultUnit.frame = CGRectMake(238, 335, 85, 21);
+        
+        _calcButton.frame = CGRectMake(253, 271, 55, 55);
+        _clearButton.frame = CGRectMake(12, 271, 55, 55);
     }
 }
+
 
 
 

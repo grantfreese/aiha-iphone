@@ -36,7 +36,6 @@
 		0F377032150FEEBA00192044 /* UIView+FindFirstResponder.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F377031150FEEBA00192044 /* UIView+FindFirstResponder.m */; };
 		0F377049150FF43E00192044 /* 85dBA reached.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F377035150FF43E00192044 /* 85dBA reached.png */; };
 		0F37704A150FF43E00192044 /* AddingSoundPressure.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F377036150FF43E00192044 /* AddingSoundPressure.png */; };
-		0F37704B150FF43E00192044 /* AIHA.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F377037150FF43E00192044 /* AIHA.png */; };
 		0F37704C150FF43E00192044 /* Area of circle.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F377038150FF43E00192044 /* Area of circle.png */; };
 		0F37704D150FF43E00192044 /* Flow rate adjustment.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F377039150FF43E00192044 /* Flow rate adjustment.png */; };
 		0F37704E150FF43E00192044 /* From ppm.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F37703A150FF43E00192044 /* From ppm.png */; };
@@ -68,6 +67,10 @@
 		32BCE4B71504809A002F1C52 /* VentilationListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 32BCE4B61504809A002F1C52 /* VentilationListViewController.m */; };
 		32BCE4BA1504812E002F1C52 /* VentilationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 32BCE4B91504812E002F1C52 /* VentilationManager.m */; };
 		8EC7AABC1522BB5800DAFABA /* HeatExposureTable.png in Resources */ = {isa = PBXBuildFile; fileRef = 8EC7AABB1522BB5800DAFABA /* HeatExposureTable.png */; };
+		9590ED9A1528406500AC45DD /* AIHA.png in Resources */ = {isa = PBXBuildFile; fileRef = 9590ED991528406500AC45DD /* AIHA.png */; };
+		9590EDA5152843CF00AC45DD /* calcButton2.png in Resources */ = {isa = PBXBuildFile; fileRef = 9590EDA4152843CF00AC45DD /* calcButton2.png */; };
+		9590EDA8152843E100AC45DD /* clearButton2.png in Resources */ = {isa = PBXBuildFile; fileRef = 9590EDA7152843E100AC45DD /* clearButton2.png */; };
+		9590EDAA152844AA00AC45DD /* resultBar.png in Resources */ = {isa = PBXBuildFile; fileRef = 9590EDA9152844AA00AC45DD /* resultBar.png */; };
 		95D86E1A151ECEB5000438E8 /* AIHA_LongFinal.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 95D86E19151ECEB5000438E8 /* AIHA_LongFinal.jpg */; };
 /* End PBXBuildFile section */
 
@@ -121,7 +124,6 @@
 		0F377031150FEEBA00192044 /* UIView+FindFirstResponder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+FindFirstResponder.m"; sourceTree = "<group>"; };
 		0F377035150FF43E00192044 /* 85dBA reached.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "85dBA reached.png"; sourceTree = "<group>"; };
 		0F377036150FF43E00192044 /* AddingSoundPressure.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AddingSoundPressure.png; sourceTree = "<group>"; };
-		0F377037150FF43E00192044 /* AIHA.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AIHA.png; sourceTree = "<group>"; };
 		0F377038150FF43E00192044 /* Area of circle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Area of circle.png"; sourceTree = "<group>"; };
 		0F377039150FF43E00192044 /* Flow rate adjustment.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Flow rate adjustment.png"; sourceTree = "<group>"; };
 		0F37703A150FF43E00192044 /* From ppm.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "From ppm.png"; sourceTree = "<group>"; };
@@ -157,6 +159,10 @@
 		32BCE4B81504812E002F1C52 /* VentilationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VentilationManager.h; sourceTree = "<group>"; };
 		32BCE4B91504812E002F1C52 /* VentilationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VentilationManager.m; sourceTree = "<group>"; };
 		8EC7AABB1522BB5800DAFABA /* HeatExposureTable.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = HeatExposureTable.png; sourceTree = "<group>"; };
+		9590ED991528406500AC45DD /* AIHA.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = AIHA.png; path = "../../../../../../Downloads/LatestFile(3_25) 2am/CalculationsAIHA Orig/AIHA.png"; sourceTree = "<group>"; };
+		9590EDA4152843CF00AC45DD /* calcButton2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = calcButton2.png; sourceTree = "<group>"; };
+		9590EDA7152843E100AC45DD /* clearButton2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = clearButton2.png; sourceTree = "<group>"; };
+		9590EDA9152844AA00AC45DD /* resultBar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = resultBar.png; sourceTree = "<group>"; };
 		95D86E19151ECEB5000438E8 /* AIHA_LongFinal.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = AIHA_LongFinal.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -277,7 +283,9 @@
 			children = (
 				0F377035150FF43E00192044 /* 85dBA reached.png */,
 				0F377036150FF43E00192044 /* AddingSoundPressure.png */,
-				0F377037150FF43E00192044 /* AIHA.png */,
+				9590EDA4152843CF00AC45DD /* calcButton2.png */,
+				9590EDA7152843E100AC45DD /* clearButton2.png */,
+				9590ED991528406500AC45DD /* AIHA.png */,
 				0F377038150FF43E00192044 /* Area of circle.png */,
 				0F377039150FF43E00192044 /* Flow rate adjustment.png */,
 				0F37703A150FF43E00192044 /* From ppm.png */,
@@ -293,6 +301,7 @@
 				222E4A4E1523CAFD0050E168 /* velocity.png */,
 				0F37703D150FF43E00192044 /* PEL(Respirable Fraction).png */,
 				0F37703E150FF43E00192044 /* PEL(Total Dust).png */,
+				9590EDA9152844AA00AC45DD /* resultBar.png */,
 				0F377040150FF43E00192044 /* Room Air changes per hour.png */,
 				0F377041150FF43E00192044 /* TLVmix.png */,
 				0F377042150FF43E00192044 /* To ppm.png */,
@@ -364,7 +373,6 @@
 				0F2E9B2315004E3700A4FB1D /* ExposureList.plist in Resources */,
 				0F377049150FF43E00192044 /* 85dBA reached.png in Resources */,
 				0F37704A150FF43E00192044 /* AddingSoundPressure.png in Resources */,
-				0F37704B150FF43E00192044 /* AIHA.png in Resources */,
 				0F37704C150FF43E00192044 /* Area of circle.png in Resources */,
 				0F37704D150FF43E00192044 /* Flow rate adjustment.png in Resources */,
 				0F37704E150FF43E00192044 /* From ppm.png in Resources */,
@@ -393,6 +401,10 @@
 				222E4A571523CAFD0050E168 /* velocity.png in Resources */,
 				222E4A591523CBBF0050E168 /* Oxygen Level of Room.PNG in Resources */,
 				22C536B81525671B00886CEA /* Ventilation.plist in Resources */,
+				9590ED9A1528406500AC45DD /* AIHA.png in Resources */,
+				9590EDA5152843CF00AC45DD /* calcButton2.png in Resources */,
+				9590EDA8152843E100AC45DD /* clearButton2.png in Resources */,
+				9590EDAA152844AA00AC45DD /* resultBar.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

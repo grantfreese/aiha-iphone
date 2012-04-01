@@ -34,6 +34,8 @@
 @synthesize formula = _formula;
 @synthesize resultUnit = _resultUnit;
 @synthesize formulaImage = _formulaImage;
+@synthesize calcButton = _calcButton;
+@synthesize clearButton = _clearButton;
 - (IBAction) calculateButtonPressed{
     float variable1 = [_textField1.text floatValue]; //reads value of first text field and stores as a float value
     float variable2 = [_textField2.text floatValue]; //reads value of second text field and stores as a float value
@@ -128,6 +130,68 @@
 }
 */
 
+- (void)viewWillAppear:(BOOL)animated
+{  if (self.interfaceOrientation == UIInterfaceOrientationLandscapeLeft ||
+       self.interfaceOrientation == UIInterfaceOrientationLandscapeRight)
+{
+    _textField1.frame = CGRectMake(95, 65, 97, 31);
+    _variable1.frame = CGRectMake(1, 75, 90, 21);
+    _unit1.frame = CGRectMake(197, 75, 99, 21);
+    
+    _textField2.frame = CGRectMake(95, 105, 97, 31);
+    _variable2.frame = CGRectMake(1, 115, 90, 21);
+    _unit2.frame = CGRectMake(197, 115, 99, 21);
+    
+    _textField3.frame = CGRectMake(288, 65, 97, 31);
+    _variable3.frame = CGRectMake(194, 75, 90, 21);
+    _unit3.frame = CGRectMake(390, 75, 99, 21);
+    
+    _textField4.frame = CGRectMake(288, 105, 97, 31);
+    _variable4.frame = CGRectMake(194, 115, 90, 21);
+    _unit4.frame = CGRectMake(390, 115, 99, 21);
+    
+    _textField5.frame = CGRectMake(192, 145, 97, 31);
+    _variable5.frame = CGRectMake(98, 155, 90, 21);
+    _unit5.frame = CGRectMake(294, 155, 99, 21);
+    
+    _result.frame = CGRectMake(92, 186, 210, 21);
+    _resultUnit.frame = CGRectMake(315, 188, 85, 21);
+    
+    _calcButton.frame = CGRectMake(415, 162, 55, 55);
+    _clearButton.frame = CGRectMake(10, 162, 55, 55);
+    
+}
+else
+{
+    _textField1.frame = CGRectMake(112, 94, 97, 31);
+    _variable1.frame = CGRectMake(1, 104, 103, 21);
+    _unit1.frame = CGRectMake(220, 104, 99, 21);
+    
+    _textField2.frame = CGRectMake(112, 134, 97, 31);
+    _variable2.frame = CGRectMake(1, 144, 103, 21);
+    _unit2.frame = CGRectMake(220, 144, 99, 21);
+    
+    _textField3.frame = CGRectMake(112, 174, 97, 31);
+    _variable3.frame = CGRectMake(1, 184, 103, 21);
+    _unit3.frame = CGRectMake(220, 184, 99, 21);
+    
+    _textField4.frame = CGRectMake(112, 214, 97, 31);
+    _variable4.frame = CGRectMake(1, 224, 103, 21);
+    _unit4.frame = CGRectMake(220, 224, 99, 21);
+    
+    _textField5.frame = CGRectMake(112, 254, 97, 31);
+    _variable5.frame = CGRectMake(1, 264, 103, 21);
+    _unit5.frame = CGRectMake(220, 264, 99, 21);
+    
+    _result.frame = CGRectMake(12, 333, 210, 21);
+    _resultUnit.frame = CGRectMake(238, 335, 85, 21);
+    
+    _calcButton.frame = CGRectMake(253, 271, 55, 55);
+    _clearButton.frame = CGRectMake(12, 271, 55, 55);
+}
+    [super viewWillAppear:animated];
+}
+
 
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad
@@ -205,5 +269,69 @@
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
     [[self.view findFirstResponder] resignFirstResponder];
 }
+
+- (void)willAnimateRotationToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation 
+                                         duration:(NSTimeInterval)duration
+{
+    if (toInterfaceOrientation == UIInterfaceOrientationLandscapeLeft ||
+        toInterfaceOrientation == UIInterfaceOrientationLandscapeRight)
+    {
+        _textField1.frame = CGRectMake(95, 65, 97, 31);
+        _variable1.frame = CGRectMake(1, 75, 90, 21);
+        _unit1.frame = CGRectMake(197, 75, 99, 21);
+        
+        _textField2.frame = CGRectMake(95, 105, 97, 31);
+        _variable2.frame = CGRectMake(1, 115, 90, 21);
+        _unit2.frame = CGRectMake(197, 115, 99, 21);
+        
+        _textField3.frame = CGRectMake(288, 65, 97, 31);
+        _variable3.frame = CGRectMake(194, 75, 90, 21);
+        _unit3.frame = CGRectMake(390, 75, 99, 21);
+        
+        _textField4.frame = CGRectMake(288, 105, 97, 31);
+        _variable4.frame = CGRectMake(194, 115, 90, 21);
+        _unit4.frame = CGRectMake(390, 115, 99, 21);
+        
+        _textField5.frame = CGRectMake(192, 145, 97, 31);
+        _variable5.frame = CGRectMake(98, 155, 90, 21);
+        _unit5.frame = CGRectMake(294, 155, 99, 21);
+        
+        _result.frame = CGRectMake(92, 186, 210, 21);
+        _resultUnit.frame = CGRectMake(315, 188, 85, 21);
+        
+        _calcButton.frame = CGRectMake(415, 162, 55, 55);
+        _clearButton.frame = CGRectMake(10, 162, 55, 55);
+        
+    }
+    else
+    {
+        _textField1.frame = CGRectMake(112, 94, 97, 31);
+        _variable1.frame = CGRectMake(1, 104, 103, 21);
+        _unit1.frame = CGRectMake(220, 104, 99, 21);
+        
+        _textField2.frame = CGRectMake(112, 134, 97, 31);
+        _variable2.frame = CGRectMake(1, 144, 103, 21);
+        _unit2.frame = CGRectMake(220, 144, 99, 21);
+        
+        _textField3.frame = CGRectMake(112, 174, 97, 31);
+        _variable3.frame = CGRectMake(1, 184, 103, 21);
+        _unit3.frame = CGRectMake(220, 184, 99, 21);
+        
+        _textField4.frame = CGRectMake(112, 214, 97, 31);
+        _variable4.frame = CGRectMake(1, 224, 103, 21);
+        _unit4.frame = CGRectMake(220, 224, 99, 21);
+        
+        _textField5.frame = CGRectMake(112, 254, 97, 31);
+        _variable5.frame = CGRectMake(1, 264, 103, 21);
+        _unit5.frame = CGRectMake(220, 264, 99, 21);
+        
+        _result.frame = CGRectMake(12, 333, 210, 21);
+        _resultUnit.frame = CGRectMake(238, 335, 85, 21);
+        
+        _calcButton.frame = CGRectMake(253, 271, 55, 55);
+        _clearButton.frame = CGRectMake(12, 271, 55, 55);
+    }
+}
+
 
 @end
