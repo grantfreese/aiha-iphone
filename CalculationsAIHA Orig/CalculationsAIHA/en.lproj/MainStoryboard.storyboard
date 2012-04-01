@@ -300,7 +300,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="PAF-rM-0CB">
-                                <rect key="frame" x="164" y="315" width="75" height="35"/>
+                                <rect key="frame" x="177" y="321" width="75" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" title="Calculate" image="calcButton2.png">
@@ -1115,6 +1115,135 @@
         <image name="clearButton2.png" width="75" height="35"/>
         <image name="resultBar.png" width="480" height="36"/>
     </resources>
+    <classes>
+        <class className="AIHAViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/AIHAViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="ExposureAssessmentButton" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="HeatStressButton" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="NoiseButton" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="VentilationButton" candidateClass="UIButton"/>
+            </relationships>
+        </class>
+        <class className="ExposureListViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ExposureListViewController.h"/>
+        </class>
+        <class className="FiveVariableViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/FiveVariableViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="calcButton" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="clearButton" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="formula" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="formulaImage" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="result" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="resultUnit" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="textField1" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="textField2" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="textField3" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="textField4" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="textField5" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="unit1" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="unit2" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="unit3" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="unit4" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="unit5" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="variable1" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="variable2" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="variable3" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="variable4" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="variable5" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+        <class className="FourVariableViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/FourVariableViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="calcButton" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="clearButton" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="formula" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="formulaImage" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="result" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="resultUnit" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="textField1" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="textField2" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="textField3" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="textField4" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="unit1" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="unit2" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="unit3" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="unit4" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="variable1" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="variable2" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="variable3" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="variable4" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+        <class className="HeatStressListViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/HeatStressListViewController.h"/>
+        </class>
+        <class className="HeatStressTableImageViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/HeatStressTableImageViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="scroll" candidateClass="UIScrollView"/>
+            </relationships>
+        </class>
+        <class className="NoiseListViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NoiseListViewController.h"/>
+        </class>
+        <class className="OneVariableViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/OneVariableViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="calcButton" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="clearButton" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="formula" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="formulaImage" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="result" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="resultUnit" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="textField1" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="unit1" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="variable1" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+        <class className="ThreeVariableViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ThreeVariableViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="calcButton" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="clearButton" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="formula" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="formulaImage" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="result" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="resultUnit" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="textField1" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="textField2" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="textField3" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="unit1" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="unit2" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="unit3" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="variable1" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="variable2" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="variable3" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+        <class className="TwoVariableViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/TwoVariableViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="calcButton" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="clearButton" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="formula" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="formulaImage" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="result" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="resultUnit" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="textField1" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="textField2" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="unit1" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="unit2" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="variable1" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="variable2" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+        <class className="VentilationListViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/VentilationListViewController.h"/>
+        </class>
+    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
