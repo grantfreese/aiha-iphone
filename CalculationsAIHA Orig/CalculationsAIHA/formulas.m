@@ -359,9 +359,9 @@ SoundPressureLevels:(NSNumber*)n_o
 #pragma mark -
 #pragma mark Conversion Equations
 
-// ConvertMgToPpm
-+(NSNumber*) convertMg: (NSNumber*) mg_o 
-                 ToPpm: (NSNumber*) ppm_o
+// ConvertPPMToMG
++(NSNumber*) convertPPM: (NSNumber*) mg_o 
+                 ToMG: (NSNumber*) ppm_o
 {
     //((gram molecular weight of substance) * (TLV in ppm)) / 24.45
     float mg = [mg_o floatValue];
