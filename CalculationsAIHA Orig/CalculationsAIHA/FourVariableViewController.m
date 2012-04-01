@@ -13,6 +13,9 @@
 #define HEATSTRESS 2
 #define VENTILATION 3
 #define EXPOSUREASSESSMENT 4
+#define PRESSURE 7
+#define MASS 8
+#define TEMPERATURE 9
 
 @implementation FourVariableViewController
 @synthesize textField1 = _textField1;
@@ -34,10 +37,110 @@
 @synthesize calcButton = _calcButton;
 @synthesize clearButton = _clearButton;
 - (IBAction) calculateButtonPressed{
+    CategoryManager *catManager = [CategoryManager sharedCategoryManager];    
+    int check = catManager.category;
+    
     float variable1 = [_textField1.text floatValue]; //reads value of first text field and stores as a float value
     float variable2 = [_textField2.text floatValue]; //reads value of second text field and stores as a float value
     float variable3 = [_textField3.text floatValue];
     float variable4 = [_textField4.text floatValue];//reads value of third text field and stores as a float value
+    
+    if(check == MASS)
+    {
+        if (variable2 != 0)
+        {
+            variable1 = variable2/453.59237;
+        }
+        else if (variable3 != 0)
+        {
+            variable1 = variable3/7000;
+        }
+        else if (variable4 != 0)
+        {
+            variable1 = variable4/16;
+        }
+        
+        variable2 = variable1*453.59237;
+        variable3 = variable1*7000;
+        variable4 = variable1*16;
+        
+        self.textField1.text = [NSString stringWithFormat:@"%.4f",variable1];
+        self.textField2.text = [NSString stringWithFormat:@"%.4f",variable2];
+        self.textField3.text = [NSString stringWithFormat:@"%.4f",variable3];
+        self.textField4.text = [NSString stringWithFormat:@"%.4f",variable4];
+    }
+    else if(check == PRESSURE)
+    {
+        if (variable2 != 0)
+        {
+            variable1 = variable2/14.7;
+        }
+        else if (variable3 != 0)
+        {
+            variable1 = variable3/760;
+        }
+        else if (variable4 != 0)
+        {
+            variable1 = variable4/33.93;
+        }
+        
+        variable2 = variable1*14.7;
+        variable3 = variable1*760;
+        variable4 = variable1*33.93;
+        
+        self.textField1.text = [NSString stringWithFormat:@"%.4f",variable1];
+        self.textField2.text = [NSString stringWithFormat:@"%.4f",variable2];
+        self.textField3.text = [NSString stringWithFormat:@"%.4f",variable3];
+        self.textField4.text = [NSString stringWithFormat:@"%.4f",variable4];
+    }
+    else if(check == TEMPERATURE)
+    {
+        if (variable1 == 0&&variable2==0&&variable3==0&&variable4==0) 
+        {
+            variable1 = 32;
+            variable2 = 0;
+            variable3 = 492;
+            variable4 = 273;
+            
+        }
+        else
+        {
+            if (variable1 != 0)
+            {
+                variable2 = (variable1-32)*(.555555);
+                variable3 = variable1+460;
+                variable4 = variable2+273;
+            }
+            else if (variable2 != 0)
+            {
+                variable1 = (variable2*(1.8))+32;
+                variable3 = variable1+460;
+                variable4 = variable2+273;
+            }
+            else if (variable3 != 0)
+            {
+                variable1 = variable3-460;
+                variable2 = (variable1-32)*(.555555);
+                variable4 =((variable1-32)*(.555555))+273;
+            }
+            else if (variable4 != 0)
+            {
+                variable2 = variable4 - 273;
+                variable1 = (variable2*(1.8))+32;
+                variable3 = variable1+460;
+            }
+            
+            
+            self.textField1.text = [NSString stringWithFormat:@"%.4f",variable1];
+            self.textField2.text = [NSString stringWithFormat:@"%.4f",variable2];
+            self.textField3.text = [NSString stringWithFormat:@"%.4f",variable3];
+            self.textField4.text = [NSString stringWithFormat:@"%.4f",variable4];
+        }
+    }
+    
+    
+    else 
+    {
     float calculationResult;
     
     HeatStressManager *heatManager = [HeatStressManager sharedHeatStressManager];
@@ -46,10 +149,6 @@
     VentilationManager *ventilationManager = [VentilationManager sharedVentilationManager];
     
     NSDictionary *chosenFormula;
-    
-    CategoryManager *catManager = [CategoryManager sharedCategoryManager];
-    
-    int check = catManager.category;
     
     if (check == HEATSTRESS)
     {
@@ -84,6 +183,7 @@
     // don't forget to unbox calculationResult, or the pointer will be printed as a float :)
     self.result.text = [NSString stringWithFormat:@"%.2f", calculationResult]; //outputs calculation result
     self.resultUnit.text = [chosenFormula objectForKey:@"resultUnit"];
+    }
 }
 
 - (IBAction)clearButtonPressed{
@@ -194,18 +294,65 @@ else
     [super viewDidLoad];
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;
+    CategoryManager *catManager = [CategoryManager sharedCategoryManager];    
+    int check = catManager.category;
+    if (check == MASS)
+    {
+        self.variable1.text = @" ";
+        self.variable2.text = @" ";
+        self.variable3.text = @" ";
+        self.variable4.text = @" ";
+        self.unit1.text = @"lbs"; 
+        self.unit2.text = @"g";
+        self.unit3.text = @"grains";
+        self.unit4.text = @"oz";
+        self.resultUnit.text = @" ";
+        self.result.text = @" ";
+        self.formula.text = @"Mass Conversions";
+        
+    }
+    else if (check == PRESSURE)
+    {
+        self.variable1.text = @" ";
+        self.variable2.text = @" ";
+        self.variable3.text = @" ";
+        self.variable4.text = @" ";
+        self.unit1.text = @"atm"; 
+        self.unit2.text = @"psi";
+        self.unit3.text = @"mm Hg";
+        self.unit4.text = @"ft water";
+        self.resultUnit.text = @" ";
+        self.result.text = @" ";
+        self.formula.text = @"Pressure Conversions";
+        
+    }
+    else if (check == TEMPERATURE)
+    {
+        self.variable1.text = @" ";
+        self.variable2.text = @" ";
+        self.variable3.text = @" ";
+        self.variable4.text = @" ";
+        self.unit1.text = @"F"; 
+        self.unit2.text = @"C";
+        self.unit3.text = @"R";
+        self.unit4.text = @"K";
+        self.resultUnit.text = @" ";
+        self.result.text = @" ";
+        self.formula.text = @"Pressure Conversions";
+        
+    }
     
+    else 
+    {
+        
     HeatStressManager *heatManager = [HeatStressManager sharedHeatStressManager];
     NoiseManager *noiseManager = [NoiseManager sharedNoiseManager];
     ExposureManager *exposureManager = [ExposureManager sharedExposureManager];
     VentilationManager *ventilationManager = [VentilationManager sharedVentilationManager];
     
-    NSDictionary *chosenFormula;
+    NSDictionary *chosenFormula; 
+        
     
-    
-    CategoryManager *catManager = [CategoryManager sharedCategoryManager];
-    
-    int check = catManager.category;
     if (check == 2)
     {
         chosenFormula = heatManager.selectedFormula;
@@ -245,6 +392,7 @@ else
     self.formulaImage.image = [UIImage imageNamed:formulaText];
     //self.formula.text = formulaText;
     self.resultUnit.text = resultUnitText;
+    }
 }
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation

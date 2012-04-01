@@ -13,6 +13,8 @@
 #define HEATSTRESS 2
 #define VENTILATION 3
 #define EXPOSUREASSESSMENT 4
+#define AREA 10
+#define FlowRate 13
 
 @implementation ThreeVariableViewController
 
@@ -37,50 +39,101 @@
     float variable1 = [_textField1.text floatValue]; //reads value of first text field and stores as a float value
     float variable2 = [_textField2.text floatValue]; //reads value of second text field and stores as a float value
     float variable3 = [_textField3.text floatValue]; //reads value of third text field and stores as a float value
-    
-    float calculationResult;
-    
-    HeatStressManager *heatManager = [HeatStressManager sharedHeatStressManager];
-    NoiseManager *noiseManager = [NoiseManager sharedNoiseManager];
-    ExposureManager *exposureManager = [ExposureManager sharedExposureManager];
-    VentilationManager *ventilationManager = [VentilationManager sharedVentilationManager];
-    
-    NSDictionary *chosenFormula;
-    
-    CategoryManager *catManager = [CategoryManager sharedCategoryManager];
-    
+    CategoryManager *catManager = [CategoryManager sharedCategoryManager];    
     int check = catManager.category;
     
-    if (check == HEATSTRESS)
+    if(check==AREA)
     {
-        chosenFormula = heatManager.selectedFormula;
+        float pi = 3.14159265;
+        if (variable1 != 0)
+        {
+            variable2 = variable1*2;
+            variable3 = pi*(variable1*variable1);
+        }
+        else if(variable2 != 0)
+        {
+            variable1 = variable2/2;
+            variable3 = pi*(variable1*variable1);
+        }
+        else
+        {
+            variable1 = sqrtf(variable3/pi);
+            variable2 = variable1*2;
+        }
         
-        calculationResult =[formulas runFunction:[chosenFormula objectForKey:@"method"]
-                                      numAndArgs:3, (double)variable1, (double)variable2, (double)variable3]; 
+        self.textField1.text = [NSString stringWithFormat:@"%.4f", variable1];
+        self.textField2.text = [NSString stringWithFormat:@"%.4f", variable2];
+        self.textField3.text = [NSString stringWithFormat:@"%.4f", variable3];
+        
+    }
+    else if(check==FlowRate)
+    {
+        if (variable1 != 0)
+        {
+            variable2 = variable1*2120;
+            variable3 = variable2*16.4;
+        }
+        else if(variable2 != 0)
+        {
+            variable1 = variable2/2120;
+            variable3 = variable2*16.4;
+        }
+        else
+        {
+            variable2 = variable3/16.4;
+            variable1 = variable2/2120;
+        }
+        
+        self.textField1.text = [NSString stringWithFormat:@"%.4f", variable1];
+        self.textField2.text = [NSString stringWithFormat:@"%.4f", variable2];
+        self.textField3.text = [NSString stringWithFormat:@"%.4f", variable3];
+        
     }
     
-    else if (check == NOISE) //(noiseManager != nil)
+    else
     {
-        chosenFormula = noiseManager.selectedFormula;
-        calculationResult =[formulas runFunction:[chosenFormula objectForKey:@"method"]
-                                      numAndArgs:3, (double)variable1, (double)variable2, (double)variable3]; 
-     }
-   
-    else if (check == EXPOSUREASSESSMENT)//(exposureManager != nil)
-    {
-        chosenFormula = exposureManager.selectedFormula;
-        calculationResult =[formulas runFunction:[chosenFormula objectForKey:@"method"]
-                                      numAndArgs:3, (double)variable1, (double)variable2, (double)variable3]; 
-    }
-    else if (check == VENTILATION)//(ventilationManager != nil)
-    {
-        chosenFormula = ventilationManager.selectedFormula;
-        calculationResult =[formulas runFunction:[chosenFormula objectForKey:@"method"]
-                                      numAndArgs:3, (double)variable1, (double)variable2, (double)variable3]; 
-    }
     
-    self.result.text = [NSString stringWithFormat:@"%.2f", calculationResult]; //outputs calculation result
-    self.resultUnit.text = [chosenFormula objectForKey:@"resultUnit"];
+        float calculationResult;
+        
+        HeatStressManager *heatManager = [HeatStressManager sharedHeatStressManager];
+        NoiseManager *noiseManager = [NoiseManager sharedNoiseManager];
+        ExposureManager *exposureManager = [ExposureManager sharedExposureManager];
+        VentilationManager *ventilationManager = [VentilationManager sharedVentilationManager];
+        
+        NSDictionary *chosenFormula;
+        
+        
+        if (check == HEATSTRESS)
+        {
+            chosenFormula = heatManager.selectedFormula;
+            
+            calculationResult =[formulas runFunction:[chosenFormula objectForKey:@"method"]
+                                          numAndArgs:3, (double)variable1, (double)variable2, (double)variable3]; 
+        }
+        
+        else if (check == NOISE) //(noiseManager != nil)
+        {
+            chosenFormula = noiseManager.selectedFormula;
+            calculationResult =[formulas runFunction:[chosenFormula objectForKey:@"method"]
+                                          numAndArgs:3, (double)variable1, (double)variable2, (double)variable3]; 
+        }
+        
+        else if (check == EXPOSUREASSESSMENT)//(exposureManager != nil)
+        {
+            chosenFormula = exposureManager.selectedFormula;
+            calculationResult =[formulas runFunction:[chosenFormula objectForKey:@"method"]
+                                          numAndArgs:3, (double)variable1, (double)variable2, (double)variable3]; 
+        }
+        else if (check == VENTILATION)//(ventilationManager != nil)
+        {
+            chosenFormula = ventilationManager.selectedFormula;
+            calculationResult =[formulas runFunction:[chosenFormula objectForKey:@"method"]
+                                          numAndArgs:3, (double)variable1, (double)variable2, (double)variable3]; 
+        }
+        
+        self.result.text = [NSString stringWithFormat:@"%.2f", calculationResult]; //outputs calculation result
+        self.resultUnit.text = [chosenFormula objectForKey:@"resultUnit"];
+    }
 }
 
 - (IBAction)clearButtonPressed{
@@ -176,55 +229,83 @@ else
     [super viewDidLoad];
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;
-    
-    HeatStressManager *heatManager = [HeatStressManager sharedHeatStressManager];
-    NoiseManager *noiseManager = [NoiseManager sharedNoiseManager];
-    ExposureManager *exposureManager = [ExposureManager sharedExposureManager];
-    VentilationManager *ventilationManager = [VentilationManager sharedVentilationManager];
-    
-    NSDictionary *chosenFormula;
-    
-    self.theUselessFormulas = [[formulas alloc] init];
-    
-    
-    CategoryManager *catManager = [CategoryManager sharedCategoryManager];
-    
+    CategoryManager *catManager = [CategoryManager sharedCategoryManager];    
     int check = catManager.category;
-    if (check == 2)
-    {
-        chosenFormula = heatManager.selectedFormula;
-    }
-    else if (check == 1)
-    {
-        chosenFormula = noiseManager.selectedFormula;
-    }
-    else if (check == 4)
-    {
-        chosenFormula = exposureManager.selectedFormula;
-    }
-    else if (check == 3)
-    {
-        chosenFormula = ventilationManager.selectedFormula;
-    }
     
-    NSString *variable1Text = [chosenFormula objectForKey:@"variable1"];
-    NSString *variable2Text = [chosenFormula objectForKey:@"variable2"];
-    NSString *variable3Text = [chosenFormula objectForKey:@"variable3"];
-    NSString *unit1Text = [chosenFormula objectForKey:@"unit1"];
-    NSString *unit2Text = [chosenFormula objectForKey:@"unit2"];
-    NSString *unit3Text = [chosenFormula objectForKey:@"unit3"];
-    NSString *formulaText = [chosenFormula objectForKey:@"imageName"];
-    //NSString *formulaText = [chosenFormula objectForKey:@"formula"];
-    NSString *resultUnitText = [chosenFormula objectForKey:@"resultUnit"];
-    self.variable1.text = variable1Text;
-    self.variable2.text = variable2Text;
-    self.variable3.text = variable3Text;
-    self.unit1.text = unit1Text; 
-    self.unit2.text = unit2Text;
-    self.unit3.text = unit3Text;
-    self.formulaImage.image = [UIImage imageNamed:formulaText];
-    //self.formula.text = formulaText;
-    self.resultUnit.text = resultUnitText;
+    if (check == AREA)
+    {
+        self.variable1.text = @"Radius";
+        self.variable2.text = @"Diameter";
+        self.variable3.text = @"Area";
+        self.unit1.text = @""; 
+        self.unit2.text = @"";
+        self.unit3.text = @"";
+        self.resultUnit.text = @"";
+        self.result.text = @" ";
+        self.formula.text = @"Area of a circle";
+        
+    }
+    else if (check == FlowRate)
+    {
+        self.variable1.text = @" ";
+        self.variable2.text = @" ";
+        self.variable3.text = @" ";
+        self.unit1.text = @"m^3/s"; 
+        self.unit2.text = @"ft^3/min";
+        self.unit3.text = @"cm^3/s";
+        self.resultUnit.text = @"";
+        self.result.text = @" ";
+        self.formula.text = @"Flow Rate Conversions";
+    }
+    else
+    {
+    
+        HeatStressManager *heatManager = [HeatStressManager sharedHeatStressManager];
+        NoiseManager *noiseManager = [NoiseManager sharedNoiseManager];
+        ExposureManager *exposureManager = [ExposureManager sharedExposureManager];
+        VentilationManager *ventilationManager = [VentilationManager sharedVentilationManager];
+        
+        NSDictionary *chosenFormula;
+        
+        self.theUselessFormulas = [[formulas alloc] init];
+        
+        
+        if (check == 2)
+        {
+            chosenFormula = heatManager.selectedFormula;
+        }
+        else if (check == 1)
+        {
+            chosenFormula = noiseManager.selectedFormula;
+        }
+        else if (check == 4)
+        {
+            chosenFormula = exposureManager.selectedFormula;
+        }
+        else if (check == 3)
+        {
+            chosenFormula = ventilationManager.selectedFormula;
+        }
+        
+        NSString *variable1Text = [chosenFormula objectForKey:@"variable1"];
+        NSString *variable2Text = [chosenFormula objectForKey:@"variable2"];
+        NSString *variable3Text = [chosenFormula objectForKey:@"variable3"];
+        NSString *unit1Text = [chosenFormula objectForKey:@"unit1"];
+        NSString *unit2Text = [chosenFormula objectForKey:@"unit2"];
+        NSString *unit3Text = [chosenFormula objectForKey:@"unit3"];
+        NSString *formulaText = [chosenFormula objectForKey:@"imageName"];
+        //NSString *formulaText = [chosenFormula objectForKey:@"formula"];
+        NSString *resultUnitText = [chosenFormula objectForKey:@"resultUnit"];
+        self.variable1.text = variable1Text;
+        self.variable2.text = variable2Text;
+        self.variable3.text = variable3Text;
+        self.unit1.text = unit1Text; 
+        self.unit2.text = unit2Text;
+        self.unit3.text = unit3Text;
+        self.formulaImage.image = [UIImage imageNamed:formulaText];
+        //self.formula.text = formulaText;
+        self.resultUnit.text = resultUnitText;
+    }
 }
 
 

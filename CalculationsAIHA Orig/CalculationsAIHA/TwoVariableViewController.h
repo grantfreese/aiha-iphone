@@ -13,6 +13,8 @@
 #import "VentilationManager.h"
 #import "formulas.h"
 #import "UIView+FindFirstResponder.h"
+#import "TLVManager.h"
+#import "ConcentrationManager.h"
 
 @interface TwoVariableViewController : UIViewController
 

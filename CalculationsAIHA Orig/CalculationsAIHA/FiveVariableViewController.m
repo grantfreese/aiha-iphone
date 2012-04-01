@@ -13,6 +13,8 @@
 #define HEATSTRESS 2
 #define VENTILATION 3
 #define EXPOSUREASSESSMENT 4
+#define VOLUME 5
+#define DISTANCE 6
 
 @implementation FiveVariableViewController
 @synthesize textField1 = _textField1;
@@ -37,11 +39,82 @@
 @synthesize calcButton = _calcButton;
 @synthesize clearButton = _clearButton;
 - (IBAction) calculateButtonPressed{
+    CategoryManager *catManager = [CategoryManager sharedCategoryManager];    
+    int check = catManager.category;
+        
     float variable1 = [_textField1.text floatValue]; //reads value of first text field and stores as a float value
     float variable2 = [_textField2.text floatValue]; //reads value of second text field and stores as a float value
-    float variable3 = [_textField3.text floatValue];
-    float variable4 = [_textField4.text floatValue];//reads value of third text field and stores as a float value
-    float variable5 = [_textField5.text floatValue];//reads value of third text field and stores as a float value
+    float variable3 = [_textField3.text floatValue]; //reads value of third text field and stores as a float value
+    float variable4 = [_textField4.text floatValue]; //reads value of fourth text field and stores as a float value
+    float variable5 = [_textField5.text floatValue]; //reads value of fifth text field and stores as a float value
+    
+    
+    if (check == VOLUME)
+    {
+        if (variable2 != 0)
+        {
+            variable1 = variable2/28300;
+        }
+        else if (variable3 != 0)
+        {
+            variable1 = variable3/1728;
+        }
+        else if (variable4 != 0)
+        {
+            variable1 = variable4/28.31686;
+        }        
+        else if (variable5 != 0)
+        {
+            variable1 = variable5/29.92208;
+        }
+        
+        variable2 = variable1*28300;
+        variable3 = variable1*1728;
+        variable4 = variable1*28.31686;        
+        variable5 = variable1*29.92208;
+        
+        self.textField1.text = [NSString stringWithFormat:@"%.4f",variable1];
+        self.textField2.text = [NSString stringWithFormat:@"%.4f",variable2];
+        self.textField3.text = [NSString stringWithFormat:@"%.4f",variable3];
+        self.textField4.text = [NSString stringWithFormat:@"%.4f",variable4];
+        self.textField5.text = [NSString stringWithFormat:@"%.4f",variable5];
+        self.result.text = @" ";
+        
+    }
+    else if (check == DISTANCE)
+    {
+        if (variable2 != 0)
+        {
+            variable1 = variable2/12;
+        }
+        else if (variable3 != 0)
+        {
+            variable1 = variable3*5280;
+        }
+        else if (variable4 != 0)
+        {
+            variable1 = variable4/30.48;
+        }        
+        else if (variable5 != 0)
+        {
+            variable1 = variable5*3.2808399;
+        }
+        
+        variable2 = variable1*12;
+        variable3 = variable1/5280;
+        variable4 = variable1*30.48;        
+        variable5 = variable1/3.2808399;
+        
+        self.textField1.text = [NSString stringWithFormat:@"%.4f",variable1];
+        self.textField2.text = [NSString stringWithFormat:@"%.4f",variable2];
+        self.textField3.text = [NSString stringWithFormat:@"%.4f",variable3];
+        self.textField4.text = [NSString stringWithFormat:@"%.4f",variable4];
+        self.textField5.text = [NSString stringWithFormat:@"%.4f",variable5];
+        
+    }
+    
+    else 
+    {
 
     float calculationResult;
     
@@ -51,11 +124,7 @@
     VentilationManager *ventilationManager = [VentilationManager sharedVentilationManager];
     
     NSDictionary *chosenFormula;
-    
-    CategoryManager *catManager = [CategoryManager sharedCategoryManager];
-    
-    int check = catManager.category;
-    
+            
     if (check == HEATSTRESS)
     {
         chosenFormula = heatManager.selectedFormula;
@@ -88,6 +157,7 @@
     // don't forget to unbox calculationResult, or the pointer will be printed as a float :)
     self.result.text = [NSString stringWithFormat:@"%.2f", calculationResult]; //outputs calculation result
     self.resultUnit.text = [chosenFormula objectForKey:@"resultUnit"];
+    }
 }
 
 - (IBAction)clearButtonPressed{
@@ -197,6 +267,48 @@ else
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    CategoryManager *catManager = [CategoryManager sharedCategoryManager];    
+    int check = catManager.category;
+    
+    if (check == VOLUME)
+    {
+        self.variable1.text = @" ";
+        self.variable2.text = @" ";
+        self.variable3.text = @" ";
+        self.variable4.text = @" ";
+        self.variable5.text = @" ";
+        self.unit1.text = @"ft^3"; 
+        self.unit2.text = @"cm^3";
+        self.unit3.text = @"in^3";
+        self.unit4.text = @"L";
+        self.unit5.text = @"qt";
+        self.resultUnit.text = @" ";
+        self.result.text = @" ";
+        self.formula.text = @"Volume Conversions";
+        
+        
+    }
+    else if (check == DISTANCE)
+    {
+        self.variable1.text = @" ";
+        self.variable2.text = @" ";
+        self.variable3.text = @" ";
+        self.variable4.text = @" ";
+        self.variable5.text = @" ";
+        self.unit1.text = @"ft"; 
+        self.unit2.text = @"in";
+        self.unit3.text = @"mi";
+        self.unit4.text = @"cm";
+        self.unit5.text = @"m";
+        self.resultUnit.text = @" ";
+        self.result.text = @" ";
+        self.formula.text = @"Distance Conversions";
+        
+        
+    }
+    
+    else 
+    {
     HeatStressManager *heatManager = [HeatStressManager sharedHeatStressManager];
     NoiseManager *noiseManager = [NoiseManager sharedNoiseManager];
     ExposureManager *exposureManager = [ExposureManager sharedExposureManager];
@@ -205,9 +317,7 @@ else
     NSDictionary *chosenFormula;
     
     
-    CategoryManager *catManager = [CategoryManager sharedCategoryManager];
     
-    int check = catManager.category;
     if (check == 2)
     {
         chosenFormula = heatManager.selectedFormula;
@@ -251,6 +361,7 @@ else
     self.formulaImage.image = [UIImage imageNamed:formulaText];    
     //self.formula.text = formulaText;
     self.resultUnit.text = resultUnitText;
+    }
 }
 
 

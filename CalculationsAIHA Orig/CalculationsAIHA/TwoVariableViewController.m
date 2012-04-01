@@ -13,6 +13,9 @@
 #define HEATSTRESS 2
 #define VENTILATION 3
 #define EXPOSUREASSESSMENT 4
+#define CONCENTRATION 11
+#define TLV 12
+#define FLOWRATE 13
 
 @implementation TwoVariableViewController
 
@@ -31,71 +34,144 @@
 - (IBAction) calculateButtonPressed{
     float variable1 = [_textField1.text floatValue]; //reads value of first text field and stores as a float value
     float variable2 = [_textField2.text floatValue]; //reads value of second text field and stores as a float value
-    NSNumber * calculationResult;
-    
-    HeatStressManager *heatManager = [HeatStressManager sharedHeatStressManager];
-    NoiseManager *noiseManager = [NoiseManager sharedNoiseManager];
-    ExposureManager *exposureManager = [ExposureManager sharedExposureManager];
-    VentilationManager *ventilationManager = [VentilationManager sharedVentilationManager];
-    
-    NSDictionary *chosenFormula;
-    
-    CategoryManager *catManager = [CategoryManager sharedCategoryManager];
-    
+    CategoryManager *catManager = [CategoryManager sharedCategoryManager];    
     int check = catManager.category;
     
-    if (check == HEATSTRESS)
+    if (check == FLOWRATE)
     {
-        chosenFormula = heatManager.selectedFormula;
-         
-       SEL method = NSSelectorFromString([chosenFormula objectForKey:@"method"]);
-        // box the two parameters to be NSNumbers so we can use performSelector:withObject:withObject
-        // to call it.  The implementation of this function should take two NSNumbers and return an
-        // NSNumber.
-        calculationResult = [formulas performSelector:method 
-                                           withObject:[NSNumber numberWithFloat: variable1] 
-                                           withObject:[NSNumber numberWithFloat: variable2]];
-    }
-    else if (check == NOISE)
-    {
-        chosenFormula = noiseManager.selectedFormula;
-        SEL method = NSSelectorFromString([chosenFormula objectForKey:@"method"]);
-        // box the two parameters to be NSNumbers so we can use performSelector:withObject:withObject
-        // to call it.  The implementation of this function should take two NSNumbers and return an
-        // NSNumber.
-        calculationResult = [formulas performSelector:method 
-                                           withObject:[NSNumber numberWithFloat: variable1] 
-                                           withObject:[NSNumber numberWithFloat: variable2]];
-
-    }
-    else if (check == EXPOSUREASSESSMENT)
-    {
-        chosenFormula = exposureManager.selectedFormula;
-        SEL method = NSSelectorFromString([chosenFormula objectForKey:@"method"]);
-        // box the two parameters to be NSNumbers so we can use performSelector:withObject:withObject
-        // to call it.  The implementation of this function should take two NSNumbers and return an
-        // NSNumber.
-        calculationResult = [formulas performSelector:method 
-                                           withObject:[NSNumber numberWithFloat: variable1] 
-                                           withObject:[NSNumber numberWithFloat: variable2]];        
-    }
-    else if (check == VENTILATION)
-    {
-        chosenFormula = ventilationManager.selectedFormula;
-        SEL method = NSSelectorFromString([chosenFormula objectForKey:@"method"]);
-        // box the two parameters to be NSNumbers so we can use performSelector:withObject:withObject
-        // to call it.  The implementation of this function should take two NSNumbers and return an
-        // NSNumber.
-        calculationResult = [formulas performSelector:method 
-                                           withObject:[NSNumber numberWithFloat: variable1] 
-                                           withObject:[NSNumber numberWithFloat: variable2]];        
+        if (variable1 != 0)
+        {
+            variable2 = variable1*.47;
+        }
+        else if(variable2 != 0)
+        {
+            variable1 = variable2/.47;
+        }
+        
+        self.textField1.text = [NSString stringWithFormat:@"%.4f", variable1];
+        self.textField2.text = [NSString stringWithFormat:@"%.4f", variable2];
     }
     
-    
-    
-    // don't forget to unbox calculationResult, or the pointer will be printed as a float :)
-    self.result.text = [NSString stringWithFormat:@"%.2f", [calculationResult floatValue]]; //outputs calculation result
-    self.resultUnit.text = [chosenFormula objectForKey:@"resultUnit"];
+    else
+    {    
+        NSNumber * calculationResult;
+        
+        HeatStressManager *heatManager = [HeatStressManager sharedHeatStressManager];
+        NoiseManager *noiseManager = [NoiseManager sharedNoiseManager];
+        ExposureManager *exposureManager = [ExposureManager sharedExposureManager];
+        VentilationManager *ventilationManager = [VentilationManager sharedVentilationManager];
+        TLVManager *tlvManager = [TLVManager sharedTLVManager];
+        ConcentrationManager *concentrationManager = [ConcentrationManager sharedConcentrationManager];
+        
+        
+        NSDictionary *chosenFormula;
+        
+        CategoryManager *catManager = [CategoryManager sharedCategoryManager];    
+        int check = catManager.category;
+        
+        if (check == HEATSTRESS)
+        {
+            chosenFormula = heatManager.selectedFormula;
+            
+            SEL method = NSSelectorFromString([chosenFormula objectForKey:@"method"]);
+            // box the two parameters to be NSNumbers so we can use performSelector:withObject:withObject
+            // to call it.  The implementation of this function should take two NSNumbers and return an
+            // NSNumber.
+            calculationResult = [formulas performSelector:method 
+                                               withObject:[NSNumber numberWithFloat: variable1] 
+                                               withObject:[NSNumber numberWithFloat: variable2]];
+        }
+        else if (check == NOISE)
+        {
+            chosenFormula = noiseManager.selectedFormula;
+            SEL method = NSSelectorFromString([chosenFormula objectForKey:@"method"]);
+            // box the two parameters to be NSNumbers so we can use performSelector:withObject:withObject
+            // to call it.  The implementation of this function should take two NSNumbers and return an
+            // NSNumber.
+            calculationResult = [formulas performSelector:method 
+                                               withObject:[NSNumber numberWithFloat: variable1] 
+                                               withObject:[NSNumber numberWithFloat: variable2]];
+            
+        }
+        else if (check == EXPOSUREASSESSMENT)
+        {
+            chosenFormula = exposureManager.selectedFormula;
+            SEL method = NSSelectorFromString([chosenFormula objectForKey:@"method"]);
+            // box the two parameters to be NSNumbers so we can use performSelector:withObject:withObject
+            // to call it.  The implementation of this function should take two NSNumbers and return an
+            // NSNumber.
+            calculationResult = [formulas performSelector:method 
+                                               withObject:[NSNumber numberWithFloat: variable1] 
+                                               withObject:[NSNumber numberWithFloat: variable2]];        
+        }
+        else if (check == VENTILATION)
+        {
+            chosenFormula = ventilationManager.selectedFormula;
+            SEL method = NSSelectorFromString([chosenFormula objectForKey:@"method"]);
+            // box the two parameters to be NSNumbers so we can use performSelector:withObject:withObject
+            // to call it.  The implementation of this function should take two NSNumbers and return an
+            // NSNumber.
+            calculationResult = [formulas performSelector:method 
+                                               withObject:[NSNumber numberWithFloat: variable1] 
+                                               withObject:[NSNumber numberWithFloat: variable2]];        
+        }
+        else if (check == TLV)
+        {
+            chosenFormula = tlvManager.selectedFormula;
+            SEL method = NSSelectorFromString([chosenFormula objectForKey:@"method"]);
+            // box the two parameters to be NSNumbers so we can use performSelector:withObject:withObject
+            // to call it.  The implementation of this function should take two NSNumbers and return an
+            // NSNumber.
+            calculationResult = [formulas performSelector:method 
+                                               withObject:[NSNumber numberWithFloat: variable1] 
+                                               withObject:[NSNumber numberWithFloat: variable2]];
+            
+        }
+        else if (check == CONCENTRATION)
+        {
+            chosenFormula = concentrationManager.selectedFormula;
+            NSString *methodText = [chosenFormula objectForKey:@"method"];
+            int checkNum = [methodText intValue];
+            if(checkNum == 1)
+            {
+                if(variable1 != 0)
+                {
+                    variable2 = 2.29*variable1;
+                }
+                else if(variable2 != 0)
+                {
+                    variable1 = variable2/2.29;
+                }
+            }
+            else 
+            {
+                if(variable1 != 0)
+                {
+                    variable2 = 35.3*variable1;
+                }
+                else if(variable2 != 0)
+                {
+                    variable1 = variable2/35.3;
+                }
+            }                
+            
+            
+        }
+        
+        
+        
+        // don't forget to unbox calculationResult, or the pointer will be printed as a float :)
+        if (check == CONCENTRATION)
+        {
+            self.textField1.text = [NSString stringWithFormat:@"%.4f", variable1];
+            self.textField2.text = [NSString stringWithFormat:@"%.4f", variable2];
+        }
+        else
+        {
+            self.result.text = [NSString stringWithFormat:@"%.2f", [calculationResult floatValue]]; //outputs calculation result
+            self.resultUnit.text = [chosenFormula objectForKey:@"resultUnit"];
+        }
+    }
 }
 
 - (IBAction)clearButtonPressed{
@@ -188,49 +264,80 @@ else
     [super viewDidLoad];
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;
-    
-    HeatStressManager *heatManager = [HeatStressManager sharedHeatStressManager];
-    NoiseManager *noiseManager = [NoiseManager sharedNoiseManager];
-    ExposureManager *exposureManager = [ExposureManager sharedExposureManager];
-    VentilationManager *ventilationManager = [VentilationManager sharedVentilationManager];
-    
-    NSDictionary *chosenFormula;
-    
-    
     CategoryManager *catManager = [CategoryManager sharedCategoryManager];
-
     int check = catManager.category;
-    if (check == 2)
+    
+    if (check == FLOWRATE)
     {
-        chosenFormula = heatManager.selectedFormula;
+        self.variable1.text = @" ";
+        self.variable2.text = @" ";
+        self.unit1.text = @"ft^3/hr"; 
+        self.unit2.text = @"L/min";
+        self.formula.text = @"Flow Rate Conversions";
+        self.resultUnit.text = @" ";
+        self.result.text = @" ";
     }
-    else if (check == 1)
+    
+    else
     {
-        chosenFormula = noiseManager.selectedFormula;
+        HeatStressManager *heatManager = [HeatStressManager sharedHeatStressManager];
+        NoiseManager *noiseManager = [NoiseManager sharedNoiseManager];
+        ExposureManager *exposureManager = [ExposureManager sharedExposureManager];
+        VentilationManager *ventilationManager = [VentilationManager sharedVentilationManager];
+        TLVManager *tlvManager = [TLVManager sharedTLVManager];
+        ConcentrationManager *concentrationManager = [ConcentrationManager sharedConcentrationManager];
+        
+        NSDictionary *chosenFormula;    
+        
+        if (check == 2)
+        {
+            chosenFormula = heatManager.selectedFormula;
+        }
+        else if (check == 1)
+        {
+            chosenFormula = noiseManager.selectedFormula;
+        }
+        else if (check == 4)
+        {
+            chosenFormula = exposureManager.selectedFormula;
+        }
+        else if (check == 3)
+        {
+            chosenFormula = ventilationManager.selectedFormula;
+        }
+        else if (check == 12)
+        {
+            chosenFormula = tlvManager.selectedFormula;
+        }
+        else if (check == 11)
+        {
+            chosenFormula = concentrationManager.selectedFormula;
+        }
+        
+        NSString *variable1Text = [chosenFormula objectForKey:@"variable1"];
+        NSString *variable2Text = [chosenFormula objectForKey:@"variable2"];
+        NSString *unit1Text = [chosenFormula objectForKey:@"unit1"];
+        NSString *unit2Text = [chosenFormula objectForKey:@"unit2"];
+        if (check == 12||check == 11)
+        {
+            NSString *formulaText = [chosenFormula objectForKey:@"formula"];
+            NSString *resultText = [chosenFormula objectForKey:@"result"];
+            self.formula.text = formulaText;
+            self.result.text = resultText;
+        }
+        else
+        {
+            NSString *formulaText = [chosenFormula objectForKey:@"imageName"];
+            self.formulaImage.image = [UIImage imageNamed:formulaText];
+        
+        }
+        NSString *resultUnitText = [chosenFormula objectForKey:@"resultUnit"];
+        self.variable1.text = variable1Text;
+        self.variable2.text = variable2Text;
+        self.unit1.text = unit1Text; 
+        self.unit2.text = unit2Text;                
+        self.resultUnit.text = resultUnitText;
     }
-    else if (check == 4)
-    {
-        chosenFormula = exposureManager.selectedFormula;
-    }
-    else if (check == 3)
-    {
-        chosenFormula = ventilationManager.selectedFormula;
-    }
-
-    NSString *variable1Text = [chosenFormula objectForKey:@"variable1"];
-    NSString *variable2Text = [chosenFormula objectForKey:@"variable2"];
-    NSString *unit1Text = [chosenFormula objectForKey:@"unit1"];
-    NSString *unit2Text = [chosenFormula objectForKey:@"unit2"];
-    NSString *formulaText = [chosenFormula objectForKey:@"imageName"];
-    //NSString *formulaText = [chosenFormula objectForKey:@"formula"];
-    NSString *resultUnitText = [chosenFormula objectForKey:@"resultUnit"];
-    self.variable1.text = variable1Text;
-    self.variable2.text = variable2Text;
-    self.unit1.text = unit1Text; 
-    self.unit2.text = unit2Text;
-    self.formulaImage.image = [UIImage imageNamed:formulaText];
-    //self.formula.text = formulaText;
-    self.resultUnit.text = resultUnitText;
     
 }
 

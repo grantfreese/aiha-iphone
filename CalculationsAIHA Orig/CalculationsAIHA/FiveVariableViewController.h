@@ -13,6 +13,7 @@
 #import "VentilationManager.h"
 #import "formulas.h"
 #import "UIView+FindFirstResponder.h"
+#import "ConversionListViewController.h"
 
 @interface FiveVariableViewController : UIViewController
 
