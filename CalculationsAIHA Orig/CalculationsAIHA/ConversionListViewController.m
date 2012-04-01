@@ -1,30 +1,97 @@
 //
-//  ConversionListViewController.m
+//  AIHAViewController.m
 //  CalculationsAIHA
 //
-//  Created by asuuser on 3/5/12.
+//  Created by asuuser on 2/27/12.
 //  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
 //
 
 #import "ConversionListViewController.h"
-
+#import "NoiseManager.h"
+#import "HeatStressManager.h"
+#import "ExposureManager.h"
+#import "VentilationManager.h"
+#import "FiveVariableViewController.h"
+#import "FourVariableViewController.h"
+#import "CategoryManager.h"
 
 @implementation ConversionListViewController
 
-- (id)initWithStyle:(UITableViewStyle)style
+@synthesize VolumeButton = _VolumeButton;
+@synthesize DistanceButton = _DistanceButton;
+@synthesize PressureButton = _PressureButton;
+@synthesize MassButton = _MassButton;
+@synthesize FlowRateButton = _FlowRateButton;
+@synthesize TemperatureButton = _TemperatureButton;
+@synthesize ConcentrationButton = _ConcentrationButton;
+@synthesize ConstantsButton = _ConstantsButton;
+@synthesize TLVButton = _TLVButton;
+@synthesize AreaButton = _AreaButton;
+
+- (IBAction)VolumeButtonPressed
 {
-    self = [super initWithStyle:style];
-    if (self) {
-        // Custom initialization
-    }
-    return self;
+    CategoryManager *catManager = [CategoryManager sharedCategoryManager];
+    catManager.category = 5;
 }
+- (IBAction)DistanceButtonPressed
+{
+    CategoryManager *catManager = [CategoryManager sharedCategoryManager];
+    catManager.category = 6;
+}
+- (IBAction)PressureButtonPressed
+{
+    CategoryManager *catManager = [CategoryManager sharedCategoryManager];
+    catManager.category = 7;
+}
+- (IBAction)MassButtonPressed
+{
+    CategoryManager *catManager = [CategoryManager sharedCategoryManager];
+    catManager.category = 8;
+}
+- (IBAction)TemperatureButtonPressed
+{
+    CategoryManager *catManager = [CategoryManager sharedCategoryManager];
+    catManager.category = 9;
+}
+- (IBAction)AreaButtonPressed
+{
+    CategoryManager *catManager = [CategoryManager sharedCategoryManager];
+    catManager.category = 10;
+}
+
+/*- (IBAction)HeatStressButtonPressed
+ {
+ NoiseManager *noiseManager = [NoiseManager sharedNoiseManager];
+ noiseManager = nil;
+ VentilationManager *ventilationManager = [VentilationManager sharedVentilationManager];
+ ventilationManager = nil;
+ ExposureManager *exposureManager = [ExposureManager sharedExposureManager];
+ exposureManager = nil;
+ }
+ 
+ - (IBAction)VentilationButtonPressed
+ {
+ HeatStressManager *heatManager = [HeatStressManager sharedHeatStressManager];
+ heatManager = nil;
+ NoiseManager *noiseManager = [NoiseManager sharedNoiseManager];
+ noiseManager = nil;
+ ExposureManager *exposureManager = [ExposureManager sharedExposureManager];
+ exposureManager = nil;
+ }
+ 
+ - (IBAction)ExposureAsseessmentPressed
+ {
+ HeatStressManager *heatManager = [HeatStressManager sharedHeatStressManager];
+ heatManager = nil;
+ VentilationManager *ventilationManager = [VentilationManager sharedVentilationManager];
+ ventilationManager = nil;
+ NoiseManager *noiseManager = [NoiseManager sharedNoiseManager];
+ noiseManager = nil;
+ } */
 
 - (void)didReceiveMemoryWarning
 {
-    // Releases the view if it doesn't have a superview.
     [super didReceiveMemoryWarning];
-    
     // Release any cached data, images, etc that aren't in use.
 }
 
@@ -33,12 +100,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
- 
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    
+	// Do any additional setup after loading the view, typically from a nib.
 }
 
 - (void)viewDidUnload
@@ -49,7 +112,22 @@
 }
 
 - (void)viewWillAppear:(BOOL)animated
+{  if (self.interfaceOrientation == UIInterfaceOrientationLandscapeLeft ||
+       self.interfaceOrientation == UIInterfaceOrientationLandscapeRight)
 {
+    //_NoiseButton.frame = CGRectMake(30, 114, 185, 40);
+    //_HeatStressButton.frame = CGRectMake(30, 164, 185, 40);
+    //_VentilationButton.frame = CGRectMake(265, 114, 185, 40);
+    //_ExposureAssessmentButton.frame = CGRectMake(265, 164, 185, 40);
+    
+}
+else
+{
+    //_NoiseButton.frame = CGRectMake(65, 154, 185, 40);
+    //_HeatStressButton.frame = CGRectMake(65, 204, 185, 40);
+    //_VentilationButton.frame = CGRectMake(65, 254, 185, 40);
+    //_ExposureAssessmentButton.frame = CGRectMake(65, 304, 185, 40);
+}
     [super viewWillAppear:animated];
 }
 
@@ -60,12 +138,12 @@
 
 - (void)viewWillDisappear:(BOOL)animated
 {
-    [super viewWillDisappear:animated];
+	[super viewWillDisappear:animated];
 }
 
 - (void)viewDidDisappear:(BOOL)animated
 {
-    [super viewDidDisappear:animated];
+	[super viewDidDisappear:animated];
 }
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
@@ -73,87 +151,29 @@
     // Return YES for supported orientations
     return (interfaceOrientation != UIInterfaceOrientationPortraitUpsideDown);
 }
-
-#pragma mark - Table view data source
-
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
-{
-//#warning Potentially incomplete method implementation.
-    // Return the number of sections.
-    return 0;
-}
-
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
-{
-//#warning Incomplete method implementation.
-    // Return the number of rows in the section.
-    return 0;
-}
-
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    static NSString *CellIdentifier = @"Cell";
-    
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
-    if (cell == nil) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
-    }
-    
-    // Configure the cell...
-    
-    return cell;
-}
-
-/*
-// Override to support conditional editing of the table view.
-- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    // Return NO if you do not want the specified item to be editable.
-    return YES;
-}
-*/
-
-/*
-// Override to support editing the table view.
-- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    if (editingStyle == UITableViewCellEditingStyleDelete) {
-        // Delete the row from the data source
-        [tableView deleteRowsAtIndexPaths:[NSArray arrayWithObject:indexPath] withRowAnimation:UITableViewRowAnimationFade];
-    }   
-    else if (editingStyle == UITableViewCellEditingStyleInsert) {
-        // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-    }   
-}
-*/
-
-/*
-// Override to support rearranging the table view.
-- (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath
-{
-}
-*/
-
-/*
-// Override to support conditional rearranging of the table view.
-- (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    // Return NO if you do not want the item to be re-orderable.
-    return YES;
-}
-*/
-
-#pragma mark - Table view delegate
-
-- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    // Navigation logic may go here. Create and push another view controller.
-    /*
-     <#DetailViewController#> *detailViewController = [[<#DetailViewController#> alloc] initWithNibName:@"<#Nib name#>" bundle:nil];
-     // ...
-     // Pass the selected object to the new view controller.
-     [self.navigationController pushViewController:detailViewController animated:YES];
-     */
-}
+/*- (void)willAnimateRotationToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation 
+ duration:(NSTimeInterval)duration
+ {
+ if (toInterfaceOrientation == UIInterfaceOrientationLandscapeLeft ||
+ toInterfaceOrientation == UIInterfaceOrientationLandscapeRight)
+ {
+ _NoiseButton.frame = CGRectMake(30, 114, 185, 40);
+ _HeatStressButton.frame = CGRectMake(30, 164, 185, 40);
+ _VentilationButton.frame = CGRectMake(265, 114, 185, 40);
+ _ExposureAssessmentButton.frame = CGRectMake(265, 164, 185, 40);
+ 
+ }
+ else
+ {
+ _NoiseButton.frame = CGRectMake(65, 154, 185, 40);
+ _HeatStressButton.frame = CGRectMake(65, 204, 185, 40);
+ _VentilationButton.frame = CGRectMake(65, 254, 185, 40);
+ _ExposureAssessmentButton.frame = CGRectMake(65, 304, 185, 40);
+ }
+ }
+ - (IBAction)handlePinch:(UIPinchGestureRecognizer *)recognizer {
+ recognizer.view.transform = CGAffineTransformScale(recognizer.view.transform, recognizer.scale, recognizer.scale);
+ recognizer.scale = 1;
+ } */
 
 @end
