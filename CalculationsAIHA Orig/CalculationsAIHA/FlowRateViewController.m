@@ -116,11 +116,11 @@
     //Don't forget that the elements in the plist must contain
     //imageName as one of its keys
     /*NSString *imageName = [formulaInfo objectForKey:@"imageName"];
-    if(imageName != nil) {
-        cell.imageView.image = [UIImage imageNamed:imageName];
-    } else {
-        cell.textLabel.text = [formulaInfo objectForKey:@"formula"];
-    }*/
+     if(imageName != nil) {
+     cell.imageView.image = [UIImage imageNamed:imageName];
+     } else {
+     cell.textLabel.text = [formulaInfo objectForKey:@"formula"];
+     }*/
     
     cell.textLabel.text = [formulaInfo objectForKey:@"formula"];
     return cell;
@@ -198,7 +198,7 @@
     
     if(Name == 1)
     {
-         ThreeVariableViewController *threeVariableVC = [storyboard instantiateViewControllerWithIdentifier:@"ThreeVariableViewController"];
+        ThreeVariableViewController *threeVariableVC = [storyboard instantiateViewControllerWithIdentifier:@"ThreeVariableViewController"];
         [self.navigationController pushViewController:threeVariableVC animated:YES];
     }    
     

@@ -7,8 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "TLVManager.h"
-#import "TwoVariableViewController.h"
+#import "TlvManager.h"
 @interface TLVViewController : UITableViewController
 
 

@@ -7,8 +7,9 @@
 //
 
 #import "TLVViewController.h"
-#import "TLVManager.h"
+#import "TlvManager.h"
 #import "CategoryManager.h"
+#import "TwoVariableViewController.h"
 
 @implementation TLVViewController
 
@@ -88,9 +89,9 @@
 {
     //#warning Incomplete method implementation.
     // Return the number of rows in the section.
-    TLVManager *TLVmanager = [TLVManager sharedTLVManager];
+    TlvManager *tlvmanager = [TlvManager sharedTlvManager];
     
-    return [TLVmanager.formulas count];
+    return [tlvmanager.formulas count];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -102,9 +103,9 @@
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
     }
     
-    TLVManager *TLVmanager = [TLVManager sharedTLVManager];
+    TlvManager *tlvmanager = [TlvManager sharedTlvManager];
     
-    NSDictionary *TLVInfo = [TLVmanager.formulas objectAtIndex:indexPath.row];
+    NSDictionary *TLVInfo = [tlvmanager.formulas objectAtIndex:indexPath.row];
     
     //Put the image into the cell with the corresponding image name. If there is no image, then
     //put the actual formula instead.
@@ -170,9 +171,9 @@
      // Pass the selected object to the new view controller.
      [self.navigationController pushViewController:detailViewController animated:YES];
      */
-    TLVManager *TLVmanager = [TLVManager sharedTLVManager];
+    TlvManager *tlvmanager = [TlvManager sharedTlvManager];
     
-    TLVmanager.selectedFormula = [TLVmanager.formulas objectAtIndex:indexPath.row];    
+    tlvmanager.selectedFormula = [tlvmanager.formulas objectAtIndex:indexPath.row];    
     
     CategoryManager *catManager = [CategoryManager sharedCategoryManager];    
     catManager.category = 12;
@@ -180,8 +181,8 @@
     UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"MainStoryboard" bundle: nil];    
     
     
-     TwoVariableViewController *twoVariableVC = [storyboard instantiateViewControllerWithIdentifier:@"TwoVariableViewController"];
-     [self.navigationController pushViewController:twoVariableVC animated:YES];
+    TwoVariableViewController *twoVariableVC = [storyboard instantiateViewControllerWithIdentifier:@"TwoVariableViewController"];
+    [self.navigationController pushViewController:twoVariableVC animated:YES];
     
     
 }
