@@ -64,6 +64,7 @@
 		222E4A571523CAFD0050E168 /* velocity.png in Resources */ = {isa = PBXBuildFile; fileRef = 222E4A4E1523CAFD0050E168 /* velocity.png */; };
 		222E4A591523CBBF0050E168 /* Oxygen Level of Room.PNG in Resources */ = {isa = PBXBuildFile; fileRef = 222E4A581523CBBF0050E168 /* Oxygen Level of Room.PNG */; };
 		22C536B81525671B00886CEA /* Ventilation.plist in Resources */ = {isa = PBXBuildFile; fileRef = 22C536B71525671B00886CEA /* Ventilation.plist */; };
+		22FA8706152A4DA300B8DC64 /* AIHA.png in Resources */ = {isa = PBXBuildFile; fileRef = 22FA8705152A4DA300B8DC64 /* AIHA.png */; };
 		321898CE152A3E4B00D4A6AE /* FlowRate.plist in Resources */ = {isa = PBXBuildFile; fileRef = 321898CD152A3E4B00D4A6AE /* FlowRate.plist */; };
 		321898D1152A3E7200D4A6AE /* Concentration.plist in Resources */ = {isa = PBXBuildFile; fileRef = 321898D0152A3E7200D4A6AE /* Concentration.plist */; };
 		321898D4152A3E9900D4A6AE /* ConcentrationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 321898D3152A3E9900D4A6AE /* ConcentrationManager.m */; };
@@ -75,7 +76,6 @@
 		8EC7AABC1522BB5800DAFABA /* HeatExposureTable.png in Resources */ = {isa = PBXBuildFile; fileRef = 8EC7AABB1522BB5800DAFABA /* HeatExposureTable.png */; };
 		9590209D15284F4F00AC45DD /* PEL(Respirable Fraction) copy.png in Resources */ = {isa = PBXBuildFile; fileRef = 9590209C15284F4E00AC45DD /* PEL(Respirable Fraction) copy.png */; };
 		9590209F15284F6500AC45DD /* PEL(Total Dust) copy.png in Resources */ = {isa = PBXBuildFile; fileRef = 9590209E15284F6300AC45DD /* PEL(Total Dust) copy.png */; };
-		9590ED9A1528406500AC45DD /* AIHA.png in Resources */ = {isa = PBXBuildFile; fileRef = 9590ED991528406500AC45DD /* AIHA.png */; };
 		9590EDA5152843CF00AC45DD /* calcButton2.png in Resources */ = {isa = PBXBuildFile; fileRef = 9590EDA4152843CF00AC45DD /* calcButton2.png */; };
 		9590EDA8152843E100AC45DD /* clearButton2.png in Resources */ = {isa = PBXBuildFile; fileRef = 9590EDA7152843E100AC45DD /* clearButton2.png */; };
 		9590EDAA152844AA00AC45DD /* resultBar.png in Resources */ = {isa = PBXBuildFile; fileRef = 9590EDA9152844AA00AC45DD /* resultBar.png */; };
@@ -162,6 +162,7 @@
 		222E4A4E1523CAFD0050E168 /* velocity.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = velocity.png; sourceTree = "<group>"; };
 		222E4A581523CBBF0050E168 /* Oxygen Level of Room.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Oxygen Level of Room.PNG"; sourceTree = "<group>"; };
 		22C536B71525671B00886CEA /* Ventilation.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Ventilation.plist; sourceTree = "<group>"; };
+		22FA8705152A4DA300B8DC64 /* AIHA.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AIHA.png; sourceTree = "<group>"; };
 		321898CD152A3E4B00D4A6AE /* FlowRate.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = FlowRate.plist; sourceTree = "<group>"; };
 		321898D0152A3E7200D4A6AE /* Concentration.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Concentration.plist; sourceTree = "<group>"; };
 		321898D2152A3E8200D4A6AE /* ConcentrationManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ConcentrationManager.h; sourceTree = "<group>"; };
@@ -189,7 +190,6 @@
 		8EC7AABB1522BB5800DAFABA /* HeatExposureTable.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = HeatExposureTable.png; sourceTree = "<group>"; };
 		9590209C15284F4E00AC45DD /* PEL(Respirable Fraction) copy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "PEL(Respirable Fraction) copy.png"; sourceTree = "<group>"; };
 		9590209E15284F6300AC45DD /* PEL(Total Dust) copy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "PEL(Total Dust) copy.png"; sourceTree = "<group>"; };
-		9590ED991528406500AC45DD /* AIHA.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = AIHA.png; path = "../../../../../../Downloads/LatestFile(3_25) 2am/CalculationsAIHA Orig/AIHA.png"; sourceTree = "<group>"; };
 		9590EDA4152843CF00AC45DD /* calcButton2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = calcButton2.png; sourceTree = "<group>"; };
 		9590EDA7152843E100AC45DD /* clearButton2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = clearButton2.png; sourceTree = "<group>"; };
 		9590EDA9152844AA00AC45DD /* resultBar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = resultBar.png; sourceTree = "<group>"; };
@@ -331,11 +331,11 @@
 		0F377034150FF43E00192044 /* Equation Images */ = {
 			isa = PBXGroup;
 			children = (
+				22FA8705152A4DA300B8DC64 /* AIHA.png */,
 				0F377035150FF43E00192044 /* 85dBA reached.png */,
 				0F377036150FF43E00192044 /* AddingSoundPressure.png */,
 				9590EDA4152843CF00AC45DD /* calcButton2.png */,
 				9590EDA7152843E100AC45DD /* clearButton2.png */,
-				9590ED991528406500AC45DD /* AIHA.png */,
 				0F377038150FF43E00192044 /* Area of circle.png */,
 				0F377039150FF43E00192044 /* Flow rate adjustment.png */,
 				0F37703A150FF43E00192044 /* From ppm.png */,
@@ -453,7 +453,6 @@
 				222E4A571523CAFD0050E168 /* velocity.png in Resources */,
 				222E4A591523CBBF0050E168 /* Oxygen Level of Room.PNG in Resources */,
 				22C536B81525671B00886CEA /* Ventilation.plist in Resources */,
-				9590ED9A1528406500AC45DD /* AIHA.png in Resources */,
 				9590EDA5152843CF00AC45DD /* calcButton2.png in Resources */,
 				9590EDA8152843E100AC45DD /* clearButton2.png in Resources */,
 				9590EDAA152844AA00AC45DD /* resultBar.png in Resources */,
@@ -463,6 +462,7 @@
 				321898D1152A3E7200D4A6AE /* Concentration.plist in Resources */,
 				321898D8152A3EAC00D4A6AE /* Constants.plist in Resources */,
 				321898E2152A3F9800D4A6AE /* TLV.plist in Resources */,
+				22FA8706152A4DA300B8DC64 /* AIHA.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
