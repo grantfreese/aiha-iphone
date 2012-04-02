@@ -60,7 +60,7 @@
         NoiseManager *noiseManager = [NoiseManager sharedNoiseManager];
         ExposureManager *exposureManager = [ExposureManager sharedExposureManager];
         VentilationManager *ventilationManager = [VentilationManager sharedVentilationManager];
-        TLVManager *tlvManager = [TLVManager sharedTLVManager];
+        TlvManager *tlvManager = [TlvManager sharedTlvManager];
         ConcentrationManager *concentrationManager = [ConcentrationManager sharedConcentrationManager];
         
         
@@ -284,7 +284,7 @@ else
         NoiseManager *noiseManager = [NoiseManager sharedNoiseManager];
         ExposureManager *exposureManager = [ExposureManager sharedExposureManager];
         VentilationManager *ventilationManager = [VentilationManager sharedVentilationManager];
-        TLVManager *tlvManager = [TLVManager sharedTLVManager];
+        TlvManager *tlvManager = [TlvManager sharedTlvManager];
         ConcentrationManager *concentrationManager = [ConcentrationManager sharedConcentrationManager];
         
         NSDictionary *chosenFormula;    

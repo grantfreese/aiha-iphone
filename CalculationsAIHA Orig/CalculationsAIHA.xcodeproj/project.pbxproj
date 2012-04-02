@@ -71,6 +71,7 @@
 		321898E2152A3F9800D4A6AE /* TLV.plist in Resources */ = {isa = PBXBuildFile; fileRef = 321898E1152A3F9800D4A6AE /* TLV.plist */; };
 		32BCE4B71504809A002F1C52 /* VentilationListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 32BCE4B61504809A002F1C52 /* VentilationListViewController.m */; };
 		32BCE4BA1504812E002F1C52 /* VentilationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 32BCE4B91504812E002F1C52 /* VentilationManager.m */; };
+		32E19060152A4A390040F800 /* TlvManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 32E1905F152A4A390040F800 /* TlvManager.m */; };
 		8EC7AABC1522BB5800DAFABA /* HeatExposureTable.png in Resources */ = {isa = PBXBuildFile; fileRef = 8EC7AABB1522BB5800DAFABA /* HeatExposureTable.png */; };
 		9590209D15284F4F00AC45DD /* PEL(Respirable Fraction) copy.png in Resources */ = {isa = PBXBuildFile; fileRef = 9590209C15284F4E00AC45DD /* PEL(Respirable Fraction) copy.png */; };
 		9590209F15284F6500AC45DD /* PEL(Total Dust) copy.png in Resources */ = {isa = PBXBuildFile; fileRef = 9590209E15284F6300AC45DD /* PEL(Total Dust) copy.png */; };
@@ -177,14 +178,14 @@
 		321898DF152A3F4C00D4A6AE /* FlowRateViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FlowRateViewController.h; sourceTree = "<group>"; };
 		321898E0152A3F4C00D4A6AE /* FlowRateViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FlowRateViewController.m; sourceTree = "<group>"; };
 		321898E1152A3F9800D4A6AE /* TLV.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = TLV.plist; sourceTree = "<group>"; };
-		321898E3152A3FA500D4A6AE /* TLVManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TLVManager.h; sourceTree = "<group>"; };
-		321898E4152A3FA500D4A6AE /* TLVManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TLVManager.m; sourceTree = "<group>"; };
 		321898E5152A3FA500D4A6AE /* TLVViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TLVViewController.h; sourceTree = "<group>"; };
 		321898E6152A3FA500D4A6AE /* TLVViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TLVViewController.m; sourceTree = "<group>"; };
 		32BCE4B51504809A002F1C52 /* VentilationListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VentilationListViewController.h; sourceTree = "<group>"; };
 		32BCE4B61504809A002F1C52 /* VentilationListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VentilationListViewController.m; sourceTree = "<group>"; };
 		32BCE4B81504812E002F1C52 /* VentilationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VentilationManager.h; sourceTree = "<group>"; };
 		32BCE4B91504812E002F1C52 /* VentilationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VentilationManager.m; sourceTree = "<group>"; };
+		32E1905E152A4A390040F800 /* TlvManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TlvManager.h; sourceTree = "<group>"; };
+		32E1905F152A4A390040F800 /* TlvManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TlvManager.m; sourceTree = "<group>"; };
 		8EC7AABB1522BB5800DAFABA /* HeatExposureTable.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = HeatExposureTable.png; sourceTree = "<group>"; };
 		9590209C15284F4E00AC45DD /* PEL(Respirable Fraction) copy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "PEL(Respirable Fraction) copy.png"; sourceTree = "<group>"; };
 		9590209E15284F6300AC45DD /* PEL(Total Dust) copy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "PEL(Total Dust) copy.png"; sourceTree = "<group>"; };
@@ -293,8 +294,8 @@
 				321898DE152A3F4C00D4A6AE /* FlowRateManager.m */,
 				321898DF152A3F4C00D4A6AE /* FlowRateViewController.h */,
 				321898E0152A3F4C00D4A6AE /* FlowRateViewController.m */,
-				321898E3152A3FA500D4A6AE /* TLVManager.h */,
-				321898E4152A3FA500D4A6AE /* TLVManager.m */,
+				32E1905E152A4A390040F800 /* TlvManager.h */,
+				32E1905F152A4A390040F800 /* TlvManager.m */,
 				321898E5152A3FA500D4A6AE /* TLVViewController.h */,
 				321898E6152A3FA500D4A6AE /* TLVViewController.m */,
 				023421721506BA930075260F /* formulas.m */,
@@ -495,6 +496,7 @@
 				02838EA7150E50940080CC57 /* FiveVariableViewController.m in Sources */,
 				0F377032150FEEBA00192044 /* UIView+FindFirstResponder.m in Sources */,
 				321898D4152A3E9900D4A6AE /* ConcentrationManager.m in Sources */,
+				32E19060152A4A390040F800 /* TlvManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

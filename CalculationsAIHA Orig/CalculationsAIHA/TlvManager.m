@@ -1,25 +1,25 @@
 //
-//  TLVManager.m
+//  TlvManager.m
 //  CalculationsAIHA
 //
 //  Created by asuuser on 3/1/12.
 //  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
 //
 
-#import "TLVManager.h"
-static TLVManager *theTLVManager;
+#import "TlvManager.h"
+static TlvManager *theTlvManager;
 
-@implementation TLVManager;
+@implementation TlvManager;
 @synthesize formulas = _formulas;
 @synthesize selectedFormula = _selectedFormula;
 
-+(TLVManager*)sharedTLVManager {
++(TlvManager*)sharedTlvManager {
     @synchronized(self){
-        if (theTLVManager == nil) {
-            theTLVManager = [[TLVManager alloc] init];
+        if (theTlvManager == nil) {
+            theTlvManager = [[TlvManager alloc] init];
         }
     }
-    return theTLVManager;
+    return theTlvManager;
 }
 
 -(id)init{

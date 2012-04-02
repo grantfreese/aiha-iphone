@@ -1,19 +1,19 @@
 //
-//  FlowRateManager.h
+//  TlvManager.h
 //  CalculationsAIHA
 //
-//  Created by asuuser on 3/1/12.
+//  Created by Jared Kraemer on 4/2/12.
 //  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+#import "CategoryManager.h"
 
-@interface TLVManager : NSObject
+@interface TlvManager : NSObject
 
 @property (nonatomic, strong) NSArray *formulas;
 @property (nonatomic, strong) NSDictionary *selectedFormula;
 
-+(TLVManager*)sharedTLVManager;
++(TlvManager*)sharedTlvManager;
 -(id)init;
 
 @end

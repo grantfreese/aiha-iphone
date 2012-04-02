@@ -180,9 +180,8 @@
     UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"MainStoryboard" bundle: nil];    
     
     
-    TwoVariableViewController *twoVariableVC = [storyboard instantiateViewControllerWithIdentifier:@"TwoVariableViewController"];
-    [self.navigationController pushViewController:twoVariableVC animated:YES];
-    
+     TwoVariableViewController *twoVariableVC = [storyboard instantiateViewControllerWithIdentifier:@"TwoVariableViewController"];
+     [self.navigationController pushViewController:twoVariableVC animated:YES];
     
     
 }
