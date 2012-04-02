@@ -64,6 +64,11 @@
 		222E4A571523CAFD0050E168 /* velocity.png in Resources */ = {isa = PBXBuildFile; fileRef = 222E4A4E1523CAFD0050E168 /* velocity.png */; };
 		222E4A591523CBBF0050E168 /* Oxygen Level of Room.PNG in Resources */ = {isa = PBXBuildFile; fileRef = 222E4A581523CBBF0050E168 /* Oxygen Level of Room.PNG */; };
 		22C536B81525671B00886CEA /* Ventilation.plist in Resources */ = {isa = PBXBuildFile; fileRef = 22C536B71525671B00886CEA /* Ventilation.plist */; };
+		321898CE152A3E4B00D4A6AE /* FlowRate.plist in Resources */ = {isa = PBXBuildFile; fileRef = 321898CD152A3E4B00D4A6AE /* FlowRate.plist */; };
+		321898D1152A3E7200D4A6AE /* Concentration.plist in Resources */ = {isa = PBXBuildFile; fileRef = 321898D0152A3E7200D4A6AE /* Concentration.plist */; };
+		321898D4152A3E9900D4A6AE /* ConcentrationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 321898D3152A3E9900D4A6AE /* ConcentrationManager.m */; };
+		321898D8152A3EAC00D4A6AE /* Constants.plist in Resources */ = {isa = PBXBuildFile; fileRef = 321898D7152A3EAC00D4A6AE /* Constants.plist */; };
+		321898E2152A3F9800D4A6AE /* TLV.plist in Resources */ = {isa = PBXBuildFile; fileRef = 321898E1152A3F9800D4A6AE /* TLV.plist */; };
 		32BCE4B71504809A002F1C52 /* VentilationListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 32BCE4B61504809A002F1C52 /* VentilationListViewController.m */; };
 		32BCE4BA1504812E002F1C52 /* VentilationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 32BCE4B91504812E002F1C52 /* VentilationManager.m */; };
 		8EC7AABC1522BB5800DAFABA /* HeatExposureTable.png in Resources */ = {isa = PBXBuildFile; fileRef = 8EC7AABB1522BB5800DAFABA /* HeatExposureTable.png */; };
@@ -156,6 +161,26 @@
 		222E4A4E1523CAFD0050E168 /* velocity.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = velocity.png; sourceTree = "<group>"; };
 		222E4A581523CBBF0050E168 /* Oxygen Level of Room.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Oxygen Level of Room.PNG"; sourceTree = "<group>"; };
 		22C536B71525671B00886CEA /* Ventilation.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Ventilation.plist; sourceTree = "<group>"; };
+		321898CD152A3E4B00D4A6AE /* FlowRate.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = FlowRate.plist; sourceTree = "<group>"; };
+		321898D0152A3E7200D4A6AE /* Concentration.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Concentration.plist; sourceTree = "<group>"; };
+		321898D2152A3E8200D4A6AE /* ConcentrationManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ConcentrationManager.h; sourceTree = "<group>"; };
+		321898D3152A3E9900D4A6AE /* ConcentrationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConcentrationManager.m; sourceTree = "<group>"; };
+		321898D5152A3EA600D4A6AE /* ConcentrationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ConcentrationViewController.h; sourceTree = "<group>"; };
+		321898D6152A3EA600D4A6AE /* ConcentrationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ConcentrationViewController.m; sourceTree = "<group>"; };
+		321898D7152A3EAC00D4A6AE /* Constants.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Constants.plist; sourceTree = "<group>"; };
+		321898D9152A3EB900D4A6AE /* ConstantsManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ConstantsManager.h; sourceTree = "<group>"; };
+		321898DA152A3EB900D4A6AE /* ConstantsManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ConstantsManager.m; sourceTree = "<group>"; };
+		321898DB152A3EB900D4A6AE /* ConstantsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ConstantsViewController.h; sourceTree = "<group>"; };
+		321898DC152A3EB900D4A6AE /* ConstantsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ConstantsViewController.m; sourceTree = "<group>"; };
+		321898DD152A3F4C00D4A6AE /* FlowRateManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FlowRateManager.h; sourceTree = "<group>"; };
+		321898DE152A3F4C00D4A6AE /* FlowRateManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FlowRateManager.m; sourceTree = "<group>"; };
+		321898DF152A3F4C00D4A6AE /* FlowRateViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FlowRateViewController.h; sourceTree = "<group>"; };
+		321898E0152A3F4C00D4A6AE /* FlowRateViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FlowRateViewController.m; sourceTree = "<group>"; };
+		321898E1152A3F9800D4A6AE /* TLV.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = TLV.plist; sourceTree = "<group>"; };
+		321898E3152A3FA500D4A6AE /* TLVManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TLVManager.h; sourceTree = "<group>"; };
+		321898E4152A3FA500D4A6AE /* TLVManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TLVManager.m; sourceTree = "<group>"; };
+		321898E5152A3FA500D4A6AE /* TLVViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TLVViewController.h; sourceTree = "<group>"; };
+		321898E6152A3FA500D4A6AE /* TLVViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TLVViewController.m; sourceTree = "<group>"; };
 		32BCE4B51504809A002F1C52 /* VentilationListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VentilationListViewController.h; sourceTree = "<group>"; };
 		32BCE4B61504809A002F1C52 /* VentilationListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VentilationListViewController.m; sourceTree = "<group>"; };
 		32BCE4B81504812E002F1C52 /* VentilationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VentilationManager.h; sourceTree = "<group>"; };
@@ -252,10 +277,26 @@
 				02838EA6150E50940080CC57 /* FiveVariableViewController.m */,
 				02622C681505253B003727E1 /* HeatStressTableImageViewController.h */,
 				02622C691505253B003727E1 /* HeatStressTableImageViewController.m */,
+				321898D2152A3E8200D4A6AE /* ConcentrationManager.h */,
+				321898D3152A3E9900D4A6AE /* ConcentrationManager.m */,
 				02622C741505356D003727E1 /* ConversionManager.h */,
 				02622C751505356D003727E1 /* ConversionManager.m */,
+				321898D5152A3EA600D4A6AE /* ConcentrationViewController.h */,
+				321898D6152A3EA600D4A6AE /* ConcentrationViewController.m */,
 				02622C77150535A0003727E1 /* ConversionListViewController.h */,
 				02622C78150535A0003727E1 /* ConversionListViewController.m */,
+				321898D9152A3EB900D4A6AE /* ConstantsManager.h */,
+				321898DA152A3EB900D4A6AE /* ConstantsManager.m */,
+				321898DB152A3EB900D4A6AE /* ConstantsViewController.h */,
+				321898DC152A3EB900D4A6AE /* ConstantsViewController.m */,
+				321898DD152A3F4C00D4A6AE /* FlowRateManager.h */,
+				321898DE152A3F4C00D4A6AE /* FlowRateManager.m */,
+				321898DF152A3F4C00D4A6AE /* FlowRateViewController.h */,
+				321898E0152A3F4C00D4A6AE /* FlowRateViewController.m */,
+				321898E3152A3FA500D4A6AE /* TLVManager.h */,
+				321898E4152A3FA500D4A6AE /* TLVManager.m */,
+				321898E5152A3FA500D4A6AE /* TLVViewController.h */,
+				321898E6152A3FA500D4A6AE /* TLVViewController.m */,
 				023421721506BA930075260F /* formulas.m */,
 				0254A7501507B3290069897B /* formulas.h */,
 				02F8302114FBD83200A240EE /* Supporting Files */,
@@ -271,6 +312,10 @@
 				02F8304314FBD96C00A240EE /* AIHA_Final.jpg */,
 				95D86E19151ECEB5000438E8 /* AIHA_LongFinal.jpg */,
 				02F8302214FBD83200A240EE /* CalculationsAIHA-Info.plist */,
+				321898CD152A3E4B00D4A6AE /* FlowRate.plist */,
+				321898D7152A3EAC00D4A6AE /* Constants.plist */,
+				321898D0152A3E7200D4A6AE /* Concentration.plist */,
+				321898E1152A3F9800D4A6AE /* TLV.plist */,
 				02F8302314FBD83200A240EE /* InfoPlist.strings */,
 				02F8302614FBD83200A240EE /* main.m */,
 				02F8302814FBD83200A240EE /* CalculationsAIHA-Prefix.pch */,
@@ -413,6 +458,10 @@
 				9590EDAA152844AA00AC45DD /* resultBar.png in Resources */,
 				9590209D15284F4F00AC45DD /* PEL(Respirable Fraction) copy.png in Resources */,
 				9590209F15284F6500AC45DD /* PEL(Total Dust) copy.png in Resources */,
+				321898CE152A3E4B00D4A6AE /* FlowRate.plist in Resources */,
+				321898D1152A3E7200D4A6AE /* Concentration.plist in Resources */,
+				321898D8152A3EAC00D4A6AE /* Constants.plist in Resources */,
+				321898E2152A3F9800D4A6AE /* TLV.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -445,6 +494,7 @@
 				0F704A5B150979370055CC32 /* CategoryManager.m in Sources */,
 				02838EA7150E50940080CC57 /* FiveVariableViewController.m in Sources */,
 				0F377032150FEEBA00192044 /* UIView+FindFirstResponder.m in Sources */,
+				321898D4152A3E9900D4A6AE /* ConcentrationManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
