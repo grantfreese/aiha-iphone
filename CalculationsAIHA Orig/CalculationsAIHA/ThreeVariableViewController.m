@@ -192,32 +192,32 @@
     _unit3.frame = CGRectMake(294, 155, 99, 21);
     
     _result.frame = CGRectMake(92, 186, 210, 21);
-    _resultUnit.frame = CGRectMake(315, 188, 85, 21);
+    _resultUnit.frame = CGRectMake(310, 188, 85, 21);
     
-    _calcButton.frame = CGRectMake(415, 162, 55, 55);
-    _clearButton.frame = CGRectMake(10, 162, 55, 55);
+    _calcButton.frame = CGRectMake(404, 177, 75, 35);
+    _clearButton.frame = CGRectMake(2, 177, 75, 35);
     
 }
 else
 {
     
-    _textField1.frame = CGRectMake(112, 134, 97, 31);
-    _variable1.frame = CGRectMake(1, 144, 103, 21);
-    _unit1.frame = CGRectMake(220, 144, 99, 21);
+    _textField1.frame = CGRectMake(112, 114, 97, 31);
+    _variable1.frame = CGRectMake(1, 124, 103, 21);
+    _unit1.frame = CGRectMake(220, 124, 99, 21);
     
-    _textField2.frame = CGRectMake(112, 174, 97, 31);
-    _variable2.frame = CGRectMake(1, 184, 103, 21);
-    _unit2.frame = CGRectMake(220, 184, 99, 21);
+    _textField2.frame = CGRectMake(112, 154, 97, 31);
+    _variable2.frame = CGRectMake(1, 164, 103, 21);
+    _unit2.frame = CGRectMake(220, 164, 99, 21);
     
-    _textField3.frame = CGRectMake(112, 214, 97, 31);
-    _variable3.frame = CGRectMake(1, 224, 103, 21);
-    _unit3.frame = CGRectMake(220, 224, 99, 21);
+    _textField3.frame = CGRectMake(112, 194, 97, 31);
+    _variable3.frame = CGRectMake(1, 204, 103, 21);
+    _unit3.frame = CGRectMake(220, 204, 99, 21);
     
     _result.frame = CGRectMake(12, 333, 210, 21);
-    _resultUnit.frame = CGRectMake(238, 335, 85, 21);
+    _resultUnit.frame = CGRectMake(233, 335, 85, 21);
     
-    _calcButton.frame = CGRectMake(253, 271, 55, 55);
-    _clearButton.frame = CGRectMake(12, 271, 55, 55);
+    _calcButton.frame = CGRectMake(180, 285, 75, 35);
+    _clearButton.frame = CGRectMake(65, 285, 75, 35);
 }
     [super viewWillAppear:animated];
 }
@@ -339,34 +339,34 @@ else
         _unit3.frame = CGRectMake(294, 155, 99, 21);
         
         _result.frame = CGRectMake(92, 186, 210, 21);
-        _resultUnit.frame = CGRectMake(315, 188, 85, 21);
+        _resultUnit.frame = CGRectMake(310, 188, 85, 21);
         
-        _calcButton.frame = CGRectMake(415, 162, 55, 55);
-        _clearButton.frame = CGRectMake(10, 162, 55, 55);
+        _calcButton.frame = CGRectMake(404, 177, 75, 35);
+        _clearButton.frame = CGRectMake(2, 177, 75, 35);
         
     }
     else
     {
         
-        _textField1.frame = CGRectMake(112, 134, 97, 31);
-        _variable1.frame = CGRectMake(1, 144, 103, 21);
-        _unit1.frame = CGRectMake(220, 144, 99, 21);
+        _textField1.frame = CGRectMake(112, 114, 97, 31);
+        _variable1.frame = CGRectMake(1, 124, 103, 21);
+        _unit1.frame = CGRectMake(220, 124, 99, 21);
         
-        _textField2.frame = CGRectMake(112, 174, 97, 31);
-        _variable2.frame = CGRectMake(1, 184, 103, 21);
-        _unit2.frame = CGRectMake(220, 184, 99, 21);
+        _textField2.frame = CGRectMake(112, 154, 97, 31);
+        _variable2.frame = CGRectMake(1, 164, 103, 21);
+        _unit2.frame = CGRectMake(220, 164, 99, 21);
         
-        _textField3.frame = CGRectMake(112, 214, 97, 31);
-        _variable3.frame = CGRectMake(1, 224, 103, 21);
-        _unit3.frame = CGRectMake(220, 224, 99, 21);
+        _textField3.frame = CGRectMake(112, 194, 97, 31);
+        _variable3.frame = CGRectMake(1, 204, 103, 21);
+        _unit3.frame = CGRectMake(220, 204, 99, 21);
         
         
         
         _result.frame = CGRectMake(12, 333, 210, 21);
-        _resultUnit.frame = CGRectMake(238, 335, 85, 21);
+        _resultUnit.frame = CGRectMake(233, 335, 85, 21);
         
-        _calcButton.frame = CGRectMake(253, 271, 55, 55);
-        _clearButton.frame = CGRectMake(12, 271, 55, 55);
+        _calcButton.frame = CGRectMake(180, 285, 75, 35);
+        _clearButton.frame = CGRectMake(65, 285, 75, 35);
     }
 }
 @end

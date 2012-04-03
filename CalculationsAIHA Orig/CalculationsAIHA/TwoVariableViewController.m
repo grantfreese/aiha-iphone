@@ -232,11 +232,11 @@
     _variable2.frame = CGRectMake(92, 140, 77, 21);
     _unit2.frame = CGRectMake(310, 140, 77, 21);
     
-    _result.frame = CGRectMake(92, 194, 210, 21);
-    _resultUnit.frame = CGRectMake(315, 196, 85, 21);
+    _result.frame = CGRectMake(92, 186, 210, 21);
+    _resultUnit.frame = CGRectMake(310, 188, 85, 21);
     
-    _calcButton.frame = CGRectMake(415, 162, 55, 55);
-    _clearButton.frame = CGRectMake(10, 162, 55, 55);
+    _calcButton.frame = CGRectMake(404, 177, 75, 35);
+    _clearButton.frame = CGRectMake(2, 177, 75, 35);
     
 }
 else
@@ -249,11 +249,11 @@ else
     _variable2.frame = CGRectMake(1, 204, 103, 21);
     _unit2.frame = CGRectMake(220, 204, 99, 21);
     
-    _result.frame = CGRectMake(12, 341, 210, 21);
-    _resultUnit.frame = CGRectMake(238, 343, 85, 21);
+    _result.frame = CGRectMake(12, 333, 210, 21);
+    _resultUnit.frame = CGRectMake(233, 335, 85, 21);
     
-    _calcButton.frame = CGRectMake(253, 271, 55, 55);
-    _clearButton.frame = CGRectMake(12, 271, 55, 55);
+    _calcButton.frame = CGRectMake(180, 285, 75, 35);
+    _clearButton.frame = CGRectMake(65, 285, 75, 35);
 }
     [super viewWillAppear:animated];
 }
@@ -364,11 +364,11 @@ else
         _variable2.frame = CGRectMake(92, 140, 77, 21);
         _unit2.frame = CGRectMake(310, 140, 77, 21);
         
-        _result.frame = CGRectMake(92, 194, 210, 21);
-        _resultUnit.frame = CGRectMake(315, 196, 85, 21);
+        _result.frame = CGRectMake(92, 186, 210, 21);
+        _resultUnit.frame = CGRectMake(310, 188, 85, 21);
         
-        _calcButton.frame = CGRectMake(415, 162, 55, 55);
-        _clearButton.frame = CGRectMake(10, 162, 55, 55);
+        _calcButton.frame = CGRectMake(404, 177, 75, 35);
+        _clearButton.frame = CGRectMake(2, 177, 75, 35);
         
     }
     else
@@ -381,11 +381,11 @@ else
         _variable2.frame = CGRectMake(1, 204, 103, 21);
         _unit2.frame = CGRectMake(220, 204, 99, 21);
         
-        _result.frame = CGRectMake(12, 341, 210, 21);
-        _resultUnit.frame = CGRectMake(238, 343, 85, 21);
+        _result.frame = CGRectMake(12, 333, 210, 21);
+        _resultUnit.frame = CGRectMake(233, 335, 85, 21);
         
-        _calcButton.frame = CGRectMake(253, 271, 55, 55);
-        _clearButton.frame = CGRectMake(12, 271, 55, 55);
+        _calcButton.frame = CGRectMake(180, 285, 75, 35);
+        _clearButton.frame = CGRectMake(65, 285, 75, 35);
     }
 }
 @end
