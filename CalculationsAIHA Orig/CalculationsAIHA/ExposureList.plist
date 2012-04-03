@@ -26,7 +26,7 @@
 		<key>method</key>
 		<string>silica:Respirable:Fraction:</string>
 		<key>imageName</key>
-		<string>PEL(Respirable Fraction) copy.png</string>
+		<string>PEL(Respirable Fraction).png</string>
 	</dict>
 	<dict>
 		<key>name</key>
@@ -52,7 +52,7 @@
 		<key>method</key>
 		<string>silica:Total:Dust:</string>
 		<key>imageName</key>
-		<string>PEL(Total Dust) copy.png</string>
+		<string>PEL(Total Dust).png</string>
 	</dict>
 	<dict>
 		<key>name</key>
