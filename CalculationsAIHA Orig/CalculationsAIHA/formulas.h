@@ -56,16 +56,16 @@ SoundPressureLevels:(NSNumber*)n_o;
            Dust:(float)trid;
 
 //TLV:of:Mixture:MultiVar:
-+(NSNumber*) TLV: (NSNumber*)c1
-              of: (NSNumber*)t1
-         Mixture: (NSNumber*)c2
-        MultiVar:(NSNumber*)t2;
+-(float) TLV: (float)c1
+          of: (float)t1
+     Mixture: (float)c2
+    MultiVar:(float)t2;
 
 //Calculate:TWA:Multi:Var:
-+(NSNumber*) Calculate:(NSNumber*)c1
-        TWA:(NSNumber*)t1
-           Multi:(NSNumber*)c2
-           Var:(NSNumber*)t2;
+-(float) Calculate:(float)c1
+               TWA:(float)t1
+             Multi:(float)c2
+               Var:(float)t2;
 
 //QUESTION: WHERE DOES DISPLACED OXYGEN COME FROM?
 //oxygenDeficiencyFormulaOne
@@ -118,10 +118,6 @@ SoundPressureLevels:(NSNumber*)n_o;
          Var:(float)RPM2;
 
 //Conversion equations
-
-// ConvertMgToPpm
-+(NSNumber*) convertMg: (NSNumber*) mg 
-             ToPpm: (NSNumber*) ppm;
 
 //getTLVinPPM
 +(NSNumber*) getTLV: (NSNumber*) tlv 
