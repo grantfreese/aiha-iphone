@@ -28,7 +28,7 @@
 		<key>method</key>
 		<string>wetBulb:GlobeTemp:Outdoors:</string>
 		<key>imageName</key>
-		<string>WBGT_Outdoor.PNG</string>
+		<string>WBGT_Outdoor.png</string>
 	</dict>
 	<dict>
 		<key>name</key>
@@ -58,7 +58,7 @@
 		<key>method</key>
 		<string>WetBulb:GlobeTempIndoors:</string>
 		<key>imageName</key>
-		<string>WBGT_Indoor.PNG</string>
+		<string>WBGT_Indoor.png</string>
 	</dict>
 	<dict>
 		<key>name</key>

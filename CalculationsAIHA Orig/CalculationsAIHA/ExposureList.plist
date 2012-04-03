@@ -26,7 +26,7 @@
 		<key>method</key>
 		<string>silica:Respirable:Fraction:</string>
 		<key>imageName</key>
-		<string>PEL(Respirable Fraction) copy.PNG</string>
+		<string>PEL(Respirable Fraction) copy.png</string>
 	</dict>
 	<dict>
 		<key>name</key>
@@ -52,7 +52,7 @@
 		<key>method</key>
 		<string>silica:Total:Dust:</string>
 		<key>imageName</key>
-		<string>PEL(Total Dust) copy.PNG</string>
+		<string>PEL(Total Dust) copy.png</string>
 	</dict>
 	<dict>
 		<key>name</key>
@@ -82,7 +82,7 @@
 		<key>method</key>
 		<string>TLV:of:Mixture:MultiVar:</string>
 		<key>imageName</key>
-		<string>TLVmix.PNG</string>
+		<string>TLVmix.png</string>
 	</dict>
 	<dict>
 		<key>name</key>
@@ -112,7 +112,7 @@
 		<key>method</key>
 		<string>Calculate:TWA:Multi:Var:</string>
 		<key>imageName</key>
-		<string>TWA.PNG</string>
+		<string>TWA.png</string>
 	</dict>
 </array>
 </plist>

@@ -30,7 +30,7 @@
 		<key>method</key>
 		<string>oxygen:Deficiency:Formula:One:</string>
 		<key>imageName</key>
-		<string>Oxygen Level of Room.PNG</string>
+		<string>Oxygen Level of Room.png</string>
 	</dict>
 	<dict>
 		<key>name</key>
@@ -74,7 +74,7 @@
 		<key>resultUnit</key>
 		<string> </string>
 		<key>imageName</key>
-		<string>Total Pressure.PNG</string>
+		<string>Total Pressure.png</string>
 	</dict>
 	<dict>
 		<key>name</key>
@@ -108,7 +108,7 @@
 		<key>resultUnit</key>
 		<string>L/min</string>
 		<key>imageName</key>
-		<string>Flow rate adjustment.PNG</string>
+		<string>Flow rate adjustment.png</string>
 	</dict>
 	<dict>
 		<key>name</key>

@@ -22,7 +22,7 @@
 		<key>method</key>
 		<string>adding:SoundPressureLevels:</string>
 		<key>imageName</key>
-		<string>AddingSoundPressure.PNG</string>
+		<string>AddingSoundPressure.png</string>
 	</dict>
 	<dict>
 		<key>name</key>
@@ -40,7 +40,7 @@
 		<key>method</key>
 		<string>eightHourTWSof85dBa:</string>
 		<key>imageName</key>
-		<string>85dBA reached.PNG</string>
+		<string>85dBA reached.png</string>
 	</dict>
 	<dict>
 		<key>name</key>
@@ -66,7 +66,7 @@
 		<key>method</key>
 		<string>inverse:Square:Law:</string>
 		<key>imageName</key>
-		<string>Inverse Square Law.PNG</string>
+		<string>Inverse Square Law.png</string>
 	</dict>
 	<dict>
 		<key>name</key>
@@ -88,7 +88,7 @@
 		<key>method</key>
 		<string>percentDosetoTWA:</string>
 		<key>imageName</key>
-		<string>TWA from %Dose.PNG</string>
+		<string>TWA from %Dose.png</string>
 	</dict>
 	<dict>
 		<key>name</key>
