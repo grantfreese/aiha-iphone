@@ -4,7 +4,7 @@
 <array>
 	<dict>
 		<key>name</key>
-		<string>tomg</string>
+		<string>Convert TLV to mg/m^3</string>
 		<key>formula</key>
 		<string>Converting ppm to mg/m3</string>
 		<key>variable1</key>
@@ -24,7 +24,7 @@
 	</dict>
 	<dict>
 		<key>name</key>
-		<string>toppm</string>
+		<string>Convert TLV to ppm</string>
 		<key>formula</key>
 		<string>Converting mg/m3 to ppm</string>
 		<key>variable1</key>
