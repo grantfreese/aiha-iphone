@@ -14,6 +14,7 @@
 @property (nonatomic, strong) IBOutlet UIButton *HeatStressButton;
 @property (nonatomic, strong) IBOutlet UIButton *VentilationButton;
 @property (nonatomic, strong) IBOutlet UIButton *ExposureAssessmentButton;
+@property (nonatomic, strong) IBOutlet UILabel *TitleLabel;
 
 
 @end

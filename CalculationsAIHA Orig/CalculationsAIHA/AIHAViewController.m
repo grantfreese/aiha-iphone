@@ -18,7 +18,7 @@
 @synthesize HeatStressButton = _HeatStressButton;
 @synthesize VentilationButton = _VentilationButton;
 @synthesize ExposureAssessmentButton = _ExposureAssessmentButton;
-
+@synthesize TitleLabel = _TitleLabel;
 - (IBAction)NoiseButtonPressed
 {
     HeatStressManager *heatManager = [HeatStressManager sharedHeatStressManager];
@@ -88,6 +88,7 @@
     _HeatStressButton.frame = CGRectMake(30, 164, 185, 40);
     _VentilationButton.frame = CGRectMake(265, 114, 185, 40);
     _ExposureAssessmentButton.frame = CGRectMake(265, 164, 185, 40);
+    _TitleLabel.frame = CGRectMake(171,71,138,32);
     
 }
 else
@@ -96,6 +97,7 @@ else
     _HeatStressButton.frame = CGRectMake(65, 204, 185, 40);
     _VentilationButton.frame = CGRectMake(65, 254, 185, 40);
     _ExposureAssessmentButton.frame = CGRectMake(65, 304, 185, 40);
+    _TitleLabel.frame = CGRectMake(91,110,138,32);
 }
     [super viewWillAppear:animated];
 }
@@ -130,6 +132,7 @@ else
         _HeatStressButton.frame = CGRectMake(30, 164, 185, 40);
         _VentilationButton.frame = CGRectMake(265, 114, 185, 40);
         _ExposureAssessmentButton.frame = CGRectMake(265, 164, 185, 40);
+        _TitleLabel.frame = CGRectMake(171,71,138,32);
 
     }
     else
@@ -138,6 +141,7 @@ else
         _HeatStressButton.frame = CGRectMake(65, 204, 185, 40);
         _VentilationButton.frame = CGRectMake(65, 254, 185, 40);
         _ExposureAssessmentButton.frame = CGRectMake(65, 304, 185, 40);
+        _TitleLabel.frame = CGRectMake(91,110,138,32);
     }
 }
 - (IBAction)handlePinch:(UIPinchGestureRecognizer *)recognizer {

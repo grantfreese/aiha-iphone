@@ -20,6 +20,8 @@
 @property (nonatomic, strong) IBOutlet UIButton *AreaButton;
 @property (nonatomic, strong) IBOutlet UIButton *TLVButton;
 @property (nonatomic, strong) IBOutlet UIButton *ConstantsButton;
+@property (nonatomic, strong) IBOutlet UILabel *ConversionsLabel;
+
 
 
 @end

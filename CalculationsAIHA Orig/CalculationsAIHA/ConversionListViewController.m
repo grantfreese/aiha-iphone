@@ -27,6 +27,7 @@
 @synthesize ConstantsButton = _ConstantsButton;
 @synthesize TLVButton = _TLVButton;
 @synthesize AreaButton = _AreaButton;
+@synthesize ConversionsLabel = _ConversionsLabel;
 
 - (IBAction)VolumeButtonPressed
 {
@@ -115,18 +116,32 @@
 {  if (self.interfaceOrientation == UIInterfaceOrientationLandscapeLeft ||
        self.interfaceOrientation == UIInterfaceOrientationLandscapeRight)
 {
-    //_NoiseButton.frame = CGRectMake(30, 114, 185, 40);
-    //_HeatStressButton.frame = CGRectMake(30, 164, 185, 40);
-    //_VentilationButton.frame = CGRectMake(265, 114, 185, 40);
-    //_ExposureAssessmentButton.frame = CGRectMake(265, 164, 185, 40);
-    
+  
+    _VolumeButton.frame = CGRectMake(30, 31, 127, 37);
+    _DistanceButton.frame = CGRectMake(176, 31, 127, 37);
+    _PressureButton.frame = CGRectMake(323, 31, 127, 37);
+    _MassButton.frame = CGRectMake(30, 78, 127, 37);
+    _TemperatureButton.frame = CGRectMake(176, 78, 127, 37);
+    _AreaButton.frame = CGRectMake(323, 78, 127, 37);
+    _TLVButton.frame = CGRectMake(30, 125, 127, 37);
+    _ConcentrationButton.frame = CGRectMake(176, 125, 127, 37);
+    _FlowRateButton.frame = CGRectMake(323, 125, 127, 37);
+    _ConstantsButton.frame = CGRectMake(176, 172, 127, 37);
+    _ConversionsLabel.frame = CGRectMake(171, -5, 138, 32);
 }
 else
 {
-    //_NoiseButton.frame = CGRectMake(65, 154, 185, 40);
-    //_HeatStressButton.frame = CGRectMake(65, 204, 185, 40);
-    //_VentilationButton.frame = CGRectMake(65, 254, 185, 40);
-    //_ExposureAssessmentButton.frame = CGRectMake(65, 304, 185, 40);
+    _VolumeButton.frame = CGRectMake(20, 71, 127, 37);
+    _DistanceButton.frame = CGRectMake(173, 71, 127, 37);
+    _PressureButton.frame = CGRectMake(20, 121, 127, 37);
+    _MassButton.frame = CGRectMake(173, 121, 127, 37);
+    _TemperatureButton.frame = CGRectMake(20, 171, 127, 37);
+    _AreaButton.frame = CGRectMake(173, 171, 127, 37);
+    _TLVButton.frame = CGRectMake(20, 221, 127, 37);
+    _ConcentrationButton.frame = CGRectMake(173, 221, 127, 37);
+    _FlowRateButton.frame = CGRectMake(20, 271, 127, 37);
+    _ConstantsButton.frame = CGRectMake(173, 271, 127, 37);
+    _ConversionsLabel.frame = CGRectMake(91, 22, 138, 32);
 }
     [super viewWillAppear:animated];
 }
@@ -151,27 +166,41 @@ else
     // Return YES for supported orientations
     return (interfaceOrientation != UIInterfaceOrientationPortraitUpsideDown);
 }
-/*- (void)willAnimateRotationToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation 
+- (void)willAnimateRotationToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation 
  duration:(NSTimeInterval)duration
  {
  if (toInterfaceOrientation == UIInterfaceOrientationLandscapeLeft ||
  toInterfaceOrientation == UIInterfaceOrientationLandscapeRight)
  {
- _NoiseButton.frame = CGRectMake(30, 114, 185, 40);
- _HeatStressButton.frame = CGRectMake(30, 164, 185, 40);
- _VentilationButton.frame = CGRectMake(265, 114, 185, 40);
- _ExposureAssessmentButton.frame = CGRectMake(265, 164, 185, 40);
+     _VolumeButton.frame = CGRectMake(30, 31, 127, 37);
+     _DistanceButton.frame = CGRectMake(176, 31, 127, 37);
+     _PressureButton.frame = CGRectMake(323, 31, 127, 37);
+     _MassButton.frame = CGRectMake(30, 78, 127, 37);
+     _TemperatureButton.frame = CGRectMake(176, 78, 127, 37);
+     _AreaButton.frame = CGRectMake(323, 78, 127, 37);
+     _TLVButton.frame = CGRectMake(30, 125, 127, 37);
+     _ConcentrationButton.frame = CGRectMake(176, 125, 127, 37);
+     _FlowRateButton.frame = CGRectMake(323, 125, 127, 37);
+     _ConstantsButton.frame = CGRectMake(176, 172, 127, 37);
+     _ConversionsLabel.frame = CGRectMake(171, -5, 138, 32);
  
  }
  else
  {
- _NoiseButton.frame = CGRectMake(65, 154, 185, 40);
- _HeatStressButton.frame = CGRectMake(65, 204, 185, 40);
- _VentilationButton.frame = CGRectMake(65, 254, 185, 40);
- _ExposureAssessmentButton.frame = CGRectMake(65, 304, 185, 40);
+     _VolumeButton.frame = CGRectMake(20, 71, 127, 37);
+     _DistanceButton.frame = CGRectMake(173, 71, 127, 37);
+     _PressureButton.frame = CGRectMake(20, 121, 127, 37);
+     _MassButton.frame = CGRectMake(173, 121, 127, 37);
+     _TemperatureButton.frame = CGRectMake(20, 171, 127, 37);
+     _AreaButton.frame = CGRectMake(173, 171, 127, 37);
+     _TLVButton.frame = CGRectMake(20, 221, 127, 37);
+     _ConcentrationButton.frame = CGRectMake(173, 221, 127, 37);
+     _FlowRateButton.frame = CGRectMake(20, 271, 127, 37);
+     _ConstantsButton.frame = CGRectMake(173, 271, 127, 37);
+     _ConversionsLabel.frame = CGRectMake(91, 22, 138, 32);
  }
  }
- - (IBAction)handlePinch:(UIPinchGestureRecognizer *)recognizer {
+/* - (IBAction)handlePinch:(UIPinchGestureRecognizer *)recognizer {
  recognizer.view.transform = CGAffineTransformScale(recognizer.view.transform, recognizer.scale, recognizer.scale);
  recognizer.scale = 1;
  } */
