@@ -10,7 +10,7 @@
 	<string>${EXECUTABLE_NAME}</string>
 	<key>CFBundleIconFiles</key>
 	<array>
-		<string>AIHA.png</string>
+		<string>logos.png</string>
 		<string>AIHA.png</string>
 		<string>AIHA.png</string>
 	</array>
@@ -20,7 +20,7 @@
 		<dict>
 			<key>CFBundleIconFiles</key>
 			<array>
-				<string>AIHA.png</string>
+				<string>logos.png</string>
 				<string>AIHA.png</string>
 				<string>AIHA.png</string>
 			</array>
@@ -41,7 +41,7 @@
 	<key>CFBundleSignature</key>
 	<string>????</string>
 	<key>CFBundleVersion</key>
-	<string>1.14</string>
+	<string>1.142</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
 	<key>UIMainStoryboardFile</key>

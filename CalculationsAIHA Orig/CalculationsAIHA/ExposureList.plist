@@ -32,11 +32,11 @@
 		<key>name</key>
 		<string>PEL(Total Dust)</string>
 		<key>formula</key>
-		<string>PEL(Total Dust) = 30/(%Qrtz + (%crist * 2) + (%trid * 2) + 2)</string>
+		<string>PEL(Total Dust) = 30/(%Quartz + (%crist * 2) + (%trid * 2) + 2)</string>
 		<key>number</key>
 		<string>3</string>
 		<key>variable1</key>
-		<string>%qrtz</string>
+		<string>%quartz</string>
 		<key>variable2</key>
 		<string>%crist</string>
 		<key>variable3</key>

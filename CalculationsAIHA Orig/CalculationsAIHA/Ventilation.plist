@@ -120,7 +120,7 @@
 		<key>variable1</key>
 		<string>VP</string>
 		<key>unit1</key>
-		<string>in. wc</string>
+		<string>in. WC</string>
 		<key>method</key>
 		<string>velocity:</string>
 		<key>resultUnit</key>
@@ -140,13 +140,13 @@
 		<key>variable2</key>
 		<string>he</string>
 		<key>unit1</key>
-		<string>in. W.C.</string>
+		<string>in. WC</string>
 		<key>unit2</key>
-		<string>in. W.C.</string>
+		<string>in. WC</string>
 		<key>method</key>
 		<string>hood:StaticPressure:</string>
 		<key>resultUnit</key>
-		<string>in. W.C.</string>
+		<string>in. WC</string>
 		<key>imageName</key>
 		<string>HoodStaticPressure.png</string>
 	</dict>
@@ -228,13 +228,13 @@
 		<key>variable3</key>
 		<string>VPin</string>
 		<key>unit1</key>
-		<string>in. W.C.</string>
+		<string>in. WC</string>
 		<key>unit2</key>
-		<string>in. W.C.</string>
+		<string>in. WC</string>
 		<key>unit3</key>
-		<string>in. W.C.</string>
+		<string>in. WC</string>
 		<key>resultUnit</key>
-		<string>in. W.C.</string>
+		<string>in. WC</string>
 		<key>method</key>
 		<string>fan:Laws:Formula:</string>
 		<key>imageName</key>
@@ -252,11 +252,11 @@
 		<key>variable2</key>
 		<string>TPin</string>
 		<key>unit1</key>
-		<string>in. W.C.</string>
+		<string>in. WC</string>
 		<key>unit2</key>
-		<string>in. W.C.</string>
+		<string>in. WC</string>
 		<key>resultUnit</key>
-		<string>in. W.C.</string>
+		<string>in. WC</string>
 		<key>method</key>
 		<string>fan:TotalPressure:</string>
 		<key>imageName</key>

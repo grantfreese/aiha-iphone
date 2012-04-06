@@ -7,6 +7,8 @@
 		<string>Avogadro&apos;s Number</string>
 		<key>formula</key>
 		<string>6.022*10^23</string>
+		<key>imageName</key>
+		<string>avogadro.png</string>
 	</dict>
 	<dict>
 		<key>name</key>

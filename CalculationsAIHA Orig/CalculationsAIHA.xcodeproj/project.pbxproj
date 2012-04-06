@@ -68,6 +68,8 @@
 		22B8B04D152ADA9700BF1D20 /* WBGT_Indoor.png in Resources */ = {isa = PBXBuildFile; fileRef = 22B8B02F152ADA9700BF1D20 /* WBGT_Indoor.png */; };
 		22B8B04E152ADA9700BF1D20 /* WBGT_Outdoor.png in Resources */ = {isa = PBXBuildFile; fileRef = 22B8B030152ADA9700BF1D20 /* WBGT_Outdoor.png */; };
 		22C536B81525671B00886CEA /* Ventilation.plist in Resources */ = {isa = PBXBuildFile; fileRef = 22C536B71525671B00886CEA /* Ventilation.plist */; };
+		22CAE47C152FB51A00C5E6B7 /* logos.png in Resources */ = {isa = PBXBuildFile; fileRef = 22CAE47B152FB51A00C5E6B7 /* logos.png */; };
+		22CAE47E152FB52800C5E6B7 /* logos.png in Resources */ = {isa = PBXBuildFile; fileRef = 22CAE47D152FB52800C5E6B7 /* logos.png */; };
 		321898CE152A3E4B00D4A6AE /* FlowRate.plist in Resources */ = {isa = PBXBuildFile; fileRef = 321898CD152A3E4B00D4A6AE /* FlowRate.plist */; };
 		321898D1152A3E7200D4A6AE /* Concentration.plist in Resources */ = {isa = PBXBuildFile; fileRef = 321898D0152A3E7200D4A6AE /* Concentration.plist */; };
 		321898D8152A3EAC00D4A6AE /* Constants.plist in Resources */ = {isa = PBXBuildFile; fileRef = 321898D7152A3EAC00D4A6AE /* Constants.plist */; };
@@ -170,6 +172,8 @@
 		22B8B02F152ADA9700BF1D20 /* WBGT_Indoor.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = WBGT_Indoor.png; sourceTree = "<group>"; };
 		22B8B030152ADA9700BF1D20 /* WBGT_Outdoor.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = WBGT_Outdoor.png; sourceTree = "<group>"; };
 		22C536B71525671B00886CEA /* Ventilation.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Ventilation.plist; sourceTree = "<group>"; };
+		22CAE47B152FB51A00C5E6B7 /* logos.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logos.png; sourceTree = "<group>"; };
+		22CAE47D152FB52800C5E6B7 /* logos.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logos.png; sourceTree = "<group>"; };
 		321898CD152A3E4B00D4A6AE /* FlowRate.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = FlowRate.plist; sourceTree = "<group>"; };
 		321898D0152A3E7200D4A6AE /* Concentration.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Concentration.plist; sourceTree = "<group>"; };
 		321898D7152A3EAC00D4A6AE /* Constants.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Constants.plist; sourceTree = "<group>"; };
@@ -215,6 +219,7 @@
 		02F8300B14FBD83200A240EE = {
 			isa = PBXGroup;
 			children = (
+				22CAE47D152FB52800C5E6B7 /* logos.png */,
 				0F37705D150FF4D300192044 /* AIHA.png */,
 				02F8302014FBD83200A240EE /* CalculationsAIHA */,
 				02F8301914FBD83200A240EE /* Frameworks */,
@@ -336,6 +341,7 @@
 				22B8B013152ADA9700BF1D20 /* 85dBA reached.png */,
 				22B8B014152ADA9700BF1D20 /* AddingSoundPressure.png */,
 				22B8B015152ADA9700BF1D20 /* AIHA.png */,
+				22CAE47B152FB51A00C5E6B7 /* logos.png */,
 				22B8B016152ADA9700BF1D20 /* AllowableExposureTime.png */,
 				22B8B017152ADA9700BF1D20 /* Area of circle.png */,
 				22B8B018152ADA9700BF1D20 /* calcButton2.png */,
@@ -461,6 +467,8 @@
 				22B8B04C152ADA9700BF1D20 /* Volume of Displaced Air.png in Resources */,
 				22B8B04D152ADA9700BF1D20 /* WBGT_Indoor.png in Resources */,
 				22B8B04E152ADA9700BF1D20 /* WBGT_Outdoor.png in Resources */,
+				22CAE47C152FB51A00C5E6B7 /* logos.png in Resources */,
+				22CAE47E152FB52800C5E6B7 /* logos.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
