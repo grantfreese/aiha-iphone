@@ -98,11 +98,11 @@ SoundPressureLevels:(NSNumber*)n_o;
           BasedOn:(float)t
    RoomAirChanges:(float)N;
 
--(float) dilution:(float)SG
-               To:(float)ER 
-          Control:(float)K
-      Evaporation:(float)MW
-          Formula:(float)C;
++(double) dilution:(double)SG
+               To:(double)ER 
+          Control:(double)K
+      Evaporation:(double)MW
+          Formula:(double)C;
 
 -(float) fan:(float)SPout
         Laws:(float)SPin

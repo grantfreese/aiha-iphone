@@ -308,13 +308,13 @@ SoundPressureLevels:(NSNumber*)n_o
 }
 
 //dilution:To:Control:Evaporation:Formula:
--(float) dilution:(float)SG
-               To:(float)ER 
-          Control:(float)K
-      Evaporation:(float)MW
-          Formula:(float)C
++(double) dilution:(double)SG
+               To:(double)ER 
+          Control:(double)K
+      Evaporation:(double)MW
+          Formula:(double)C
 {
-    float retVal = 403.0 * SG * ER * K * powf(10.0, 6.0);
+    double retVal = 403.0 * SG * ER * K * powf(10.0, 6.0);
     retVal = retVal / (MW * C);
 
     return retVal;

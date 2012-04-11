@@ -115,6 +115,7 @@
     
     else 
     {
+        bool print = true;
 
     float calculationResult;
     
@@ -124,7 +125,7 @@
     VentilationManager *ventilationManager = [VentilationManager sharedVentilationManager];
     
     NSDictionary *chosenFormula;
-            
+        
     if (check == HEATSTRESS)
     {
         chosenFormula = heatManager.selectedFormula;
@@ -148,15 +149,39 @@
     else if (check == VENTILATION)
     {
         chosenFormula = ventilationManager.selectedFormula;
-        calculationResult =[formulas runFunction:[chosenFormula objectForKey:@"method"]
+        
+        if ([[chosenFormula objectForKey:@"name"] isEqualToString:@"Dilution to Control Evaporation"])
+        {
+            double result = [formulas dilution:(double)variable1 To:(double)variable2 Control:(double)variable3 Evaporation:(double)variable4 Formula:(double)variable5];
+            result = result * 100.0;
+            result = round(result);
+            result = result/100.0;    
+            
+            // don't forget to unbox calculationResult, or the pointer will be printed as a float :)
+            self.result.text = [NSString stringWithFormat:@"%.2lf", result]; //outputs calculation result
+            self.resultUnit.text = [chosenFormula objectForKey:@"resultUnit"];
+            print = false;
+        }
+        
+        else
+        {
+            calculationResult =[formulas runFunction:[chosenFormula objectForKey:@"method"]
                                       numAndArgs:5, (double)variable1, (double)variable2, (double)variable3, (double)variable4, (double)variable5];
+        }
     }
+        
+    if (print)
+        
+    {
+        calculationResult = calculationResult * 100.0;
+        calculationResult = roundf(calculationResult);
+        calculationResult = calculationResult/100.0;    
     
-    
-    
-    // don't forget to unbox calculationResult, or the pointer will be printed as a float :)
-    self.result.text = [NSString stringWithFormat:@"%.2f", calculationResult]; //outputs calculation result
-    self.resultUnit.text = [chosenFormula objectForKey:@"resultUnit"];
+        // don't forget to unbox calculationResult, or the pointer will be printed as a float :)
+        self.result.text = [NSString stringWithFormat:@"%.2f", calculationResult]; //outputs calculation result
+        self.resultUnit.text = [chosenFormula objectForKey:@"resultUnit"];
+        print = true;
+    }
     }
 }
 

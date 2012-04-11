@@ -168,7 +168,12 @@
         }
         else
         {
-            self.result.text = [NSString stringWithFormat:@"%.2f", [calculationResult floatValue]]; //outputs calculation result
+            float result = [calculationResult floatValue];
+            result = result * 100.0;
+            result = roundf(result);
+            result = result/100.0;
+            
+            self.result.text = [NSString stringWithFormat:@"%.2f", result]; //outputs calculation result
             self.resultUnit.text = [chosenFormula objectForKey:@"resultUnit"];
         }
     }

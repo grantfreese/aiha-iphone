@@ -131,6 +131,10 @@
                                           numAndArgs:3, (double)variable1, (double)variable2, (double)variable3]; 
         }
         
+        calculationResult = calculationResult * 100.0;
+        calculationResult = roundf(calculationResult);
+        calculationResult = calculationResult/100.0;
+        
         self.result.text = [NSString stringWithFormat:@"%.2f", calculationResult]; //outputs calculation result
         self.resultUnit.text = [chosenFormula objectForKey:@"resultUnit"];
     }

@@ -82,10 +82,13 @@
                                            withObject:[NSNumber numberWithFloat: variable1]];        
     }
     
-    
+    float result = [calculationResult floatValue];
+    result = result * 100.0;
+    result = roundf(result);
+    result = result/100.0;
     
     // don't forget to unbox calculationResult, or the pointer will be printed as a float :)
-    self.result.text = [NSString stringWithFormat:@"%.2f", [calculationResult floatValue]]; //outputs calculation result
+    self.result.text = [NSString stringWithFormat:@"%.2f", result]; //outputs calculation result
     self.resultUnit.text = [chosenFormula objectForKey:@"resultUnit"];
 }
 

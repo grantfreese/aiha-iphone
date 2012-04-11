@@ -178,7 +178,9 @@
                                       numAndArgs:4, (double)variable1, (double)variable2, (double)variable3, (double)variable4];
     }
     
-    
+    calculationResult = calculationResult * 100.0;
+    calculationResult = roundf(calculationResult);
+    calculationResult = calculationResult/100.0;
     
     // don't forget to unbox calculationResult, or the pointer will be printed as a float :)
     self.result.text = [NSString stringWithFormat:@"%.2f", calculationResult]; //outputs calculation result
