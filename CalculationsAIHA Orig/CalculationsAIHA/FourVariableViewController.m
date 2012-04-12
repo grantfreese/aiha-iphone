@@ -334,10 +334,10 @@ else
         self.variable2.text = @" ";
         self.variable3.text = @" ";
         self.variable4.text = @" ";
-        self.unit1.text = @"F"; 
-        self.unit2.text = @"C";
-        self.unit3.text = @"R";
-        self.unit4.text = @"K";
+        self.unit1.text = @"Farenheit"; 
+        self.unit2.text = @"Celsius";
+        self.unit3.text = @"Rankine";
+        self.unit4.text = @"Kelvin";
         self.resultUnit.text = @" ";
         self.result.text = @" ";
         self.formula.text = @"Pressure Conversions";

@@ -241,9 +241,9 @@ else
         self.variable1.text = @"Radius";
         self.variable2.text = @"Diameter";
         self.variable3.text = @"Area";
-        self.unit1.text = @""; 
-        self.unit2.text = @"";
-        self.unit3.text = @"";
+        self.unit1.text = @"inches"; 
+        self.unit2.text = @"inches";
+        self.unit3.text = @"inches sq.";
         self.resultUnit.text = @"";
         self.result.text = @" ";
         self.formula.text = @"Area of a circle";
