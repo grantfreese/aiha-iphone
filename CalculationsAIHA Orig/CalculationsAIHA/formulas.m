@@ -378,8 +378,8 @@ SoundPressureLevels:(NSNumber*)n_o
               inPPM: (NSNumber*) mg_o
 {
     //(24.45 * (TLV in mg/m^3)) / (gram molecular weight of substance)
-    float tlv = [tlv_o floatValue];
-    float mg = [mg_o floatValue];
+    float tlv = [mg_o floatValue];
+    float mg = [tlv_o floatValue];
     float temp = 24.45 * tlv;
     temp = (temp / mg);
     
