@@ -40,6 +40,26 @@
     CategoryManager *catManager = [CategoryManager sharedCategoryManager];    
     int check = catManager.category;
     
+    bool var1 = false;
+    bool var2 = false;
+    bool var3 = false;
+    bool var4 = false;
+    if( [_textField1.text isEqualToString:@""])
+    {
+        var1=true;
+    }
+    if( [_textField2.text isEqualToString:@""])
+    {
+        var2=true;
+    }
+    if( [_textField3.text isEqualToString:@""])
+    {
+        var3=true;
+    }
+    if( [_textField4.text isEqualToString:@""])
+    {
+        var4=true;
+    }
     float variable1 = [_textField1.text floatValue]; //reads value of first text field and stores as a float value
     float variable2 = [_textField2.text floatValue]; //reads value of second text field and stores as a float value
     float variable3 = [_textField3.text floatValue];
@@ -95,47 +115,35 @@
     }
     else if(check == TEMPERATURE)
     {
-        if (variable1 == 0&&variable2==0&&variable3==0&&variable4==0) 
+        if (var1 == false)
         {
-            variable1 = 32;
-            variable2 = 0;
-            variable3 = 492;
-            variable4 = 273;
-            
-        }
-        else
+            variable2 = (variable1-32)*(.555555);
+            variable3 = variable1+460;
+            variable4 = variable2+273;
+        }            
+        else if (!var2)
         {
-            if (variable1 != 0)
-            {
-                variable2 = (variable1-32)*(.555555);
-                variable3 = variable1+460;
-                variable4 = variable2+273;
-            }
-            else if (variable2 != 0)
-            {
-                variable1 = (variable2*(1.8))+32;
-                variable3 = variable1+460;
-                variable4 = variable2+273;
-            }
-            else if (variable3 != 0)
-            {
-                variable1 = variable3-460;
-                variable2 = (variable1-32)*(.555555);
-                variable4 =((variable1-32)*(.555555))+273;
-            }
-            else if (variable4 != 0)
-            {
-                variable2 = variable4 - 273;
-                variable1 = (variable2*(1.8))+32;
-                variable3 = variable1+460;
-            }
-            
-            
-            self.textField1.text = [NSString stringWithFormat:@"%.4f",variable1];
-            self.textField2.text = [NSString stringWithFormat:@"%.4f",variable2];
-            self.textField3.text = [NSString stringWithFormat:@"%.4f",variable3];
-            self.textField4.text = [NSString stringWithFormat:@"%.4f",variable4];
+            variable1 = (variable2*(1.8))+32;
+            variable3 = variable1+460;
+            variable4 = variable2+273;
         }
+        else if (!var3)
+        {
+            variable1 = variable3-460;
+            variable2 = (variable1-32)*(.555555);
+            variable4 =((variable1-32)*(.555555))+273;
+        }
+        else if (!var4)
+        {
+            variable2 = variable4 - 273;
+            variable1 = (variable2*(1.8))+32;
+            variable3 = variable1+460;
+        }            
+            
+        self.textField1.text = [NSString stringWithFormat:@"%.4f",variable1];
+        self.textField2.text = [NSString stringWithFormat:@"%.4f",variable2];
+        self.textField3.text = [NSString stringWithFormat:@"%.4f",variable3];
+        self.textField4.text = [NSString stringWithFormat:@"%.4f",variable4];   
     }
     
     
