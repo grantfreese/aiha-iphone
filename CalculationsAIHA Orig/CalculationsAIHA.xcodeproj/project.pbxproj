@@ -53,7 +53,6 @@
 		22B8B03E152ADA9700BF1D20 /* From ppm.png in Resources */ = {isa = PBXBuildFile; fileRef = 22B8B020152ADA9700BF1D20 /* From ppm.png */; };
 		22B8B03F152ADA9700BF1D20 /* HoodStaticPressure.png in Resources */ = {isa = PBXBuildFile; fileRef = 22B8B021152ADA9700BF1D20 /* HoodStaticPressure.png */; };
 		22B8B040152ADA9700BF1D20 /* Inverse Square Law.png in Resources */ = {isa = PBXBuildFile; fileRef = 22B8B022152ADA9700BF1D20 /* Inverse Square Law.png */; };
-		22B8B041152ADA9700BF1D20 /* Oxygen Level of Room.png in Resources */ = {isa = PBXBuildFile; fileRef = 22B8B023152ADA9700BF1D20 /* Oxygen Level of Room.png */; };
 		22B8B042152ADA9700BF1D20 /* PEL(Respirable Fraction).png in Resources */ = {isa = PBXBuildFile; fileRef = 22B8B024152ADA9700BF1D20 /* PEL(Respirable Fraction).png */; };
 		22B8B043152ADA9700BF1D20 /* PEL(Total Dust).png in Resources */ = {isa = PBXBuildFile; fileRef = 22B8B025152ADA9700BF1D20 /* PEL(Total Dust).png */; };
 		22B8B044152ADA9700BF1D20 /* resultBar.png in Resources */ = {isa = PBXBuildFile; fileRef = 22B8B026152ADA9700BF1D20 /* resultBar.png */; };
@@ -85,6 +84,41 @@
 		32BCE4BA1504812E002F1C52 /* VentilationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 32BCE4B91504812E002F1C52 /* VentilationManager.m */; };
 		32E19060152A4A390040F800 /* TlvManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 32E1905F152A4A390040F800 /* TlvManager.m */; };
 		8EC7AABC1522BB5800DAFABA /* HeatExposureTable.png in Resources */ = {isa = PBXBuildFile; fileRef = 8EC7AABB1522BB5800DAFABA /* HeatExposureTable.png */; };
+		95CA6DA5153E9D7300506444 /* Oxygen Level of Room.png in Resources */ = {isa = PBXBuildFile; fileRef = 95CA6DA4153E9D7300506444 /* Oxygen Level of Room.png */; };
+		95CA6DC8153E9EB000506444 /* 85dBA reached@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 95CA6DA6153E9EAF00506444 /* 85dBA reached@2x.png */; };
+		95CA6DC9153E9EB000506444 /* AddingSoundPressure@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 95CA6DA7153E9EAF00506444 /* AddingSoundPressure@2x.png */; };
+		95CA6DCA153E9EB000506444 /* AllowableExposureTime@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 95CA6DA8153E9EAF00506444 /* AllowableExposureTime@2x.png */; };
+		95CA6DCB153E9EB000506444 /* Avogadros Number.png in Resources */ = {isa = PBXBuildFile; fileRef = 95CA6DA9153E9EAF00506444 /* Avogadros Number.png */; };
+		95CA6DCC153E9EB000506444 /* Avogadros Number@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 95CA6DAA153E9EAF00506444 /* Avogadros Number@2x.png */; };
+		95CA6DCD153E9EB000506444 /* dilutionToControlEvaporation@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 95CA6DAB153E9EAF00506444 /* dilutionToControlEvaporation@2x.png */; };
+		95CA6DCE153E9EB000506444 /* dilutionVentilation@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 95CA6DAC153E9EAF00506444 /* dilutionVentilation@2x.png */; };
+		95CA6DCF153E9EB000506444 /* fanLaws@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 95CA6DAD153E9EAF00506444 /* fanLaws@2x.png */; };
+		95CA6DD0153E9EB000506444 /* fanLaws2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 95CA6DAE153E9EAF00506444 /* fanLaws2@2x.png */; };
+		95CA6DD1153E9EB000506444 /* fanTotalPressure@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 95CA6DAF153E9EAF00506444 /* fanTotalPressure@2x.png */; };
+		95CA6DD2153E9EB000506444 /* Flow rate adjustment@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 95CA6DB0153E9EAF00506444 /* Flow rate adjustment@2x.png */; };
+		95CA6DD3153E9EB000506444 /* From ppm@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 95CA6DB1153E9EAF00506444 /* From ppm@2x.png */; };
+		95CA6DD4153E9EB000506444 /* HoodStaticPressure@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 95CA6DB2153E9EAF00506444 /* HoodStaticPressure@2x.png */; };
+		95CA6DD5153E9EB000506444 /* Inverse Square Law@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 95CA6DB3153E9EAF00506444 /* Inverse Square Law@2x.png */; };
+		95CA6DD6153E9EB000506444 /* Oxygen Level of Room@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 95CA6DB4153E9EAF00506444 /* Oxygen Level of Room@2x.png */; };
+		95CA6DD7153E9EB000506444 /* PEL(Respirable Fraction)@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 95CA6DB5153E9EAF00506444 /* PEL(Respirable Fraction)@2x.png */; };
+		95CA6DD8153E9EB000506444 /* PEL(Total Dust)@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 95CA6DB6153E9EAF00506444 /* PEL(Total Dust)@2x.png */; };
+		95CA6DD9153E9EB000506444 /* PercentDose@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 95CA6DB7153E9EAF00506444 /* PercentDose@2x.png */; };
+		95CA6DDA153E9EB000506444 /* Planck's Constant.png in Resources */ = {isa = PBXBuildFile; fileRef = 95CA6DB8153E9EAF00506444 /* Planck's Constant.png */; };
+		95CA6DDB153E9EB000506444 /* Planck's Constant@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 95CA6DB9153E9EAF00506444 /* Planck's Constant@2x.png */; };
+		95CA6DDC153E9EB000506444 /* Room Air changes per hour@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 95CA6DBA153E9EAF00506444 /* Room Air changes per hour@2x.png */; };
+		95CA6DDD153E9EB000506444 /* Speed of Light.png in Resources */ = {isa = PBXBuildFile; fileRef = 95CA6DBB153E9EAF00506444 /* Speed of Light.png */; };
+		95CA6DDE153E9EB000506444 /* Speed of Light@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 95CA6DBC153E9EB000506444 /* Speed of Light@2x.png */; };
+		95CA6DDF153E9EB000506444 /* Speed of Sound.png in Resources */ = {isa = PBXBuildFile; fileRef = 95CA6DBD153E9EB000506444 /* Speed of Sound.png */; };
+		95CA6DE0153E9EB000506444 /* Speed of Sound@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 95CA6DBE153E9EB000506444 /* Speed of Sound@2x.png */; };
+		95CA6DE1153E9EB000506444 /* TLVmix@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 95CA6DBF153E9EB000506444 /* TLVmix@2x.png */; };
+		95CA6DE2153E9EB000506444 /* To ppm@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 95CA6DC0153E9EB000506444 /* To ppm@2x.png */; };
+		95CA6DE3153E9EB000506444 /* Total Pressure@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 95CA6DC1153E9EB000506444 /* Total Pressure@2x.png */; };
+		95CA6DE4153E9EB000506444 /* TWA from %Dose@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 95CA6DC2153E9EB000506444 /* TWA from %Dose@2x.png */; };
+		95CA6DE5153E9EB000506444 /* TWA@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 95CA6DC3153E9EB000506444 /* TWA@2x.png */; };
+		95CA6DE6153E9EB000506444 /* velocity@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 95CA6DC4153E9EB000506444 /* velocity@2x.png */; };
+		95CA6DE7153E9EB000506444 /* Volume of Displaced Air@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 95CA6DC5153E9EB000506444 /* Volume of Displaced Air@2x.png */; };
+		95CA6DE8153E9EB000506444 /* WBGT_Indoor@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 95CA6DC6153E9EB000506444 /* WBGT_Indoor@2x.png */; };
+		95CA6DE9153E9EB000506444 /* WBGT_Outdoor@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 95CA6DC7153E9EB000506444 /* WBGT_Outdoor@2x.png */; };
 		95D86E1A151ECEB5000438E8 /* AIHA_LongFinal.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 95D86E19151ECEB5000438E8 /* AIHA_LongFinal.jpg */; };
 /* End PBXBuildFile section */
 
@@ -157,7 +191,6 @@
 		22B8B020152ADA9700BF1D20 /* From ppm.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "From ppm.png"; sourceTree = "<group>"; };
 		22B8B021152ADA9700BF1D20 /* HoodStaticPressure.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = HoodStaticPressure.png; sourceTree = "<group>"; };
 		22B8B022152ADA9700BF1D20 /* Inverse Square Law.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Inverse Square Law.png"; sourceTree = "<group>"; };
-		22B8B023152ADA9700BF1D20 /* Oxygen Level of Room.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Oxygen Level of Room.png"; sourceTree = "<group>"; };
 		22B8B024152ADA9700BF1D20 /* PEL(Respirable Fraction).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "PEL(Respirable Fraction).png"; sourceTree = "<group>"; };
 		22B8B025152ADA9700BF1D20 /* PEL(Total Dust).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "PEL(Total Dust).png"; sourceTree = "<group>"; };
 		22B8B026152ADA9700BF1D20 /* resultBar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = resultBar.png; sourceTree = "<group>"; };
@@ -199,6 +232,41 @@
 		32E1905E152A4A390040F800 /* TlvManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TlvManager.h; sourceTree = "<group>"; };
 		32E1905F152A4A390040F800 /* TlvManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TlvManager.m; sourceTree = "<group>"; };
 		8EC7AABB1522BB5800DAFABA /* HeatExposureTable.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = HeatExposureTable.png; sourceTree = "<group>"; };
+		95CA6DA4153E9D7300506444 /* Oxygen Level of Room.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Oxygen Level of Room.png"; path = "../../../../../../../../Volumes/DAVEOPOLIS!/Stuff'n'Things/AIHA formulas/Oxygen Level of Room.png"; sourceTree = "<group>"; };
+		95CA6DA6153E9EAF00506444 /* 85dBA reached@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "85dBA reached@2x.png"; path = "../../../../../../../../Volumes/DAVEOPOLIS!/Stuff'n'Things/AIHA formulas/85dBA reached@2x.png"; sourceTree = "<group>"; };
+		95CA6DA7153E9EAF00506444 /* AddingSoundPressure@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "AddingSoundPressure@2x.png"; path = "../../../../../../../../Volumes/DAVEOPOLIS!/Stuff'n'Things/AIHA formulas/AddingSoundPressure@2x.png"; sourceTree = "<group>"; };
+		95CA6DA8153E9EAF00506444 /* AllowableExposureTime@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "AllowableExposureTime@2x.png"; path = "../../../../../../../../Volumes/DAVEOPOLIS!/Stuff'n'Things/AIHA formulas/AllowableExposureTime@2x.png"; sourceTree = "<group>"; };
+		95CA6DA9153E9EAF00506444 /* Avogadros Number.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Avogadros Number.png"; path = "../../../../../../../../Volumes/DAVEOPOLIS!/Stuff'n'Things/AIHA formulas/Avogadros Number.png"; sourceTree = "<group>"; };
+		95CA6DAA153E9EAF00506444 /* Avogadros Number@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Avogadros Number@2x.png"; path = "../../../../../../../../Volumes/DAVEOPOLIS!/Stuff'n'Things/AIHA formulas/Avogadros Number@2x.png"; sourceTree = "<group>"; };
+		95CA6DAB153E9EAF00506444 /* dilutionToControlEvaporation@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "dilutionToControlEvaporation@2x.png"; path = "../../../../../../../../Volumes/DAVEOPOLIS!/Stuff'n'Things/AIHA formulas/dilutionToControlEvaporation@2x.png"; sourceTree = "<group>"; };
+		95CA6DAC153E9EAF00506444 /* dilutionVentilation@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "dilutionVentilation@2x.png"; path = "../../../../../../../../Volumes/DAVEOPOLIS!/Stuff'n'Things/AIHA formulas/dilutionVentilation@2x.png"; sourceTree = "<group>"; };
+		95CA6DAD153E9EAF00506444 /* fanLaws@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "fanLaws@2x.png"; path = "../../../../../../../../Volumes/DAVEOPOLIS!/Stuff'n'Things/AIHA formulas/fanLaws@2x.png"; sourceTree = "<group>"; };
+		95CA6DAE153E9EAF00506444 /* fanLaws2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "fanLaws2@2x.png"; path = "../../../../../../../../Volumes/DAVEOPOLIS!/Stuff'n'Things/AIHA formulas/fanLaws2@2x.png"; sourceTree = "<group>"; };
+		95CA6DAF153E9EAF00506444 /* fanTotalPressure@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "fanTotalPressure@2x.png"; path = "../../../../../../../../Volumes/DAVEOPOLIS!/Stuff'n'Things/AIHA formulas/fanTotalPressure@2x.png"; sourceTree = "<group>"; };
+		95CA6DB0153E9EAF00506444 /* Flow rate adjustment@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Flow rate adjustment@2x.png"; path = "../../../../../../../../Volumes/DAVEOPOLIS!/Stuff'n'Things/AIHA formulas/Flow rate adjustment@2x.png"; sourceTree = "<group>"; };
+		95CA6DB1153E9EAF00506444 /* From ppm@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "From ppm@2x.png"; path = "../../../../../../../../Volumes/DAVEOPOLIS!/Stuff'n'Things/AIHA formulas/From ppm@2x.png"; sourceTree = "<group>"; };
+		95CA6DB2153E9EAF00506444 /* HoodStaticPressure@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "HoodStaticPressure@2x.png"; path = "../../../../../../../../Volumes/DAVEOPOLIS!/Stuff'n'Things/AIHA formulas/HoodStaticPressure@2x.png"; sourceTree = "<group>"; };
+		95CA6DB3153E9EAF00506444 /* Inverse Square Law@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Inverse Square Law@2x.png"; path = "../../../../../../../../Volumes/DAVEOPOLIS!/Stuff'n'Things/AIHA formulas/Inverse Square Law@2x.png"; sourceTree = "<group>"; };
+		95CA6DB4153E9EAF00506444 /* Oxygen Level of Room@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Oxygen Level of Room@2x.png"; path = "../../../../../../../../Volumes/DAVEOPOLIS!/Stuff'n'Things/AIHA formulas/Oxygen Level of Room@2x.png"; sourceTree = "<group>"; };
+		95CA6DB5153E9EAF00506444 /* PEL(Respirable Fraction)@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "PEL(Respirable Fraction)@2x.png"; path = "../../../../../../../../Volumes/DAVEOPOLIS!/Stuff'n'Things/AIHA formulas/PEL(Respirable Fraction)@2x.png"; sourceTree = "<group>"; };
+		95CA6DB6153E9EAF00506444 /* PEL(Total Dust)@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "PEL(Total Dust)@2x.png"; path = "../../../../../../../../Volumes/DAVEOPOLIS!/Stuff'n'Things/AIHA formulas/PEL(Total Dust)@2x.png"; sourceTree = "<group>"; };
+		95CA6DB7153E9EAF00506444 /* PercentDose@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "PercentDose@2x.png"; path = "../../../../../../../../Volumes/DAVEOPOLIS!/Stuff'n'Things/AIHA formulas/PercentDose@2x.png"; sourceTree = "<group>"; };
+		95CA6DB8153E9EAF00506444 /* Planck's Constant.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Planck's Constant.png"; path = "../../../../../../../../Volumes/DAVEOPOLIS!/Stuff'n'Things/AIHA formulas/Planck's Constant.png"; sourceTree = "<group>"; };
+		95CA6DB9153E9EAF00506444 /* Planck's Constant@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Planck's Constant@2x.png"; path = "../../../../../../../../Volumes/DAVEOPOLIS!/Stuff'n'Things/AIHA formulas/Planck's Constant@2x.png"; sourceTree = "<group>"; };
+		95CA6DBA153E9EAF00506444 /* Room Air changes per hour@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Room Air changes per hour@2x.png"; path = "../../../../../../../../Volumes/DAVEOPOLIS!/Stuff'n'Things/AIHA formulas/Room Air changes per hour@2x.png"; sourceTree = "<group>"; };
+		95CA6DBB153E9EAF00506444 /* Speed of Light.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Speed of Light.png"; path = "../../../../../../../../Volumes/DAVEOPOLIS!/Stuff'n'Things/AIHA formulas/Speed of Light.png"; sourceTree = "<group>"; };
+		95CA6DBC153E9EB000506444 /* Speed of Light@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Speed of Light@2x.png"; path = "../../../../../../../../Volumes/DAVEOPOLIS!/Stuff'n'Things/AIHA formulas/Speed of Light@2x.png"; sourceTree = "<group>"; };
+		95CA6DBD153E9EB000506444 /* Speed of Sound.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Speed of Sound.png"; path = "../../../../../../../../Volumes/DAVEOPOLIS!/Stuff'n'Things/AIHA formulas/Speed of Sound.png"; sourceTree = "<group>"; };
+		95CA6DBE153E9EB000506444 /* Speed of Sound@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Speed of Sound@2x.png"; path = "../../../../../../../../Volumes/DAVEOPOLIS!/Stuff'n'Things/AIHA formulas/Speed of Sound@2x.png"; sourceTree = "<group>"; };
+		95CA6DBF153E9EB000506444 /* TLVmix@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "TLVmix@2x.png"; path = "../../../../../../../../Volumes/DAVEOPOLIS!/Stuff'n'Things/AIHA formulas/TLVmix@2x.png"; sourceTree = "<group>"; };
+		95CA6DC0153E9EB000506444 /* To ppm@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "To ppm@2x.png"; path = "../../../../../../../../Volumes/DAVEOPOLIS!/Stuff'n'Things/AIHA formulas/To ppm@2x.png"; sourceTree = "<group>"; };
+		95CA6DC1153E9EB000506444 /* Total Pressure@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Total Pressure@2x.png"; path = "../../../../../../../../Volumes/DAVEOPOLIS!/Stuff'n'Things/AIHA formulas/Total Pressure@2x.png"; sourceTree = "<group>"; };
+		95CA6DC2153E9EB000506444 /* TWA from %Dose@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "TWA from %Dose@2x.png"; path = "../../../../../../../../Volumes/DAVEOPOLIS!/Stuff'n'Things/AIHA formulas/TWA from %Dose@2x.png"; sourceTree = "<group>"; };
+		95CA6DC3153E9EB000506444 /* TWA@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "TWA@2x.png"; path = "../../../../../../../../Volumes/DAVEOPOLIS!/Stuff'n'Things/AIHA formulas/TWA@2x.png"; sourceTree = "<group>"; };
+		95CA6DC4153E9EB000506444 /* velocity@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "velocity@2x.png"; path = "../../../../../../../../Volumes/DAVEOPOLIS!/Stuff'n'Things/AIHA formulas/velocity@2x.png"; sourceTree = "<group>"; };
+		95CA6DC5153E9EB000506444 /* Volume of Displaced Air@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Volume of Displaced Air@2x.png"; path = "../../../../../../../../Volumes/DAVEOPOLIS!/Stuff'n'Things/AIHA formulas/Volume of Displaced Air@2x.png"; sourceTree = "<group>"; };
+		95CA6DC6153E9EB000506444 /* WBGT_Indoor@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "WBGT_Indoor@2x.png"; path = "../../../../../../../../Volumes/DAVEOPOLIS!/Stuff'n'Things/AIHA formulas/WBGT_Indoor@2x.png"; sourceTree = "<group>"; };
+		95CA6DC7153E9EB000506444 /* WBGT_Outdoor@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "WBGT_Outdoor@2x.png"; path = "../../../../../../../../Volumes/DAVEOPOLIS!/Stuff'n'Things/AIHA formulas/WBGT_Outdoor@2x.png"; sourceTree = "<group>"; };
 		95D86E19151ECEB5000438E8 /* AIHA_LongFinal.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = AIHA_LongFinal.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -355,7 +423,7 @@
 				22B8B020152ADA9700BF1D20 /* From ppm.png */,
 				22B8B021152ADA9700BF1D20 /* HoodStaticPressure.png */,
 				22B8B022152ADA9700BF1D20 /* Inverse Square Law.png */,
-				22B8B023152ADA9700BF1D20 /* Oxygen Level of Room.png */,
+				95CA6DA4153E9D7300506444 /* Oxygen Level of Room.png */,
 				22B8B024152ADA9700BF1D20 /* PEL(Respirable Fraction).png */,
 				22B8B025152ADA9700BF1D20 /* PEL(Total Dust).png */,
 				22B8B026152ADA9700BF1D20 /* resultBar.png */,
@@ -369,6 +437,40 @@
 				22B8B02E152ADA9700BF1D20 /* Volume of Displaced Air.png */,
 				22B8B02F152ADA9700BF1D20 /* WBGT_Indoor.png */,
 				22B8B030152ADA9700BF1D20 /* WBGT_Outdoor.png */,
+				95CA6DA6153E9EAF00506444 /* 85dBA reached@2x.png */,
+				95CA6DA7153E9EAF00506444 /* AddingSoundPressure@2x.png */,
+				95CA6DA8153E9EAF00506444 /* AllowableExposureTime@2x.png */,
+				95CA6DA9153E9EAF00506444 /* Avogadros Number.png */,
+				95CA6DAA153E9EAF00506444 /* Avogadros Number@2x.png */,
+				95CA6DAB153E9EAF00506444 /* dilutionToControlEvaporation@2x.png */,
+				95CA6DAC153E9EAF00506444 /* dilutionVentilation@2x.png */,
+				95CA6DAD153E9EAF00506444 /* fanLaws@2x.png */,
+				95CA6DAE153E9EAF00506444 /* fanLaws2@2x.png */,
+				95CA6DAF153E9EAF00506444 /* fanTotalPressure@2x.png */,
+				95CA6DB0153E9EAF00506444 /* Flow rate adjustment@2x.png */,
+				95CA6DB1153E9EAF00506444 /* From ppm@2x.png */,
+				95CA6DB2153E9EAF00506444 /* HoodStaticPressure@2x.png */,
+				95CA6DB3153E9EAF00506444 /* Inverse Square Law@2x.png */,
+				95CA6DB4153E9EAF00506444 /* Oxygen Level of Room@2x.png */,
+				95CA6DB5153E9EAF00506444 /* PEL(Respirable Fraction)@2x.png */,
+				95CA6DB6153E9EAF00506444 /* PEL(Total Dust)@2x.png */,
+				95CA6DB7153E9EAF00506444 /* PercentDose@2x.png */,
+				95CA6DB8153E9EAF00506444 /* Planck's Constant.png */,
+				95CA6DB9153E9EAF00506444 /* Planck's Constant@2x.png */,
+				95CA6DBA153E9EAF00506444 /* Room Air changes per hour@2x.png */,
+				95CA6DBB153E9EAF00506444 /* Speed of Light.png */,
+				95CA6DBC153E9EB000506444 /* Speed of Light@2x.png */,
+				95CA6DBD153E9EB000506444 /* Speed of Sound.png */,
+				95CA6DBE153E9EB000506444 /* Speed of Sound@2x.png */,
+				95CA6DBF153E9EB000506444 /* TLVmix@2x.png */,
+				95CA6DC0153E9EB000506444 /* To ppm@2x.png */,
+				95CA6DC1153E9EB000506444 /* Total Pressure@2x.png */,
+				95CA6DC2153E9EB000506444 /* TWA from %Dose@2x.png */,
+				95CA6DC3153E9EB000506444 /* TWA@2x.png */,
+				95CA6DC4153E9EB000506444 /* velocity@2x.png */,
+				95CA6DC5153E9EB000506444 /* Volume of Displaced Air@2x.png */,
+				95CA6DC6153E9EB000506444 /* WBGT_Indoor@2x.png */,
+				95CA6DC7153E9EB000506444 /* WBGT_Outdoor@2x.png */,
 			);
 			path = "Equation Images";
 			sourceTree = "<group>";
@@ -453,7 +555,6 @@
 				22B8B03E152ADA9700BF1D20 /* From ppm.png in Resources */,
 				22B8B03F152ADA9700BF1D20 /* HoodStaticPressure.png in Resources */,
 				22B8B040152ADA9700BF1D20 /* Inverse Square Law.png in Resources */,
-				22B8B041152ADA9700BF1D20 /* Oxygen Level of Room.png in Resources */,
 				22B8B042152ADA9700BF1D20 /* PEL(Respirable Fraction).png in Resources */,
 				22B8B043152ADA9700BF1D20 /* PEL(Total Dust).png in Resources */,
 				22B8B044152ADA9700BF1D20 /* resultBar.png in Resources */,
@@ -469,6 +570,41 @@
 				22B8B04E152ADA9700BF1D20 /* WBGT_Outdoor.png in Resources */,
 				22CAE47C152FB51A00C5E6B7 /* logos.png in Resources */,
 				22CAE47E152FB52800C5E6B7 /* logos.png in Resources */,
+				95CA6DA5153E9D7300506444 /* Oxygen Level of Room.png in Resources */,
+				95CA6DC8153E9EB000506444 /* 85dBA reached@2x.png in Resources */,
+				95CA6DC9153E9EB000506444 /* AddingSoundPressure@2x.png in Resources */,
+				95CA6DCA153E9EB000506444 /* AllowableExposureTime@2x.png in Resources */,
+				95CA6DCB153E9EB000506444 /* Avogadros Number.png in Resources */,
+				95CA6DCC153E9EB000506444 /* Avogadros Number@2x.png in Resources */,
+				95CA6DCD153E9EB000506444 /* dilutionToControlEvaporation@2x.png in Resources */,
+				95CA6DCE153E9EB000506444 /* dilutionVentilation@2x.png in Resources */,
+				95CA6DCF153E9EB000506444 /* fanLaws@2x.png in Resources */,
+				95CA6DD0153E9EB000506444 /* fanLaws2@2x.png in Resources */,
+				95CA6DD1153E9EB000506444 /* fanTotalPressure@2x.png in Resources */,
+				95CA6DD2153E9EB000506444 /* Flow rate adjustment@2x.png in Resources */,
+				95CA6DD3153E9EB000506444 /* From ppm@2x.png in Resources */,
+				95CA6DD4153E9EB000506444 /* HoodStaticPressure@2x.png in Resources */,
+				95CA6DD5153E9EB000506444 /* Inverse Square Law@2x.png in Resources */,
+				95CA6DD6153E9EB000506444 /* Oxygen Level of Room@2x.png in Resources */,
+				95CA6DD7153E9EB000506444 /* PEL(Respirable Fraction)@2x.png in Resources */,
+				95CA6DD8153E9EB000506444 /* PEL(Total Dust)@2x.png in Resources */,
+				95CA6DD9153E9EB000506444 /* PercentDose@2x.png in Resources */,
+				95CA6DDA153E9EB000506444 /* Planck's Constant.png in Resources */,
+				95CA6DDB153E9EB000506444 /* Planck's Constant@2x.png in Resources */,
+				95CA6DDC153E9EB000506444 /* Room Air changes per hour@2x.png in Resources */,
+				95CA6DDD153E9EB000506444 /* Speed of Light.png in Resources */,
+				95CA6DDE153E9EB000506444 /* Speed of Light@2x.png in Resources */,
+				95CA6DDF153E9EB000506444 /* Speed of Sound.png in Resources */,
+				95CA6DE0153E9EB000506444 /* Speed of Sound@2x.png in Resources */,
+				95CA6DE1153E9EB000506444 /* TLVmix@2x.png in Resources */,
+				95CA6DE2153E9EB000506444 /* To ppm@2x.png in Resources */,
+				95CA6DE3153E9EB000506444 /* Total Pressure@2x.png in Resources */,
+				95CA6DE4153E9EB000506444 /* TWA from %Dose@2x.png in Resources */,
+				95CA6DE5153E9EB000506444 /* TWA@2x.png in Resources */,
+				95CA6DE6153E9EB000506444 /* velocity@2x.png in Resources */,
+				95CA6DE7153E9EB000506444 /* Volume of Displaced Air@2x.png in Resources */,
+				95CA6DE8153E9EB000506444 /* WBGT_Indoor@2x.png in Resources */,
+				95CA6DE9153E9EB000506444 /* WBGT_Outdoor@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

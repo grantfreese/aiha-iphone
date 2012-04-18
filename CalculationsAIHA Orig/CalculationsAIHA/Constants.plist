@@ -8,25 +8,31 @@
 		<key>formula</key>
 		<string>6.022*10^23</string>
 		<key>imageName</key>
-		<string>avogadro.png</string>
+		<string>Avogadros Number.png</string>
 	</dict>
 	<dict>
 		<key>name</key>
 		<string>Planck&apos;s Constant</string>
 		<key>formula</key>
 		<string>6.63*10^-34 m2 kg/s</string>
+		<key>imageName</key>
+		<string>Planck&apos;s Constant.png</string>
 	</dict>
 	<dict>
 		<key>name</key>
 		<string>Speed of light</string>
 		<key>formula</key>
 		<string>3*10^8 m/s</string>
+		<key>imageName</key>
+		<string>Speed of Light.png</string>
 	</dict>
 	<dict>
 		<key>name</key>
 		<string>Speed of sound</string>
 		<key>formula</key>
 		<string>331 m/s</string>
+		<key>imageName</key>
+		<string>Speed of Sound.png</string>
 	</dict>
 </array>
 </plist>
