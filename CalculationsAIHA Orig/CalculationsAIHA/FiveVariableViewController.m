@@ -55,25 +55,27 @@
     {
         if (variable2 != 0)
         {
-            variable1 = variable2/453.59237;
+            variable1 = variable2/.45359;
         }
         else if (variable3 != 0)
         {
-            variable1 = variable3/7000;
+            variable1 = variable3/453.59237;
         }
         else if (variable4 != 0)
         {
-            variable1 = variable4/16;
+            variable1 = variable4/7000;
         }
         else if (variable5 != 0)
         {
-            variable1 = variable5/.45359;
+            variable1 = variable5/16;
         }
+
         
-        variable2 = variable1*453.59237;
-        variable3 = variable1*7000;
-        variable4 = variable1*16;
-        variable5 = variable1*.45359;
+        variable2 = variable1*.45359;
+        variable3 = variable1*453.59237;
+        variable4 = variable1*7000;
+        variable5 = variable1*16;
+        
         
         self.textField1.text = [NSString stringWithFormat:@"%.4f",variable1];
         self.textField2.text = [NSString stringWithFormat:@"%.4f",variable2];
@@ -335,11 +337,12 @@ else
         self.variable3.text = @" ";
         self.variable4.text = @" ";
         self.variable5.text = @" ";
-        self.unit1.text = @"pounds"; 
-        self.unit2.text = @"grams";
-        self.unit3.text = @"grains";
-        self.unit4.text = @"ounces";
-        self.unit5.text = @"kilogram";
+        self.unit1.text = @"pounds";
+        self.unit2.text = @"kilograms";
+        self.unit3.text = @"grams";
+        self.unit4.text = @"grains";
+        self.unit5.text = @"ounces";
+        
         self.resultUnit.text = @" ";
         self.result.text = @" ";
         self.formula.text = @"Mass Conversions";
