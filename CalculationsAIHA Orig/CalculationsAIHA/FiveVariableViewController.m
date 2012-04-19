@@ -334,6 +334,7 @@ else
         self.variable2.text = @" ";
         self.variable3.text = @" ";
         self.variable4.text = @" ";
+        self.variable5.text = @" ";
         self.unit1.text = @"pounds"; 
         self.unit2.text = @"grams";
         self.unit3.text = @"grains";
@@ -344,7 +345,7 @@ else
         self.formula.text = @"Mass Conversions";
         
     }
-    if (check == VOLUME)
+    else if (check == VOLUME)
     {
         self.variable1.text = @" ";
         self.variable2.text = @" ";
