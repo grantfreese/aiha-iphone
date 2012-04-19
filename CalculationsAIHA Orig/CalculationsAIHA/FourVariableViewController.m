@@ -312,10 +312,10 @@ else
         self.variable2.text = @" ";
         self.variable3.text = @" ";
         self.variable4.text = @" ";
-        self.unit1.text = @"lbs"; 
-        self.unit2.text = @"g";
+        self.unit1.text = @"pounds"; 
+        self.unit2.text = @"grams";
         self.unit3.text = @"grains";
-        self.unit4.text = @"oz";
+        self.unit4.text = @"ounces";
         self.resultUnit.text = @" ";
         self.result.text = @" ";
         self.formula.text = @"Mass Conversions";

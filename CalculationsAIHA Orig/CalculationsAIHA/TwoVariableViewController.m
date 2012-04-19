@@ -276,8 +276,8 @@ else
     {
         self.variable1.text = @" ";
         self.variable2.text = @" ";
-        self.unit1.text = @"ft^3/hr"; 
-        self.unit2.text = @"L/min";
+        self.unit1.text = @"cubic feet/hr"; 
+        self.unit2.text = @"liters/min";
         self.formula.text = @"Flow Rate Conversions";
         self.resultUnit.text = @" ";
         self.result.text = @" ";

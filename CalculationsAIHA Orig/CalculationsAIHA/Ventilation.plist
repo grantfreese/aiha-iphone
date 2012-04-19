@@ -50,7 +50,7 @@
 		<key>method</key>
 		<string>roomAirChanges:PerHour:</string>
 		<key>resultUnit</key>
-		<string> </string>
+		<string>AC/hr</string>
 		<key>imageName</key>
 		<string>Room Air changes per hour.png</string>
 	</dict>

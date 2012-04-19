@@ -254,9 +254,9 @@ else
         self.variable1.text = @" ";
         self.variable2.text = @" ";
         self.variable3.text = @" ";
-        self.unit1.text = @"m^3/s"; 
-        self.unit2.text = @"ft^3/min";
-        self.unit3.text = @"cm^3/s";
+        self.unit1.text = @"cubic meters/s"; 
+        self.unit2.text = @"cubic feet/min";
+        self.unit3.text = @"cubic centimeters/s";
         self.resultUnit.text = @"";
         self.result.text = @" ";
         self.formula.text = @"Flow Rate Conversions";
