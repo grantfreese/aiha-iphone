@@ -15,6 +15,7 @@
 #define EXPOSUREASSESSMENT 4
 #define VOLUME 5
 #define DISTANCE 6
+#define MASS 8
 
 @implementation FiveVariableViewController
 @synthesize textField1 = _textField1;
@@ -38,6 +39,7 @@
 @synthesize formulaImage = _formulaImage;
 @synthesize calcButton = _calcButton;
 @synthesize clearButton = _clearButton;
+
 - (IBAction) calculateButtonPressed{
     CategoryManager *catManager = [CategoryManager sharedCategoryManager];    
     int check = catManager.category;
@@ -49,7 +51,38 @@
     float variable5 = [_textField5.text floatValue]; //reads value of fifth text field and stores as a float value
     
     
-    if (check == VOLUME)
+    if(check == MASS)
+    {
+        if (variable2 != 0)
+        {
+            variable1 = variable2/453.59237;
+        }
+        else if (variable3 != 0)
+        {
+            variable1 = variable3/7000;
+        }
+        else if (variable4 != 0)
+        {
+            variable1 = variable4/16;
+        }
+        else if (variable5 != 0)
+        {
+            variable1 = variable5/.45359;
+        }
+        
+        variable2 = variable1*453.59237;
+        variable3 = variable1*7000;
+        variable4 = variable1*16;
+        variable5 = variable1*.45359;
+        
+        self.textField1.text = [NSString stringWithFormat:@"%.4f",variable1];
+        self.textField2.text = [NSString stringWithFormat:@"%.4f",variable2];
+        self.textField3.text = [NSString stringWithFormat:@"%.4f",variable3];
+        self.textField4.text = [NSString stringWithFormat:@"%.4f",variable4];
+        self.textField5.text = [NSString stringWithFormat:@"%.4f",variable5];
+        self.result.text = @" ";
+    }
+    else if (check == VOLUME)
     {
         if (variable2 != 0)
         {
@@ -295,6 +328,22 @@ else
     CategoryManager *catManager = [CategoryManager sharedCategoryManager];    
     int check = catManager.category;
     
+    if (check == MASS)
+    {
+        self.variable1.text = @" ";
+        self.variable2.text = @" ";
+        self.variable3.text = @" ";
+        self.variable4.text = @" ";
+        self.unit1.text = @"pounds"; 
+        self.unit2.text = @"grams";
+        self.unit3.text = @"grains";
+        self.unit4.text = @"ounces";
+        self.unit5.text = @"kilogram";
+        self.resultUnit.text = @" ";
+        self.result.text = @" ";
+        self.formula.text = @"Mass Conversions";
+        
+    }
     if (check == VOLUME)
     {
         self.variable1.text = @" ";
@@ -334,58 +383,56 @@ else
     
     else 
     {
-    HeatStressManager *heatManager = [HeatStressManager sharedHeatStressManager];
-    NoiseManager *noiseManager = [NoiseManager sharedNoiseManager];
-    ExposureManager *exposureManager = [ExposureManager sharedExposureManager];
-    VentilationManager *ventilationManager = [VentilationManager sharedVentilationManager];
+        HeatStressManager *heatManager = [HeatStressManager sharedHeatStressManager];
+        NoiseManager *noiseManager = [NoiseManager sharedNoiseManager];
+        ExposureManager *exposureManager = [ExposureManager sharedExposureManager];
+        VentilationManager *ventilationManager = [VentilationManager sharedVentilationManager];
     
-    NSDictionary *chosenFormula;
+        NSDictionary *chosenFormula;
     
     
     
-    if (check == 2)
-    {
-        chosenFormula = heatManager.selectedFormula;
-    }
-    else if (check == 1)
-    {
-        chosenFormula = noiseManager.selectedFormula;
-    }
-    else if (check == 4)
-    {
-        chosenFormula = exposureManager.selectedFormula;
-    }
-    else if (check == 3)
-    {
-        chosenFormula = ventilationManager.selectedFormula;
-    }
+        if (check == 2)
+        {
+            chosenFormula = heatManager.selectedFormula;
+        }
+        else if (check == 1)
+        {
+            chosenFormula = noiseManager.selectedFormula;
+        }
+        else if (check == 4)
+        {
+            chosenFormula = exposureManager.selectedFormula;
+        }
+        else if (check == 3)
+        {
+            chosenFormula = ventilationManager.selectedFormula;
+        }
     
-    NSString *variable1Text = [chosenFormula objectForKey:@"variable1"];
-    NSString *variable2Text = [chosenFormula objectForKey:@"variable2"];
-    NSString *variable3Text = [chosenFormula objectForKey:@"variable3"];
-    NSString *variable4Text = [chosenFormula objectForKey:@"variable4"];
-    NSString *variable5Text = [chosenFormula objectForKey:@"variable5"];
-    NSString *unit1Text = [chosenFormula objectForKey:@"unit1"];
-    NSString *unit2Text = [chosenFormula objectForKey:@"unit2"];
-    NSString *unit3Text = [chosenFormula objectForKey:@"unit3"];
-    NSString *unit4Text = [chosenFormula objectForKey:@"unit4"];
-    NSString *unit5Text = [chosenFormula objectForKey:@"unit5"];
-    NSString *formulaText = [chosenFormula objectForKey:@"imageName"];       
-    //NSString *formulaText = [chosenFormula objectForKey:@"formula"];
-    NSString *resultUnitText = [chosenFormula objectForKey:@"resultUnit"];
-    self.variable1.text = variable1Text;
-    self.variable2.text = variable2Text;
-    self.variable3.text = variable3Text;
-    self.variable4.text = variable4Text;
-    self.variable5.text = variable5Text;
-    self.unit1.text = unit1Text; 
-    self.unit2.text = unit2Text;
-    self.unit3.text = unit3Text;
-    self.unit4.text = unit4Text;
-    self.unit5.text = unit5Text;
-    self.formulaImage.image = [UIImage imageNamed:formulaText];    
-    //self.formula.text = formulaText;
-    self.resultUnit.text = resultUnitText;
+        NSString *variable1Text = [chosenFormula objectForKey:@"variable1"];
+        NSString *variable2Text = [chosenFormula objectForKey:@"variable2"];
+        NSString *variable3Text = [chosenFormula objectForKey:@"variable3"];
+        NSString *variable4Text = [chosenFormula objectForKey:@"variable4"];
+        NSString *variable5Text = [chosenFormula objectForKey:@"variable5"];
+        NSString *unit1Text = [chosenFormula objectForKey:@"unit1"];
+        NSString *unit2Text = [chosenFormula objectForKey:@"unit2"];
+        NSString *unit3Text = [chosenFormula objectForKey:@"unit3"];
+        NSString *unit4Text = [chosenFormula objectForKey:@"unit4"];
+        NSString *unit5Text = [chosenFormula objectForKey:@"unit5"];
+        NSString *formulaText = [chosenFormula objectForKey:@"imageName"];       
+        NSString *resultUnitText = [chosenFormula objectForKey:@"resultUnit"];
+        self.variable1.text = variable1Text;
+        self.variable2.text = variable2Text;
+        self.variable3.text = variable3Text;
+        self.variable4.text = variable4Text;
+        self.variable5.text = variable5Text;
+        self.unit1.text = unit1Text; 
+        self.unit2.text = unit2Text;
+        self.unit3.text = unit3Text;
+        self.unit4.text = unit4Text;
+        self.unit5.text = unit5Text;
+        self.formulaImage.image = [UIImage imageNamed:formulaText];    
+        self.resultUnit.text = resultUnitText;
     }
 }
 
