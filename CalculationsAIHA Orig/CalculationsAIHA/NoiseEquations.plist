@@ -14,11 +14,11 @@
 		<key>variable2</key>
 		<string>SPLi</string>
 		<key>unit1</key>
-		<string>dBA</string>
+		<string>decibels</string>
 		<key>unit2</key>
-		<string>dBA</string>
+		<string>decibels</string>
 		<key>resultUnit</key>
-		<string>dBA</string>
+		<string>decibels</string>
 		<key>method</key>
 		<string>adding:SoundPressureLevels:</string>
 		<key>imageName</key>
@@ -34,7 +34,7 @@
 		<key>variable1</key>
 		<string>L</string>
 		<key>unit1</key>
-		<string>&apos;dBA&apos; decibles</string>
+		<string>decibels</string>
 		<key>resultUnit</key>
 		<string>hours</string>
 		<key>method</key>
@@ -82,9 +82,9 @@
 		<key>unit1</key>
 		<string>%</string>
 		<key>unit2</key>
-		<string>dBA</string>
+		<string>decibels</string>
 		<key>resultUnit</key>
-		<string>dBA</string>
+		<string>decibels</string>
 		<key>method</key>
 		<string>percentDosetoTWA:</string>
 		<key>imageName</key>
@@ -100,7 +100,7 @@
 		<key>variable1</key>
 		<string>SPL</string>
 		<key>unit1</key>
-		<string>&apos;dBA&apos; decibles</string>
+		<string>decibels</string>
 		<key>resultUnit</key>
 		<string>Hours</string>
 		<key>method</key>
