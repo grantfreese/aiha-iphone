@@ -8,6 +8,7 @@
 
 #import "OneVariableViewController.h"
 #import "CategoryManager.h"
+#import <QuartzCore/QuartzCore.h> 
 
 #define NOISE 1
 #define HEATSTRESS 2
@@ -149,12 +150,25 @@ else
     _textField1.frame = CGRectMake(112, 184, 97, 31);
     _variable1.frame = CGRectMake(12, 194, 77, 21);
     _unit1.frame = CGRectMake(230, 194, 77, 21);
-    _result.frame = CGRectMake(12, 333, 210, 21);
+    _result.frame = CGRectMake(12, 333 , 210, 21);
     _resultUnit.frame = CGRectMake(233, 335, 85, 21);
-    
+        
     _calcButton.frame = CGRectMake(180, 285, 75, 35);
     _clearButton.frame = CGRectMake(65, 285, 75, 35);
 }
+    
+    [_result.layer setShadowColor:[[UIColor blackColor] CGColor]];
+    [_result.layer setShadowOffset:CGSizeMake(1.0, 1.0)];
+    [_result.layer setShadowOpacity:1.0];
+    [_result.layer setShadowRadius:0.3];
+    
+    [_resultUnit.layer setShadowColor:[[UIColor blackColor] CGColor]];
+    [_resultUnit.layer setShadowOffset:CGSizeMake(1.0, 1.0)];
+    [_resultUnit.layer setShadowOpacity:1.0];
+    [_resultUnit.layer setShadowRadius:0.3];
+    
+    [_result scrollRectToVisible:CGRectMake(1, 0, 240, 28) 
+                            animated:NO];
     [super viewWillAppear:animated];
 }
 
