@@ -21,6 +21,8 @@
 		<string>TLV in mg/m^3</string>
 		<key>method</key>
 		<string>convertPPM:ToMG:</string>
+		<key>imageName</key>
+		<string>convertTLV 1.png</string>
 	</dict>
 	<dict>
 		<key>name</key>
@@ -41,6 +43,8 @@
 		<string>TLV in ppm</string>
 		<key>method</key>
 		<string>getTLV:inPPM:</string>
+		<key>imageName</key>
+		<string>convertTLV 2.png</string>
 	</dict>
 </array>
 </plist>

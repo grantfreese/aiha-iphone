@@ -110,13 +110,13 @@
     //put the actual formula instead.
     //Don't forget that the elements in the plist must contain
     //imageName as one of its keys
-    /*NSString *imageName = [formulaInfo objectForKey:@"imageName"];
+    NSString *imageName = [ConcentrationInfo objectForKey:@"imageName"];
      if(imageName != nil) {
      cell.imageView.image = [UIImage imageNamed:imageName];
      } else {
-     */
+     
     cell.textLabel.text = [ConcentrationInfo objectForKey:@"formula"];
-    
+     }
     return cell;
 }
 

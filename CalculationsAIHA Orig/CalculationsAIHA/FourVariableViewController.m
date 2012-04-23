@@ -248,21 +248,22 @@
        self.interfaceOrientation == UIInterfaceOrientationLandscapeRight)
 {
     
-    _textField1.frame = CGRectMake(95, 85, 97, 31);
-    _variable1.frame = CGRectMake(1, 95, 90, 21);
-    _unit1.frame = CGRectMake(197, 95, 99, 21);
+    _textField1.frame = CGRectMake(80, 85, 97, 31);
+    _variable1.frame = CGRectMake(1, 95, 76, 21);
+    _unit1.frame = CGRectMake(182, 95, 62, 21);
     
-    _textField2.frame = CGRectMake(95, 125, 97, 31);
-    _variable2.frame = CGRectMake(1, 135, 90, 21);
-    _unit2.frame = CGRectMake(197, 135, 99, 21);
+    _textField2.frame = CGRectMake(80, 125, 97, 31);
+    _variable2.frame = CGRectMake(1, 135, 76, 21);
+    _unit2.frame = CGRectMake(182, 135, 62, 21);
     
-    _textField3.frame = CGRectMake(288, 85, 97, 31);
-    _variable3.frame = CGRectMake(194, 95, 90, 21);
-    _unit3.frame = CGRectMake(390, 95, 99, 21);
+    _textField3.frame = CGRectMake(303, 85, 97, 31);
+    _variable3.frame = CGRectMake(245, 95, 55, 21);
+    _unit3.frame = CGRectMake(405, 95, 75, 21);
     
-    _textField4.frame = CGRectMake(288, 125, 97, 31);
-    _variable4.frame = CGRectMake(194, 135, 90, 21);
-    _unit4.frame = CGRectMake(390, 135, 99, 21);
+    _textField4.frame = CGRectMake(303, 125, 97, 31);
+    _variable4.frame = CGRectMake(245, 135, 55, 21);
+    _unit4.frame = CGRectMake(405, 135, 75, 21);
+
     
     _result.frame = CGRectMake(92, 186, 210, 21);
     _resultUnit.frame = CGRectMake(310, 188, 85, 21);
@@ -421,21 +422,21 @@ else
         toInterfaceOrientation == UIInterfaceOrientationLandscapeRight)
     {
         
-        _textField1.frame = CGRectMake(95, 85, 97, 31);
-        _variable1.frame = CGRectMake(1, 95, 90, 21);
-        _unit1.frame = CGRectMake(197, 95, 99, 21);
+        _textField1.frame = CGRectMake(80, 85, 97, 31);
+        _variable1.frame = CGRectMake(1, 95, 76, 21);
+        _unit1.frame = CGRectMake(182, 95, 62, 21);
         
-        _textField2.frame = CGRectMake(95, 125, 97, 31);
-        _variable2.frame = CGRectMake(1, 135, 90, 21);
-        _unit2.frame = CGRectMake(197, 135, 99, 21);
+        _textField2.frame = CGRectMake(80, 125, 97, 31);
+        _variable2.frame = CGRectMake(1, 135, 76, 21);
+        _unit2.frame = CGRectMake(182, 135, 62, 21);
         
-        _textField3.frame = CGRectMake(288, 85, 97, 31);
-        _variable3.frame = CGRectMake(194, 95, 90, 21);
-        _unit3.frame = CGRectMake(390, 95, 99, 21);
+        _textField3.frame = CGRectMake(303, 85, 97, 31);
+        _variable3.frame = CGRectMake(245, 95, 55, 21);
+        _unit3.frame = CGRectMake(405, 95, 75, 21);
         
-        _textField4.frame = CGRectMake(288, 125, 97, 31);
-        _variable4.frame = CGRectMake(194, 135, 90, 21);
-        _unit4.frame = CGRectMake(390, 135, 99, 21);
+        _textField4.frame = CGRectMake(303, 125, 97, 31);
+        _variable4.frame = CGRectMake(245, 135, 55, 21);
+        _unit4.frame = CGRectMake(405, 135, 75, 21);
         
         _result.frame = CGRectMake(92, 186, 210, 21);
         _resultUnit.frame = CGRectMake(310, 188, 85, 21);

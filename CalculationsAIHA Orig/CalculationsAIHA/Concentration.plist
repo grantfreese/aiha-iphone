@@ -19,6 +19,8 @@
 		<string> </string>
 		<key>method</key>
 		<string>1</string>
+		<key>imageName</key>
+		<string>grain to gm.png</string>
 	</dict>
 	<dict>
 		<key>variable1</key>
@@ -37,6 +39,8 @@
 		<string> </string>
 		<key>method</key>
 		<string>2</string>
+		<key>imageName</key>
+		<string>mppcf.png</string>
 	</dict>
 </array>
 </plist>

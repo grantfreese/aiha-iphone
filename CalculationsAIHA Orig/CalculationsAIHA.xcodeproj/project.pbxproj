@@ -84,6 +84,27 @@
 		32BCE4BA1504812E002F1C52 /* VentilationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 32BCE4B91504812E002F1C52 /* VentilationManager.m */; };
 		32E19060152A4A390040F800 /* TlvManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 32E1905F152A4A390040F800 /* TlvManager.m */; };
 		8EC7AABC1522BB5800DAFABA /* HeatExposureTable.png in Resources */ = {isa = PBXBuildFile; fileRef = 8EC7AABB1522BB5800DAFABA /* HeatExposureTable.png */; };
+		95A739981544E00E00AE7E4E /* AIHAlogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 95A739851544E00E00AE7E4E /* AIHAlogo.png */; };
+		95A739991544E00E00AE7E4E /* AIHAlogo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 95A739861544E00E00AE7E4E /* AIHAlogo@2x.png */; };
+		95A7399A1544E00E00AE7E4E /* calculate.png in Resources */ = {isa = PBXBuildFile; fileRef = 95A739871544E00E00AE7E4E /* calculate.png */; };
+		95A7399B1544E00E00AE7E4E /* calculate@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 95A739881544E00E00AE7E4E /* calculate@2x.png */; };
+		95A7399C1544E00E00AE7E4E /* clear.png in Resources */ = {isa = PBXBuildFile; fileRef = 95A739891544E00E00AE7E4E /* clear.png */; };
+		95A7399D1544E00E00AE7E4E /* clear@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 95A7398A1544E00E00AE7E4E /* clear@2x.png */; };
+		95A7399E1544E00E00AE7E4E /* convertTLV 1.png in Resources */ = {isa = PBXBuildFile; fileRef = 95A7398B1544E00E00AE7E4E /* convertTLV 1.png */; };
+		95A7399F1544E00E00AE7E4E /* convertTLV 1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 95A7398C1544E00E00AE7E4E /* convertTLV 1@2x.png */; };
+		95A739A01544E00E00AE7E4E /* convertTLV 2.png in Resources */ = {isa = PBXBuildFile; fileRef = 95A7398D1544E00E00AE7E4E /* convertTLV 2.png */; };
+		95A739A11544E00E00AE7E4E /* convertTLV 2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 95A7398E1544E00E00AE7E4E /* convertTLV 2@2x.png */; };
+		95A739A21544E00E00AE7E4E /* flow rate 1.png in Resources */ = {isa = PBXBuildFile; fileRef = 95A7398F1544E00E00AE7E4E /* flow rate 1.png */; };
+		95A739A31544E00E00AE7E4E /* flow rate 1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 95A739901544E00E00AE7E4E /* flow rate 1@2x.png */; };
+		95A739A41544E00E00AE7E4E /* flow rate 2.png in Resources */ = {isa = PBXBuildFile; fileRef = 95A739911544E00E00AE7E4E /* flow rate 2.png */; };
+		95A739A51544E00E00AE7E4E /* flow rate 2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 95A739921544E00E00AE7E4E /* flow rate 2@2x.png */; };
+		95A739A61544E00E00AE7E4E /* grain to gm.png in Resources */ = {isa = PBXBuildFile; fileRef = 95A739931544E00E00AE7E4E /* grain to gm.png */; };
+		95A739A71544E00E00AE7E4E /* grain to gm@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 95A739941544E00E00AE7E4E /* grain to gm@2x.png */; };
+		95A739A81544E00E00AE7E4E /* mppcf.png in Resources */ = {isa = PBXBuildFile; fileRef = 95A739951544E00E00AE7E4E /* mppcf.png */; };
+		95A739A91544E00E00AE7E4E /* mppcf@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 95A739961544E00E00AE7E4E /* mppcf@2x.png */; };
+		95A739AA1544E00E00AE7E4E /* resultBar@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 95A739971544E00E00AE7E4E /* resultBar@2x.png */; };
+		95A739AD1544EB2600AE7E4E /* OSHA Table.png in Resources */ = {isa = PBXBuildFile; fileRef = 95A739AC1544EB2600AE7E4E /* OSHA Table.png */; };
+		95A739AF1544EB3600AE7E4E /* OSHA Table@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 95A739AE1544EB3600AE7E4E /* OSHA Table@2x.png */; };
 		95AD7045153FA089008810F0 /* Oxygen Level of Room.png in Resources */ = {isa = PBXBuildFile; fileRef = 95AD7044153FA089008810F0 /* Oxygen Level of Room.png */; };
 		95AD7067153FA119008810F0 /* 85dBA reached@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 95AD7046153FA119008810F0 /* 85dBA reached@2x.png */; };
 		95AD7068153FA119008810F0 /* AddingSoundPressure@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 95AD7047153FA119008810F0 /* AddingSoundPressure@2x.png */; };
@@ -231,6 +252,27 @@
 		32E1905E152A4A390040F800 /* TlvManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TlvManager.h; sourceTree = "<group>"; };
 		32E1905F152A4A390040F800 /* TlvManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TlvManager.m; sourceTree = "<group>"; };
 		8EC7AABB1522BB5800DAFABA /* HeatExposureTable.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = HeatExposureTable.png; sourceTree = "<group>"; };
+		95A739851544E00E00AE7E4E /* AIHAlogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AIHAlogo.png; sourceTree = "<group>"; };
+		95A739861544E00E00AE7E4E /* AIHAlogo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "AIHAlogo@2x.png"; sourceTree = "<group>"; };
+		95A739871544E00E00AE7E4E /* calculate.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = calculate.png; sourceTree = "<group>"; };
+		95A739881544E00E00AE7E4E /* calculate@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "calculate@2x.png"; sourceTree = "<group>"; };
+		95A739891544E00E00AE7E4E /* clear.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = clear.png; sourceTree = "<group>"; };
+		95A7398A1544E00E00AE7E4E /* clear@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "clear@2x.png"; sourceTree = "<group>"; };
+		95A7398B1544E00E00AE7E4E /* convertTLV 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "convertTLV 1.png"; sourceTree = "<group>"; };
+		95A7398C1544E00E00AE7E4E /* convertTLV 1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "convertTLV 1@2x.png"; sourceTree = "<group>"; };
+		95A7398D1544E00E00AE7E4E /* convertTLV 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "convertTLV 2.png"; sourceTree = "<group>"; };
+		95A7398E1544E00E00AE7E4E /* convertTLV 2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "convertTLV 2@2x.png"; sourceTree = "<group>"; };
+		95A7398F1544E00E00AE7E4E /* flow rate 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "flow rate 1.png"; sourceTree = "<group>"; };
+		95A739901544E00E00AE7E4E /* flow rate 1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "flow rate 1@2x.png"; sourceTree = "<group>"; };
+		95A739911544E00E00AE7E4E /* flow rate 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "flow rate 2.png"; sourceTree = "<group>"; };
+		95A739921544E00E00AE7E4E /* flow rate 2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "flow rate 2@2x.png"; sourceTree = "<group>"; };
+		95A739931544E00E00AE7E4E /* grain to gm.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "grain to gm.png"; sourceTree = "<group>"; };
+		95A739941544E00E00AE7E4E /* grain to gm@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "grain to gm@2x.png"; sourceTree = "<group>"; };
+		95A739951544E00E00AE7E4E /* mppcf.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mppcf.png; sourceTree = "<group>"; };
+		95A739961544E00E00AE7E4E /* mppcf@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mppcf@2x.png"; sourceTree = "<group>"; };
+		95A739971544E00E00AE7E4E /* resultBar@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "resultBar@2x.png"; sourceTree = "<group>"; };
+		95A739AC1544EB2600AE7E4E /* OSHA Table.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "OSHA Table.png"; sourceTree = "<group>"; };
+		95A739AE1544EB3600AE7E4E /* OSHA Table@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "OSHA Table@2x.png"; sourceTree = "<group>"; };
 		95AD7044153FA089008810F0 /* Oxygen Level of Room.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Oxygen Level of Room.png"; sourceTree = "<group>"; };
 		95AD7046153FA119008810F0 /* 85dBA reached@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "85dBA reached@2x.png"; sourceTree = "<group>"; };
 		95AD7047153FA119008810F0 /* AddingSoundPressure@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "AddingSoundPressure@2x.png"; sourceTree = "<group>"; };
@@ -449,6 +491,8 @@
 				95AD7051153FA119008810F0 /* From ppm@2x.png */,
 				95AD7052153FA119008810F0 /* HoodStaticPressure@2x.png */,
 				95AD7053153FA119008810F0 /* Inverse Square Law@2x.png */,
+				95A739AC1544EB2600AE7E4E /* OSHA Table.png */,
+				95A739AE1544EB3600AE7E4E /* OSHA Table@2x.png */,
 				95AD7054153FA119008810F0 /* Oxygen Level of Room@2x.png */,
 				95AD7055153FA119008810F0 /* PEL(Respirable Fraction)@2x.png */,
 				95AD7056153FA119008810F0 /* PEL(Total Dust)@2x.png */,
@@ -468,6 +512,25 @@
 				95AD7064153FA119008810F0 /* Volume of Displaced Air@2x.png */,
 				95AD7065153FA119008810F0 /* WBGT_Indoor@2x.png */,
 				95AD7066153FA119008810F0 /* WBGT_Outdoor@2x.png */,
+				95A739851544E00E00AE7E4E /* AIHAlogo.png */,
+				95A739861544E00E00AE7E4E /* AIHAlogo@2x.png */,
+				95A739871544E00E00AE7E4E /* calculate.png */,
+				95A739881544E00E00AE7E4E /* calculate@2x.png */,
+				95A739891544E00E00AE7E4E /* clear.png */,
+				95A7398A1544E00E00AE7E4E /* clear@2x.png */,
+				95A7398B1544E00E00AE7E4E /* convertTLV 1.png */,
+				95A7398C1544E00E00AE7E4E /* convertTLV 1@2x.png */,
+				95A7398D1544E00E00AE7E4E /* convertTLV 2.png */,
+				95A7398E1544E00E00AE7E4E /* convertTLV 2@2x.png */,
+				95A7398F1544E00E00AE7E4E /* flow rate 1.png */,
+				95A739901544E00E00AE7E4E /* flow rate 1@2x.png */,
+				95A739911544E00E00AE7E4E /* flow rate 2.png */,
+				95A739921544E00E00AE7E4E /* flow rate 2@2x.png */,
+				95A739931544E00E00AE7E4E /* grain to gm.png */,
+				95A739941544E00E00AE7E4E /* grain to gm@2x.png */,
+				95A739951544E00E00AE7E4E /* mppcf.png */,
+				95A739961544E00E00AE7E4E /* mppcf@2x.png */,
+				95A739971544E00E00AE7E4E /* resultBar@2x.png */,
 			);
 			path = "Equation Images";
 			sourceTree = "<group>";
@@ -601,6 +664,27 @@
 				95AD7085153FA119008810F0 /* Volume of Displaced Air@2x.png in Resources */,
 				95AD7086153FA119008810F0 /* WBGT_Indoor@2x.png in Resources */,
 				95AD7087153FA119008810F0 /* WBGT_Outdoor@2x.png in Resources */,
+				95A739981544E00E00AE7E4E /* AIHAlogo.png in Resources */,
+				95A739991544E00E00AE7E4E /* AIHAlogo@2x.png in Resources */,
+				95A7399A1544E00E00AE7E4E /* calculate.png in Resources */,
+				95A7399B1544E00E00AE7E4E /* calculate@2x.png in Resources */,
+				95A7399C1544E00E00AE7E4E /* clear.png in Resources */,
+				95A7399D1544E00E00AE7E4E /* clear@2x.png in Resources */,
+				95A7399E1544E00E00AE7E4E /* convertTLV 1.png in Resources */,
+				95A7399F1544E00E00AE7E4E /* convertTLV 1@2x.png in Resources */,
+				95A739A01544E00E00AE7E4E /* convertTLV 2.png in Resources */,
+				95A739A11544E00E00AE7E4E /* convertTLV 2@2x.png in Resources */,
+				95A739A21544E00E00AE7E4E /* flow rate 1.png in Resources */,
+				95A739A31544E00E00AE7E4E /* flow rate 1@2x.png in Resources */,
+				95A739A41544E00E00AE7E4E /* flow rate 2.png in Resources */,
+				95A739A51544E00E00AE7E4E /* flow rate 2@2x.png in Resources */,
+				95A739A61544E00E00AE7E4E /* grain to gm.png in Resources */,
+				95A739A71544E00E00AE7E4E /* grain to gm@2x.png in Resources */,
+				95A739A81544E00E00AE7E4E /* mppcf.png in Resources */,
+				95A739A91544E00E00AE7E4E /* mppcf@2x.png in Resources */,
+				95A739AA1544E00E00AE7E4E /* resultBar@2x.png in Resources */,
+				95A739AD1544EB2600AE7E4E /* OSHA Table.png in Resources */,
+				95A739AF1544EB3600AE7E4E /* OSHA Table@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -7,12 +7,16 @@
 		<string>1</string>
 		<key>formula</key>
 		<string>1 m^3/s = 2120 ft^3/min = 16.4 cm^3/s</string>
+		<key>imageName</key>
+		<string>flow rate 1.png</string>
 	</dict>
 	<dict>
 		<key>name</key>
 		<string>2</string>
 		<key>formula</key>
 		<string>1 ft^3/hr = .47 L/min</string>
+		<key>imageName</key>
+		<string>flow rate 2.png</string>
 	</dict>
 </array>
 </plist>
