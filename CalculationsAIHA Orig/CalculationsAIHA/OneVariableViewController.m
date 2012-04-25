@@ -25,6 +25,7 @@
 @synthesize formulaImage = _formulaImage;
 @synthesize calcButton = _calcButton;
 @synthesize clearButton = _clearButton;
+
 - (IBAction) calculateButtonPressed{
     float variable1 = [_textField1.text floatValue]; //reads value of first text field and stores as a float value
     NSNumber * calculationResult;
@@ -262,7 +263,25 @@ else
     }
 }
 
-
+- (BOOL)textField:(UITextField *)theTextField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)string 
+{
+    if(string.length == 0)
+    {
+        return YES;
+    }
+    
+    NSCharacterSet *myCharSet = [NSCharacterSet characterSetWithCharactersInString:@"0123456789."];
+    for (int i = 0; i < [string length]; i++) 
+    {
+        unichar c = [string characterAtIndex:i];
+        if ([myCharSet characterIsMember:c]) 
+        {
+            return YES;
+        }
+    }
+    
+    return NO;
+} 
 
 
 @end
