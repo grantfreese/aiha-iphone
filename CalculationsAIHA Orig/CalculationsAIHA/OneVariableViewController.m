@@ -138,8 +138,8 @@
     _textField1.frame = CGRectMake(192, 110, 97, 31);
     _variable1.frame = CGRectMake(92, 120, 77, 21);
     _unit1.frame = CGRectMake(310, 120, 77, 21);
-    _result.frame = CGRectMake(92, 186, 210, 21);
-    _resultUnit.frame = CGRectMake(310, 188, 85, 21);
+    _result.frame = CGRectMake(79, 175, 210, 31);
+    _resultUnit.frame = CGRectMake(307, 186, 85, 21);
     
     _calcButton.frame = CGRectMake(404, 177, 75, 35);
     _clearButton.frame = CGRectMake(2, 177, 75, 35);
@@ -150,8 +150,8 @@ else
     _textField1.frame = CGRectMake(112, 184, 97, 31);
     _variable1.frame = CGRectMake(12, 194, 77, 21);
     _unit1.frame = CGRectMake(230, 194, 77, 21);
-    _result.frame = CGRectMake(12, 333 , 210, 21);
-    _resultUnit.frame = CGRectMake(233, 335, 85, 21);
+    _result.frame = CGRectMake(11, 324 , 208, 31);
+    _resultUnit.frame = CGRectMake(227, 334, 85, 21);
         
     _calcButton.frame = CGRectMake(180, 285, 75, 35);
     _clearButton.frame = CGRectMake(65, 285, 75, 35);
@@ -243,8 +243,8 @@ else
         _textField1.frame = CGRectMake(192, 110, 97, 31);
         _variable1.frame = CGRectMake(92, 120, 77, 21);
         _unit1.frame = CGRectMake(310, 120, 77, 21);
-        _result.frame = CGRectMake(92, 186, 210, 21);
-        _resultUnit.frame = CGRectMake(310, 188, 85, 21);
+        _result.frame = CGRectMake(79, 173, 210, 31);
+        _resultUnit.frame = CGRectMake(307, 186, 85, 21);
         
         _calcButton.frame = CGRectMake(404, 177, 75, 35);
         _clearButton.frame = CGRectMake(2, 177, 75, 35);
@@ -255,8 +255,8 @@ else
         _textField1.frame = CGRectMake(112, 184, 97, 31);
         _variable1.frame = CGRectMake(12, 194, 77, 21);
         _unit1.frame = CGRectMake(230, 194, 77, 21);
-        _result.frame = CGRectMake(12, 333, 210, 21);
-        _resultUnit.frame = CGRectMake(233, 335, 85, 21);
+        _result.frame = CGRectMake(11, 324, 210, 31);
+        _resultUnit.frame = CGRectMake(227, 334, 85, 21);
         
         _calcButton.frame = CGRectMake(180, 285, 75, 35);
         _clearButton.frame = CGRectMake(65, 285, 75, 35);

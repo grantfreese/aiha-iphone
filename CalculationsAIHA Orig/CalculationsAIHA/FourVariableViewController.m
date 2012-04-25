@@ -451,7 +451,7 @@ else
         _variable4.frame = CGRectMake(245, 135, 55, 21);
         _unit4.frame = CGRectMake(405, 135, 75, 21);
         
-        _result.frame = CGRectMake(79, 175, 207, 29);
+        _result.frame = CGRectMake(79, 175, 207, 31);
         _resultUnit.frame = CGRectMake(307, 186, 85, 21);
         
         _calcButton.frame = CGRectMake(404, 177, 75, 35);
@@ -476,7 +476,7 @@ else
         _variable4.frame = CGRectMake(1, 224, 103, 21);
         _unit4.frame = CGRectMake(220, 224, 99, 21);
         
-        _result.frame = CGRectMake(11, 324, 208, 29);
+        _result.frame = CGRectMake(11, 324, 208, 31);
         _resultUnit.frame = CGRectMake(227, 334, 85, 21);
         
         _calcButton.frame = CGRectMake(180, 285, 75, 35);
