@@ -32,7 +32,7 @@
 @property (nonatomic, strong) IBOutlet UILabel *unit3;
 @property (nonatomic, strong) IBOutlet UILabel *unit4;
 @property (nonatomic, strong) IBOutlet UILabel *unit5;
-@property (nonatomic, strong) IBOutlet UILabel *result;
+@property (nonatomic, strong) IBOutlet UITextView *result;
 @property (nonatomic, strong) IBOutlet UILabel *formula;
 @property (nonatomic, strong) IBOutlet UILabel *resultUnit;
 @property (nonatomic, strong) IBOutlet UIImageView *formulaImage;

@@ -98,10 +98,9 @@
 }
 
 //removes keyboard when return is pressed
-- (BOOL) textFieldShouldReturn:(UITextField *)textField{
-    NSLog(@"before call");
+- (BOOL) textFieldShouldReturn:(UITextField *)textField
+{
     [textField resignFirstResponder];
-    NSLog(@"after call");
     return YES;
 }
 

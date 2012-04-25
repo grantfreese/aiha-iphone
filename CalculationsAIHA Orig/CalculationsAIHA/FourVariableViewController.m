@@ -8,6 +8,7 @@
 
 #import "FourVariableViewController.h"
 #import "CategoryManager.h"
+#import <QuartzCore/QuartzCore.h> 
 
 #define NOISE 1
 #define HEATSTRESS 2
@@ -244,7 +245,10 @@
 */
 
 - (void)viewWillAppear:(BOOL)animated
-{  if (self.interfaceOrientation == UIInterfaceOrientationLandscapeLeft ||
+{  
+    [super viewWillAppear:animated];
+    
+    if (self.interfaceOrientation == UIInterfaceOrientationLandscapeLeft ||
        self.interfaceOrientation == UIInterfaceOrientationLandscapeRight)
 {
     
@@ -265,8 +269,8 @@
     _unit4.frame = CGRectMake(405, 135, 75, 21);
 
     
-    _result.frame = CGRectMake(92, 186, 210, 21);
-    _resultUnit.frame = CGRectMake(310, 188, 85, 21);
+    _result.frame = CGRectMake(79, 175, 207, 29);
+    _resultUnit.frame = CGRectMake(307, 186, 85, 21);
     
     _calcButton.frame = CGRectMake(404, 177, 75, 35);
     _clearButton.frame = CGRectMake(2, 177, 75, 35);
@@ -290,13 +294,22 @@ else
     _variable4.frame = CGRectMake(1, 224, 103, 21);
     _unit4.frame = CGRectMake(220, 224, 99, 21);
     
-    _result.frame = CGRectMake(12, 333, 210, 21);
-    _resultUnit.frame = CGRectMake(233, 335, 85, 21);
+    _result.frame = CGRectMake(11, 324, 208, 29);
+    _resultUnit.frame = CGRectMake(227, 334, 85, 21);
     
     _calcButton.frame = CGRectMake(180, 285, 75, 35);
     _clearButton.frame = CGRectMake(65, 285, 75, 35);
 }
-    [super viewWillAppear:animated];
+
+    [_result.layer setShadowColor:[[UIColor blackColor] CGColor]];
+    [_result.layer setShadowOffset:CGSizeMake(1.0, 1.0)];
+    [_result.layer setShadowOpacity:1.0];
+    [_result.layer setShadowRadius:0.3];
+    
+    [_resultUnit.layer setShadowColor:[[UIColor blackColor] CGColor]];
+    [_resultUnit.layer setShadowOffset:CGSizeMake(1.0, 1.0)];
+    [_resultUnit.layer setShadowOpacity:1.0];
+    [_resultUnit.layer setShadowRadius:0.3];
 }
 
 
@@ -438,8 +451,8 @@ else
         _variable4.frame = CGRectMake(245, 135, 55, 21);
         _unit4.frame = CGRectMake(405, 135, 75, 21);
         
-        _result.frame = CGRectMake(92, 186, 210, 21);
-        _resultUnit.frame = CGRectMake(310, 188, 85, 21);
+        _result.frame = CGRectMake(79, 175, 207, 29);
+        _resultUnit.frame = CGRectMake(307, 186, 85, 21);
         
         _calcButton.frame = CGRectMake(404, 177, 75, 35);
         _clearButton.frame = CGRectMake(2, 177, 75, 35);
@@ -463,8 +476,8 @@ else
         _variable4.frame = CGRectMake(1, 224, 103, 21);
         _unit4.frame = CGRectMake(220, 224, 99, 21);
         
-        _result.frame = CGRectMake(12, 333, 210, 21);
-        _resultUnit.frame = CGRectMake(233, 335, 85, 21);
+        _result.frame = CGRectMake(11, 324, 208, 29);
+        _resultUnit.frame = CGRectMake(227, 334, 85, 21);
         
         _calcButton.frame = CGRectMake(180, 285, 75, 35);
         _clearButton.frame = CGRectMake(65, 285, 75, 35);

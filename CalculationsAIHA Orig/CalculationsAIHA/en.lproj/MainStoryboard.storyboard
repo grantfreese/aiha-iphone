@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="1.0" toolsVersion="1938" systemVersion="10K549" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="2oC-uV-JM6">
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="1.0" toolsVersion="1938" systemVersion="11D50d" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="2oC-uV-JM6">
     <dependencies>
         <development defaultVersion="4200" identifier="xcode"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="933"/>
@@ -421,21 +421,12 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="0" textAlignment="right" lineBreakMode="tailTruncation" minimumFontSize="10" id="8Ia-pm-LOZ">
-                                <rect key="frame" x="40" y="309" width="49" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <nil key="highlightedColor"/>
-                                <color key="shadowColor" cocoaTouchSystemColor="darkTextColor"/>
-                            </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Unit" lineBreakMode="tailTruncation" minimumFontSize="10" id="EZ7-62-nEo">
                                 <rect key="frame" x="230" y="309" width="77" height="23"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
-                                <color key="shadowColor" cocoaTouchSystemColor="darkTextColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="J8f-Xi-vDA">
                                 <rect key="frame" x="50" y="243" width="75" height="35"/>
@@ -456,6 +447,17 @@
                                 <rect key="frame" x="0.0" y="2" width="320" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" editable="NO" text="0" textAlignment="right" id="dpZ-tg-B9L">
+                                <rect key="frame" x="14" y="319" width="240" height="28"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <connections>
+                                    <outlet property="delegate" destination="QOy-69-ptC" id="saM-01-h8f"/>
+                                </connections>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -463,7 +465,7 @@
                         <outlet property="calcButton" destination="yvF-na-Lpl" id="1gF-KZ-qIk"/>
                         <outlet property="clearButton" destination="J8f-Xi-vDA" id="hXr-Tp-PKF"/>
                         <outlet property="formulaImage" destination="cVM-Rm-ht0" id="bfb-od-UcR"/>
-                        <outlet property="result" destination="8Ia-pm-LOZ" id="poB-Qa-hHz"/>
+                        <outlet property="result" destination="dpZ-tg-B9L" id="TKe-my-Cbl"/>
                         <outlet property="resultUnit" destination="EZ7-62-nEo" id="ICr-2D-1Ew"/>
                         <outlet property="textField1" destination="U7Q-KR-DS2" id="9sd-Up-ulG"/>
                         <outlet property="textField2" destination="Ghx-Tu-DC4" id="3bl-7v-It0"/>
@@ -572,21 +574,12 @@
                                     <outlet property="delegate" destination="6L6-lH-MRD" id="xqk-hq-WqF"/>
                                 </connections>
                             </textField>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="0" textAlignment="right" lineBreakMode="tailTruncation" minimumFontSize="10" id="wwn-CF-mrB">
-                                <rect key="frame" x="60" y="315" width="49" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <nil key="highlightedColor"/>
-                                <color key="shadowColor" cocoaTouchSystemColor="darkTextColor"/>
-                            </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Unit" lineBreakMode="tailTruncation" minimumFontSize="10" id="S7V-Fo-8mq">
-                                <rect key="frame" x="216" y="315" width="73" height="24"/>
+                                <rect key="frame" x="227" y="331" width="73" height="24"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
-                                <color key="shadowColor" cocoaTouchSystemColor="darkTextColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="PyZ-jM-iMT">
                                 <rect key="frame" x="46" y="264" width="75" height="35"/>
@@ -607,6 +600,17 @@
                                 <rect key="frame" x="0.0" y="4" width="320" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" editable="NO" text="0" textAlignment="right" id="8bc-nY-Dhg">
+                                <rect key="frame" x="-41" y="321" width="240" height="28"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <connections>
+                                    <outlet property="delegate" destination="6L6-lH-MRD" id="biQ-NM-MTz"/>
+                                </connections>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -615,7 +619,7 @@
                         <outlet property="calcButton" destination="BKd-A3-9nA" id="W9p-Em-IPT"/>
                         <outlet property="clearButton" destination="PyZ-jM-iMT" id="ljf-ON-jaZ"/>
                         <outlet property="formulaImage" destination="Q9G-Kb-gAp" id="jNd-k7-rbG"/>
-                        <outlet property="result" destination="wwn-CF-mrB" id="PGo-fV-TQg"/>
+                        <outlet property="result" destination="8bc-nY-Dhg" id="zzW-v9-USz"/>
                         <outlet property="resultUnit" destination="S7V-Fo-8mq" id="LWj-4T-sIw"/>
                         <outlet property="textField1" destination="OoO-h5-0b8" id="qdZ-M1-8j8"/>
                         <outlet property="textField2" destination="HrC-KM-Pxo" id="2xC-nW-k28"/>
@@ -765,26 +769,28 @@
                                     <outlet property="delegate" destination="HNx-EM-Lh5" id="R56-Wr-y5T"/>
                                 </connections>
                             </textField>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="0" textAlignment="right" lineBreakMode="tailTruncation" minimumFontSize="10" id="WSy-kt-fSX">
-                                <rect key="frame" x="72" y="344" width="49" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <nil key="highlightedColor"/>
-                                <color key="shadowColor" cocoaTouchSystemColor="darkTextColor"/>
-                            </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Unit" lineBreakMode="tailTruncation" minimumFontSize="10" id="Zjw-ee-UYN">
-                                <rect key="frame" x="210" y="344" width="42" height="21"/>
+                                <rect key="frame" x="210" y="343" width="42" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
-                                <color key="shadowColor" cocoaTouchSystemColor="darkTextColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" id="he1-Qn-14g">
                                 <rect key="frame" x="0.0" y="4" width="320" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" editable="NO" text="0" textAlignment="right" id="0P5-UW-343">
+                                <rect key="frame" x="55" y="329" width="139" height="28"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <connections>
+                                    <outlet property="delegate" destination="HNx-EM-Lh5" id="bn6-Qv-oEf"/>
+                                </connections>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -793,7 +799,7 @@
                         <outlet property="calcButton" destination="KZa-hN-hOb" id="wBT-ml-PFX"/>
                         <outlet property="clearButton" destination="vho-xN-Kcr" id="mpv-ZZ-59v"/>
                         <outlet property="formulaImage" destination="he1-Qn-14g" id="rhr-QQ-kgD"/>
-                        <outlet property="result" destination="WSy-kt-fSX" id="9Zg-SZ-q8K"/>
+                        <outlet property="result" destination="0P5-UW-343" id="Sad-PN-tSY"/>
                         <outlet property="resultUnit" destination="Zjw-ee-UYN" id="ihk-qS-RfH"/>
                         <outlet property="textField1" destination="4JP-tr-poU" id="1Lk-g1-eIz"/>
                         <outlet property="textField2" destination="78O-2R-6fT" id="x6x-0b-GXY"/>
@@ -1011,21 +1017,12 @@
                                     <outlet property="delegate" destination="qZ6-qh-AZR" id="ZBx-XJ-Zjh"/>
                                 </connections>
                             </textField>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="0" textAlignment="right" lineBreakMode="tailTruncation" minimumFontSize="10" id="3aW-vT-2Wj">
-                                <rect key="frame" x="44" y="332" width="92" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <nil key="highlightedColor"/>
-                                <color key="shadowColor" cocoaTouchSystemColor="darkTextColor"/>
-                            </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Unit" lineBreakMode="tailTruncation" minimumFontSize="10" id="qRf-XH-eex">
                                 <rect key="frame" x="184" y="332" width="92" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
-                                <color key="shadowColor" cocoaTouchSystemColor="darkTextColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="JeT-de-I4O">
                                 <rect key="frame" x="44" y="293" width="75" height="35"/>
@@ -1046,6 +1043,17 @@
                                 <rect key="frame" x="0.0" y="3" width="320" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" editable="NO" text="0" textAlignment="right" id="paD-7y-XNz">
+                                <rect key="frame" x="20" y="324" width="168" height="28"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <connections>
+                                    <outlet property="delegate" destination="qZ6-qh-AZR" id="jFD-QH-Am9"/>
+                                </connections>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -1054,7 +1062,7 @@
                         <outlet property="calcButton" destination="ZiR-Kl-T3Q" id="IKa-tY-iQv"/>
                         <outlet property="clearButton" destination="JeT-de-I4O" id="6bn-6y-nyu"/>
                         <outlet property="formulaImage" destination="ixC-U0-HC3" id="yb4-gL-uJs"/>
-                        <outlet property="result" destination="3aW-vT-2Wj" id="nu7-ma-gK0"/>
+                        <outlet property="result" destination="paD-7y-XNz" id="5iP-9c-iGV"/>
                         <outlet property="resultUnit" destination="qRf-XH-eex" id="otQ-V8-UYU"/>
                         <outlet property="textField1" destination="xjP-KS-9sg" id="MsA-0D-tkU"/>
                         <outlet property="textField2" destination="ZLt-mw-iW8" id="SNo-VD-qdy"/>
@@ -1456,7 +1464,7 @@
                 <relationship kind="outlet" name="clearButton" candidateClass="UIButton"/>
                 <relationship kind="outlet" name="formula" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="formulaImage" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="result" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="result" candidateClass="UITextView"/>
                 <relationship kind="outlet" name="resultUnit" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="textField1" candidateClass="UITextField"/>
                 <relationship kind="outlet" name="textField2" candidateClass="UITextField"/>
@@ -1485,7 +1493,7 @@
                 <relationship kind="outlet" name="clearButton" candidateClass="UIButton"/>
                 <relationship kind="outlet" name="formula" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="formulaImage" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="result" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="result" candidateClass="UITextView"/>
                 <relationship kind="outlet" name="resultUnit" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="textField1" candidateClass="UITextField"/>
                 <relationship kind="outlet" name="textField2" candidateClass="UITextField"/>
@@ -1537,7 +1545,7 @@
                 <relationship kind="outlet" name="clearButton" candidateClass="UIButton"/>
                 <relationship kind="outlet" name="formula" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="formulaImage" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="result" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="result" candidateClass="UITextView"/>
                 <relationship kind="outlet" name="resultUnit" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="textField1" candidateClass="UITextField"/>
                 <relationship kind="outlet" name="textField2" candidateClass="UITextField"/>
@@ -1557,7 +1565,7 @@
                 <relationship kind="outlet" name="clearButton" candidateClass="UIButton"/>
                 <relationship kind="outlet" name="formula" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="formulaImage" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="result" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="result" candidateClass="UITextView"/>
                 <relationship kind="outlet" name="resultUnit" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="textField1" candidateClass="UITextField"/>
                 <relationship kind="outlet" name="textField2" candidateClass="UITextField"/>
