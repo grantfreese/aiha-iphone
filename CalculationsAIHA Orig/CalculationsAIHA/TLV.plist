@@ -4,7 +4,7 @@
 <array>
 	<dict>
 		<key>name</key>
-		<string>Convert TLV to mg/m^3</string>
+		<string>Convert TLV to mg/m3</string>
 		<key>formula</key>
 		<string>Converting ppm to mg/m3</string>
 		<key>variable1</key>
@@ -18,7 +18,7 @@
 		<key>result</key>
 		<string> </string>
 		<key>resultUnit</key>
-		<string>TLV in mg/m^3</string>
+		<string>TLV in mg/m3</string>
 		<key>method</key>
 		<string>convertPPM:ToMG:</string>
 		<key>imageName</key>
@@ -36,7 +36,7 @@
 		<key>unit1</key>
 		<string>gram weight</string>
 		<key>unit2</key>
-		<string>TLV in mg/m^3</string>
+		<string>TLV in mg/m3</string>
 		<key>result</key>
 		<string> </string>
 		<key>resultUnit</key>

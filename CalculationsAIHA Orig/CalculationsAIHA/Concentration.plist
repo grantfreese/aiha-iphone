@@ -8,9 +8,9 @@
 		<key>variable2</key>
 		<string> </string>
 		<key>unit1</key>
-		<string>grain/ft^3</string>
+		<string>grain/ft3</string>
 		<key>unit2</key>
-		<string>g/m^3</string>
+		<string>g/m3</string>
 		<key>formula</key>
 		<string>grain/ft-cubed to g/m-cubed </string>
 		<key>resultUnit</key>
@@ -30,7 +30,7 @@
 		<key>unit1</key>
 		<string>mppcf</string>
 		<key>unit2</key>
-		<string>particles/cm^3</string>
+		<string>particles/cm3</string>
 		<key>formula</key>
 		<string>mppcf to particles/cm-cubed</string>
 		<key>resultUnit</key>

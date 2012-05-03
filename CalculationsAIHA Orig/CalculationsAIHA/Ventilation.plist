@@ -20,11 +20,11 @@
 		<key>unit1</key>
 		<string>L</string>
 		<key>unit2</key>
-		<string>g/cm^3</string>
+		<string>g/cm3</string>
 		<key>unit3</key>
 		<string>g</string>
 		<key>unit4</key>
-		<string>ft^3</string>
+		<string>ft3</string>
 		<key>resultUnit</key>
 		<string>%</string>
 		<key>method</key>
@@ -46,7 +46,7 @@
 		<key>unit1</key>
 		<string>cfm</string>
 		<key>unit2</key>
-		<string>ft^3</string>
+		<string>ft3</string>
 		<key>method</key>
 		<string>roomAirChanges:PerHour:</string>
 		<key>resultUnit</key>
