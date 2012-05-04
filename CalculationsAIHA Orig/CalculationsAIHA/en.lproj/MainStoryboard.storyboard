@@ -1197,7 +1197,7 @@
                                 </state>
                                 <connections>
                                     <action selector="TemperatureButtonPressed" destination="2HU-uz-dmU" eventType="touchUpInside" id="Cjr-aV-WSB"/>
-                                    <segue destination="HNx-EM-Lh5" kind="push" id="l60-4C-Krd"/>
+                                    <segue destination="qZ6-qh-AZR" kind="push" id="cuY-R3-vFr"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="zZc-ge-yzJ">
@@ -1586,6 +1586,5 @@
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
         <segue reference="k2t-Yl-1QV"/>
-        <segue reference="l60-4C-Krd"/>
     </inferredMetricsTieBreakers>
 </document>

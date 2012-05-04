@@ -2,8 +2,8 @@
 //  FourVariableViewController.m
 //  CalculationsAIHA
 //
-//  Created by asuuser on 2/28/12.
-//  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
+//  Created by Team IHOP of Arizona State University on 3/5/12.
+//  Copyright (c) 2012 AIHA. All rights reserved.
 //
 
 #import "FourVariableViewController.h"
@@ -16,7 +16,6 @@
 #define EXPOSUREASSESSMENT 4
 #define PRESSURE 7
 #define MASS 8
-#define TEMPERATURE 9
 
 @implementation FourVariableViewController
 @synthesize textField1 = _textField1;
@@ -37,30 +36,11 @@
 @synthesize formulaImage = _formulaImage;
 @synthesize calcButton = _calcButton;
 @synthesize clearButton = _clearButton;
+
 - (IBAction) calculateButtonPressed{
     CategoryManager *catManager = [CategoryManager sharedCategoryManager];    
     int check = catManager.category;
-    
-    bool var1 = false;
-    bool var2 = false;
-    bool var3 = false;
-    bool var4 = false;
-    if( [_textField1.text isEqualToString:@""])
-    {
-        var1=true;
-    }
-    if( [_textField2.text isEqualToString:@""])
-    {
-        var2=true;
-    }
-    if( [_textField3.text isEqualToString:@""])
-    {
-        var3=true;
-    }
-    if( [_textField4.text isEqualToString:@""])
-    {
-        var4=true;
-    }
+
     float variable1 = [_textField1.text floatValue]; //reads value of first text field and stores as a float value
     float variable2 = [_textField2.text floatValue]; //reads value of second text field and stores as a float value
     float variable3 = [_textField3.text floatValue];
@@ -114,39 +94,6 @@
         self.textField3.text = [NSString stringWithFormat:@"%.4f",variable3];
         self.textField4.text = [NSString stringWithFormat:@"%.4f",variable4];
     }
-    else if(check == TEMPERATURE)
-    {
-        if (var1 == false)
-        {
-            variable2 = (variable1-32)*(.555555);
-            variable3 = variable1+460;
-            variable4 = variable2+273;
-        }            
-        else if (!var2)
-        {
-            variable1 = (variable2*(1.8))+32;
-            variable3 = variable1+460;
-            variable4 = variable2+273;
-        }
-        else if (!var3)
-        {
-            variable1 = variable3-460;
-            variable2 = (variable1-32)*(.555555);
-            variable4 =((variable1-32)*(.555555))+273;
-        }
-        else if (!var4)
-        {
-            variable2 = variable4 - 273;
-            variable1 = (variable2*(1.8))+32;
-            variable3 = variable1+460;
-        }            
-            
-        self.textField1.text = [NSString stringWithFormat:@"%.4f",variable1];
-        self.textField2.text = [NSString stringWithFormat:@"%.4f",variable2];
-        self.textField3.text = [NSString stringWithFormat:@"%.4f",variable3];
-        self.textField4.text = [NSString stringWithFormat:@"%.4f",variable4];   
-    }
-    
     
     else 
     {
@@ -348,22 +295,6 @@ else
         self.resultUnit.text = @" ";
         self.result.text = @" ";
         self.formula.text = @"Pressure Conversions";
-        
-    }
-    else if (check == TEMPERATURE)
-    {
-        self.variable1.text = @" ";
-        self.variable2.text = @" ";
-        self.variable3.text = @" ";
-        self.variable4.text = @" ";
-        self.unit1.text = @"Farenheit"; 
-        self.unit2.text = @"Celsius";
-        self.unit3.text = @"Rankine";
-        self.unit4.text = @"Kelvin";
-        self.resultUnit.text = @" ";
-        self.result.text = @" ";
-        self.formula.text = @"Pressure Conversions";
-        
     }
     
     else 

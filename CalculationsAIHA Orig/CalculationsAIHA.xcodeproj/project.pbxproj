@@ -357,11 +357,11 @@
 		02F8302014FBD83200A240EE /* CalculationsAIHA */ = {
 			isa = PBXGroup;
 			children = (
+				02F8302C14FBD83200A240EE /* MainStoryboard.storyboard */,
 				0F377030150FEEBA00192044 /* UIView+FindFirstResponder.h */,
 				0F377031150FEEBA00192044 /* UIView+FindFirstResponder.m */,
 				02F8302914FBD83200A240EE /* AIHAAppDelegate.h */,
 				02F8302A14FBD83200A240EE /* AIHAAppDelegate.m */,
-				02F8302C14FBD83200A240EE /* MainStoryboard.storyboard */,
 				02F8302F14FBD83200A240EE /* AIHAViewController.h */,
 				02F8303014FBD83200A240EE /* AIHAViewController.m */,
 				0F704A59150979370055CC32 /* CategoryManager.h */,

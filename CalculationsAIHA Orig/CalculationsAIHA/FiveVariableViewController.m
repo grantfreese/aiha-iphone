@@ -2,8 +2,8 @@
 //  FiveVariableViewController.m
 //  CalculationsAIHA
 //
-//  Created by asuuser on 3/12/12.
-//  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
+//  Created by Team IHOP of Arizona State University on 3/5/12.
+//  Copyright (c) 2012 AIHA. All rights reserved.
 //
 
 #import "FiveVariableViewController.h"
@@ -17,6 +17,7 @@
 #define VOLUME 5
 #define DISTANCE 6
 #define MASS 8
+#define TEMPERATURE 9
 
 @implementation FiveVariableViewController
 @synthesize textField1 = _textField1;
@@ -51,6 +52,32 @@
     float variable4 = [_textField4.text floatValue]; //reads value of fourth text field and stores as a float value
     float variable5 = [_textField5.text floatValue]; //reads value of fifth text field and stores as a float value
     
+    bool var1 = false;
+    bool var2 = false;
+    bool var3 = false;
+    bool var4 = false;
+    bool var5 = false;
+    
+    if( [_textField1.text isEqualToString:@""])
+    {
+        var1=true;
+    }
+    if( [_textField2.text isEqualToString:@""])
+    {
+        var2=true;
+    }
+    if( [_textField3.text isEqualToString:@""])
+    {
+        var3=true;
+    }
+    if( [_textField4.text isEqualToString:@""])
+    {
+        var4=true;
+    }
+    if( [_textField5.text isEqualToString:@""])
+    {
+        var5=true;
+    }
     
     if(check == MASS)
     {
@@ -148,6 +175,50 @@
         self.textField5.text = [NSString stringWithFormat:@"%.4f",variable5];
         
     }
+    else if(check == TEMPERATURE)
+    {
+        if (!var1) //If Celsius
+        {
+            variable2 = (variable1*(1.8))+32;
+            variable3 = variable1+273.15;
+            variable4 = variable2+459.67;
+            variable5 = variable1*.8;
+        }
+        else if (!var2) //If Farenheit
+        {
+            variable1 = (variable2-32)*(.555555);
+            variable3 = variable1+273.15;
+            variable4 = variable2+459.67;
+            variable5 = (variable2-32)*(.444444);
+        }
+        else if (!var3) //If Kelvin
+        {
+            variable1 = variable3 - 273.15;
+            variable2 = (variable1*(1.8))+32;
+            variable4 = variable2+459.67;
+            variable5 = variable1*(.8);
+        }       
+        else if (!var4) //If Rankine
+        {
+            variable1 = (variable4-491.67)*.555555;
+            variable2 = variable4 - 459.67;
+            variable3 = variable4*.555555;
+            variable5 = variable1*.8;
+        }
+        else if (!var5) //If Reaumur
+        {
+            variable1 = variable5*1.25;
+            variable2 = (variable1*(1.8))+32;
+            variable3 = variable1+273.15;
+            variable4 = variable2+459.67;
+        }
+        
+        self.textField1.text = [NSString stringWithFormat:@"%.2f",variable1];
+        self.textField2.text = [NSString stringWithFormat:@"%.2f",variable2];
+        self.textField3.text = [NSString stringWithFormat:@"%.2f",variable3];
+        self.textField4.text = [NSString stringWithFormat:@"%.2f",variable4];  
+        self.textField5.text = [NSString stringWithFormat:@"%.2f",variable5];  
+    }
     
     else 
     {
@@ -221,7 +292,8 @@
     }
 }
 
-- (IBAction)clearButtonPressed{
+- (IBAction)clearButtonPressed
+{
     self.textField1.text = [NSString stringWithFormat:@""];
     self.textField2.text = [NSString stringWithFormat:@""];
     self.textField3.text = [NSString stringWithFormat:@""];
@@ -373,7 +445,7 @@ else
         self.unit2.text = @"cubic cm";
         self.unit3.text = @"cubic inches";
         self.unit4.text = @"liters";
-        self.unit5.text = @"quartz";
+        self.unit5.text = @"quarts";
         self.resultUnit.text = @" ";
         self.result.text = @" ";
         self.formula.text = @"Volume Conversions";
@@ -395,8 +467,22 @@ else
         self.resultUnit.text = @" ";
         self.result.text = @" ";
         self.formula.text = @"Distance Conversions";
-        
-        
+    }
+    else if (check == TEMPERATURE)
+    {
+        self.variable1.text = @" ";
+        self.variable2.text = @" ";
+        self.variable3.text = @" ";
+        self.variable4.text = @" ";
+        self.variable5.text = @" ";
+        self.unit1.text = @"Celsius";
+        self.unit2.text = @"Farenheit";
+        self.unit3.text = @"Kelvin";
+        self.unit4.text = @"Rankine";
+        self.unit5.text = @"Reaumur";
+        self.resultUnit.text = @" ";
+        self.result.text = @" ";
+        self.formula.text = @"Pressure Conversions";
     }
     
     else 

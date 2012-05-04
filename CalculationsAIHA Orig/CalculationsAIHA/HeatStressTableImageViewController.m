@@ -2,8 +2,8 @@
 //  HeatStressTableImageViewController.m
 //  CalculationsAIHA
 //
-//  Created by asuuser on 3/5/12.
-//  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
+//  Created by Team IHOP of Arizona State University on 3/5/12.
+//  Copyright (c) 2012 AIHA. All rights reserved.
 //
 
 #import "HeatStressTableImageViewController.h"
