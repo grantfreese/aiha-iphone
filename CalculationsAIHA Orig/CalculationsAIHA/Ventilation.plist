@@ -18,13 +18,13 @@
 		<key>variable4</key>
 		<string>roomVolume</string>
 		<key>unit1</key>
-		<string>L</string>
+		<string>liters</string>
 		<key>unit2</key>
-		<string>g/cm3</string>
+		<string>grams/cm3</string>
 		<key>unit3</key>
-		<string>g</string>
+		<string>grams</string>
 		<key>unit4</key>
-		<string>ft3</string>
+		<string>feet3</string>
 		<key>resultUnit</key>
 		<string>%</string>
 		<key>method</key>
@@ -46,7 +46,7 @@
 		<key>unit1</key>
 		<string>cfm</string>
 		<key>unit2</key>
-		<string>ft3</string>
+		<string>feet3</string>
 		<key>method</key>
 		<string>roomAirChanges:PerHour:</string>
 		<key>resultUnit</key>
@@ -100,9 +100,9 @@
 		<key>unit3</key>
 		<string>kPa</string>
 		<key>unit4</key>
-		<string>deg K</string>
+		<string>degrees K</string>
 		<key>unit5</key>
-		<string>deg K</string>
+		<string>degrees K</string>
 		<key>method</key>
 		<string>flow:Rate:Adjustment:Formula:One:</string>
 		<key>resultUnit</key>
@@ -124,7 +124,7 @@
 		<key>method</key>
 		<string>velocity:</string>
 		<key>resultUnit</key>
-		<string>ft/min</string>
+		<string>feet/min</string>
 		<key>imageName</key>
 		<string>velocity.png</string>
 	</dict>
@@ -166,9 +166,9 @@
 		<key>variable4</key>
 		<string>N</string>
 		<key>unit1</key>
-		<string>ft3/min</string>
+		<string>feet3/minute</string>
 		<key>unit2</key>
-		<string>ft3/min</string>
+		<string>feet3/minute</string>
 		<key>unit3</key>
 		<string>minutes</string>
 		<key>unit4</key>
@@ -210,7 +210,7 @@
 		<key>method</key>
 		<string>dilution:To:Control:Evaporation:Formula:</string>
 		<key>resultUnit</key>
-		<string>ft3/min</string>
+		<string>feet3/min</string>
 		<key>imageName</key>
 		<string>dilutionToControlEvaporation.png</string>
 	</dict>
@@ -280,7 +280,7 @@
 		<key>variable5</key>
 		<string>RPM2</string>
 		<key>unit1</key>
-		<string>ft3/min</string>
+		<string>feet3/min</string>
 		<key>unit2</key>
 		<string>inches</string>
 		<key>unit3</key>
@@ -290,7 +290,7 @@
 		<key>unit5</key>
 		<string>rpm</string>
 		<key>resultUnit</key>
-		<string>ft3/min</string>
+		<string>feet3/min</string>
 		<key>method</key>
 		<string>fan:Laws:Formula:Five:Var:</string>
 		<key>imageName</key>

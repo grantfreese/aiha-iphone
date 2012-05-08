@@ -82,12 +82,12 @@
         }
         else if (variable4 != 0)
         {
-            variable1 = variable4/33.93;
+            variable1 = variable4/407;
         }
         
         variable2 = variable1*14.7;
         variable3 = variable1*760;
-        variable4 = variable1*33.93;
+        variable4 = variable1*407;
         
         self.textField1.text = [NSString stringWithFormat:@"%.4f",variable1];
         self.textField2.text = [NSString stringWithFormat:@"%.4f",variable2];
@@ -291,7 +291,7 @@ else
         self.unit1.text = @"atm"; 
         self.unit2.text = @"psi";
         self.unit3.text = @"mm Hg";
-        self.unit4.text = @"ft water";
+        self.unit4.text = @"inches water";
         self.resultUnit.text = @" ";
         self.result.text = @" ";
         self.formula.text = @"Pressure Conversions";

@@ -88,6 +88,21 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="PSr-HM-LTP">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="97"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" size="button"/>
+                                <state key="normal">
+                                    <color key="titleColor" red="0.19607843137254902" green="0.30980392156862746" blue="0.52156862745098043" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="logoButtonPressed" destination="2" eventType="touchUpInside" id="oXr-2h-Zs0"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <gestureRecognizers/>
@@ -137,7 +152,7 @@
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="p4h-ME-h4O" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController definesPresentationContext="YES" id="UTH-k5-kTu" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Conversions" id="frH-ZZ-I1n"/>
+                    <tabBarItem key="tabBarItem" title="Conversions" image="conversion.png" id="frH-ZZ-I1n"/>
                     <navigationBar key="navigationBar" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="fJZ-ya-cFS">
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -830,15 +845,8 @@
                                 <rect key="frame" x="-78" y="-76" width="480" height="100"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="OSHA Permissible Heat Exposure Threshold Limit Value Table" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" minimumFontSize="10" id="KkM-Bf-gGx">
-                                <rect key="frame" x="-72" y="113" width="475" height="64"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" id="5Nj-w4-EhL">
-                                <rect key="frame" x="0.0" y="196" width="320" height="234"/>
+                                <rect key="frame" x="0.0" y="120" width="320" height="234"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <subviews>
                                     <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="HeatExposureTable.png" id="g4g-tm-Lu3">
@@ -861,7 +869,7 @@
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Heh-0K-uas" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController title="Formulas" id="buh-cO-NR4" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Formulas" id="hHl-MP-jZt"/>
+                    <tabBarItem key="tabBarItem" title="Formulas" image="formula.png" id="hHl-MP-jZt"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="Dvd-po-b8c">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -1419,6 +1427,8 @@
         <image name="HeatExposureTable.png" width="658" height="234"/>
         <image name="calculate.png" width="75" height="35"/>
         <image name="clear.png" width="75" height="35"/>
+        <image name="conversion.png" width="30" height="30"/>
+        <image name="formula.png" width="30" height="30"/>
         <image name="resultBar.png" width="480" height="36"/>
     </resources>
     <classes>
@@ -1430,6 +1440,7 @@
                 <relationship kind="outlet" name="NoiseButton" candidateClass="UIButton"/>
                 <relationship kind="outlet" name="TitleLabel" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="VentilationButton" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="logoButton" candidateClass="UIButton"/>
             </relationships>
         </class>
         <class className="ConcentrationViewController" superclassName="UITableViewController">

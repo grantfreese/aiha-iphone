@@ -255,7 +255,7 @@ else
         self.variable3.text = @"Area";
         self.unit1.text = @"inches"; 
         self.unit2.text = @"inches";
-        self.unit3.text = @"inches sq.";
+        self.unit3.text = @"square inches";
         self.resultUnit.text = @"";
         self.result.text = @" ";
         self.formula.text = @"Area of a circle";

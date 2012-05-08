@@ -37,6 +37,8 @@
 		0F37705E150FF4D300192044 /* AIHA.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F37705D150FF4D300192044 /* AIHA.png */; };
 		0F65F10915095B050028A6D7 /* OneVariableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F65F10815095B050028A6D7 /* OneVariableViewController.m */; };
 		0F704A5B150979370055CC32 /* CategoryManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F704A5A150979370055CC32 /* CategoryManager.m */; };
+		228708D115587FC9000C3888 /* formula.png in Resources */ = {isa = PBXBuildFile; fileRef = 228708D015587FC9000C3888 /* formula.png */; };
+		228708D415588A31000C3888 /* conversion.png in Resources */ = {isa = PBXBuildFile; fileRef = 228708D315588A31000C3888 /* conversion.png */; };
 		22A341121552E67700AAFC2E /* AIHAretina.png in Resources */ = {isa = PBXBuildFile; fileRef = 22A341111552E67700AAFC2E /* AIHAretina.png */; };
 		22B8B031152ADA9700BF1D20 /* 85dBA reached.png in Resources */ = {isa = PBXBuildFile; fileRef = 22B8B013152ADA9700BF1D20 /* 85dBA reached.png */; };
 		22B8B032152ADA9700BF1D20 /* AddingSoundPressure.png in Resources */ = {isa = PBXBuildFile; fileRef = 22B8B014152ADA9700BF1D20 /* AddingSoundPressure.png */; };
@@ -194,6 +196,8 @@
 		0F65F10815095B050028A6D7 /* OneVariableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OneVariableViewController.m; sourceTree = "<group>"; };
 		0F704A59150979370055CC32 /* CategoryManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CategoryManager.h; sourceTree = "<group>"; };
 		0F704A5A150979370055CC32 /* CategoryManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CategoryManager.m; sourceTree = "<group>"; };
+		228708D015587FC9000C3888 /* formula.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = formula.png; sourceTree = "<group>"; };
+		228708D315588A31000C3888 /* conversion.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = conversion.png; sourceTree = "<group>"; };
 		22A341111552E67700AAFC2E /* AIHAretina.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AIHAretina.png; sourceTree = "<group>"; };
 		22B8B013152ADA9700BF1D20 /* 85dBA reached.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "85dBA reached.png"; sourceTree = "<group>"; };
 		22B8B014152ADA9700BF1D20 /* AddingSoundPressure.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AddingSoundPressure.png; sourceTree = "<group>"; };
@@ -447,6 +451,8 @@
 		22B8B012152ADA9700BF1D20 /* Equation Images */ = {
 			isa = PBXGroup;
 			children = (
+				228708D015587FC9000C3888 /* formula.png */,
+				228708D315588A31000C3888 /* conversion.png */,
 				22B8B013152ADA9700BF1D20 /* 85dBA reached.png */,
 				22B8B014152ADA9700BF1D20 /* AddingSoundPressure.png */,
 				22B8B015152ADA9700BF1D20 /* AIHA.png */,
@@ -685,6 +691,8 @@
 				95A739AD1544EB2600AE7E4E /* OSHA Table.png in Resources */,
 				95A739AF1544EB3600AE7E4E /* OSHA Table@2x.png in Resources */,
 				22A341121552E67700AAFC2E /* AIHAretina.png in Resources */,
+				228708D115587FC9000C3888 /* formula.png in Resources */,
+				228708D415588A31000C3888 /* conversion.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -798,11 +806,13 @@
 		02F8303514FBD83200A240EE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: American Industrial Hygiene Association";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CalculationsAIHA/CalculationsAIHA-Prefix.pch";
 				INFOPLIST_FILE = "CalculationsAIHA/CalculationsAIHA-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "BA0FA380-1243-481D-838C-2C7DED9B2294";
 				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
@@ -811,11 +821,13 @@
 		02F8303614FBD83200A240EE /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: American Industrial Hygiene Association";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CalculationsAIHA/CalculationsAIHA-Prefix.pch";
 				INFOPLIST_FILE = "CalculationsAIHA/CalculationsAIHA-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "BA0FA380-1243-481D-838C-2C7DED9B2294";
 				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};

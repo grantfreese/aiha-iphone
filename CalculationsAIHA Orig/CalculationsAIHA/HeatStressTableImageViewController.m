@@ -54,6 +54,20 @@
     // e.g. self.myOutlet = nil;
 }
 
+- (void)willAnimateRotationToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation 
+                                         duration:(NSTimeInterval)duration
+{
+    if (toInterfaceOrientation == UIInterfaceOrientationLandscapeLeft ||
+        toInterfaceOrientation == UIInterfaceOrientationLandscapeRight)
+    {
+        self.scroll.frame = CGRectMake(0, 0, 480, 320);
+    }
+    else
+    {
+        self.scroll.frame = CGRectMake(0, 10, 320, 470);
+    }
+}
+
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {
     // Return YES for supported orientations

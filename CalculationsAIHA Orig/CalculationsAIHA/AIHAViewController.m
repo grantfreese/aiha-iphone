@@ -19,6 +19,14 @@
 @synthesize VentilationButton = _VentilationButton;
 @synthesize ExposureAssessmentButton = _ExposureAssessmentButton;
 @synthesize TitleLabel = _TitleLabel;
+@synthesize logoButton = _logoButton;
+
+- (IBAction)logoButtonPressed
+{
+    UIApplication *sharedApp = [UIApplication sharedApplication];
+    [sharedApp  openURL:[NSURL URLWithString:@"http://www.aiha.org"]];
+}
+
 - (IBAction)NoiseButtonPressed
 {
     HeatStressManager *heatManager = [HeatStressManager sharedHeatStressManager];
