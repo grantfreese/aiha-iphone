@@ -5,13 +5,12 @@
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
 	<key>CFBundleDisplayName</key>
-	<string>Calculator</string>
+	<string>IH Calculator</string>
 	<key>CFBundleExecutable</key>
 	<string>${EXECUTABLE_NAME}</string>
 	<key>CFBundleIconFiles</key>
 	<array>
 		<string>logos.png</string>
-		<string>AIHA.png</string>
 		<string>AIHA.png</string>
 		<string>AIHAretina.png</string>
 	</array>
@@ -22,7 +21,6 @@
 			<key>CFBundleIconFiles</key>
 			<array>
 				<string>logos.png</string>
-				<string>AIHA.png</string>
 				<string>AIHA.png</string>
 				<string>AIHAretina.png</string>
 			</array>
@@ -39,11 +37,11 @@
 	<key>CFBundlePackageType</key>
 	<string>APPL</string>
 	<key>CFBundleShortVersionString</key>
-	<string>1.2</string>
+	<string>1.0</string>
 	<key>CFBundleSignature</key>
 	<string>????</string>
 	<key>CFBundleVersion</key>
-	<string>1.2</string>
+	<string>1.0</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
 	<key>UIMainStoryboardFile</key>

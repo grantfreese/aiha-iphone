@@ -54,6 +54,21 @@
     // e.g. self.myOutlet = nil;
 }
 
+- (void)viewWillAppear:(BOOL)animated
+{  
+    [super viewWillAppear:animated];
+    
+    if (self.interfaceOrientation == UIInterfaceOrientationLandscapeLeft ||
+        self.interfaceOrientation == UIInterfaceOrientationLandscapeRight)
+    {
+        self.scroll.frame = CGRectMake(0, 0, 480, 320);
+    }
+    else
+    {
+        self.scroll.frame = CGRectMake(0, 10, 320, 470);
+    }
+}
+
 - (void)willAnimateRotationToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation 
                                          duration:(NSTimeInterval)duration
 {

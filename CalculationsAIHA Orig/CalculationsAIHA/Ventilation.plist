@@ -166,9 +166,9 @@
 		<key>variable4</key>
 		<string>N</string>
 		<key>unit1</key>
-		<string>feet3/minute</string>
+		<string>cfm</string>
 		<key>unit2</key>
-		<string>feet3/minute</string>
+		<string>cfm</string>
 		<key>unit3</key>
 		<string>minutes</string>
 		<key>unit4</key>
@@ -280,7 +280,7 @@
 		<key>variable5</key>
 		<string>RPM2</string>
 		<key>unit1</key>
-		<string>feet3/min</string>
+		<string>cfm</string>
 		<key>unit2</key>
 		<string>inches</string>
 		<key>unit3</key>
@@ -290,9 +290,9 @@
 		<key>unit5</key>
 		<string>rpm</string>
 		<key>resultUnit</key>
-		<string>feet3/min</string>
+		<string>cfm</string>
 		<key>method</key>
-		<string>fan:Laws:Formula:Five:Var:</string>
+		<string>kwri</string>
 		<key>imageName</key>
 		<string>fanLaws2.png</string>
 	</dict>

@@ -39,7 +39,6 @@
 		0F704A5B150979370055CC32 /* CategoryManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F704A5A150979370055CC32 /* CategoryManager.m */; };
 		228708D115587FC9000C3888 /* formula.png in Resources */ = {isa = PBXBuildFile; fileRef = 228708D015587FC9000C3888 /* formula.png */; };
 		228708D415588A31000C3888 /* conversion.png in Resources */ = {isa = PBXBuildFile; fileRef = 228708D315588A31000C3888 /* conversion.png */; };
-		22A341121552E67700AAFC2E /* AIHAretina.png in Resources */ = {isa = PBXBuildFile; fileRef = 22A341111552E67700AAFC2E /* AIHAretina.png */; };
 		22B8B031152ADA9700BF1D20 /* 85dBA reached.png in Resources */ = {isa = PBXBuildFile; fileRef = 22B8B013152ADA9700BF1D20 /* 85dBA reached.png */; };
 		22B8B032152ADA9700BF1D20 /* AddingSoundPressure.png in Resources */ = {isa = PBXBuildFile; fileRef = 22B8B014152ADA9700BF1D20 /* AddingSoundPressure.png */; };
 		22B8B034152ADA9700BF1D20 /* AllowableExposureTime.png in Resources */ = {isa = PBXBuildFile; fileRef = 22B8B016152ADA9700BF1D20 /* AllowableExposureTime.png */; };
@@ -68,6 +67,7 @@
 		22B8B04C152ADA9700BF1D20 /* Volume of Displaced Air.png in Resources */ = {isa = PBXBuildFile; fileRef = 22B8B02E152ADA9700BF1D20 /* Volume of Displaced Air.png */; };
 		22B8B04D152ADA9700BF1D20 /* WBGT_Indoor.png in Resources */ = {isa = PBXBuildFile; fileRef = 22B8B02F152ADA9700BF1D20 /* WBGT_Indoor.png */; };
 		22B8B04E152ADA9700BF1D20 /* WBGT_Outdoor.png in Resources */ = {isa = PBXBuildFile; fileRef = 22B8B030152ADA9700BF1D20 /* WBGT_Outdoor.png */; };
+		22C042E8155DC39C00D6E9A4 /* AIHAretina.png in Resources */ = {isa = PBXBuildFile; fileRef = 22C042E7155DC39C00D6E9A4 /* AIHAretina.png */; };
 		22C536B81525671B00886CEA /* Ventilation.plist in Resources */ = {isa = PBXBuildFile; fileRef = 22C536B71525671B00886CEA /* Ventilation.plist */; };
 		22CAE47E152FB52800C5E6B7 /* logos.png in Resources */ = {isa = PBXBuildFile; fileRef = 22CAE47D152FB52800C5E6B7 /* logos.png */; };
 		321898CE152A3E4B00D4A6AE /* FlowRate.plist in Resources */ = {isa = PBXBuildFile; fileRef = 321898CD152A3E4B00D4A6AE /* FlowRate.plist */; };
@@ -198,7 +198,6 @@
 		0F704A5A150979370055CC32 /* CategoryManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CategoryManager.m; sourceTree = "<group>"; };
 		228708D015587FC9000C3888 /* formula.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = formula.png; sourceTree = "<group>"; };
 		228708D315588A31000C3888 /* conversion.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = conversion.png; sourceTree = "<group>"; };
-		22A341111552E67700AAFC2E /* AIHAretina.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AIHAretina.png; sourceTree = "<group>"; };
 		22B8B013152ADA9700BF1D20 /* 85dBA reached.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "85dBA reached.png"; sourceTree = "<group>"; };
 		22B8B014152ADA9700BF1D20 /* AddingSoundPressure.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AddingSoundPressure.png; sourceTree = "<group>"; };
 		22B8B015152ADA9700BF1D20 /* AIHA.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AIHA.png; sourceTree = "<group>"; };
@@ -228,6 +227,7 @@
 		22B8B02E152ADA9700BF1D20 /* Volume of Displaced Air.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Volume of Displaced Air.png"; sourceTree = "<group>"; };
 		22B8B02F152ADA9700BF1D20 /* WBGT_Indoor.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = WBGT_Indoor.png; sourceTree = "<group>"; };
 		22B8B030152ADA9700BF1D20 /* WBGT_Outdoor.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = WBGT_Outdoor.png; sourceTree = "<group>"; };
+		22C042E7155DC39C00D6E9A4 /* AIHAretina.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AIHAretina.png; sourceTree = "<group>"; };
 		22C536B71525671B00886CEA /* Ventilation.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Ventilation.plist; sourceTree = "<group>"; };
 		22CAE47B152FB51A00C5E6B7 /* logos.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logos.png; sourceTree = "<group>"; };
 		22CAE47D152FB52800C5E6B7 /* logos.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logos.png; sourceTree = "<group>"; };
@@ -331,9 +331,9 @@
 		02F8300B14FBD83200A240EE = {
 			isa = PBXGroup;
 			children = (
-				22A341111552E67700AAFC2E /* AIHAretina.png */,
 				22CAE47D152FB52800C5E6B7 /* logos.png */,
 				0F37705D150FF4D300192044 /* AIHA.png */,
+				22C042E7155DC39C00D6E9A4 /* AIHAretina.png */,
 				02F8302014FBD83200A240EE /* CalculationsAIHA */,
 				02F8301914FBD83200A240EE /* Frameworks */,
 				02F8301714FBD83200A240EE /* Products */,
@@ -690,9 +690,9 @@
 				95A739AA1544E00E00AE7E4E /* resultBar@2x.png in Resources */,
 				95A739AD1544EB2600AE7E4E /* OSHA Table.png in Resources */,
 				95A739AF1544EB3600AE7E4E /* OSHA Table@2x.png in Resources */,
-				22A341121552E67700AAFC2E /* AIHAretina.png in Resources */,
 				228708D115587FC9000C3888 /* formula.png in Resources */,
 				228708D415588A31000C3888 /* conversion.png in Resources */,
+				22C042E8155DC39C00D6E9A4 /* AIHAretina.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -764,7 +764,7 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				CLANG_ENABLE_OBJC_ARC = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Craig Sorrell (VYL5XE46K8)";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -779,6 +779,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "30B5F89E-9627-4008-9E2E-C63460AE2BC4";
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -789,7 +790,7 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				CLANG_ENABLE_OBJC_ARC = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Craig Sorrell (VYL5XE46K8)";
 				COPY_PHASE_STRIP = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
@@ -798,6 +799,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "30B5F89E-9627-4008-9E2E-C63460AE2BC4";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -806,13 +808,13 @@
 		02F8303514FBD83200A240EE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: American Industrial Hygiene Association";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Craig Sorrell (VYL5XE46K8)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CalculationsAIHA/CalculationsAIHA-Prefix.pch";
 				INFOPLIST_FILE = "CalculationsAIHA/CalculationsAIHA-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "BA0FA380-1243-481D-838C-2C7DED9B2294";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "30B5F89E-9627-4008-9E2E-C63460AE2BC4";
 				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
@@ -821,13 +823,13 @@
 		02F8303614FBD83200A240EE /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: American Industrial Hygiene Association";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Craig Sorrell (VYL5XE46K8)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CalculationsAIHA/CalculationsAIHA-Prefix.pch";
 				INFOPLIST_FILE = "CalculationsAIHA/CalculationsAIHA-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "BA0FA380-1243-481D-838C-2C7DED9B2294";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "30B5F89E-9627-4008-9E2E-C63460AE2BC4";
 				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};

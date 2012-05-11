@@ -36,7 +36,7 @@
 		<key>number</key>
 		<string>3</string>
 		<key>variable1</key>
-		<string>%quartz</string>
+		<string>%qrtz</string>
 		<key>variable2</key>
 		<string>%crist</string>
 		<key>variable3</key>
