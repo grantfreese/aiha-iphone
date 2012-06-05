@@ -4,7 +4,7 @@
 <array>
 	<dict>
 		<key>name</key>
-		<string>Convert TLV to mg/m3</string>
+		<string>Convert OEL to mg/m3</string>
 		<key>formula</key>
 		<string>Converting ppm to mg/m3</string>
 		<key>variable1</key>
@@ -14,37 +14,37 @@
 		<key>unit1</key>
 		<string>gram weight</string>
 		<key>unit2</key>
-		<string>TLV in PPM</string>
+		<string>OEL in PPM</string>
 		<key>result</key>
 		<string> </string>
 		<key>resultUnit</key>
-		<string>TLV in mg/m3</string>
+		<string>OEL in mg/m3</string>
 		<key>method</key>
 		<string>convertPPM:ToMG:</string>
 		<key>imageName</key>
-		<string>convertTLV 1.png</string>
+		<string>convertOEL 1.png</string>
 	</dict>
 	<dict>
 		<key>name</key>
-		<string>Convert TLV to ppm</string>
+		<string>Convert OEL to ppm</string>
 		<key>formula</key>
 		<string>Converting mg/m3 to ppm</string>
 		<key>variable1</key>
-		<string>TLV</string>
+		<string>OEL</string>
 		<key>variable2</key>
 		<string>mg</string>
 		<key>unit1</key>
 		<string>gram weight</string>
 		<key>unit2</key>
-		<string>TLV in mg/m3</string>
+		<string>OEM in mg/m3</string>
 		<key>result</key>
 		<string> </string>
 		<key>resultUnit</key>
-		<string>TLV in ppm</string>
+		<string>OEL in ppm</string>
 		<key>method</key>
-		<string>getTLV:inPPM:</string>
+		<string>getOEL:inPPM:</string>
 		<key>imageName</key>
-		<string>convertTLV 2.png</string>
+		<string>convertOEL 2.png</string>
 	</dict>
 </array>
 </plist>

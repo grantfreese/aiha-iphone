@@ -168,14 +168,14 @@ SoundPressureLevels:(NSNumber*)n_o
 }
 
 
--(float) TLV: (float)c1
+-(float) OEL: (float)c1
           of: (float)t1
      Mixture: (float)c2
     MultiVar:(float)t2
 {
     float temp;
     
-    //% = ( (C1/TLV1) + (C2/TLV2) + (Ci / TLVi))
+    //% = ( (C1/OEL1) + (C2/OEL2) + (Ci / OELi))
     if(c2 == 0.0 || t2 == 0.0)
         temp =  ((c1/t1));
     else
@@ -282,7 +282,7 @@ SoundPressureLevels:(NSNumber*)n_o
 +(NSNumber*) hood: (NSNumber*) VPd_o
    StaticPressure: (NSNumber*) he_o
 {
-    //((gram molecular weight of substance) * (TLV in ppm)) / 24.45
+    //((gram molecular weight of substance) * (OEL in ppm)) / 24.45
     float VPd = [VPd_o floatValue];
     float he = [he_o floatValue];
     
@@ -332,7 +332,7 @@ SoundPressureLevels:(NSNumber*)n_o
 +(NSNumber*) fan: (NSNumber*) TPout_o
    TotalPressure: (NSNumber*) TPin_o
 {
-    //((gram molecular weight of substance) * (TLV in ppm)) / 24.45
+    //((gram molecular weight of substance) * (OEL in ppm)) / 24.45
     float TPout = [TPout_o floatValue];
     float TPin = [TPin_o floatValue];
     
@@ -363,7 +363,7 @@ SoundPressureLevels:(NSNumber*)n_o
 +(NSNumber*) convertPPM: (NSNumber*) mg_o 
                  ToMG: (NSNumber*) ppm_o
 {
-    //((gram molecular weight of substance) * (TLV in ppm)) / 24.45
+    //((gram molecular weight of substance) * (OEL in ppm)) / 24.45
     float mg = [mg_o floatValue];
     float ppm = [ppm_o floatValue];
     
@@ -373,14 +373,14 @@ SoundPressureLevels:(NSNumber*)n_o
     return retVal;
 }
 
-//getTLVinPPM
-+(NSNumber*) getTLV: (NSNumber*) tlv_o 
+//getOELinPPM
++(NSNumber*) getOEL: (NSNumber*) oel_o 
               inPPM: (NSNumber*) mg_o
 {
-    //(24.45 * (TLV in mg/m^3)) / (gram molecular weight of substance)
-    float tlv = [mg_o floatValue];
-    float mg = [tlv_o floatValue];
-    float temp = 24.45 * tlv;
+    //(24.45 * (OEL in mg/m^3)) / (gram molecular weight of substance)
+    float oel = [mg_o floatValue];
+    float mg = [oel_o floatValue];
+    float temp = 24.45 * oel;
     temp = (temp / mg);
     
     NSNumber *retVal = [NSNumber numberWithFloat:temp]; 
@@ -523,7 +523,7 @@ SoundPressureLevels:(NSNumber*)n_o
 //gToLb
 +(NSNumber*) gToLb: (NSNumber*) g_o
 {
-    //(24.45 * (TLV in mg/m^3)) / (gram molecular weight of substance)
+    //(24.45 * (OEL in mg/m^3)) / (gram molecular weight of substance)
     float g = [g_o floatValue];
     float temp = g / 453.6;
     
@@ -534,7 +534,7 @@ SoundPressureLevels:(NSNumber*)n_o
 //gToGrains
 +(NSNumber*) gToGrains: (NSNumber*) g_o
 {
-    //(24.45 * (TLV in mg/m^3)) / (gram molecular weight of substance)
+    //(24.45 * (OEL in mg/m^3)) / (gram molecular weight of substance)
     float g = [g_o floatValue];
     float temp = g * 15.43;
     
@@ -545,7 +545,7 @@ SoundPressureLevels:(NSNumber*)n_o
 //grainsToG
 +(NSNumber*) grainsToG: (NSNumber*) g_o
 {
-    //(24.45 * (TLV in mg/m^3)) / (gram molecular weight of substance)
+    //(24.45 * (OEL in mg/m^3)) / (gram molecular weight of substance)
     float g = [g_o floatValue];
     float temp = g / 15.43;
     
@@ -556,7 +556,7 @@ SoundPressureLevels:(NSNumber*)n_o
 //ozToG
 +(NSNumber*) ozToG: (NSNumber*) oz_o
 {
-    //(24.45 * (TLV in mg/m^3)) / (gram molecular weight of substance)
+    //(24.45 * (OEL in mg/m^3)) / (gram molecular weight of substance)
     float oz = [oz_o floatValue];
     float temp = oz * 28.35;
     
@@ -567,7 +567,7 @@ SoundPressureLevels:(NSNumber*)n_o
 //gToOz
 +(NSNumber*)gToOz: (NSNumber*) g_o
 {
-    //(24.45 * (TLV in mg/m^3)) / (gram molecular weight of substance)
+    //(24.45 * (OEL in mg/m^3)) / (gram molecular weight of substance)
     float g = [g_o floatValue];
     float temp = g / 28.35;
     

@@ -55,8 +55,8 @@ SoundPressureLevels:(NSNumber*)n_o;
           Total:(float)crist
            Dust:(float)trid;
 
-//TLV:of:Mixture:MultiVar:
--(float) TLV: (float)c1
+//OEL:of:Mixture:MultiVar:
+-(float) OEL: (float)c1
           of: (float)t1
      Mixture: (float)c2
     MultiVar:(float)t2;
@@ -119,8 +119,8 @@ SoundPressureLevels:(NSNumber*)n_o;
 
 //Conversion equations
 
-//getTLVinPPM
-+(NSNumber*) getTLV: (NSNumber*) tlv 
+//getOELinPPM
++(NSNumber*) getOEL: (NSNumber*) oel 
           inPPM: (NSNumber*) mg;
 
 //ftToCm
