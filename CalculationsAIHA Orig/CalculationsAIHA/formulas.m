@@ -74,7 +74,9 @@ SoundPressureLevels:(NSNumber*)n_o
 {
     float SPL = [SPL_o floatValue];
     
-    float temp = 8 / (2*((SPL-90)/5));
+    float temp = (SPL-90)/5;
+    temp = pow(2, temp);
+    temp = 8 / temp;
     
     NSNumber *retVal = [NSNumber numberWithFloat:temp];
     return retVal;
@@ -85,11 +87,11 @@ SoundPressureLevels:(NSNumber*)n_o
 +(NSNumber*) eightHourTWSof85dBa: (NSNumber*) soundPressure_o
 {
     float soundPressure = [soundPressure_o floatValue];
-    //T = 8/((L - 85)/3)2)
+    //T = 8/(2 ^ (L - 85)/3))
     //Assumes a 3dB doubling rate.
     float temp = (soundPressure - 85.0);
     temp = temp/3;
-    temp = temp * 2;
+    temp = pow(2, temp);
     temp = 8 / temp;
     NSNumber *retval = [NSNumber numberWithFloat:temp];
     return retval;

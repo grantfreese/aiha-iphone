@@ -56,13 +56,13 @@
 		<key>variable3</key>
 		<string>d2</string>
 		<key>unit1</key>
-		<string>m/R</string>
+		<string>watts/m2</string>
 		<key>unit2</key>
-		<string>feet</string>
+		<string>meters</string>
 		<key>unit3</key>
-		<string>feet</string>
+		<string>meters</string>
 		<key>resultUnit</key>
-		<string>m/R</string>
+		<string>watts/m2</string>
 		<key>method</key>
 		<string>inverse:Square:Law:</string>
 		<key>imageName</key>
