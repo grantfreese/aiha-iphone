@@ -89,24 +89,32 @@
 }
 
 - (void)viewWillAppear:(BOOL)animated
-{  if (self.interfaceOrientation == UIInterfaceOrientationLandscapeLeft ||
-       self.interfaceOrientation == UIInterfaceOrientationLandscapeRight)
 {
-    _NoiseButton.frame = CGRectMake(30, 114, 185, 40);
-    _HeatStressButton.frame = CGRectMake(30, 164, 185, 40);
-    _VentilationButton.frame = CGRectMake(265, 114, 185, 40);
-    _ExposureAssessmentButton.frame = CGRectMake(265, 164, 185, 40);
-    _TitleLabel.frame = CGRectMake(171,71,138,32);
+    NSString *deviceType = [UIDevice currentDevice].model;
     
-}
-else
-{
-    _NoiseButton.frame = CGRectMake(65, 154, 185, 40);
-    _HeatStressButton.frame = CGRectMake(65, 204, 185, 40);
-    _VentilationButton.frame = CGRectMake(65, 254, 185, 40);
-    _ExposureAssessmentButton.frame = CGRectMake(65, 304, 185, 40);
-    _TitleLabel.frame = CGRectMake(91,110,138,32);
-}
+    if([deviceType isEqualToString:@"iPhone"])
+    {
+        
+        if (self.interfaceOrientation == UIInterfaceOrientationLandscapeLeft ||
+            self.interfaceOrientation == UIInterfaceOrientationLandscapeRight)
+        {
+            _NoiseButton.frame = CGRectMake(30, 114, 185, 40);
+            _HeatStressButton.frame = CGRectMake(30, 164, 185, 40);
+            _VentilationButton.frame = CGRectMake(265, 114, 185, 40);
+            _ExposureAssessmentButton.frame = CGRectMake(265, 164, 185, 40);
+            _TitleLabel.frame = CGRectMake(171,71,138,32);
+    
+        }
+        else
+        {
+            _NoiseButton.frame = CGRectMake(65, 154, 185, 40);
+            _HeatStressButton.frame = CGRectMake(65, 204, 185, 40);
+            _VentilationButton.frame = CGRectMake(65, 254, 185, 40);
+            _ExposureAssessmentButton.frame = CGRectMake(65, 304, 185, 40);
+            _TitleLabel.frame = CGRectMake(91,110,138,32);
+        }
+    }
+    
     [super viewWillAppear:animated];
 }
 

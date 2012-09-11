@@ -75,6 +75,7 @@
 		22C042E8155DC39C00D6E9A4 /* AIHAretina.png in Resources */ = {isa = PBXBuildFile; fileRef = 22C042E7155DC39C00D6E9A4 /* AIHAretina.png */; };
 		22C536B81525671B00886CEA /* Ventilation.plist in Resources */ = {isa = PBXBuildFile; fileRef = 22C536B71525671B00886CEA /* Ventilation.plist */; };
 		22CAE47E152FB52800C5E6B7 /* logos.png in Resources */ = {isa = PBXBuildFile; fileRef = 22CAE47D152FB52800C5E6B7 /* logos.png */; };
+		2C0AE3AF15FFC83B00641451 /* iPad_Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C0AE3AE15FFC83B00641451 /* iPad_Storyboard.storyboard */; };
 		321898CE152A3E4B00D4A6AE /* FlowRate.plist in Resources */ = {isa = PBXBuildFile; fileRef = 321898CD152A3E4B00D4A6AE /* FlowRate.plist */; };
 		321898D1152A3E7200D4A6AE /* Concentration.plist in Resources */ = {isa = PBXBuildFile; fileRef = 321898D0152A3E7200D4A6AE /* Concentration.plist */; };
 		321898D8152A3EAC00D4A6AE /* Constants.plist in Resources */ = {isa = PBXBuildFile; fileRef = 321898D7152A3EAC00D4A6AE /* Constants.plist */; };
@@ -234,6 +235,7 @@
 		22C536B71525671B00886CEA /* Ventilation.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Ventilation.plist; sourceTree = "<group>"; };
 		22CAE47B152FB51A00C5E6B7 /* logos.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logos.png; sourceTree = "<group>"; };
 		22CAE47D152FB52800C5E6B7 /* logos.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logos.png; sourceTree = "<group>"; };
+		2C0AE3AE15FFC83B00641451 /* iPad_Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = iPad_Storyboard.storyboard; sourceTree = "<group>"; };
 		321898CD152A3E4B00D4A6AE /* FlowRate.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = FlowRate.plist; sourceTree = "<group>"; };
 		321898D0152A3E7200D4A6AE /* Concentration.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Concentration.plist; sourceTree = "<group>"; };
 		321898D7152A3EAC00D4A6AE /* Constants.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Constants.plist; sourceTree = "<group>"; };
@@ -358,6 +360,7 @@
 			isa = PBXGroup;
 			children = (
 				02F8302C14FBD83200A240EE /* MainStoryboard.storyboard */,
+				2C0AE3AE15FFC83B00641451 /* iPad_Storyboard.storyboard */,
 				0F377030150FEEBA00192044 /* UIView+FindFirstResponder.h */,
 				0F377031150FEEBA00192044 /* UIView+FindFirstResponder.m */,
 				02F8302914FBD83200A240EE /* AIHAAppDelegate.h */,
@@ -685,6 +688,7 @@
 				225442CC157DAA7200633E94 /* convertOEL 1@2x.png in Resources */,
 				225442CD157DAA7200633E94 /* convertOEL 2.png in Resources */,
 				225442CE157DAA7200633E94 /* convertOEL 2@2x.png in Resources */,
+				2C0AE3AF15FFC83B00641451 /* iPad_Storyboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -804,10 +808,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CalculationsAIHA/CalculationsAIHA-Prefix.pch";
 				INFOPLIST_FILE = "CalculationsAIHA/CalculationsAIHA-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -820,10 +824,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CalculationsAIHA/CalculationsAIHA-Prefix.pch";
 				INFOPLIST_FILE = "CalculationsAIHA/CalculationsAIHA-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
