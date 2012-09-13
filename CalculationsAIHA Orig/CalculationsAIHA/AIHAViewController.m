@@ -92,7 +92,7 @@
 {
     NSString *deviceType = [UIDevice currentDevice].model;
     
-    if([deviceType isEqualToString:@"iPhone"])
+    if([deviceType isEqualToString:@"iPhone"]||[deviceType isEqualToString:@"iPhone Simulator"])
     {
         
         if (self.interfaceOrientation == UIInterfaceOrientationLandscapeLeft ||

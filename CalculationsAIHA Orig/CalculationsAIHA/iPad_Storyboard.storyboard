@@ -230,7 +230,7 @@
                     <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="blackTranslucent"/>
                 </tableViewController>
             </objects>
-            <point key="canvasLocation" x="1167" y="502"/>
+            <point key="canvasLocation" x="1153" y="486"/>
         </scene>
         <!--Heat Stress List View Controller-->
         <scene sceneID="KCD-77-JcE">
@@ -1473,7 +1473,6 @@
         <class className="AIHAViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/AIHAViewController.h"/>
             <relationships>
-                <relationship kind="action" name="handlePinch:" candidateClass="UIPinchGestureRecognizer"/>
                 <relationship kind="outlet" name="ExposureAssessmentButton" candidateClass="UIButton"/>
                 <relationship kind="outlet" name="HeatStressButton" candidateClass="UIButton"/>
                 <relationship kind="outlet" name="NoiseButton" candidateClass="UIButton"/>
