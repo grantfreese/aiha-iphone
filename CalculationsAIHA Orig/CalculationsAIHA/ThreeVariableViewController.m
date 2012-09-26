@@ -182,51 +182,56 @@
 - (void)viewWillAppear:(BOOL)animated
 {  
     [super viewWillAppear:animated];
+    NSString *deviceType = [UIDevice currentDevice].model;
     
-    if (self.interfaceOrientation == UIInterfaceOrientationLandscapeLeft ||
-       self.interfaceOrientation == UIInterfaceOrientationLandscapeRight)
-{
+    if([deviceType isEqualToString:@"iPhone"]||[deviceType isEqualToString:@"iPhone Simulator"])
+    {
+        if (self.interfaceOrientation == UIInterfaceOrientationLandscapeLeft ||
+            self.interfaceOrientation == UIInterfaceOrientationLandscapeRight)
+        {
     
-    _textField1.frame = CGRectMake(192, 65, 97, 31);
-    _variable1.frame = CGRectMake(98, 75, 90, 21);
-    _unit1.frame = CGRectMake(294, 75, 99, 21);
+            _textField1.frame = CGRectMake(192, 65, 97, 31);
+            _variable1.frame = CGRectMake(98, 75, 90, 21);
+            _unit1.frame = CGRectMake(294, 75, 99, 21);
     
-    _textField2.frame = CGRectMake(192, 105, 97, 31);
-    _variable2.frame = CGRectMake(98, 115, 90, 21);
-    _unit2.frame = CGRectMake(294, 115, 99, 21);
+            _textField2.frame = CGRectMake(192, 105, 97, 31);
+            _variable2.frame = CGRectMake(98, 115, 90, 21);
+            _unit2.frame = CGRectMake(294, 115, 99, 21);
     
-    _textField3.frame = CGRectMake(192, 145, 97, 31);
-    _variable3.frame = CGRectMake(98, 155, 90, 21);
-    _unit3.frame = CGRectMake(294, 155, 99, 21);
+            _textField3.frame = CGRectMake(192, 145, 97, 31);
+            _variable3.frame = CGRectMake(98, 155, 90, 21);
+            _unit3.frame = CGRectMake(294, 155, 99, 21);
     
-    _result.frame = CGRectMake(79, 175, 207, 31);
-    _resultUnit.frame = CGRectMake(307, 186, 85, 21);
+            _result.frame = CGRectMake(79, 175, 207, 31);
+            _resultUnit.frame = CGRectMake(307, 186, 85, 21);
     
-    _calcButton.frame = CGRectMake(404, 177, 75, 35);
-    _clearButton.frame = CGRectMake(2, 177, 75, 35);
+            _calcButton.frame = CGRectMake(404, 177, 75, 35);
+            _clearButton.frame = CGRectMake(2, 177, 75, 35);
     
-}
-else
-{
+        }
+        else
+        {
     
-    _textField1.frame = CGRectMake(112, 114, 97, 31);
-    _variable1.frame = CGRectMake(1, 124, 103, 21);
-    _unit1.frame = CGRectMake(220, 124, 99, 21);
+            _textField1.frame = CGRectMake(112, 114, 97, 31);
+            _variable1.frame = CGRectMake(1, 124, 103, 21);
+            _unit1.frame = CGRectMake(220, 124, 99, 21);
     
-    _textField2.frame = CGRectMake(112, 154, 97, 31);
-    _variable2.frame = CGRectMake(1, 164, 103, 21);
-    _unit2.frame = CGRectMake(220, 164, 99, 21);
+            _textField2.frame = CGRectMake(112, 154, 97, 31);
+            _variable2.frame = CGRectMake(1, 164, 103, 21);
+            _unit2.frame = CGRectMake(220, 164, 99, 21);
     
-    _textField3.frame = CGRectMake(112, 194, 97, 31);
-    _variable3.frame = CGRectMake(1, 204, 103, 21);
-    _unit3.frame = CGRectMake(220, 204, 99, 21);
+            _textField3.frame = CGRectMake(112, 194, 97, 31);
+            _variable3.frame = CGRectMake(1, 204, 103, 21);
+            _unit3.frame = CGRectMake(220, 204, 99, 21);
     
-    _result.frame = CGRectMake(11, 324, 208, 31);
-    _resultUnit.frame = CGRectMake(227, 334, 85, 21);
+            _result.frame = CGRectMake(11, 324, 208, 31);
+            _resultUnit.frame = CGRectMake(227, 334, 85, 21);
     
-    _calcButton.frame = CGRectMake(180, 285, 75, 35);
-    _clearButton.frame = CGRectMake(65, 285, 75, 35);
-}
+            _calcButton.frame = CGRectMake(180, 285, 75, 35);
+            _clearButton.frame = CGRectMake(65, 285, 75, 35);
+        }
+    }
+    
     [_result.layer setShadowColor:[[UIColor blackColor] CGColor]];
     [_result.layer setShadowOffset:CGSizeMake(1.0, 1.0)];
     [_result.layer setShadowOpacity:1.0];
