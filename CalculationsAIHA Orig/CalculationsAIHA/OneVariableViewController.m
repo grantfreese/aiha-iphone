@@ -137,8 +137,6 @@
     
     if([deviceType isEqualToString:@"iPhone"]||[deviceType isEqualToString:@"iPhone Simulator"])
     {
-    
-    
         if (self.interfaceOrientation == UIInterfaceOrientationLandscapeLeft ||
             self.interfaceOrientation == UIInterfaceOrientationLandscapeRight)
         {
@@ -150,7 +148,6 @@
     
             _calcButton.frame = CGRectMake(404, 177, 75, 35);
             _clearButton.frame = CGRectMake(2, 177, 75, 35);
-    
         }
         else
         {
@@ -162,6 +159,33 @@
         
             _calcButton.frame = CGRectMake(180, 285, 75, 35);
             _clearButton.frame = CGRectMake(65, 285, 75, 35);
+        }
+    }
+    
+    if([deviceType isEqualToString:@"iPad"]||[deviceType isEqualToString:@"iPad Simulator"])
+    {
+        if (self.interfaceOrientation == UIInterfaceOrientationLandscapeLeft ||
+            self.interfaceOrientation == UIInterfaceOrientationLandscapeRight)
+        {
+            _textField1.frame = CGRectMake(192, 110, 97, 31);
+            _variable1.frame = CGRectMake(92, 120, 77, 21);
+            _unit1.frame = CGRectMake(310, 120, 77, 21);
+            _result.frame = CGRectMake(79, 175, 210, 31);
+            _resultUnit.frame = CGRectMake(307, 186, 85, 21);
+            
+            _calcButton.frame = CGRectMake(10, 20, 150, 70);
+            _clearButton.frame = CGRectMake(10, 20, 150, 70);
+        }
+        else
+        {
+            _textField1.frame = CGRectMake(112, 184, 97, 31);
+            _variable1.frame = CGRectMake(12, 194, 77, 21);
+            _unit1.frame = CGRectMake(230, 194, 77, 21);
+            _result.frame = CGRectMake(225, 555 , 208, 31);
+            _resultUnit.frame = CGRectMake(450, 568, 85, 21);
+    
+            _calcButton.frame = CGRectMake(529, 468, 150, 70);
+            _clearButton.frame = CGRectMake(123, 468, 150, 70);
         }
     }
     
@@ -246,6 +270,7 @@
 - (void)willAnimateRotationToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation 
                                          duration:(NSTimeInterval)duration
 {
+    // STARTS IN PORTRAIT POSITION 
     if (toInterfaceOrientation == UIInterfaceOrientationLandscapeLeft ||
         toInterfaceOrientation == UIInterfaceOrientationLandscapeRight)
     {
@@ -255,8 +280,8 @@
         _result.frame = CGRectMake(79, 173, 210, 31);
         _resultUnit.frame = CGRectMake(307, 186, 85, 21);
         
-        _calcButton.frame = CGRectMake(404, 177, 75, 35);
-        _clearButton.frame = CGRectMake(2, 177, 75, 35);
+        _calcButton.frame = CGRectMake(10, 20, 150, 70);
+        _clearButton.frame = CGRectMake(10, 20, 150, 370);
         
     }
     else
@@ -264,11 +289,11 @@
         _textField1.frame = CGRectMake(112, 184, 97, 31);
         _variable1.frame = CGRectMake(12, 194, 77, 21);
         _unit1.frame = CGRectMake(230, 194, 77, 21);
-        _result.frame = CGRectMake(11, 324, 210, 31);
-        _resultUnit.frame = CGRectMake(227, 334, 85, 21);
+        _result.frame = CGRectMake(225, 555, 210, 31);
+        _resultUnit.frame = CGRectMake(450, 568, 85, 21);
         
-        _calcButton.frame = CGRectMake(180, 285, 75, 35);
-        _clearButton.frame = CGRectMake(65, 285, 75, 35);
+        _calcButton.frame = CGRectMake(529, 468, 150, 70);
+        _clearButton.frame = CGRectMake(123, 468, 150, 70);
     }
 }
 
