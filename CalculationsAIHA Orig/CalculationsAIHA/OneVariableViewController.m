@@ -167,7 +167,7 @@
     {
         if (self.interfaceOrientation == UIInterfaceOrientationLandscapeLeft ||
             self.interfaceOrientation == UIInterfaceOrientationLandscapeRight)
-        {
+        { //Landscape Mode
             _textField1.frame = CGRectMake(192, 110, 97, 31);
             _variable1.frame = CGRectMake(92, 120, 77, 21);
             _unit1.frame = CGRectMake(310, 120, 77, 21);
@@ -178,7 +178,7 @@
             _clearButton.frame = CGRectMake(10, 20, 150, 70);
         }
         else
-        {
+        { //Portrait Mode
             _textField1.frame = CGRectMake(345, 150, 97, 40);
             _variable1.frame = CGRectMake(250, 150, 77, 40);
             _unit1.frame = CGRectMake(465, 150, 77, 40);
@@ -274,7 +274,6 @@
 {
     NSString *deviceType = [UIDevice currentDevice].model;
     
-    // STARTS IN PORTRAIT POSITION 
     if([deviceType isEqualToString:@"iPhone"]||[deviceType isEqualToString:@"iPhone Simulator"])
     {
         if (self.interfaceOrientation == UIInterfaceOrientationLandscapeLeft ||
@@ -303,10 +302,10 @@
     }
     
     if([deviceType isEqualToString:@"iPad"]||[deviceType isEqualToString:@"iPad Simulator"])
-    {
+    { 
         if (self.interfaceOrientation == UIInterfaceOrientationLandscapeLeft ||
             self.interfaceOrientation == UIInterfaceOrientationLandscapeRight)
-        {
+        { //Landscape Mode
             _textField1.frame = CGRectMake(192, 110, 97, 31);
             _variable1.frame = CGRectMake(92, 120, 77, 21);
             _unit1.frame = CGRectMake(310, 120, 77, 21);
@@ -317,7 +316,7 @@
             _clearButton.frame = CGRectMake(10, 20, 150, 70);
         }
         else
-        {
+        { //Portrait Mode
             _textField1.frame = CGRectMake(345, 150, 97, 40);
             _variable1.frame = CGRectMake(250, 150, 77, 40);
             _unit1.frame = CGRectMake(465, 150, 77, 40);

@@ -406,7 +406,7 @@
     {
         if (self.interfaceOrientation == UIInterfaceOrientationLandscapeLeft ||
             self.interfaceOrientation == UIInterfaceOrientationLandscapeRight)
-        {
+        { //Landscape Mode
             _textField1.frame = CGRectMake(80, 65, 97, 31);
             _variable1.frame = CGRectMake(1, 75, 76, 21);
             _unit1.frame = CGRectMake(182, 75, 62, 21);
@@ -437,7 +437,7 @@
             
         }
         else
-        {
+        { //Portrait Mode
             _textField1.frame = CGRectMake(345, 150, 97, 40);
             _variable1.frame = CGRectMake(250, 150, 77, 40);
             _unit1.frame = CGRectMake(465, 150, 77, 40);
@@ -699,7 +699,7 @@
     {
         if (self.interfaceOrientation == UIInterfaceOrientationLandscapeLeft ||
             self.interfaceOrientation == UIInterfaceOrientationLandscapeRight)
-        {
+        { //Landscape Mode
             _textField1.frame = CGRectMake(80, 65, 97, 31);
             _variable1.frame = CGRectMake(1, 75, 76, 21);
             _unit1.frame = CGRectMake(182, 75, 62, 21);
@@ -729,7 +729,7 @@
             _clearButton.frame = CGRectMake(2, 177, 75, 35);
         }
         else
-        {
+        { //Portrait Mode
             _textField1.frame = CGRectMake(345, 150, 97, 40);
             _variable1.frame = CGRectMake(250, 150, 77, 40);
             _unit1.frame = CGRectMake(465, 150, 77, 40);
