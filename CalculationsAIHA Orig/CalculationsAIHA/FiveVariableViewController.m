@@ -442,21 +442,21 @@
             _variable1.frame = CGRectMake(250, 150, 77, 40);
             _unit1.frame = CGRectMake(465, 150, 77, 40);
             
-            _textField2.frame = CGRectMake(112, 114, 97, 31);
-            _variable2.frame = CGRectMake(1, 124, 103, 21);
-            _unit2.frame = CGRectMake(220, 124, 99, 21);
+            _textField2.frame = CGRectMake(345, 210, 97, 40);
+            _variable2.frame = CGRectMake(250, 210, 77, 40);
+            _unit2.frame = CGRectMake(465, 210, 77, 40);
             
-            _textField3.frame = CGRectMake(112, 154, 97, 31);
-            _variable3.frame = CGRectMake(1, 164, 103, 21);
-            _unit3.frame = CGRectMake(220, 164, 99, 21);
+            _textField3.frame = CGRectMake(345, 270, 97, 40);
+            _variable3.frame = CGRectMake(250, 270, 77, 40);
+            _unit3.frame = CGRectMake(465, 270, 77, 40);
             
-            _textField4.frame = CGRectMake(112, 194, 97, 31);
-            _variable4.frame = CGRectMake(1, 204, 103, 21);
-            _unit4.frame = CGRectMake(220, 204, 99, 21);
+            _textField4.frame = CGRectMake(345, 330, 97, 40);
+            _variable4.frame = CGRectMake(250, 330, 77, 40);
+            _unit4.frame = CGRectMake(465, 330, 77, 40);
             
-            _textField5.frame = CGRectMake(112, 234, 97, 31);
-            _variable5.frame = CGRectMake(1, 244, 103, 21);
-            _unit5.frame = CGRectMake(220, 244, 99, 21);
+            _textField5.frame = CGRectMake(345, 390, 97, 40);
+            _variable5.frame = CGRectMake(250, 390, 77, 40);
+            _unit5.frame = CGRectMake(465, 390, 77, 40);
             
             _result.frame = CGRectMake(360, 555 , 208, 45);
             _resultUnit.frame = CGRectMake(590, 563, 85, 45);
