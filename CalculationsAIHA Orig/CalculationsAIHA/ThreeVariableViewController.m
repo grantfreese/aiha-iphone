@@ -261,16 +261,16 @@
         else
         { //Portrait Mode
             _textField1.frame = CGRectMake(345, 150, 97, 40);
-            _variable1.frame = CGRectMake(250, 150, 77, 40);
-            _unit1.frame = CGRectMake(465, 150, 77, 40);
+            _variable1.frame = CGRectMake(250, 150, 95, 40);
+            _unit1.frame = CGRectMake(465, 150, 110, 40);
             
             _textField2.frame = CGRectMake(345, 210, 97, 40);
-            _variable2.frame = CGRectMake(250, 210, 77, 40);
-            _unit2.frame = CGRectMake(465, 210, 77, 40);
+            _variable2.frame = CGRectMake(250, 210, 95, 40);
+            _unit2.frame = CGRectMake(465, 210, 110, 40);
             
             _textField3.frame = CGRectMake(345, 270, 97, 40);
-            _variable3.frame = CGRectMake(250, 270, 77, 40);
-            _unit3.frame = CGRectMake(465, 270, 77, 40);
+            _variable3.frame = CGRectMake(250, 270, 95, 40);
+            _unit3.frame = CGRectMake(465, 270, 110, 40);
             
             _result.frame = CGRectMake(360, 555 , 208, 45);
             _resultUnit.frame = CGRectMake(590, 563, 85, 45);
@@ -470,16 +470,16 @@
         else
         { //Portrait Mode
             _textField1.frame = CGRectMake(345, 150, 97, 40);
-            _variable1.frame = CGRectMake(250, 150, 77, 40);
-            _unit1.frame = CGRectMake(465, 150, 77, 40);
+            _variable1.frame = CGRectMake(250, 150, 95, 40);
+            _unit1.frame = CGRectMake(465, 150, 110, 40);
             
             _textField2.frame = CGRectMake(345, 210, 97, 40);
-            _variable2.frame = CGRectMake(250, 210, 77, 40);
-            _unit2.frame = CGRectMake(465, 210, 77, 40);
+            _variable2.frame = CGRectMake(250, 210, 95, 40);
+            _unit2.frame = CGRectMake(465, 210, 110, 40);
             
             _textField3.frame = CGRectMake(345, 270, 97, 40);
-            _variable3.frame = CGRectMake(250, 270, 77, 40);
-            _unit3.frame = CGRectMake(465, 270, 77, 40);
+            _variable3.frame = CGRectMake(250, 270, 95, 40);
+            _unit3.frame = CGRectMake(465, 270, 110, 40);
             
             _result.frame = CGRectMake(360, 555 , 208, 45);
             _resultUnit.frame = CGRectMake(590, 563, 85, 45);
