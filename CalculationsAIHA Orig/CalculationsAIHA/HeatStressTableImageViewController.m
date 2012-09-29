@@ -58,28 +58,64 @@
 {  
     [super viewWillAppear:animated];
     
-    if (self.interfaceOrientation == UIInterfaceOrientationLandscapeLeft ||
-        self.interfaceOrientation == UIInterfaceOrientationLandscapeRight)
+    NSString *deviceType = [UIDevice currentDevice].model;
+    
+    if([deviceType isEqualToString:@"iPod"]||[deviceType isEqualToString:@"iPod Simulator"])
     {
-        self.scroll.frame = CGRectMake(0, 0, 480, 320);
+        if (self.interfaceOrientation == UIInterfaceOrientationLandscapeLeft ||
+            self.interfaceOrientation == UIInterfaceOrientationLandscapeRight)
+        {
+            self.scroll.frame = CGRectMake(0, 0, 480, 320);
+        }
+        else
+        {
+            self.scroll.frame = CGRectMake(0, 10, 320, 470);
+        }
     }
-    else
+    
+    if([deviceType isEqualToString:@"iPad"]||[deviceType isEqualToString:@"iPad Simulator"])
     {
-        self.scroll.frame = CGRectMake(0, 10, 320, 470);
+        if (self.interfaceOrientation == UIInterfaceOrientationLandscapeLeft ||
+            self.interfaceOrientation == UIInterfaceOrientationLandscapeRight)
+        {
+            self.scroll.frame = CGRectMake(0, 30, 658, 234);
+        }
+        else
+        {
+            self.scroll.frame = CGRectMake(0, 30, 658, 324);
+        }
     }
 }
 
-- (void)willAnimateRotationToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation 
+- (void)willAnimateRotationToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation
                                          duration:(NSTimeInterval)duration
 {
-    if (toInterfaceOrientation == UIInterfaceOrientationLandscapeLeft ||
-        toInterfaceOrientation == UIInterfaceOrientationLandscapeRight)
+    NSString *deviceType = [UIDevice currentDevice].model;
+    
+    if([deviceType isEqualToString:@"iPod"]||[deviceType isEqualToString:@"iPod Simulator"])
     {
-        self.scroll.frame = CGRectMake(0, 0, 480, 320);
+        if (self.interfaceOrientation == UIInterfaceOrientationLandscapeLeft ||
+            self.interfaceOrientation == UIInterfaceOrientationLandscapeRight)
+        {
+            self.scroll.frame = CGRectMake(0, 0, 480, 320);
+        }
+        else
+        {
+            self.scroll.frame = CGRectMake(0, 10, 320, 470);
+        }
     }
-    else
+    
+    if([deviceType isEqualToString:@"iPad"]||[deviceType isEqualToString:@"iPad Simulator"])
     {
-        self.scroll.frame = CGRectMake(0, 10, 320, 470);
+        if (self.interfaceOrientation == UIInterfaceOrientationLandscapeLeft ||
+            self.interfaceOrientation == UIInterfaceOrientationLandscapeRight)
+        {
+            self.scroll.frame = CGRectMake(0, 30, 658, 234);
+        }
+        else
+        {
+            self.scroll.frame = CGRectMake(0, 30, 658, 324);
+        }
     }
 }
 
