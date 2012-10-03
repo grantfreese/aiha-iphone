@@ -37,4 +37,6 @@
 @property (nonatomic, strong) IBOutlet UIImageView *resultBar;
 @property (nonatomic, strong) IBOutlet UIButton *calcButton;
 @property (nonatomic, strong) IBOutlet UIButton *clearButton;
+
+-(IBAction) hideKeyboard;
 @end

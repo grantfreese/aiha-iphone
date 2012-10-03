@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="2549" systemVersion="11G56" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" initialViewController="V7k-to-wBe">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="2549" systemVersion="11E53" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" initialViewController="V7k-to-wBe">
     <dependencies>
         <deployment defaultVersion="1296" identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1498"/>
@@ -295,6 +295,7 @@
                                 </state>
                                 <connections>
                                     <action selector="calculateButtonPressed" destination="3Xg-hR-wr1" eventType="touchUpInside" id="CbD-PV-L5Y"/>
+                                    <action selector="hideKeyboard" destination="w0C-tk-5Aj" eventType="touchUpInside" id="Lfh-AY-ltj"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="gUA-7j-LhU">
@@ -409,6 +410,7 @@
                                 </state>
                                 <connections>
                                     <action selector="calculateButtonPressed" destination="T2t-uC-6An" eventType="touchUpInside" id="a8n-2Q-t3z"/>
+                                    <action selector="hideKeyboard" destination="cKr-rO-sGu" eventType="touchUpInside" id="d7y-12-75y"/>
                                 </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="sDP-6e-rKt">
@@ -542,6 +544,7 @@
                                 </state>
                                 <connections>
                                     <action selector="calculateButtonPressed" destination="BV3-vl-Yad" eventType="touchUpInside" id="Ckn-ba-mXe"/>
+                                    <action selector="hideKeyboard" destination="BLF-lo-6nH" eventType="touchUpInside" id="OtU-Fe-Puh"/>
                                 </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="5hU-yQ-zsb">
@@ -702,6 +705,7 @@
                                 </state>
                                 <connections>
                                     <action selector="calculateButtonPressed" destination="W06-hs-P0G" eventType="touchUpInside" id="R1x-XU-ao7"/>
+                                    <action selector="hideKeyboard" destination="ubS-Ua-gLX" eventType="touchUpInside" id="gSt-AX-Wxe"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="chJ-h4-CTu">
@@ -942,6 +946,7 @@
                                 </state>
                                 <connections>
                                     <action selector="calculateButtonPressed" destination="msB-j9-2ME" eventType="touchUpInside" id="op8-Qt-meT"/>
+                                    <action selector="hideKeyboard" destination="rjN-ag-g0k" eventType="touchUpInside" id="bYW-WS-9ri"/>
                                 </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="jzq-wN-Mjn">
@@ -1467,6 +1472,176 @@
         <image name="formula.png" width="30" height="30"/>
         <image name="resultBar.png" width="480" height="36"/>
     </resources>
+    <classes>
+        <class className="AIHAViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/AIHAViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="handlePinch:" candidateClass="UIPinchGestureRecognizer"/>
+                <relationship kind="outlet" name="ExposureAssessmentButton" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="HeatStressButton" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="NoiseButton" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="TitleLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="VentilationButton" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="logoButton" candidateClass="UIButton"/>
+            </relationships>
+        </class>
+        <class className="ConcentrationViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ConcentrationViewController.h"/>
+        </class>
+        <class className="ConstantsViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ConstantsViewController.h"/>
+        </class>
+        <class className="ConversionListViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ConversionListViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="AreaButton" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="ConcentrationButton" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="ConstantsButton" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="ConversionsLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="DistanceButton" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="FlowRateButton" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="MassButton" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="PressureButton" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="TLVButton" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="TemperatureButton" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="VolumeButton" candidateClass="UIButton"/>
+            </relationships>
+        </class>
+        <class className="ExposureListViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ExposureListViewController.h"/>
+        </class>
+        <class className="FiveVariableViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/FiveVariableViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="hideKeyboard"/>
+                <relationship kind="outlet" name="calcButton" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="clearButton" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="formula" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="formulaImage" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="result" candidateClass="UITextView"/>
+                <relationship kind="outlet" name="resultBar" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="resultUnit" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="textField1" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="textField2" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="textField3" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="textField4" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="textField5" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="unit1" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="unit2" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="unit3" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="unit4" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="unit5" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="variable1" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="variable2" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="variable3" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="variable4" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="variable5" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+        <class className="FlowRateViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/FlowRateViewController.h"/>
+        </class>
+        <class className="FourVariableViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/FourVariableViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="hideKeyboard"/>
+                <relationship kind="outlet" name="calcButton" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="clearButton" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="formula" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="formulaImage" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="result" candidateClass="UITextView"/>
+                <relationship kind="outlet" name="resultBar" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="resultUnit" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="textField1" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="textField2" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="textField3" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="textField4" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="unit1" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="unit2" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="unit3" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="unit4" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="variable1" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="variable2" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="variable3" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="variable4" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+        <class className="HeatStressListViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/HeatStressListViewController.h"/>
+        </class>
+        <class className="HeatStressTableImageViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/HeatStressTableImageViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="scroll" candidateClass="UIScrollView"/>
+            </relationships>
+        </class>
+        <class className="NoiseListViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NoiseListViewController.h"/>
+        </class>
+        <class className="OneVariableViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/OneVariableViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="hideKeyboard"/>
+                <relationship kind="outlet" name="calcButton" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="clearButton" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="formula" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="formulaImage" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="result" candidateClass="UITextView"/>
+                <relationship kind="outlet" name="resultBar" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="resultUnit" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="textField1" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="unit1" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="variable1" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+        <class className="TLVViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/TLVViewController.h"/>
+        </class>
+        <class className="ThreeVariableViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ThreeVariableViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="hideKeyboard"/>
+                <relationship kind="outlet" name="calcButton" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="clearButton" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="formula" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="formulaImage" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="result" candidateClass="UITextView"/>
+                <relationship kind="outlet" name="resultBar" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="resultUnit" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="textField1" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="textField2" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="textField3" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="unit1" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="unit2" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="unit3" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="variable1" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="variable2" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="variable3" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+        <class className="TwoVariableViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/TwoVariableViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="hideKeyboard"/>
+                <relationship kind="outlet" name="calcButton" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="clearButton" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="formula" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="formulaImage" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="result" candidateClass="UITextView"/>
+                <relationship kind="outlet" name="resultBar" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="resultUnit" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="textField1" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="textField2" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="unit1" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="unit2" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="variable1" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="variable2" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+        <class className="VentilationListViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/VentilationListViewController.h"/>
+        </class>
+    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar" statusBarStyle="blackTranslucent"/>
         <simulatedOrientationMetrics key="orientation"/>

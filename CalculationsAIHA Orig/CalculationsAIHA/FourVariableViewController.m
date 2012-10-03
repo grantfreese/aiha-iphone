@@ -144,7 +144,7 @@
     self.resultUnit.text = [chosenFormula objectForKey:@"resultUnit"];
     }
 }
-
+//hides keyboard and linked to Calculate button so that keyboard disappears when Calculate button is pressed
 - (IBAction)clearButtonPressed{
     self.textField1.text = [NSString stringWithFormat:@""];
     self.textField2.text = [NSString stringWithFormat:@""];
@@ -156,6 +156,14 @@
 - (BOOL) textFieldShouldReturn:(UITextField *)textField{
     [textField resignFirstResponder];
     return YES;
+}
+
+-(IBAction) hideKeyboard
+{
+    [_textField1 resignFirstResponder];
+    [_textField2 resignFirstResponder];
+    [_textField3 resignFirstResponder];
+    [_textField4 resignFirstResponder];
 }
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil

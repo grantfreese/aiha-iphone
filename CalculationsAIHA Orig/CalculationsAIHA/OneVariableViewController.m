@@ -107,6 +107,12 @@
     return YES;
 }
 
+//hides keyboard and linked to Calculate button so that keyboard disappears when Calculate button is pressed
+-(IBAction) hideKeyboard
+{
+    [_textField1 resignFirstResponder];
+}
+
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];

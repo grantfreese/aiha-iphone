@@ -35,5 +35,6 @@
 @property (nonatomic, strong) IBOutlet UIButton *clearButton;
 
 - (BOOL) textFieldShouldReturn:(UITextField *)textField;
+-(IBAction) hideKeyboard;
 
 @end
