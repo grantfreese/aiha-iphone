@@ -311,6 +311,7 @@
                                 </state>
                                 <connections>
                                     <action selector="clearButtonPressed" destination="3Xg-hR-wr1" eventType="touchUpInside" id="wgb-Rm-x6o"/>
+                                    <action selector="hideKeyboard" destination="w0C-tk-5Aj" eventType="touchUpInside" id="VPB-iB-ayt"/>
                                 </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="5c3-Lm-f1S">
@@ -465,6 +466,7 @@
                                 </state>
                                 <connections>
                                     <action selector="clearButtonPressed" destination="T2t-uC-6An" eventType="touchUpInside" id="gst-gr-bnl"/>
+                                    <action selector="hideKeyboard" destination="cKr-rO-sGu" eventType="touchUpInside" id="zqK-7i-Nz9"/>
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" id="aEk-aB-7Pr">
@@ -622,6 +624,7 @@
                                 </state>
                                 <connections>
                                     <action selector="clearButtonPressed" destination="BV3-vl-Yad" eventType="touchUpInside" id="Fnh-zo-71H"/>
+                                    <action selector="hideKeyboard" destination="BLF-lo-6nH" eventType="touchUpInside" id="fpW-4U-UlC"/>
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" id="xF7-0b-wG0">
@@ -721,6 +724,7 @@
                                 </state>
                                 <connections>
                                     <action selector="clearButtonPressed" destination="W06-hs-P0G" eventType="touchUpInside" id="HNJ-qH-mgv"/>
+                                    <action selector="hideKeyboard" destination="ubS-Ua-gLX" eventType="touchUpInside" id="apr-uq-bve"/>
                                 </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="oBL-ul-pWT">
@@ -1070,6 +1074,7 @@
                                 </state>
                                 <connections>
                                     <action selector="clearButtonPressed" destination="msB-j9-2ME" eventType="touchUpInside" id="mu4-e1-qd5"/>
+                                    <action selector="hideKeyboard" destination="rjN-ag-g0k" eventType="touchUpInside" id="P0j-AL-Spo"/>
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" id="PUJ-3u-hy7">
