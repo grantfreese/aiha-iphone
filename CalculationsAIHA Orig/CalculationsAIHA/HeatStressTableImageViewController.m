@@ -60,7 +60,7 @@
     
     NSString *deviceType = [UIDevice currentDevice].model;
     
-    if([deviceType isEqualToString:@"iPod"]||[deviceType isEqualToString:@"iPod Simulator"])
+    if([deviceType isEqualToString:@"iPhone"]||[deviceType isEqualToString:@"iPhone Simulator"])
     {
         if (self.interfaceOrientation == UIInterfaceOrientationLandscapeLeft ||
             self.interfaceOrientation == UIInterfaceOrientationLandscapeRight)
@@ -78,11 +78,11 @@
         if (self.interfaceOrientation == UIInterfaceOrientationLandscapeLeft ||
             self.interfaceOrientation == UIInterfaceOrientationLandscapeRight)
         {
-            self.scroll.frame = CGRectMake(0, 30, 658, 234);
+            self.scroll.frame = CGRectMake(200, 200, 658, 234);
         }
         else
         {
-            self.scroll.frame = CGRectMake(0, 30, 658, 324);
+            self.scroll.frame = CGRectMake(50, 200, 658, 324);
         }
     }
 }
@@ -92,7 +92,7 @@
 {
     NSString *deviceType = [UIDevice currentDevice].model;
     
-    if([deviceType isEqualToString:@"iPod"]||[deviceType isEqualToString:@"iPod Simulator"])
+    if([deviceType isEqualToString:@"iPhone"]||[deviceType isEqualToString:@"iPhone Simulator"])
     {
         if (self.interfaceOrientation == UIInterfaceOrientationLandscapeLeft ||
             self.interfaceOrientation == UIInterfaceOrientationLandscapeRight)
@@ -110,11 +110,11 @@
         if (self.interfaceOrientation == UIInterfaceOrientationLandscapeLeft ||
             self.interfaceOrientation == UIInterfaceOrientationLandscapeRight)
         {
-            self.scroll.frame = CGRectMake(0, 30, 658, 234);
+            self.scroll.frame = CGRectMake(200, 200, 658, 234);
         }
         else
         {
-            self.scroll.frame = CGRectMake(0, 30, 658, 324);
+            self.scroll.frame = CGRectMake(50, 200, 658, 324);
         }
     }
 }

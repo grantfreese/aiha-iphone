@@ -242,13 +242,13 @@
             _variable1.frame = CGRectMake(372, 85, 77, 40);
             _unit1.frame = CGRectMake(590, 85, 77, 40);
             
-            _textField2.frame = CGRectMake(192, 105, 97, 31);
-            _variable2.frame = CGRectMake(98, 115, 90, 21);
-            _unit2.frame = CGRectMake(294, 115, 99, 21);
+            _textField2.frame = CGRectMake(192, 105, 97, 40);
+            _variable2.frame = CGRectMake(98, 115, 90, 40);
+            _unit2.frame = CGRectMake(294, 115, 99, 40);
             
-            _textField3.frame = CGRectMake(192, 145, 97, 31);
-            _variable3.frame = CGRectMake(98, 155, 90, 21);
-            _unit3.frame = CGRectMake(294, 155, 99, 21);
+            _textField3.frame = CGRectMake(192, 145, 97, 40);
+            _variable3.frame = CGRectMake(98, 155, 90, 40);
+            _unit3.frame = CGRectMake(294, 155, 99, 40);
             
             _result.frame = CGRectMake(635, 345, 210, 45);
             _resultUnit.frame = CGRectMake(850, 355, 85, 45);
@@ -451,13 +451,13 @@
             _variable1.frame = CGRectMake(372, 85, 77, 40);
             _unit1.frame = CGRectMake(590, 85, 77, 40);
             
-            _textField2.frame = CGRectMake(192, 105, 97, 31);
-            _variable2.frame = CGRectMake(98, 115, 90, 21);
-            _unit2.frame = CGRectMake(294, 115, 99, 21);
+            _textField2.frame = CGRectMake(192, 105, 97, 40);
+            _variable2.frame = CGRectMake(98, 115, 90, 40);
+            _unit2.frame = CGRectMake(294, 115, 99, 40);
             
-            _textField3.frame = CGRectMake(192, 145, 97, 31);
-            _variable3.frame = CGRectMake(98, 155, 90, 21);
-            _unit3.frame = CGRectMake(294, 155, 99, 21);
+            _textField3.frame = CGRectMake(192, 145, 97, 40);
+            _variable3.frame = CGRectMake(98, 155, 90, 40);
+            _unit3.frame = CGRectMake(294, 155, 99, 40);
             
             _result.frame = CGRectMake(635, 345, 210, 45);
             _resultUnit.frame = CGRectMake(850, 355, 85, 45);
