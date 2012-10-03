@@ -1142,12 +1142,12 @@
                         <rect key="frame" x="0.0" y="64" width="768" height="911"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="center" image="AIHAlogo.png" id="MiH-yB-Cib">
+                            <imageView userInteractionEnabled="NO" contentMode="center" image="AIHAlogo_iPad.png" id="MiH-yB-Cib">
                                 <rect key="frame" x="-33" y="-88" width="801" height="111"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="ZdN-Wa-yWg">
-                                <rect key="frame" x="259" y="121" width="127" height="37"/>
+                                <rect key="frame" x="99" y="159" width="250" height="80"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" title="Volume">
@@ -1163,14 +1163,14 @@
                                 </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Conversions" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" id="KA7-ta-vgt">
-                                <rect key="frame" x="315" y="57" width="138" height="32"/>
+                                <rect key="frame" x="221" y="31" width="327" height="120"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="38"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="cbS-hV-0iX">
-                                <rect key="frame" x="492" y="121" width="127" height="37"/>
+                                <rect key="frame" x="438" y="159" width="250" height="80"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" title="Distance">
@@ -1186,7 +1186,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="SYH-pV-Eey">
-                                <rect key="frame" x="259" y="166" width="127" height="37"/>
+                                <rect key="frame" x="99" y="271" width="250" height="80"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" title="Pressure">
@@ -1202,7 +1202,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="3Ca-FS-ufE">
-                                <rect key="frame" x="492" y="166" width="127" height="37"/>
+                                <rect key="frame" x="438" y="271" width="250" height="80"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" title="Mass">
@@ -1218,7 +1218,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="2FQ-9y-ccB">
-                                <rect key="frame" x="259" y="211" width="127" height="37"/>
+                                <rect key="frame" x="99" y="383" width="250" height="80"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" title="Temperature">
@@ -1234,7 +1234,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="N0H-Bq-f8M">
-                                <rect key="frame" x="496" y="211" width="135" height="37"/>
+                                <rect key="frame" x="438" y="383" width="250" height="80"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" title="Area of a Circle">
@@ -1250,7 +1250,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="7QN-ly-plv">
-                                <rect key="frame" x="259" y="261" width="127" height="37"/>
+                                <rect key="frame" x="99" y="495" width="250" height="80"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" title="OEL">
@@ -1265,7 +1265,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="OKi-zQ-ex0">
-                                <rect key="frame" x="492" y="261" width="127" height="37"/>
+                                <rect key="frame" x="438" y="495" width="250" height="80"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" title="Concentration">
@@ -1280,7 +1280,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="fhv-QS-7OO">
-                                <rect key="frame" x="259" y="311" width="127" height="37"/>
+                                <rect key="frame" x="99" y="607" width="250" height="80"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" title="Flow Rate">
@@ -1295,7 +1295,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="7zF-AJ-YPr">
-                                <rect key="frame" x="492" y="311" width="127" height="37"/>
+                                <rect key="frame" x="438" y="607" width="250" height="80"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" title="Constants">
@@ -1458,7 +1458,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="AIHAlogo.png" width="480" height="100"/>
         <image name="AIHAlogo_iPad.png" width="960" height="160"/>
         <image name="HeatExposureTable.png" width="658" height="234"/>
         <image name="calculate.png" width="150" height="70"/>
@@ -1468,170 +1467,6 @@
         <image name="formula.png" width="30" height="30"/>
         <image name="resultBar.png" width="480" height="36"/>
     </resources>
-    <classes>
-        <class className="AIHAViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/AIHAViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="ExposureAssessmentButton" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="HeatStressButton" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="NoiseButton" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="TitleLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="VentilationButton" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="logoButton" candidateClass="UIButton"/>
-            </relationships>
-        </class>
-        <class className="ConcentrationViewController" superclassName="UITableViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/ConcentrationViewController.h"/>
-        </class>
-        <class className="ConstantsViewController" superclassName="UITableViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/ConstantsViewController.h"/>
-        </class>
-        <class className="ConversionListViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/ConversionListViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="AreaButton" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="ConcentrationButton" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="ConstantsButton" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="ConversionsLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="DistanceButton" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="FlowRateButton" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="MassButton" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="PressureButton" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="TLVButton" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="TemperatureButton" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="VolumeButton" candidateClass="UIButton"/>
-            </relationships>
-        </class>
-        <class className="ExposureListViewController" superclassName="UITableViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/ExposureListViewController.h"/>
-        </class>
-        <class className="FiveVariableViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/FiveVariableViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="calcButton" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="clearButton" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="formula" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="formulaImage" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="result" candidateClass="UITextView"/>
-                <relationship kind="outlet" name="resultBar" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="resultUnit" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="textField1" candidateClass="UITextField"/>
-                <relationship kind="outlet" name="textField2" candidateClass="UITextField"/>
-                <relationship kind="outlet" name="textField3" candidateClass="UITextField"/>
-                <relationship kind="outlet" name="textField4" candidateClass="UITextField"/>
-                <relationship kind="outlet" name="textField5" candidateClass="UITextField"/>
-                <relationship kind="outlet" name="unit1" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="unit2" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="unit3" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="unit4" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="unit5" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="variable1" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="variable2" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="variable3" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="variable4" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="variable5" candidateClass="UILabel"/>
-            </relationships>
-        </class>
-        <class className="FlowRateViewController" superclassName="UITableViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/FlowRateViewController.h"/>
-        </class>
-        <class className="FourVariableViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/FourVariableViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="calcButton" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="clearButton" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="formula" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="formulaImage" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="result" candidateClass="UITextView"/>
-                <relationship kind="outlet" name="resultBar" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="resultUnit" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="textField1" candidateClass="UITextField"/>
-                <relationship kind="outlet" name="textField2" candidateClass="UITextField"/>
-                <relationship kind="outlet" name="textField3" candidateClass="UITextField"/>
-                <relationship kind="outlet" name="textField4" candidateClass="UITextField"/>
-                <relationship kind="outlet" name="unit1" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="unit2" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="unit3" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="unit4" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="variable1" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="variable2" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="variable3" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="variable4" candidateClass="UILabel"/>
-            </relationships>
-        </class>
-        <class className="HeatStressListViewController" superclassName="UITableViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/HeatStressListViewController.h"/>
-        </class>
-        <class className="HeatStressTableImageViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/HeatStressTableImageViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="scroll" candidateClass="UIScrollView"/>
-            </relationships>
-        </class>
-        <class className="NoiseListViewController" superclassName="UITableViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/NoiseListViewController.h"/>
-        </class>
-        <class className="OneVariableViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/OneVariableViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="calcButton" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="clearButton" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="formula" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="formulaImage" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="result" candidateClass="UITextView"/>
-                <relationship kind="outlet" name="resultBar" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="resultUnit" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="textField1" candidateClass="UITextField"/>
-                <relationship kind="outlet" name="unit1" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="variable1" candidateClass="UILabel"/>
-            </relationships>
-        </class>
-        <class className="TLVViewController" superclassName="UITableViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/TLVViewController.h"/>
-        </class>
-        <class className="ThreeVariableViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/ThreeVariableViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="calcButton" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="clearButton" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="formula" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="formulaImage" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="result" candidateClass="UITextView"/>
-                <relationship kind="outlet" name="resultBar" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="resultUnit" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="textField1" candidateClass="UITextField"/>
-                <relationship kind="outlet" name="textField2" candidateClass="UITextField"/>
-                <relationship kind="outlet" name="textField3" candidateClass="UITextField"/>
-                <relationship kind="outlet" name="unit1" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="unit2" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="unit3" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="variable1" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="variable2" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="variable3" candidateClass="UILabel"/>
-            </relationships>
-        </class>
-        <class className="TwoVariableViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/TwoVariableViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="calcButton" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="clearButton" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="formula" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="formulaImage" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="result" candidateClass="UITextView"/>
-                <relationship kind="outlet" name="resultBar" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="resultUnit" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="textField1" candidateClass="UITextField"/>
-                <relationship kind="outlet" name="textField2" candidateClass="UITextField"/>
-                <relationship kind="outlet" name="unit1" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="unit2" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="variable1" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="variable2" candidateClass="UILabel"/>
-            </relationships>
-        </class>
-        <class className="VentilationListViewController" superclassName="UITableViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/VentilationListViewController.h"/>
-        </class>
-    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar" statusBarStyle="blackTranslucent"/>
         <simulatedOrientationMetrics key="orientation"/>

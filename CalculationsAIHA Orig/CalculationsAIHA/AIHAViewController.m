@@ -129,11 +129,11 @@
         }
         else
         {
-            _NoiseButton.frame = CGRectMake(65, 154, 185, 40);
-            _HeatStressButton.frame = CGRectMake(65, 204, 185, 40);
-            _VentilationButton.frame = CGRectMake(65, 254, 185, 40);
-            _ExposureAssessmentButton.frame = CGRectMake(65, 304, 185, 40);
-            _TitleLabel.frame = CGRectMake(91,110,138,32);
+            _NoiseButton.frame = CGRectMake(250, 328, 250, 80);
+            _HeatStressButton.frame = CGRectMake(250, 452, 250, 80);
+            _VentilationButton.frame = CGRectMake(250, 576, 250, 80);
+            _ExposureAssessmentButton.frame = CGRectMake(250, 700, 250, 80);
+            _TitleLabel.frame = CGRectMake(219,200,327,120);
         }
     }
 
@@ -203,11 +203,11 @@
         }
         else
         {
-            _NoiseButton.frame = CGRectMake(65, 154, 185, 40);
-            _HeatStressButton.frame = CGRectMake(65, 204, 185, 40);
-            _VentilationButton.frame = CGRectMake(65, 254, 185, 40);
-            _ExposureAssessmentButton.frame = CGRectMake(65, 304, 185, 40);
-            _TitleLabel.frame = CGRectMake(91,110,138,32);
+            _NoiseButton.frame = CGRectMake(250, 328, 250, 80);
+            _HeatStressButton.frame = CGRectMake(250, 452, 250, 80);
+            _VentilationButton.frame = CGRectMake(250, 576, 250, 80);
+            _ExposureAssessmentButton.frame = CGRectMake(250, 700, 250, 80);
+            _TitleLabel.frame = CGRectMake(219,200,327,120);
         }
     }
 }
