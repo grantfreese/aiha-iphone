@@ -27,6 +27,7 @@
 @synthesize calcButton = _calcButton;
 @synthesize clearButton = _clearButton;
 
+
 - (IBAction) calculateButtonPressed{
     float variable1 = [_textField1.text floatValue]; //reads value of first text field and stores as a float value
     NSNumber * calculationResult;
@@ -136,7 +137,7 @@
 {
     NSString *deviceType = [UIDevice currentDevice].model;
     
-    if([deviceType isEqualToString:@"iPhone"]||[deviceType isEqualToString:@"iPhone Simulator"])
+    if([deviceType isEqualToString:@"iPhone"]||[deviceType isEqualToString:@"iPhone Simulator"]||[deviceType isEqualToString:@"iPod touch"])
     {
         if (self.interfaceOrientation == UIInterfaceOrientationLandscapeLeft ||
             self.interfaceOrientation == UIInterfaceOrientationLandscapeRight)
@@ -275,7 +276,7 @@
 {
     NSString *deviceType = [UIDevice currentDevice].model;
     
-    if([deviceType isEqualToString:@"iPhone"]||[deviceType isEqualToString:@"iPhone Simulator"])
+    if([deviceType isEqualToString:@"iPhone"]||[deviceType isEqualToString:@"iPhone Simulator"]||[deviceType isEqualToString:@"iPod touch"])
     {
         if (self.interfaceOrientation == UIInterfaceOrientationLandscapeLeft ||
             self.interfaceOrientation == UIInterfaceOrientationLandscapeRight)

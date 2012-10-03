@@ -92,7 +92,7 @@
 {
     NSString *deviceType = [UIDevice currentDevice].model;
     
-    if([deviceType isEqualToString:@"iPhone"]||[deviceType isEqualToString:@"iPhone Simulator"])
+    if([deviceType isEqualToString:@"iPhone"]||[deviceType isEqualToString:@"iPhone Simulator"]||[deviceType isEqualToString:@"iPod touch"])
     {
         
         if (self.interfaceOrientation == UIInterfaceOrientationLandscapeLeft ||
@@ -165,7 +165,7 @@
 {
     NSString *deviceType = [UIDevice currentDevice].model;
     
-    if([deviceType isEqualToString:@"iPhone"]||[deviceType isEqualToString:@"iPhone Simulator"])
+    if([deviceType isEqualToString:@"iPhone"]||[deviceType isEqualToString:@"iPhone Simulator"]||[deviceType isEqualToString:@"iPod touch"])
     {
         
         if (self.interfaceOrientation == UIInterfaceOrientationLandscapeLeft ||

@@ -198,7 +198,7 @@
     
     NSString *deviceType = [UIDevice currentDevice].model;
     
-    if([deviceType isEqualToString:@"iPhone"]||[deviceType isEqualToString:@"iPhone Simulator"])
+    if([deviceType isEqualToString:@"iPhone"]||[deviceType isEqualToString:@"iPhone Simulator"]||[deviceType isEqualToString:@"iPod touch"])
     {
         if (self.interfaceOrientation == UIInterfaceOrientationLandscapeLeft ||
             self.interfaceOrientation == UIInterfaceOrientationLandscapeRight)
@@ -263,17 +263,17 @@
             _variable1.frame = CGRectMake(372, 85, 77, 40);
             _unit1.frame = CGRectMake(590, 85, 77, 40);
             
-            _textField2.frame = CGRectMake(80, 125, 97, 40);
-            _variable2.frame = CGRectMake(1, 135, 76, 40);
-            _unit2.frame = CGRectMake(182, 135, 62, 40);
+            _textField2.frame = CGRectMake(472, 130, 97, 40);
+            _variable2.frame = CGRectMake(372, 130, 77, 40);
+            _unit2.frame = CGRectMake(590, 130, 77, 40);
             
-            _textField3.frame = CGRectMake(303, 85, 97, 40);
-            _variable3.frame = CGRectMake(245, 95, 55, 40);
-            _unit3.frame = CGRectMake(405, 95, 75, 40);
+            _textField3.frame = CGRectMake(472, 175, 97, 40);
+            _variable3.frame = CGRectMake(372, 175, 77, 40);
+            _unit3.frame = CGRectMake(590, 175, 77, 40);
             
-            _textField4.frame = CGRectMake(303, 125, 97, 40);
-            _variable4.frame = CGRectMake(245, 135, 55, 40);
-            _unit4.frame = CGRectMake(405, 135, 75, 40);
+            _textField4.frame = CGRectMake(472, 220, 97, 40);
+            _variable4.frame = CGRectMake(372, 220, 77, 40);
+            _unit4.frame = CGRectMake(590, 220, 77, 40);
             
             
             _result.frame = CGRectMake(635, 345, 210, 45);
@@ -426,7 +426,7 @@
 {
     NSString *deviceType = [UIDevice currentDevice].model;
     
-    if([deviceType isEqualToString:@"iPhone"]||[deviceType isEqualToString:@"iPhone Simulator"])
+    if([deviceType isEqualToString:@"iPhone"]||[deviceType isEqualToString:@"iPhone Simulator"]||[deviceType isEqualToString:@"iPod touch"])
     {
         if (self.interfaceOrientation == UIInterfaceOrientationLandscapeLeft ||
             self.interfaceOrientation == UIInterfaceOrientationLandscapeRight)
@@ -491,17 +491,17 @@
             _variable1.frame = CGRectMake(372, 85, 77, 40);
             _unit1.frame = CGRectMake(590, 85, 77, 40);
             
-            _textField2.frame = CGRectMake(80, 125, 97, 40);
-            _variable2.frame = CGRectMake(1, 135, 76, 40);
-            _unit2.frame = CGRectMake(182, 135, 62, 40);
+            _textField2.frame = CGRectMake(472, 130, 97, 40);
+            _variable2.frame = CGRectMake(372, 130, 77, 40);
+            _unit2.frame = CGRectMake(590, 130, 77, 40);
             
-            _textField3.frame = CGRectMake(303, 85, 97, 40);
-            _variable3.frame = CGRectMake(245, 95, 55, 40);
-            _unit3.frame = CGRectMake(405, 95, 75, 40);
+            _textField3.frame = CGRectMake(472, 175, 97, 40);
+            _variable3.frame = CGRectMake(372, 175, 77, 40);
+            _unit3.frame = CGRectMake(590, 175, 77, 40);
             
-            _textField4.frame = CGRectMake(303, 125, 97, 40);
-            _variable4.frame = CGRectMake(245, 135, 55, 40);
-            _unit4.frame = CGRectMake(405, 135, 75, 40);
+            _textField4.frame = CGRectMake(472, 220, 97, 40);
+            _variable4.frame = CGRectMake(372, 220, 77, 40);
+            _unit4.frame = CGRectMake(590, 220, 77, 40);
             
             
             _result.frame = CGRectMake(635, 345, 210, 45);
