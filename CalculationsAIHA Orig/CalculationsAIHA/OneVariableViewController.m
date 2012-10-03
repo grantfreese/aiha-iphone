@@ -168,14 +168,15 @@
         if (self.interfaceOrientation == UIInterfaceOrientationLandscapeLeft ||
             self.interfaceOrientation == UIInterfaceOrientationLandscapeRight)
         { //Landscape Mode
-            _textField1.frame = CGRectMake(192, 110, 97, 31);
-            _variable1.frame = CGRectMake(92, 120, 77, 21);
-            _unit1.frame = CGRectMake(310, 120, 77, 21);
-            _result.frame = CGRectMake(79, 175, 210, 31);
-            _resultUnit.frame = CGRectMake(307, 186, 85, 21);
+            _textField1.frame = CGRectMake(472, 85, 97, 40);
+            _variable1.frame = CGRectMake(372, 85, 77, 40);
+            _unit1.frame = CGRectMake(590, 85, 77, 40);
+            _result.frame = CGRectMake(635, 345, 210, 45);
+            _resultUnit.frame = CGRectMake(850, 355, 85, 45);
+            _resultBar.frame = CGRectMake(0, 350, 1025, 50);
             
-            _calcButton.frame = CGRectMake(10, 20, 150, 70);
-            _clearButton.frame = CGRectMake(10, 20, 150, 70);
+            _calcButton.frame = CGRectMake(850, 275, 150, 70);
+            _clearButton.frame = CGRectMake(10, 275, 150, 70);
         }
         else
         { //Portrait Mode
@@ -306,14 +307,15 @@
         if (self.interfaceOrientation == UIInterfaceOrientationLandscapeLeft ||
             self.interfaceOrientation == UIInterfaceOrientationLandscapeRight)
         { //Landscape Mode
-            _textField1.frame = CGRectMake(192, 110, 97, 31);
-            _variable1.frame = CGRectMake(92, 120, 77, 21);
-            _unit1.frame = CGRectMake(310, 120, 77, 21);
-            _result.frame = CGRectMake(79, 175, 210, 31);
-            _resultUnit.frame = CGRectMake(307, 186, 85, 21);
+            _textField1.frame = CGRectMake(472, 85, 97, 40);
+            _variable1.frame = CGRectMake(372, 85, 77, 40);
+            _unit1.frame = CGRectMake(590, 85, 77, 40);
+            _result.frame = CGRectMake(635, 345, 210, 45);
+            _resultUnit.frame = CGRectMake(850, 355, 85, 45);
+            _resultBar.frame = CGRectMake(0, 350, 1025, 50);
             
-            _calcButton.frame = CGRectMake(10, 20, 150, 70);
-            _clearButton.frame = CGRectMake(10, 20, 150, 70);
+            _calcButton.frame = CGRectMake(850, 275, 150, 70);
+            _clearButton.frame = CGRectMake(10, 275, 150, 70);
         }
         else
         { //Portrait Mode
