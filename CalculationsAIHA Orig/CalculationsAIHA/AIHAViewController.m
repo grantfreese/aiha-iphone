@@ -120,11 +120,11 @@
         if (self.interfaceOrientation == UIInterfaceOrientationLandscapeLeft ||
             self.interfaceOrientation == UIInterfaceOrientationLandscapeRight)
         {
-            _NoiseButton.frame = CGRectMake(30, 114, 185, 40);
-            _HeatStressButton.frame = CGRectMake(30, 164, 185, 40);
-            _VentilationButton.frame = CGRectMake(265, 114, 185, 40);
-            _ExposureAssessmentButton.frame = CGRectMake(265, 164, 185, 40);
-            _TitleLabel.frame = CGRectMake(171,71,138,32);
+            _NoiseButton.frame = CGRectMake(400, 245, 250, 80);
+            _HeatStressButton.frame = CGRectMake(400, 345, 250, 80);
+            _VentilationButton.frame = CGRectMake(400, 445, 250, 80);
+            _ExposureAssessmentButton.frame = CGRectMake(400, 545, 250, 80);
+            _TitleLabel.frame = CGRectMake(370,145,327,120);
             
         }
         else
@@ -194,11 +194,11 @@
         if (self.interfaceOrientation == UIInterfaceOrientationLandscapeLeft ||
             self.interfaceOrientation == UIInterfaceOrientationLandscapeRight)
         {
-            _NoiseButton.frame = CGRectMake(30, 114, 185, 40);
-            _HeatStressButton.frame = CGRectMake(30, 164, 185, 40);
-            _VentilationButton.frame = CGRectMake(265, 114, 185, 40);
-            _ExposureAssessmentButton.frame = CGRectMake(265, 164, 185, 40);
-            _TitleLabel.frame = CGRectMake(171,71,138,32);
+            _NoiseButton.frame = CGRectMake(400, 245, 250, 80);
+            _HeatStressButton.frame = CGRectMake(400, 345, 250, 80);
+            _VentilationButton.frame = CGRectMake(400, 445, 250, 80);
+            _ExposureAssessmentButton.frame = CGRectMake(400, 545, 250, 80);
+            _TitleLabel.frame = CGRectMake(370,145,327,120);
             
         }
         else
