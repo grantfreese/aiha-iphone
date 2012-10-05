@@ -29,6 +29,8 @@
 		<string>wetBulb:GlobeTemp:Outdoors:</string>
 		<key>imageName</key>
 		<string>WBGT_Outdoor.png</string>
+		<key>imageNameIpad</key>
+		<string>WBGT_Outdoor_iPad.png</string>
 	</dict>
 	<dict>
 		<key>name</key>
@@ -59,6 +61,8 @@
 		<string>WetBulb:GlobeTempIndoors:</string>
 		<key>imageName</key>
 		<string>WBGT_Indoor.png</string>
+		<key>imageNameIpad</key>
+		<string>WBGT_Indoor_iPad.png</string>
 	</dict>
 	<dict>
 		<key>name</key>
@@ -89,6 +93,8 @@
 		<string></string>
 		<key>imageName</key>
 		<string>OSHA Table.png</string>
+		<key>imageNameIpad</key>
+		<string>OSHA Table_iPad.png</string>
 	</dict>
 </array>
 </plist>
