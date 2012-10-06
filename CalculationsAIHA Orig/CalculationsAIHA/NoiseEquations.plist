@@ -23,6 +23,8 @@
 		<string>adding:SoundPressureLevels:</string>
 		<key>imageName</key>
 		<string>AddingSoundPressure.png</string>
+		<key>imageNameIpad</key>
+		<string>AddingSoundPressure_iPad.png</string>		
 	</dict>
 	<dict>
 		<key>name</key>
@@ -41,6 +43,8 @@
 		<string>eightHourTWSof85dBa:</string>
 		<key>imageName</key>
 		<string>85dBA reached.png</string>
+		<key>imageNameIpad</key>
+		<string>85dBA reached_iPad.png</string>		
 	</dict>
 	<dict>
 		<key>name</key>
@@ -67,6 +71,8 @@
 		<string>inverse:Square:Law:</string>
 		<key>imageName</key>
 		<string>Inverse Square Law.png</string>
+		<key>imageNameIpad</key>
+		<string>Inverse Square Law_iPad.png</string>			
 	</dict>
 	<dict>
 		<key>name</key>
@@ -85,6 +91,8 @@
 		<string>percentDosetoTWA:</string>
 		<key>imageName</key>
 		<string>TWA from %Dose.png</string>
+		<key>imageNameIpad</key>
+		<string>TWA from %Dose_iPad.png</string>		
 	</dict>
 	<dict>
 		<key>name</key>
@@ -103,6 +111,8 @@
 		<string>allowableExposureTime:</string>
 		<key>imageName</key>
 		<string>AllowableExposureTime.png</string>
+		<key>imageNameIpad</key>
+		<string>AllowableExposureTime_iPad.png</string>		
 	</dict>
 </array>
 </plist>

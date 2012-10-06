@@ -21,6 +21,9 @@
 		<string>1</string>
 		<key>imageName</key>
 		<string>grain to gm.png</string>
+		<key>imageNameIpad</key>
+		<string>grain to gm_iPad.png</string>		
+		
 	</dict>
 	<dict>
 		<key>variable1</key>
@@ -41,6 +44,8 @@
 		<string>2</string>
 		<key>imageName</key>
 		<string>mppcf.png</string>
+		<key>imageNameIpad</key>
+		<string>mppcf_iPad.png</string>			
 	</dict>
 </array>
 </plist>

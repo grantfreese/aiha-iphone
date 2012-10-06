@@ -23,6 +23,8 @@
 		<string>convertPPM:ToMG:</string>
 		<key>imageName</key>
 		<string>convertOEL 1.png</string>
+		<key>imageNameIpad</key>
+		<string>convertOEL 1_iPad.png</string>			
 	</dict>
 	<dict>
 		<key>name</key>
@@ -45,6 +47,8 @@
 		<string>getOEL:inPPM:</string>
 		<key>imageName</key>
 		<string>convertOEL 2.png</string>
+		<key>imageNameIpad</key>
+		<string>convertOEL 2_iPad.png</string>		
 	</dict>
 </array>
 </plist>

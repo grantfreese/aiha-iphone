@@ -27,6 +27,8 @@
 		<string>silica:Respirable:Fraction:</string>
 		<key>imageName</key>
 		<string>PEL(Respirable Fraction).png</string>
+		<key>imageNameIpad</key>
+		<string>PEL(Respirable Fraction)_iPad.png</string>		
 	</dict>
 	<dict>
 		<key>name</key>
@@ -53,6 +55,8 @@
 		<string>silica:Total:Dust:</string>
 		<key>imageName</key>
 		<string>PEL(Total Dust).png</string>
+		<key>imageNameIpad</key>
+		<string>PEL(Total Dust)_iPad.png</string>			
 	</dict>
 	<dict>
 		<key>name</key>
@@ -83,6 +87,8 @@
 		<string>OEL:of:Mixture:MultiVar:</string>
 		<key>imageName</key>
 		<string>OELmix.png</string>
+		<key>imageNameIpad</key>
+		<string>OELmix.png_iPad.png</string>				
 	</dict>
 </array>
 </plist>

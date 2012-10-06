@@ -9,6 +9,8 @@
 		<string>1 m3/s = 2120 ft3/min = 16.4 cm3/s</string>
 		<key>imageName</key>
 		<string>flow rate 1.png</string>
+		<key>imageNameIpad</key>
+		<string>flow rate 1_iPad.png</string>
 	</dict>
 	<dict>
 		<key>name</key>
@@ -17,6 +19,8 @@
 		<string>1 ft3/hr = .47 L/min</string>
 		<key>imageName</key>
 		<string>flow rate 2.png</string>
+		<key>imageNameIpad</key>
+		<string>flow rate 2_iPad.png</string>		
 	</dict>
 </array>
 </plist>
