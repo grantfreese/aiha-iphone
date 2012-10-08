@@ -154,17 +154,17 @@
         if (self.interfaceOrientation == UIInterfaceOrientationLandscapeLeft ||
             self.interfaceOrientation == UIInterfaceOrientationLandscapeRight)
         { //Landscape
-            _VolumeButton.frame = CGRectMake(30, 31, 250, 80);
-            _DistanceButton.frame = CGRectMake(176, 31, 250, 80);
-            _PressureButton.frame = CGRectMake(323, 31, 250, 80);
-            _MassButton.frame = CGRectMake(30, 78, 250, 80);
-            _TemperatureButton.frame = CGRectMake(176, 78, 250, 80);
-            _AreaButton.frame = CGRectMake(323, 78, 250, 80);
-            _TLVButton.frame = CGRectMake(30, 125, 250, 80);
-            _ConcentrationButton.frame = CGRectMake(176, 125, 250, 80);
-            _FlowRateButton.frame = CGRectMake(323, 125, 250, 80);
-            _ConstantsButton.frame = CGRectMake(176, 172, 250, 80);
-            _ConversionsLabel.frame = CGRectMake(171, -5, 250, 32);
+            _VolumeButton.frame = CGRectMake(200, 130, 250, 80);
+            _DistanceButton.frame = CGRectMake(600, 130, 250, 80);
+            _PressureButton.frame = CGRectMake(200, 230, 250, 80);
+            _MassButton.frame = CGRectMake(600, 230, 250, 80);
+            _TemperatureButton.frame = CGRectMake(200, 330, 250, 80);
+            _AreaButton.frame = CGRectMake(600, 330, 250, 80);
+            _TLVButton.frame = CGRectMake(200, 430, 250, 80);
+            _ConcentrationButton.frame = CGRectMake(600, 430, 250, 80);
+            _FlowRateButton.frame = CGRectMake(200, 530, 250, 80);
+            _ConstantsButton.frame = CGRectMake(600, 530, 250, 80);
+            _ConversionsLabel.frame = CGRectMake(400, 70, 250, 32);
         }
         else
         { //Portrait
@@ -248,17 +248,17 @@
          if (toInterfaceOrientation == UIInterfaceOrientationLandscapeLeft ||
              toInterfaceOrientation == UIInterfaceOrientationLandscapeRight)
          { //Landscape
-             _VolumeButton.frame = CGRectMake(30, 31, 127, 37);
-             _DistanceButton.frame = CGRectMake(176, 31, 127, 37);
-             _PressureButton.frame = CGRectMake(323, 31, 127, 37);
-             _MassButton.frame = CGRectMake(30, 78, 127, 37);
-             _TemperatureButton.frame = CGRectMake(176, 78, 127, 37);
-             _AreaButton.frame = CGRectMake(323, 78, 127, 37);
-             _TLVButton.frame = CGRectMake(30, 125, 127, 37);
-             _ConcentrationButton.frame = CGRectMake(176, 125, 127, 37);
-             _FlowRateButton.frame = CGRectMake(323, 125, 127, 37);
-             _ConstantsButton.frame = CGRectMake(176, 172, 127, 37);
-             _ConversionsLabel.frame = CGRectMake(171, -5, 138, 32);
+             _VolumeButton.frame = CGRectMake(200, 130, 250, 80);
+             _DistanceButton.frame = CGRectMake(600, 130, 250, 80);
+             _PressureButton.frame = CGRectMake(200, 230, 250, 80);
+             _MassButton.frame = CGRectMake(600, 230, 250, 80);
+             _TemperatureButton.frame = CGRectMake(200, 330, 250, 80);
+             _AreaButton.frame = CGRectMake(600, 330, 250, 80);
+             _TLVButton.frame = CGRectMake(200, 430, 250, 80);
+             _ConcentrationButton.frame = CGRectMake(600, 430, 250, 80);
+             _FlowRateButton.frame = CGRectMake(200, 530, 250, 80);
+             _ConstantsButton.frame = CGRectMake(600, 530, 250, 80);
+             _ConversionsLabel.frame = CGRectMake(400, 70, 250, 32);
          }
          else
          { //Portrait
