@@ -131,7 +131,12 @@
     }
 
     if(imageName != nil) {
-        cell.imageView.image = [UIImage imageNamed:imageName];
+        if([cell isKindOfClass:[CenteredImageCell class]]) {
+            CenteredImageCell *centeredCell = (CenteredImageCell*)cell;
+            centeredCell.centeredImageView.image = [UIImage imageNamed:imageName];
+        } else {
+            cell.imageView.image = [UIImage imageNamed:imageName];
+        }
     } else {
         cell.textLabel.text = [formulaInfo objectForKey:@"formula"];
     }

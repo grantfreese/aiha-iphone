@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "CenteredImageCell.h"
 
 @interface NoiseListViewController : UITableViewController
 

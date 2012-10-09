@@ -46,6 +46,7 @@
 		225442CD157DAA7200633E94 /* convertOEL 2.png in Resources */ = {isa = PBXBuildFile; fileRef = 225442C9157DAA7200633E94 /* convertOEL 2.png */; };
 		225442CE157DAA7200633E94 /* convertOEL 2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 225442CA157DAA7200633E94 /* convertOEL 2@2x.png */; };
 		2266B29A1624DCA3007CCBC2 /* 85dBA reached_iPad.png in Resources */ = {isa = PBXBuildFile; fileRef = 2266B2991624DCA3007CCBC2 /* 85dBA reached_iPad.png */; };
+		2266B29E1624E923007CCBC2 /* CenteredImageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2266B29D1624E922007CCBC2 /* CenteredImageCell.m */; };
 		2277D7FB161F8560001C7DDC /* AIHAlogo_iPad.png in Resources */ = {isa = PBXBuildFile; fileRef = 2277D7F9161F8560001C7DDC /* AIHAlogo_iPad.png */; };
 		2277D7FC161F8560001C7DDC /* OSHA Table_iPad.png in Resources */ = {isa = PBXBuildFile; fileRef = 2277D7FA161F8560001C7DDC /* OSHA Table_iPad.png */; };
 		228708D115587FC9000C3888 /* formula.png in Resources */ = {isa = PBXBuildFile; fileRef = 228708D015587FC9000C3888 /* formula.png */; };
@@ -207,6 +208,8 @@
 		225442C9157DAA7200633E94 /* convertOEL 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "convertOEL 2.png"; sourceTree = "<group>"; };
 		225442CA157DAA7200633E94 /* convertOEL 2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "convertOEL 2@2x.png"; sourceTree = "<group>"; };
 		2266B2991624DCA3007CCBC2 /* 85dBA reached_iPad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "85dBA reached_iPad.png"; path = "iPadImages/85dBA reached_iPad.png"; sourceTree = "<group>"; };
+		2266B29C1624E922007CCBC2 /* CenteredImageCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CenteredImageCell.h; sourceTree = "<group>"; };
+		2266B29D1624E922007CCBC2 /* CenteredImageCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CenteredImageCell.m; sourceTree = "<group>"; };
 		2277D7F9161F8560001C7DDC /* AIHAlogo_iPad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = AIHAlogo_iPad.png; path = iPadImages/AIHAlogo_iPad.png; sourceTree = "<group>"; };
 		2277D7FA161F8560001C7DDC /* OSHA Table_iPad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "OSHA Table_iPad.png"; path = "iPadImages/OSHA Table_iPad.png"; sourceTree = "<group>"; };
 		228708D015587FC9000C3888 /* formula.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = formula.png; sourceTree = "<group>"; };
@@ -425,6 +428,8 @@
 				326B00BC152A546C0084A11C /* TLVViewController.m */,
 				023421721506BA930075260F /* formulas.m */,
 				0254A7501507B3290069897B /* formulas.h */,
+				2266B29C1624E922007CCBC2 /* CenteredImageCell.h */,
+				2266B29D1624E922007CCBC2 /* CenteredImageCell.m */,
 				02F8302114FBD83200A240EE /* Supporting Files */,
 			);
 			path = CalculationsAIHA;
@@ -749,6 +754,7 @@
 				326B00C9152A57860084A11C /* FlowRateViewController.m in Sources */,
 				326B00CC152A57D70084A11C /* ConcentrationViewController.m in Sources */,
 				326B00CF152A58170084A11C /* ConcentrationManager.m in Sources */,
+				2266B29E1624E923007CCBC2 /* CenteredImageCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
