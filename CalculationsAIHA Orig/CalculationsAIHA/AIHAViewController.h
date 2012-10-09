@@ -16,6 +16,7 @@
 @property (nonatomic, strong) IBOutlet UIButton *ExposureAssessmentButton;
 @property (nonatomic, strong) IBOutlet UIButton *logoButton;
 @property (nonatomic, strong) IBOutlet UILabel *TitleLabel;
+@property (nonatomic, strong) IBOutlet UIImageView *logoImage;
 
 
 @end

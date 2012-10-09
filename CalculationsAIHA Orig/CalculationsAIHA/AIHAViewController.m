@@ -125,7 +125,7 @@
             _VentilationButton.frame = CGRectMake(400, 445, 250, 80);
             _ExposureAssessmentButton.frame = CGRectMake(400, 545, 250, 80);
             _TitleLabel.frame = CGRectMake(370,145,327,120);
-            
+            _logoImage.frame = CGRectMake(0, 0, 1024, 160);
         }
         else
         {
@@ -134,6 +134,7 @@
             _VentilationButton.frame = CGRectMake(250, 576, 250, 80);
             _ExposureAssessmentButton.frame = CGRectMake(250, 700, 250, 80);
             _TitleLabel.frame = CGRectMake(219,200,327,120);
+            _logoImage.frame = CGRectMake(-111, 0, 1024, 160);
         }
     }
 
@@ -199,6 +200,7 @@
             _VentilationButton.frame = CGRectMake(400, 445, 250, 80);
             _ExposureAssessmentButton.frame = CGRectMake(400, 545, 250, 80);
             _TitleLabel.frame = CGRectMake(370,145,327,120);
+            _logoImage.frame = CGRectMake(0, 0, 1024, 160);
             
         }
         else
@@ -208,6 +210,7 @@
             _VentilationButton.frame = CGRectMake(250, 576, 250, 80);
             _ExposureAssessmentButton.frame = CGRectMake(250, 700, 250, 80);
             _TitleLabel.frame = CGRectMake(219,200,327,120);
+            _logoImage.frame = CGRectMake(-111, 0, 1024, 160);
         }
     }
 }
