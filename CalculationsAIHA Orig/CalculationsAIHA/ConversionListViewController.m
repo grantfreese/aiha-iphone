@@ -165,6 +165,7 @@
             _FlowRateButton.frame = CGRectMake(200, 530, 250, 80);
             _ConstantsButton.frame = CGRectMake(600, 530, 250, 80);
             _ConversionsLabel.frame = CGRectMake(400, 70, 250, 32);
+            _logoImage.frame = CGRectMake(0, -113, 1024, 160);
         }
         else
         { //Portrait
@@ -179,6 +180,7 @@
             _FlowRateButton.frame = CGRectMake(99, 607, 250, 80);
             _ConstantsButton.frame = CGRectMake(438, 607, 250, 80);
             _ConversionsLabel.frame = CGRectMake(221, 31, 327, 120);
+            _logoImage.frame = CGRectMake(-111, -113, 1024, 160);
         }
     }
 
@@ -259,6 +261,7 @@
              _FlowRateButton.frame = CGRectMake(200, 530, 250, 80);
              _ConstantsButton.frame = CGRectMake(600, 530, 250, 80);
              _ConversionsLabel.frame = CGRectMake(400, 70, 250, 32);
+             _logoImage.frame = CGRectMake(0, -113, 1024, 160);
          }
          else
          { //Portrait
@@ -273,6 +276,7 @@
              _FlowRateButton.frame = CGRectMake(99, 607, 250, 80);
              _ConstantsButton.frame = CGRectMake(438, 607, 250, 80);
              _ConversionsLabel.frame = CGRectMake(221, 31, 327, 120);
+             _logoImage.frame = CGRectMake(-111, -113, 1024, 160);
          }
      }
  }

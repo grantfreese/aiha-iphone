@@ -21,7 +21,7 @@
 @property (nonatomic, strong) IBOutlet UIButton *TLVButton;
 @property (nonatomic, strong) IBOutlet UIButton *ConstantsButton;
 @property (nonatomic, strong) IBOutlet UILabel *ConversionsLabel;
-
+@property (nonatomic, strong) IBOutlet UIImageView *logoImage;
 
 
 @end
