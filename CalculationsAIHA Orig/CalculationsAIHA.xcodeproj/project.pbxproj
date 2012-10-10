@@ -45,6 +45,42 @@
 		225442CC157DAA7200633E94 /* convertOEL 1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 225442C8157DAA7200633E94 /* convertOEL 1@2x.png */; };
 		225442CD157DAA7200633E94 /* convertOEL 2.png in Resources */ = {isa = PBXBuildFile; fileRef = 225442C9157DAA7200633E94 /* convertOEL 2.png */; };
 		225442CE157DAA7200633E94 /* convertOEL 2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 225442CA157DAA7200633E94 /* convertOEL 2@2x.png */; };
+		2254BB8C16254562000E82F0 /* AddingSoundPressure_iPad.png in Resources */ = {isa = PBXBuildFile; fileRef = 2254BB6A16254561000E82F0 /* AddingSoundPressure_iPad.png */; };
+		2254BB8D16254562000E82F0 /* AllowableExposureTime_iPad.png in Resources */ = {isa = PBXBuildFile; fileRef = 2254BB6B16254561000E82F0 /* AllowableExposureTime_iPad.png */; };
+		2254BB8E16254562000E82F0 /* Area of circle_iPad.png in Resources */ = {isa = PBXBuildFile; fileRef = 2254BB6C16254561000E82F0 /* Area of circle_iPad.png */; };
+		2254BB8F16254562000E82F0 /* Avogadros Number_iPad.png in Resources */ = {isa = PBXBuildFile; fileRef = 2254BB6D16254561000E82F0 /* Avogadros Number_iPad.png */; };
+		2254BB9016254562000E82F0 /* concentrations_iPad.png in Resources */ = {isa = PBXBuildFile; fileRef = 2254BB6E16254561000E82F0 /* concentrations_iPad.png */; };
+		2254BB9116254562000E82F0 /* convertOEL 1_iPad.png in Resources */ = {isa = PBXBuildFile; fileRef = 2254BB6F16254561000E82F0 /* convertOEL 1_iPad.png */; };
+		2254BB9216254562000E82F0 /* convertOEL 2_iPad.png in Resources */ = {isa = PBXBuildFile; fileRef = 2254BB7016254561000E82F0 /* convertOEL 2_iPad.png */; };
+		2254BB9316254562000E82F0 /* dilutionToControlEvaporation_iPad.png in Resources */ = {isa = PBXBuildFile; fileRef = 2254BB7116254561000E82F0 /* dilutionToControlEvaporation_iPad.png */; };
+		2254BB9416254562000E82F0 /* dilutionVentilation_iPad.png in Resources */ = {isa = PBXBuildFile; fileRef = 2254BB7216254561000E82F0 /* dilutionVentilation_iPad.png */; };
+		2254BB9516254562000E82F0 /* fanLaws_iPad.png in Resources */ = {isa = PBXBuildFile; fileRef = 2254BB7316254561000E82F0 /* fanLaws_iPad.png */; };
+		2254BB9616254562000E82F0 /* fanLaws2_iPad.png in Resources */ = {isa = PBXBuildFile; fileRef = 2254BB7416254561000E82F0 /* fanLaws2_iPad.png */; };
+		2254BB9716254562000E82F0 /* fanTotalPressure_iPad.png in Resources */ = {isa = PBXBuildFile; fileRef = 2254BB7516254561000E82F0 /* fanTotalPressure_iPad.png */; };
+		2254BB9816254562000E82F0 /* flow rate 1_iPad.png in Resources */ = {isa = PBXBuildFile; fileRef = 2254BB7616254561000E82F0 /* flow rate 1_iPad.png */; };
+		2254BB9916254562000E82F0 /* flow rate 2_iPad.png in Resources */ = {isa = PBXBuildFile; fileRef = 2254BB7716254561000E82F0 /* flow rate 2_iPad.png */; };
+		2254BB9A16254562000E82F0 /* Flow rate adjustment_iPad.png in Resources */ = {isa = PBXBuildFile; fileRef = 2254BB7816254561000E82F0 /* Flow rate adjustment_iPad.png */; };
+		2254BB9B16254562000E82F0 /* From ppm_iPad.png in Resources */ = {isa = PBXBuildFile; fileRef = 2254BB7916254561000E82F0 /* From ppm_iPad.png */; };
+		2254BB9C16254562000E82F0 /* grain to gm_iPad.png in Resources */ = {isa = PBXBuildFile; fileRef = 2254BB7A16254561000E82F0 /* grain to gm_iPad.png */; };
+		2254BB9D16254562000E82F0 /* HoodStaticPressure_iPad.png in Resources */ = {isa = PBXBuildFile; fileRef = 2254BB7B16254561000E82F0 /* HoodStaticPressure_iPad.png */; };
+		2254BB9E16254562000E82F0 /* Inverse Square Law_iPad.png in Resources */ = {isa = PBXBuildFile; fileRef = 2254BB7C16254561000E82F0 /* Inverse Square Law_iPad.png */; };
+		2254BB9F16254562000E82F0 /* mppcf_iPad.png in Resources */ = {isa = PBXBuildFile; fileRef = 2254BB7D16254561000E82F0 /* mppcf_iPad.png */; };
+		2254BBA016254562000E82F0 /* OELmix_iPad.png in Resources */ = {isa = PBXBuildFile; fileRef = 2254BB7E16254561000E82F0 /* OELmix_iPad.png */; };
+		2254BBA116254562000E82F0 /* Oxygen Level of Room_iPad.png in Resources */ = {isa = PBXBuildFile; fileRef = 2254BB7F16254561000E82F0 /* Oxygen Level of Room_iPad.png */; };
+		2254BBA216254562000E82F0 /* PEL(Respirable Fraction)_iPad.png in Resources */ = {isa = PBXBuildFile; fileRef = 2254BB8016254561000E82F0 /* PEL(Respirable Fraction)_iPad.png */; };
+		2254BBA316254562000E82F0 /* PEL(Total Dust)_iPad.png in Resources */ = {isa = PBXBuildFile; fileRef = 2254BB8116254561000E82F0 /* PEL(Total Dust)_iPad.png */; };
+		2254BBA416254562000E82F0 /* PercentDose_iPad.png in Resources */ = {isa = PBXBuildFile; fileRef = 2254BB8216254561000E82F0 /* PercentDose_iPad.png */; };
+		2254BBA516254562000E82F0 /* Planck's Constant_iPad.png in Resources */ = {isa = PBXBuildFile; fileRef = 2254BB8316254561000E82F0 /* Planck's Constant_iPad.png */; };
+		2254BBA616254562000E82F0 /* Room Air changes per hour_iPad.png in Resources */ = {isa = PBXBuildFile; fileRef = 2254BB8416254561000E82F0 /* Room Air changes per hour_iPad.png */; };
+		2254BBA716254562000E82F0 /* Speed of Light_iPad.png in Resources */ = {isa = PBXBuildFile; fileRef = 2254BB8516254561000E82F0 /* Speed of Light_iPad.png */; };
+		2254BBA816254562000E82F0 /* Speed of Sound_iPad.pcx in Resources */ = {isa = PBXBuildFile; fileRef = 2254BB8616254561000E82F0 /* Speed of Sound_iPad.pcx */; };
+		2254BBA916254562000E82F0 /* TLVmix_iPad.png in Resources */ = {isa = PBXBuildFile; fileRef = 2254BB8716254561000E82F0 /* TLVmix_iPad.png */; };
+		2254BBAA16254562000E82F0 /* To ppm_iPad.png in Resources */ = {isa = PBXBuildFile; fileRef = 2254BB8816254561000E82F0 /* To ppm_iPad.png */; };
+		2254BBAB16254562000E82F0 /* Total Pressure_iPad.png in Resources */ = {isa = PBXBuildFile; fileRef = 2254BB8916254561000E82F0 /* Total Pressure_iPad.png */; };
+		2254BBAC16254562000E82F0 /* WBGT_Indoor_iPad.png in Resources */ = {isa = PBXBuildFile; fileRef = 2254BB8A16254561000E82F0 /* WBGT_Indoor_iPad.png */; };
+		2254BBAD16254562000E82F0 /* WBGT_Outdoor_iPad.png in Resources */ = {isa = PBXBuildFile; fileRef = 2254BB8B16254561000E82F0 /* WBGT_Outdoor_iPad.png */; };
+		2254BBAF16254810000E82F0 /* TWA from %Dose_iPad.png in Resources */ = {isa = PBXBuildFile; fileRef = 2254BBAE16254810000E82F0 /* TWA from %Dose_iPad.png */; };
+		2254BBB1162548F8000E82F0 /* velocity_iPad.png in Resources */ = {isa = PBXBuildFile; fileRef = 2254BBB0162548F8000E82F0 /* velocity_iPad.png */; };
 		2266B29A1624DCA3007CCBC2 /* 85dBA reached_iPad.png in Resources */ = {isa = PBXBuildFile; fileRef = 2266B2991624DCA3007CCBC2 /* 85dBA reached_iPad.png */; };
 		2266B29E1624E923007CCBC2 /* CenteredImageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2266B29D1624E922007CCBC2 /* CenteredImageCell.m */; };
 		2277D7FB161F8560001C7DDC /* AIHAlogo_iPad.png in Resources */ = {isa = PBXBuildFile; fileRef = 2277D7F9161F8560001C7DDC /* AIHAlogo_iPad.png */; };
@@ -199,6 +235,7 @@
 		0F65F10815095B050028A6D7 /* OneVariableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OneVariableViewController.m; sourceTree = "<group>"; };
 		0F704A59150979370055CC32 /* CategoryManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CategoryManager.h; sourceTree = "<group>"; };
 		0F704A5A150979370055CC32 /* CategoryManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CategoryManager.m; sourceTree = "<group>"; };
+		221EC53F162543B60075CE78 /* AIHAlogo_iPad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = AIHAlogo_iPad.png; path = iPadImages/AIHAlogo_iPad.png; sourceTree = "<group>"; };
 		225442BF157DA6D100633E94 /* OELmix.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = OELmix.png; sourceTree = "<group>"; };
 		225442C0157DA6D100633E94 /* OELmix@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "OELmix@2x.png"; sourceTree = "<group>"; };
 		225442C3157DA90100633E94 /* From ppm.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "From ppm.png"; path = "../From ppm.png"; sourceTree = "<group>"; };
@@ -207,6 +244,42 @@
 		225442C8157DAA7200633E94 /* convertOEL 1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "convertOEL 1@2x.png"; sourceTree = "<group>"; };
 		225442C9157DAA7200633E94 /* convertOEL 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "convertOEL 2.png"; sourceTree = "<group>"; };
 		225442CA157DAA7200633E94 /* convertOEL 2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "convertOEL 2@2x.png"; sourceTree = "<group>"; };
+		2254BB6A16254561000E82F0 /* AddingSoundPressure_iPad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = AddingSoundPressure_iPad.png; path = iPadImages/AddingSoundPressure_iPad.png; sourceTree = "<group>"; };
+		2254BB6B16254561000E82F0 /* AllowableExposureTime_iPad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = AllowableExposureTime_iPad.png; path = iPadImages/AllowableExposureTime_iPad.png; sourceTree = "<group>"; };
+		2254BB6C16254561000E82F0 /* Area of circle_iPad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Area of circle_iPad.png"; path = "iPadImages/Area of circle_iPad.png"; sourceTree = "<group>"; };
+		2254BB6D16254561000E82F0 /* Avogadros Number_iPad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Avogadros Number_iPad.png"; path = "iPadImages/Avogadros Number_iPad.png"; sourceTree = "<group>"; };
+		2254BB6E16254561000E82F0 /* concentrations_iPad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = concentrations_iPad.png; path = iPadImages/concentrations_iPad.png; sourceTree = "<group>"; };
+		2254BB6F16254561000E82F0 /* convertOEL 1_iPad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "convertOEL 1_iPad.png"; path = "iPadImages/convertOEL 1_iPad.png"; sourceTree = "<group>"; };
+		2254BB7016254561000E82F0 /* convertOEL 2_iPad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "convertOEL 2_iPad.png"; path = "iPadImages/convertOEL 2_iPad.png"; sourceTree = "<group>"; };
+		2254BB7116254561000E82F0 /* dilutionToControlEvaporation_iPad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = dilutionToControlEvaporation_iPad.png; path = iPadImages/dilutionToControlEvaporation_iPad.png; sourceTree = "<group>"; };
+		2254BB7216254561000E82F0 /* dilutionVentilation_iPad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = dilutionVentilation_iPad.png; path = iPadImages/dilutionVentilation_iPad.png; sourceTree = "<group>"; };
+		2254BB7316254561000E82F0 /* fanLaws_iPad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = fanLaws_iPad.png; path = iPadImages/fanLaws_iPad.png; sourceTree = "<group>"; };
+		2254BB7416254561000E82F0 /* fanLaws2_iPad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = fanLaws2_iPad.png; path = iPadImages/fanLaws2_iPad.png; sourceTree = "<group>"; };
+		2254BB7516254561000E82F0 /* fanTotalPressure_iPad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = fanTotalPressure_iPad.png; path = iPadImages/fanTotalPressure_iPad.png; sourceTree = "<group>"; };
+		2254BB7616254561000E82F0 /* flow rate 1_iPad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "flow rate 1_iPad.png"; path = "iPadImages/flow rate 1_iPad.png"; sourceTree = "<group>"; };
+		2254BB7716254561000E82F0 /* flow rate 2_iPad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "flow rate 2_iPad.png"; path = "iPadImages/flow rate 2_iPad.png"; sourceTree = "<group>"; };
+		2254BB7816254561000E82F0 /* Flow rate adjustment_iPad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Flow rate adjustment_iPad.png"; path = "iPadImages/Flow rate adjustment_iPad.png"; sourceTree = "<group>"; };
+		2254BB7916254561000E82F0 /* From ppm_iPad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "From ppm_iPad.png"; path = "iPadImages/From ppm_iPad.png"; sourceTree = "<group>"; };
+		2254BB7A16254561000E82F0 /* grain to gm_iPad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "grain to gm_iPad.png"; path = "iPadImages/grain to gm_iPad.png"; sourceTree = "<group>"; };
+		2254BB7B16254561000E82F0 /* HoodStaticPressure_iPad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = HoodStaticPressure_iPad.png; path = iPadImages/HoodStaticPressure_iPad.png; sourceTree = "<group>"; };
+		2254BB7C16254561000E82F0 /* Inverse Square Law_iPad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Inverse Square Law_iPad.png"; path = "iPadImages/Inverse Square Law_iPad.png"; sourceTree = "<group>"; };
+		2254BB7D16254561000E82F0 /* mppcf_iPad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = mppcf_iPad.png; path = iPadImages/mppcf_iPad.png; sourceTree = "<group>"; };
+		2254BB7E16254561000E82F0 /* OELmix_iPad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = OELmix_iPad.png; path = iPadImages/OELmix_iPad.png; sourceTree = "<group>"; };
+		2254BB7F16254561000E82F0 /* Oxygen Level of Room_iPad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Oxygen Level of Room_iPad.png"; path = "iPadImages/Oxygen Level of Room_iPad.png"; sourceTree = "<group>"; };
+		2254BB8016254561000E82F0 /* PEL(Respirable Fraction)_iPad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "PEL(Respirable Fraction)_iPad.png"; path = "iPadImages/PEL(Respirable Fraction)_iPad.png"; sourceTree = "<group>"; };
+		2254BB8116254561000E82F0 /* PEL(Total Dust)_iPad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "PEL(Total Dust)_iPad.png"; path = "iPadImages/PEL(Total Dust)_iPad.png"; sourceTree = "<group>"; };
+		2254BB8216254561000E82F0 /* PercentDose_iPad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = PercentDose_iPad.png; path = iPadImages/PercentDose_iPad.png; sourceTree = "<group>"; };
+		2254BB8316254561000E82F0 /* Planck's Constant_iPad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Planck's Constant_iPad.png"; path = "iPadImages/Planck's Constant_iPad.png"; sourceTree = "<group>"; };
+		2254BB8416254561000E82F0 /* Room Air changes per hour_iPad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Room Air changes per hour_iPad.png"; path = "iPadImages/Room Air changes per hour_iPad.png"; sourceTree = "<group>"; };
+		2254BB8516254561000E82F0 /* Speed of Light_iPad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Speed of Light_iPad.png"; path = "iPadImages/Speed of Light_iPad.png"; sourceTree = "<group>"; };
+		2254BB8616254561000E82F0 /* Speed of Sound_iPad.pcx */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Speed of Sound_iPad.pcx"; path = "iPadImages/Speed of Sound_iPad.pcx"; sourceTree = "<group>"; };
+		2254BB8716254561000E82F0 /* TLVmix_iPad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = TLVmix_iPad.png; path = iPadImages/TLVmix_iPad.png; sourceTree = "<group>"; };
+		2254BB8816254561000E82F0 /* To ppm_iPad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "To ppm_iPad.png"; path = "iPadImages/To ppm_iPad.png"; sourceTree = "<group>"; };
+		2254BB8916254561000E82F0 /* Total Pressure_iPad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Total Pressure_iPad.png"; path = "iPadImages/Total Pressure_iPad.png"; sourceTree = "<group>"; };
+		2254BB8A16254561000E82F0 /* WBGT_Indoor_iPad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = WBGT_Indoor_iPad.png; path = iPadImages/WBGT_Indoor_iPad.png; sourceTree = "<group>"; };
+		2254BB8B16254561000E82F0 /* WBGT_Outdoor_iPad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = WBGT_Outdoor_iPad.png; path = iPadImages/WBGT_Outdoor_iPad.png; sourceTree = "<group>"; };
+		2254BBAE16254810000E82F0 /* TWA from %Dose_iPad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "TWA from %Dose_iPad.png"; path = "iPadImages/TWA from %Dose_iPad.png"; sourceTree = "<group>"; };
+		2254BBB0162548F8000E82F0 /* velocity_iPad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = velocity_iPad.png; path = iPadImages/velocity_iPad.png; sourceTree = "<group>"; };
 		2266B2991624DCA3007CCBC2 /* 85dBA reached_iPad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "85dBA reached_iPad.png"; path = "iPadImages/85dBA reached_iPad.png"; sourceTree = "<group>"; };
 		2266B29C1624E922007CCBC2 /* CenteredImageCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CenteredImageCell.h; sourceTree = "<group>"; };
 		2266B29D1624E922007CCBC2 /* CenteredImageCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CenteredImageCell.m; sourceTree = "<group>"; };
@@ -461,6 +534,43 @@
 		2277D7F8161F854B001C7DDC /* iPad Images */ = {
 			isa = PBXGroup;
 			children = (
+				2254BB6A16254561000E82F0 /* AddingSoundPressure_iPad.png */,
+				2254BB6B16254561000E82F0 /* AllowableExposureTime_iPad.png */,
+				2254BB6C16254561000E82F0 /* Area of circle_iPad.png */,
+				2254BB6D16254561000E82F0 /* Avogadros Number_iPad.png */,
+				2254BB6E16254561000E82F0 /* concentrations_iPad.png */,
+				2254BB6F16254561000E82F0 /* convertOEL 1_iPad.png */,
+				2254BB7016254561000E82F0 /* convertOEL 2_iPad.png */,
+				2254BB7116254561000E82F0 /* dilutionToControlEvaporation_iPad.png */,
+				2254BB7216254561000E82F0 /* dilutionVentilation_iPad.png */,
+				2254BB7316254561000E82F0 /* fanLaws_iPad.png */,
+				2254BB7416254561000E82F0 /* fanLaws2_iPad.png */,
+				2254BB7516254561000E82F0 /* fanTotalPressure_iPad.png */,
+				2254BB7616254561000E82F0 /* flow rate 1_iPad.png */,
+				2254BB7716254561000E82F0 /* flow rate 2_iPad.png */,
+				2254BB7816254561000E82F0 /* Flow rate adjustment_iPad.png */,
+				2254BB7916254561000E82F0 /* From ppm_iPad.png */,
+				2254BB7A16254561000E82F0 /* grain to gm_iPad.png */,
+				2254BB7B16254561000E82F0 /* HoodStaticPressure_iPad.png */,
+				2254BB7C16254561000E82F0 /* Inverse Square Law_iPad.png */,
+				2254BB7D16254561000E82F0 /* mppcf_iPad.png */,
+				2254BB7E16254561000E82F0 /* OELmix_iPad.png */,
+				2254BB7F16254561000E82F0 /* Oxygen Level of Room_iPad.png */,
+				2254BB8016254561000E82F0 /* PEL(Respirable Fraction)_iPad.png */,
+				2254BB8116254561000E82F0 /* PEL(Total Dust)_iPad.png */,
+				2254BB8216254561000E82F0 /* PercentDose_iPad.png */,
+				2254BB8316254561000E82F0 /* Planck's Constant_iPad.png */,
+				2254BB8416254561000E82F0 /* Room Air changes per hour_iPad.png */,
+				2254BB8516254561000E82F0 /* Speed of Light_iPad.png */,
+				2254BB8616254561000E82F0 /* Speed of Sound_iPad.pcx */,
+				2254BB8716254561000E82F0 /* TLVmix_iPad.png */,
+				2254BB8816254561000E82F0 /* To ppm_iPad.png */,
+				2254BBAE16254810000E82F0 /* TWA from %Dose_iPad.png */,
+				2254BB8916254561000E82F0 /* Total Pressure_iPad.png */,
+				2254BB8A16254561000E82F0 /* WBGT_Indoor_iPad.png */,
+				2254BB8B16254561000E82F0 /* WBGT_Outdoor_iPad.png */,
+				2254BBB0162548F8000E82F0 /* velocity_iPad.png */,
+				221EC53F162543B60075CE78 /* AIHAlogo_iPad.png */,
 				2266B2991624DCA3007CCBC2 /* 85dBA reached_iPad.png */,
 				2277D7F9161F8560001C7DDC /* AIHAlogo_iPad.png */,
 				2277D7FA161F8560001C7DDC /* OSHA Table_iPad.png */,
@@ -714,6 +824,42 @@
 				2277D7FB161F8560001C7DDC /* AIHAlogo_iPad.png in Resources */,
 				2277D7FC161F8560001C7DDC /* OSHA Table_iPad.png in Resources */,
 				2266B29A1624DCA3007CCBC2 /* 85dBA reached_iPad.png in Resources */,
+				2254BB8C16254562000E82F0 /* AddingSoundPressure_iPad.png in Resources */,
+				2254BB8D16254562000E82F0 /* AllowableExposureTime_iPad.png in Resources */,
+				2254BB8E16254562000E82F0 /* Area of circle_iPad.png in Resources */,
+				2254BB8F16254562000E82F0 /* Avogadros Number_iPad.png in Resources */,
+				2254BB9016254562000E82F0 /* concentrations_iPad.png in Resources */,
+				2254BB9116254562000E82F0 /* convertOEL 1_iPad.png in Resources */,
+				2254BB9216254562000E82F0 /* convertOEL 2_iPad.png in Resources */,
+				2254BB9316254562000E82F0 /* dilutionToControlEvaporation_iPad.png in Resources */,
+				2254BB9416254562000E82F0 /* dilutionVentilation_iPad.png in Resources */,
+				2254BB9516254562000E82F0 /* fanLaws_iPad.png in Resources */,
+				2254BB9616254562000E82F0 /* fanLaws2_iPad.png in Resources */,
+				2254BB9716254562000E82F0 /* fanTotalPressure_iPad.png in Resources */,
+				2254BB9816254562000E82F0 /* flow rate 1_iPad.png in Resources */,
+				2254BB9916254562000E82F0 /* flow rate 2_iPad.png in Resources */,
+				2254BB9A16254562000E82F0 /* Flow rate adjustment_iPad.png in Resources */,
+				2254BB9B16254562000E82F0 /* From ppm_iPad.png in Resources */,
+				2254BB9C16254562000E82F0 /* grain to gm_iPad.png in Resources */,
+				2254BB9D16254562000E82F0 /* HoodStaticPressure_iPad.png in Resources */,
+				2254BB9E16254562000E82F0 /* Inverse Square Law_iPad.png in Resources */,
+				2254BB9F16254562000E82F0 /* mppcf_iPad.png in Resources */,
+				2254BBA016254562000E82F0 /* OELmix_iPad.png in Resources */,
+				2254BBA116254562000E82F0 /* Oxygen Level of Room_iPad.png in Resources */,
+				2254BBA216254562000E82F0 /* PEL(Respirable Fraction)_iPad.png in Resources */,
+				2254BBA316254562000E82F0 /* PEL(Total Dust)_iPad.png in Resources */,
+				2254BBA416254562000E82F0 /* PercentDose_iPad.png in Resources */,
+				2254BBA516254562000E82F0 /* Planck's Constant_iPad.png in Resources */,
+				2254BBA616254562000E82F0 /* Room Air changes per hour_iPad.png in Resources */,
+				2254BBA716254562000E82F0 /* Speed of Light_iPad.png in Resources */,
+				2254BBA816254562000E82F0 /* Speed of Sound_iPad.pcx in Resources */,
+				2254BBA916254562000E82F0 /* TLVmix_iPad.png in Resources */,
+				2254BBAA16254562000E82F0 /* To ppm_iPad.png in Resources */,
+				2254BBAB16254562000E82F0 /* Total Pressure_iPad.png in Resources */,
+				2254BBAC16254562000E82F0 /* WBGT_Indoor_iPad.png in Resources */,
+				2254BBAD16254562000E82F0 /* WBGT_Outdoor_iPad.png in Resources */,
+				2254BBAF16254810000E82F0 /* TWA from %Dose_iPad.png in Resources */,
+				2254BBB1162548F8000E82F0 /* velocity_iPad.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
