@@ -250,12 +250,28 @@
     
     NSString *variable1Text = [chosenFormula objectForKey:@"variable1"];
     NSString *unit1Text = [chosenFormula objectForKey:@"unit1"];
-    NSString *formulaText = [chosenFormula objectForKey:@"imageName"];    
+        
     //NSString *formulaText = [chosenFormula objectForKey:@"formula"];
     NSString *resultUnitText = [chosenFormula objectForKey:@"resultUnit"];
     self.variable1.text = variable1Text;
-    self.unit1.text = unit1Text; 
+    self.unit1.text = unit1Text;
+    
+    NSString *formulaText = [chosenFormula objectForKey:@"imageName"];
     self.formulaImage.image = [UIImage imageNamed:formulaText];
+    
+    /*
+    //Get image for the screen (depending on device type)
+    if([deviceType isEqualToString:@"iPad"]||[deviceType isEqualToString:@"iPad Simulator"])
+    {
+        formulaText = [chosenFormula objectForKey:@"imageNameIpad"];
+    }
+    else
+    {
+        formulaText = [chosenFormula objectForKey:@"imageName"];
+    }
+    self.formulaImage.image = [UIImage imageNamed:formulaText];
+    */
+    
     //self.formula.text = formulaText;
     self.resultUnit.text = resultUnitText;
     

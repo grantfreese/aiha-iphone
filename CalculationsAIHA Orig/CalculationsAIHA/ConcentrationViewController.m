@@ -123,14 +123,13 @@
         imageName = [ConcentrationInfo objectForKey:@"imageName"];
     }
     
-    if(imageName != nil) {
-        if([cell isKindOfClass:[CenteredImageCell class]]) {
-            CenteredImageCell *centeredCell = (CenteredImageCell*)cell;
-            centeredCell.centeredImageView.image = [UIImage imageNamed:imageName];
-        } else {
-            cell.imageView.image = [UIImage imageNamed:imageName];
-        }
-    } else {
+    if(imageName != nil)
+    {
+        CenteredImageCell *centeredCell = (CenteredImageCell*)cell;
+        centeredCell.centeredImageView.image = [UIImage imageNamed:imageName];
+    }
+    else
+    {
         cell.textLabel.text = [ConcentrationInfo objectForKey:@"formula"];
     }
     return cell;

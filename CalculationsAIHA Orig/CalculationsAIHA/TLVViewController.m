@@ -125,13 +125,8 @@
     
     if(imageName != nil)
     {
-        if([cell isKindOfClass:[CenteredImageCell class]]) {
-            CenteredImageCell *centeredCell = (CenteredImageCell*)cell;
-            centeredCell.centeredImageView.image = [UIImage imageNamed:imageName];
-        } else
-        {
-            cell.imageView.image = [UIImage imageNamed:imageName];
-        }
+        CenteredImageCell *centeredCell = (CenteredImageCell*)cell;
+        centeredCell.centeredImageView.image = [UIImage imageNamed:imageName];
     }
     else
     {
