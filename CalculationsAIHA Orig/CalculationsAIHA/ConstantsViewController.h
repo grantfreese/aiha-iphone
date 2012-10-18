@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 #import "ConstantsManager.h"
+#import "CenteredImageCell.h"
+
 @interface ConstantsViewController : UITableViewController
 
 

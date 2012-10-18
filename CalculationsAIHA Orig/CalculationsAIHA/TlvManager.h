@@ -7,6 +7,7 @@
 //
 
 #import "CategoryManager.h"
+#import "CenteredImageCell.h"
 
 @interface TlvManager : NSObject
 

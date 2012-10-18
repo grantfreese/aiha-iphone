@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 #import "FlowRateManager.h"
+#import "CenteredImageCell.h"
+
 @interface FlowRateViewController : UITableViewController
 
 

@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 #import "ExposureManager.h"
+#import "CenteredImageCell.h"
+
 @interface ExposureListViewController : UITableViewController
 
 

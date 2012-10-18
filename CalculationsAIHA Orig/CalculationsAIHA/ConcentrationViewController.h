@@ -9,6 +9,8 @@
 #import <UIKit/UIKit.h>
 #import "ConcentrationManager.h"
 #import "TwoVariableViewController.h"
+#import "CenteredImageCell.h"
+
 @interface ConcentrationViewController : UITableViewController
 
 
