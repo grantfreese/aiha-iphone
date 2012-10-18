@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 #import "TlvManager.h"
+#import "CenteredImageCell.h"
+
 @interface TLVViewController : UITableViewController
 
 

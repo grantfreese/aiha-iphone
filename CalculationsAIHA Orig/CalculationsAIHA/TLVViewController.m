@@ -111,14 +111,33 @@
     //put the actual formula instead.
     //Don't forget that the elements in the plist must contain
     //imageName as one of its keys
-    NSString *imageName = [TLVInfo objectForKey:@"imageName"];
-     if(imageName != nil) {
-     cell.imageView.image = [UIImage imageNamed:imageName];
-     } else {
-     
-    cell.textLabel.text = [TLVInfo objectForKey:@"name"];
-     }
+    NSString *deviceType = [UIDevice currentDevice].model;
+    NSString *imageName;
     
+    if([deviceType isEqualToString:@"iPad"]||[deviceType isEqualToString:@"iPad Simulator"])
+    {
+        imageName = [TLVInfo objectForKey:@"imageNameIpad"];
+    }
+    else
+    {
+        imageName = [TLVInfo objectForKey:@"imageName"];
+    }
+    
+    if(imageName != nil)
+    {
+        if([cell isKindOfClass:[CenteredImageCell class]]) {
+            CenteredImageCell *centeredCell = (CenteredImageCell*)cell;
+            centeredCell.centeredImageView.image = [UIImage imageNamed:imageName];
+        } else
+        {
+            cell.imageView.image = [UIImage imageNamed:imageName];
+        }
+    }
+    else
+    {
+        cell.textLabel.text = [TLVInfo objectForKey:@"formula"];
+    }
+
     return cell;
 }
 
