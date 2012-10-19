@@ -115,6 +115,7 @@
 		22C042E8155DC39C00D6E9A4 /* AIHAretina.png in Resources */ = {isa = PBXBuildFile; fileRef = 22C042E7155DC39C00D6E9A4 /* AIHAretina.png */; };
 		22C536B81525671B00886CEA /* Ventilation.plist in Resources */ = {isa = PBXBuildFile; fileRef = 22C536B71525671B00886CEA /* Ventilation.plist */; };
 		22CAE47E152FB52800C5E6B7 /* logos.png in Resources */ = {isa = PBXBuildFile; fileRef = 22CAE47D152FB52800C5E6B7 /* logos.png */; };
+		22E2F1AC1631E23400DDB862 /* TWA_iPad.png in Resources */ = {isa = PBXBuildFile; fileRef = 22E2F1AB1631E23400DDB862 /* TWA_iPad.png */; };
 		2C0AE3AF15FFC83B00641451 /* iPad_Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C0AE3AE15FFC83B00641451 /* iPad_Storyboard.storyboard */; };
 		321898CE152A3E4B00D4A6AE /* FlowRate.plist in Resources */ = {isa = PBXBuildFile; fileRef = 321898CD152A3E4B00D4A6AE /* FlowRate.plist */; };
 		321898D1152A3E7200D4A6AE /* Concentration.plist in Resources */ = {isa = PBXBuildFile; fileRef = 321898D0152A3E7200D4A6AE /* Concentration.plist */; };
@@ -317,6 +318,7 @@
 		22C536B71525671B00886CEA /* Ventilation.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Ventilation.plist; sourceTree = "<group>"; };
 		22CAE47B152FB51A00C5E6B7 /* logos.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logos.png; sourceTree = "<group>"; };
 		22CAE47D152FB52800C5E6B7 /* logos.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logos.png; sourceTree = "<group>"; };
+		22E2F1AB1631E23400DDB862 /* TWA_iPad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = TWA_iPad.png; path = iPadImages/TWA_iPad.png; sourceTree = "<group>"; };
 		2C0AE3AE15FFC83B00641451 /* iPad_Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = iPad_Storyboard.storyboard; sourceTree = "<group>"; };
 		321898CD152A3E4B00D4A6AE /* FlowRate.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = FlowRate.plist; sourceTree = "<group>"; };
 		321898D0152A3E7200D4A6AE /* Concentration.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Concentration.plist; sourceTree = "<group>"; };
@@ -565,6 +567,7 @@
 				2254BB8616254561000E82F0 /* Speed of Sound_iPad.pcx */,
 				2254BB8716254561000E82F0 /* TLVmix_iPad.png */,
 				2254BB8816254561000E82F0 /* To ppm_iPad.png */,
+				22E2F1AB1631E23400DDB862 /* TWA_iPad.png */,
 				2254BBAE16254810000E82F0 /* TWA from %Dose_iPad.png */,
 				2254BB8916254561000E82F0 /* Total Pressure_iPad.png */,
 				2254BB8A16254561000E82F0 /* WBGT_Indoor_iPad.png */,
@@ -860,6 +863,7 @@
 				2254BBAD16254562000E82F0 /* WBGT_Outdoor_iPad.png in Resources */,
 				2254BBAF16254810000E82F0 /* TWA from %Dose_iPad.png in Resources */,
 				2254BBB1162548F8000E82F0 /* velocity_iPad.png in Resources */,
+				22E2F1AC1631E23400DDB862 /* TWA_iPad.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
