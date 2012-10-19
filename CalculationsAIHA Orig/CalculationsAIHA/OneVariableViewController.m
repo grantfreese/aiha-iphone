@@ -182,8 +182,8 @@
             _resultUnit.frame = CGRectMake(850, 355, 85, 45);
             _resultBar.frame = CGRectMake(0, 350, 1025, 50);
             
-            _calcButton.frame = CGRectMake(850, 275, 150, 70);
-            _clearButton.frame = CGRectMake(10, 275, 150, 70);
+            _calcButton.frame = CGRectMake(850, 300, 107, 50);
+            _clearButton.frame = CGRectMake(10, 300, 107, 50);
         }
         else
         { //Portrait Mode
@@ -194,8 +194,8 @@
             _resultUnit.frame = CGRectMake(590, 563, 85, 45);
             _resultBar.frame = CGRectMake(0, 555, 768, 64);
     
-            _calcButton.frame = CGRectMake(529, 468, 150, 70);
-            _clearButton.frame = CGRectMake(123, 468, 150, 70);
+            _calcButton.frame = CGRectMake(529, 500, 107, 50);
+            _clearButton.frame = CGRectMake(123, 500, 107, 50);
         }
     }
     
@@ -337,8 +337,8 @@
             _resultUnit.frame = CGRectMake(850, 355, 85, 45);
             _resultBar.frame = CGRectMake(0, 350, 1025, 50);
             
-            _calcButton.frame = CGRectMake(850, 275, 150, 70);
-            _clearButton.frame = CGRectMake(10, 275, 150, 70);
+            _calcButton.frame = CGRectMake(850, 300, 107, 50);
+            _clearButton.frame = CGRectMake(10, 300, 107, 50);
         }
         else
         { //Portrait Mode
@@ -349,8 +349,8 @@
             _resultUnit.frame = CGRectMake(590, 563, 85, 45);
             _resultBar.frame = CGRectMake(0, 555, 768, 64);
             
-            _calcButton.frame = CGRectMake(529, 468, 150, 70);
-            _clearButton.frame = CGRectMake(123, 468, 150, 70);
+            _calcButton.frame = CGRectMake(529, 500, 107, 50);
+            _clearButton.frame = CGRectMake(123, 500, 107, 50);
         }
     }
 
