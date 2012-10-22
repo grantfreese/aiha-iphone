@@ -32,7 +32,7 @@
 		<key>imageName</key>
 		<string>Oxygen Level of Room.png</string>
 		<key>imageNameIpad</key>
-		<string>Oxygen Level of Room_iPad.png</string>		
+		<string>Oxygen Level of Room_iPad.png</string>
 	</dict>
 	<dict>
 		<key>name</key>
@@ -56,7 +56,7 @@
 		<key>imageName</key>
 		<string>Room Air changes per hour.png</string>
 		<key>imageNameIpad</key>
-		<string>Room Air changes per hour_iPad.png</string>		
+		<string>Room Air changes per hour_iPad.png</string>
 	</dict>
 	<dict>
 		<key>name</key>
@@ -80,7 +80,7 @@
 		<key>imageName</key>
 		<string>Total Pressure.png</string>
 		<key>imageNameIpad</key>
-		<string>Total Pressure_iPad.png</string>			
+		<string>Total Pressure_iPad.png</string>
 	</dict>
 	<dict>
 		<key>name</key>
@@ -116,7 +116,7 @@
 		<key>imageName</key>
 		<string>Flow rate adjustment.png</string>
 		<key>imageNameIpad</key>
-		<string>Flow rate adjustment_iPad.png</string>			
+		<string>Flow rate adjustment_iPad.png</string>
 	</dict>
 	<dict>
 		<key>name</key>
@@ -136,7 +136,7 @@
 		<key>imageName</key>
 		<string>velocity.png</string>
 		<key>imageNameIpad</key>
-		<string>velocity_iPad.png</string>		
+		<string>velocity_iPad.png</string>
 	</dict>
 	<dict>
 		<key>name</key>
@@ -160,7 +160,7 @@
 		<key>imageName</key>
 		<string>HoodStaticPressure.png</string>
 		<key>imageNameIpad</key>
-		<string>HoodStaticPressure_iPad.png</string>		
+		<string>HoodStaticPressure_iPad.png</string>
 	</dict>
 	<dict>
 		<key>name</key>
@@ -192,7 +192,7 @@
 		<key>imageName</key>
 		<string>dilutionVentilation.png</string>
 		<key>imageNameIpad</key>
-		<string>dilutionVentilation_iPad.png</string>		
+		<string>dilutionVentilation_iPad.png</string>
 	</dict>
 	<dict>
 		<key>name</key>
@@ -228,7 +228,7 @@
 		<key>imageName</key>
 		<string>dilutionToControlEvaporation.png</string>
 		<key>imageNameIpad</key>
-		<string>dilutionToControlEvaporation_iPad.png</string>		
+		<string>dilutionToControlEvaporation_iPad.png</string>
 	</dict>
 	<dict>
 		<key>name</key>
@@ -256,7 +256,7 @@
 		<key>imageName</key>
 		<string>fanLaws.png</string>
 		<key>imageNameIpad</key>
-		<string>fanLaws_iPad.png</string>		
+		<string>fanLaws_iPad.png</string>
 	</dict>
 	<dict>
 		<key>name</key>
@@ -280,7 +280,7 @@
 		<key>imageName</key>
 		<string>fanTotalPressure.png</string>
 		<key>imageNameIpad</key>
-		<string>fanTotalPressure_iPad.png</string>		
+		<string>fanTotalPressure_iPad.png</string>
 	</dict>
 	<dict>
 		<key>name</key>
@@ -312,11 +312,11 @@
 		<key>resultUnit</key>
 		<string>cfm</string>
 		<key>method</key>
-		<string>kwri</string>
+		<string>fan:Laws:Formula:Five:Var:</string>
 		<key>imageName</key>
 		<string>fanLaws2.png</string>
 		<key>imageNameIpad</key>
-		<string>fanLaws2_iPad.png</string>			
+		<string>fanLaws2_iPad.png</string>
 	</dict>
 </array>
 </plist>
