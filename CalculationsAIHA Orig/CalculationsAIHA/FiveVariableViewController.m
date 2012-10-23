@@ -117,7 +117,7 @@
     {
         if (variable2 != 0)
         {
-            variable1 = variable2/28300;
+            variable1 = variable2/28316;
         }
         else if (variable3 != 0)
         {
@@ -132,7 +132,7 @@
             variable1 = variable5/29.92208;
         }
         
-        variable2 = variable1*28300;
+        variable2 = variable1*28316.86;
         variable3 = variable1*1728;
         variable4 = variable1*28.31686;        
         variable5 = variable1*29.92208;
