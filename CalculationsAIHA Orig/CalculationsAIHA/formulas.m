@@ -196,10 +196,7 @@ SoundPressureLevels:(NSNumber*)n_o
     float temp;
     
     //TWA = (Ca*Ta + Cb*Tb +Cn*Tn) / (Ta + Tb + Tn)
-    if(c2 == 0.0 || t2 == 0.0)
-        temp = ((c1*t1) / t1);
-    else
-        temp = (((c1*t1)+(c2*t2)) / (t1 + t2));
+    temp = (((c1*t1)+(c2*t2)) / (t1 + t2));
    
     return temp;
 }
