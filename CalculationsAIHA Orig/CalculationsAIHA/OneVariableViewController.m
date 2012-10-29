@@ -176,7 +176,7 @@
             self.interfaceOrientation == UIInterfaceOrientationLandscapeRight)
         { //Landscape Mode
             _textField1.frame = CGRectMake(472, 85, 97, 40);
-            _variable1.frame = CGRectMake(372, 85, 77, 40);
+            _variable1.frame = CGRectMake(368, 85, 100, 40);
             _unit1.frame = CGRectMake(590, 85, 77, 40);
             _result.frame = CGRectMake(635, 345, 210, 45);
             _resultUnit.frame = CGRectMake(850, 355, 85, 45);
@@ -188,7 +188,7 @@
         else
         { //Portrait Mode
             _textField1.frame = CGRectMake(345, 150, 97, 40);
-            _variable1.frame = CGRectMake(250, 150, 77, 40);
+            _variable1.frame = CGRectMake(240, 150, 100, 40);
             _unit1.frame = CGRectMake(465, 150, 77, 40);
             _result.frame = CGRectMake(360, 555 , 208, 45);
             _resultUnit.frame = CGRectMake(590, 563, 85, 45);
@@ -331,7 +331,7 @@
             self.interfaceOrientation == UIInterfaceOrientationLandscapeRight)
         { //Landscape Mode
             _textField1.frame = CGRectMake(472, 85, 97, 40);
-            _variable1.frame = CGRectMake(372, 85, 77, 40);
+            _variable1.frame = CGRectMake(368, 85, 100, 40);
             _unit1.frame = CGRectMake(590, 85, 77, 40);
             _result.frame = CGRectMake(635, 345, 210, 45);
             _resultUnit.frame = CGRectMake(850, 355, 85, 45);
@@ -343,7 +343,7 @@
         else
         { //Portrait Mode
             _textField1.frame = CGRectMake(345, 150, 97, 40);
-            _variable1.frame = CGRectMake(250, 150, 77, 40);
+            _variable1.frame = CGRectMake(240, 150, 100, 40);
             _unit1.frame = CGRectMake(465, 150, 77, 40);
             _result.frame = CGRectMake(360, 555 , 208, 45);
             _resultUnit.frame = CGRectMake(590, 563, 85, 45);

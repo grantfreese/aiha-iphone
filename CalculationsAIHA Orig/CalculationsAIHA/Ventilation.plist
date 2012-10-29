@@ -10,11 +10,11 @@
 		<key>number</key>
 		<string>4</string>
 		<key>variable1</key>
-		<string>gas</string>
+		<string>gas volume</string>
 		<key>variable2</key>
-		<string>density</string>
+		<string>gas density</string>
 		<key>variable3</key>
-		<string>MW</string>
+		<string>gas MW</string>
 		<key>variable4</key>
 		<string>roomVolume</string>
 		<key>unit1</key>
