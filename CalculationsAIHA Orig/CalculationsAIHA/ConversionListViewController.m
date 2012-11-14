@@ -116,39 +116,6 @@
 {
     NSString *deviceType = [UIDevice currentDevice].model;
     
-    if([deviceType isEqualToString:@"iPhone"]||[deviceType isEqualToString:@"iPhone Simulator"])
-    {
-        if (self.interfaceOrientation == UIInterfaceOrientationLandscapeLeft ||
-            self.interfaceOrientation == UIInterfaceOrientationLandscapeRight)
-        {
-            _VolumeButton.frame = CGRectMake(30, 31, 127, 37);
-            _DistanceButton.frame = CGRectMake(176, 31, 127, 37);
-            _PressureButton.frame = CGRectMake(323, 31, 127, 37);
-            _MassButton.frame = CGRectMake(30, 78, 127, 37);
-            _TemperatureButton.frame = CGRectMake(176, 78, 127, 37);
-            _AreaButton.frame = CGRectMake(323, 78, 127, 37);
-            _TLVButton.frame = CGRectMake(30, 125, 127, 37);
-            _ConcentrationButton.frame = CGRectMake(176, 125, 127, 37);
-            _FlowRateButton.frame = CGRectMake(323, 125, 127, 37);
-            _ConstantsButton.frame = CGRectMake(176, 172, 127, 37);
-            _ConversionsLabel.frame = CGRectMake(171, -5, 138, 32);
-        }
-        else
-        {
-            _VolumeButton.frame = CGRectMake(20, 71, 127, 37);
-            _DistanceButton.frame = CGRectMake(173, 71, 127, 37);
-            _PressureButton.frame = CGRectMake(20, 121, 127, 37);
-            _MassButton.frame = CGRectMake(173, 121, 127, 37);
-            _TemperatureButton.frame = CGRectMake(20, 171, 127, 37);
-            _AreaButton.frame = CGRectMake(173, 171, 127, 37);
-            _TLVButton.frame = CGRectMake(20, 221, 127, 37);
-            _ConcentrationButton.frame = CGRectMake(173, 221, 127, 37);
-            _FlowRateButton.frame = CGRectMake(20, 271, 127, 37);
-            _ConstantsButton.frame = CGRectMake(173, 271, 127, 37);
-            _ConversionsLabel.frame = CGRectMake(91, 22, 138, 32);
-        }
-    }
-    
     if([deviceType isEqualToString:@"iPad"]||[deviceType isEqualToString:@"iPad Simulator"])
     {
         if (self.interfaceOrientation == UIInterfaceOrientationLandscapeLeft ||
@@ -183,7 +150,39 @@
             _logoImage.frame = CGRectMake(-111, -113, 1024, 160);
         }
     }
-
+    else
+    {
+        if (self.interfaceOrientation == UIInterfaceOrientationLandscapeLeft ||
+            self.interfaceOrientation == UIInterfaceOrientationLandscapeRight)
+        {
+            _VolumeButton.frame = CGRectMake(30, 31, 127, 37);
+            _DistanceButton.frame = CGRectMake(176, 31, 127, 37);
+            _PressureButton.frame = CGRectMake(323, 31, 127, 37);
+            _MassButton.frame = CGRectMake(30, 78, 127, 37);
+            _TemperatureButton.frame = CGRectMake(176, 78, 127, 37);
+            _AreaButton.frame = CGRectMake(323, 78, 127, 37);
+            _TLVButton.frame = CGRectMake(30, 125, 127, 37);
+            _ConcentrationButton.frame = CGRectMake(176, 125, 127, 37);
+            _FlowRateButton.frame = CGRectMake(323, 125, 127, 37);
+            _ConstantsButton.frame = CGRectMake(176, 172, 127, 37);
+            _ConversionsLabel.frame = CGRectMake(171, -5, 138, 32);
+        }
+        else
+        {
+            _VolumeButton.frame = CGRectMake(20, 71, 127, 37);
+            _DistanceButton.frame = CGRectMake(173, 71, 127, 37);
+            _PressureButton.frame = CGRectMake(20, 121, 127, 37);
+            _MassButton.frame = CGRectMake(173, 121, 127, 37);
+            _TemperatureButton.frame = CGRectMake(20, 171, 127, 37);
+            _AreaButton.frame = CGRectMake(173, 171, 127, 37);
+            _TLVButton.frame = CGRectMake(20, 221, 127, 37);
+            _ConcentrationButton.frame = CGRectMake(173, 221, 127, 37);
+            _FlowRateButton.frame = CGRectMake(20, 271, 127, 37);
+            _ConstantsButton.frame = CGRectMake(173, 271, 127, 37);
+            _ConversionsLabel.frame = CGRectMake(91, 22, 138, 32);
+        }
+    }
+    
     [super viewWillAppear:animated];
 }
 
@@ -211,39 +210,6 @@
  duration:(NSTimeInterval)duration
  {
      NSString *deviceType = [UIDevice currentDevice].model;
-     
-     if([deviceType isEqualToString:@"iPhone"]||[deviceType isEqualToString:@"iPhone Simulator"])
-     {
-         if (toInterfaceOrientation == UIInterfaceOrientationLandscapeLeft ||
-            toInterfaceOrientation == UIInterfaceOrientationLandscapeRight)
-         {
-             _VolumeButton.frame = CGRectMake(30, 31, 127, 37);
-             _DistanceButton.frame = CGRectMake(176, 31, 127, 37);
-             _PressureButton.frame = CGRectMake(323, 31, 127, 37);
-             _MassButton.frame = CGRectMake(30, 78, 127, 37);
-             _TemperatureButton.frame = CGRectMake(176, 78, 127, 37);
-             _AreaButton.frame = CGRectMake(323, 78, 127, 37);
-             _TLVButton.frame = CGRectMake(30, 125, 127, 37);
-             _ConcentrationButton.frame = CGRectMake(176, 125, 127, 37);
-             _FlowRateButton.frame = CGRectMake(323, 125, 127, 37);
-             _ConstantsButton.frame = CGRectMake(176, 172, 127, 37);
-             _ConversionsLabel.frame = CGRectMake(171, -5, 138, 32);
-         }
-         else
-         {
-            _VolumeButton.frame = CGRectMake(20, 71, 127, 37);
-             _DistanceButton.frame = CGRectMake(173, 71, 127, 37);
-             _PressureButton.frame = CGRectMake(20, 121, 127, 37);
-             _MassButton.frame = CGRectMake(173, 121, 127, 37);
-             _TemperatureButton.frame = CGRectMake(20, 171, 127, 37);
-             _AreaButton.frame = CGRectMake(173, 171, 127, 37);
-             _TLVButton.frame = CGRectMake(20, 221, 127, 37);
-             _ConcentrationButton.frame = CGRectMake(173, 221, 127, 37);
-             _FlowRateButton.frame = CGRectMake(20, 271, 127, 37);
-             _ConstantsButton.frame = CGRectMake(173, 271, 127, 37);
-             _ConversionsLabel.frame = CGRectMake(91, 22, 138, 32);
-         }
-     }
      
      if([deviceType isEqualToString:@"iPad"]||[deviceType isEqualToString:@"iPad Simulator"])
      {
@@ -277,6 +243,38 @@
              _ConstantsButton.frame = CGRectMake(438, 607, 250, 80);
              _ConversionsLabel.frame = CGRectMake(221, 31, 327, 120);
              _logoImage.frame = CGRectMake(-111, -113, 1024, 160);
+         }
+     }
+     else
+     {
+         if (toInterfaceOrientation == UIInterfaceOrientationLandscapeLeft ||
+            toInterfaceOrientation == UIInterfaceOrientationLandscapeRight)
+         {
+             _VolumeButton.frame = CGRectMake(30, 31, 127, 37);
+             _DistanceButton.frame = CGRectMake(176, 31, 127, 37);
+             _PressureButton.frame = CGRectMake(323, 31, 127, 37);
+             _MassButton.frame = CGRectMake(30, 78, 127, 37);
+             _TemperatureButton.frame = CGRectMake(176, 78, 127, 37);
+             _AreaButton.frame = CGRectMake(323, 78, 127, 37);
+             _TLVButton.frame = CGRectMake(30, 125, 127, 37);
+             _ConcentrationButton.frame = CGRectMake(176, 125, 127, 37);
+             _FlowRateButton.frame = CGRectMake(323, 125, 127, 37);
+             _ConstantsButton.frame = CGRectMake(176, 172, 127, 37);
+             _ConversionsLabel.frame = CGRectMake(171, -5, 138, 32);
+         }
+         else
+         {
+            _VolumeButton.frame = CGRectMake(20, 71, 127, 37);
+             _DistanceButton.frame = CGRectMake(173, 71, 127, 37);
+             _PressureButton.frame = CGRectMake(20, 121, 127, 37);
+             _MassButton.frame = CGRectMake(173, 121, 127, 37);
+             _TemperatureButton.frame = CGRectMake(20, 171, 127, 37);
+             _AreaButton.frame = CGRectMake(173, 171, 127, 37);
+             _TLVButton.frame = CGRectMake(20, 221, 127, 37);
+             _ConcentrationButton.frame = CGRectMake(173, 221, 127, 37);
+             _FlowRateButton.frame = CGRectMake(20, 271, 127, 37);
+             _ConstantsButton.frame = CGRectMake(173, 271, 127, 37);
+             _ConversionsLabel.frame = CGRectMake(91, 22, 138, 32);
          }
      }
  }
