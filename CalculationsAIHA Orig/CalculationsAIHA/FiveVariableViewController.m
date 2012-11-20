@@ -117,7 +117,7 @@
     {
         if (variable2 != 0)
         {
-            variable1 = variable2/28316;
+            variable1 = variable2/28316.8466;
         }
         else if (variable3 != 0)
         {
@@ -132,7 +132,7 @@
             variable1 = variable5/29.92208;
         }
         
-        variable2 = variable1*28316.86;
+        variable2 = variable1*28316.8466;
         variable3 = variable1*1728;
         variable4 = variable1*28.31686;        
         variable5 = variable1*29.92208;
@@ -518,11 +518,11 @@
         self.variable3.text = @" ";
         self.variable4.text = @" ";
         self.variable5.text = @" ";
-        self.unit1.text = @"cubic feet"; 
+        self.unit1.text = @"cubic ft  ";
         self.unit2.text = @"cubic cm";
-        self.unit3.text = @"cubic inches";
-        self.unit4.text = @"liters";
-        self.unit5.text = @"quarts";
+        self.unit3.text = @"cubic in ";
+        self.unit4.text = @"liters     ";
+        self.unit5.text = @"quarts   ";
         self.resultUnit.text = @" ";
         self.result.text = @" ";
         self.formula.text = @"Volume Conversions";
@@ -536,11 +536,11 @@
         self.variable3.text = @" ";
         self.variable4.text = @" ";
         self.variable5.text = @" ";
-        self.unit1.text = @"feet"; 
-        self.unit2.text = @"inches";
-        self.unit3.text = @"miles";
+        self.unit1.text = @"feet           ";
+        self.unit2.text = @"inches      ";
+        self.unit3.text = @"miles        ";
         self.unit4.text = @"centimeters";
-        self.unit5.text = @"meters";
+        self.unit5.text = @"meters       ";
         self.resultUnit.text = @" ";
         self.result.text = @" ";
         self.formula.text = @"Distance Conversions";
@@ -552,11 +552,11 @@
         self.variable3.text = @" ";
         self.variable4.text = @" ";
         self.variable5.text = @" ";
-        self.unit1.text = @"Celsius";
-        self.unit2.text = @"Farenheit";
-        self.unit3.text = @"Kelvin";
-        self.unit4.text = @"Rankine";
-        self.unit5.text = @"Reaumur";
+        self.unit1.text = @"Celsius    ";
+        self.unit2.text = @"Farenheit  ";
+        self.unit3.text = @"Kelvin            ";
+        self.unit4.text = @"Rankine    ";
+        self.unit5.text = @"Reaumur    ";
         self.resultUnit.text = @" ";
         self.result.text = @" ";
         self.formula.text = @"Pressure Conversions";

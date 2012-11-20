@@ -193,7 +193,13 @@
     CategoryManager *catManager = [CategoryManager sharedCategoryManager];    
     catManager.category = 12;
     
-    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"MainStoryboard" bundle: nil];    
+    NSString *deviceType = [UIDevice currentDevice].model;
+    UIStoryboard *storyboard;
+    
+    if([deviceType isEqualToString:@"iPhone"]||[deviceType isEqualToString:@"iPhone Simulator"]){
+        storyboard = [UIStoryboard storyboardWithName:@"MainStoryboard" bundle: nil];}
+    else{
+        storyboard = [UIStoryboard storyboardWithName:@"iPad_Storyboard" bundle: nil];}
     
     
     TwoVariableViewController *twoVariableVC = [storyboard instantiateViewControllerWithIdentifier:@"TwoVariableViewController"];
