@@ -361,7 +361,7 @@
         return YES;
     }
     
-    NSCharacterSet *myCharSet = [NSCharacterSet characterSetWithCharactersInString:@"0123456789."];
+    NSCharacterSet *myCharSet = [NSCharacterSet characterSetWithCharactersInString:@"0123456789.-"];
     for (int i = 0; i < [string length]; i++) 
     {
         unichar c = [string characterAtIndex:i];

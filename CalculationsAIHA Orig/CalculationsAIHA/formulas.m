@@ -74,9 +74,14 @@ SoundPressureLevels:(NSNumber*)n_o
 {
     float SPL = [SPL_o floatValue];
     
-    float temp = (SPL-90)/5;
+    float temp = (SPL-90);
+    NSLog(@"%f HEY", temp);
+    temp = temp/5;
+     NSLog(@"%f HEY 2", temp);
     temp = pow(2, temp);
+    NSLog(@"%f HEY 3", temp);
     temp = 8 / temp;
+    NSLog(@"%f HEY 4", temp);
     
     NSNumber *retVal = [NSNumber numberWithFloat:temp];
     return retVal;
@@ -87,8 +92,7 @@ SoundPressureLevels:(NSNumber*)n_o
 +(NSNumber*) eightHourTWSof85dBa: (NSNumber*) soundPressure_o
 {
     float soundPressure = [soundPressure_o floatValue];
-    //T = 8/(2 ^ (L - 85)/3))
-    //Assumes a 3dB doubling rate.
+
     float temp = (soundPressure - 85.0);
     temp = temp/3;
     temp = pow(2, temp);
@@ -134,7 +138,8 @@ SoundPressureLevels:(NSNumber*)n_o
     //TWA = 16.61 log(%D/100) + 90dBA
     float percentDose = [percentDose_o floatValue];
     
-    float temp = log((percentDose / 100.0));
+    //percentDose = percentDose / 100
+    float temp = log10((percentDose / 100.0));
     
     temp = (16.61 * temp) + 90.0;
     
@@ -341,6 +346,7 @@ SoundPressureLevels:(NSNumber*)n_o
     return retVal;
 }
 
+//LOOK AT THIS ONE, MAKE 4 STEPS.
 //fan:Laws:Formula:Five:Var:
 -(float) fan:(float)size1
         Laws:(float)size2

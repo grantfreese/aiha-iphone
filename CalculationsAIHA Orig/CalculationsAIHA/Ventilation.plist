@@ -90,7 +90,7 @@
 		<key>number</key>
 		<string>5</string>
 		<key>variable1</key>
-		<string>Qind</string>
+		<string>Qindicated</string>
 		<key>variable2</key>
 		<string>Pc</string>
 		<key>variable3</key>
@@ -104,9 +104,9 @@
 		<key>unit2</key>
 		<string>kPa</string>
 		<key>unit3</key>
-		<string>kPa</string>
-		<key>unit4</key>
 		<string>degrees K</string>
+		<key>unit4</key>
+		<string>kPa</string>
 		<key>unit5</key>
 		<string>degrees K</string>
 		<key>method</key>
@@ -184,7 +184,7 @@
 		<key>unit3</key>
 		<string>minutes</string>
 		<key>unit4</key>
-		<string>changes/hour</string>
+		<string>air changes/hour</string>
 		<key>method</key>
 		<string>dilution:Ventilation:BasedOn:RoomAirChanges:</string>
 		<key>resultUnit</key>

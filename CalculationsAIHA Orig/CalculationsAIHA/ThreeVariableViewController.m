@@ -326,9 +326,9 @@
         self.variable1.text = @" ";
         self.variable2.text = @" ";
         self.variable3.text = @" ";
-        self.unit1.text = @"cubic meters/s"; 
-        self.unit2.text = @"cubic feet/min";
-        self.unit3.text = @"cubic centimeters/s";
+        self.unit1.text = @"m3/s"; 
+        self.unit2.text = @"CFM";
+        self.unit3.text = @"cm3/s";
         self.resultUnit.text = @"";
         self.result.text = @" ";
         self.formula.text = @"Flow Rate Conversions";
@@ -503,7 +503,7 @@
         return YES;
     }
     
-    NSCharacterSet *myCharSet = [NSCharacterSet characterSetWithCharactersInString:@"0123456789."];
+    NSCharacterSet *myCharSet = [NSCharacterSet characterSetWithCharactersInString:@"0123456789.-"];
     for (int i = 0; i < [string length]; i++) 
     {
         unichar c = [string characterAtIndex:i];
