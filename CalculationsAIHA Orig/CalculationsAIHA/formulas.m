@@ -273,7 +273,7 @@ SoundPressureLevels:(NSNumber*)n_o
     float VPd = [VPd_o floatValue];
     float he = [he_o floatValue];
     
-    float temp = -VPd - he;
+    float temp = fabs(VPd + he);
     
     NSNumber *retVal = [NSNumber numberWithFloat:temp];
     return retVal;
@@ -336,11 +336,11 @@ SoundPressureLevels:(NSNumber*)n_o
 
 //LOOK AT THIS ONE, MAKE 4 STEPS.
 //fan:Laws:Formula:Five:Var:
--(float) fan:(float)size1
-        Laws:(float)size2
-     Formula:(float)RPM1
-        Five:(float)RPM2
-         Var:(float)Q
+-(float) fan:(float)Q
+        Laws:(float)size1
+     Formula:(float)size2
+        Five:(float)RPM1
+         Var:(float)RPM2
 {
     float retVal = (size2 / size1);
     retVal = powf(retVal, 3.0);
