@@ -212,12 +212,12 @@
             self.interfaceOrientation == UIInterfaceOrientationLandscapeRight)
         { //Landscape Mode
             _textField1.frame = CGRectMake(472, 85, 97, 40);
-            _variable1.frame = CGRectMake(372, 85, 95, 40);
-            _unit1.frame = CGRectMake(590, 85, 77, 40);
+            _variable1.frame = CGRectMake(342, 85, 110, 40);
+            _unit1.frame = CGRectMake(590, 85, 110, 40);
             
             _textField2.frame = CGRectMake(472, 130, 97, 40);
-            _variable2.frame = CGRectMake(372, 130, 95, 40);
-            _unit2.frame = CGRectMake(590, 130, 77, 40);
+            _variable2.frame = CGRectMake(342, 130, 110, 40);
+            _unit2.frame = CGRectMake(590, 130, 110, 40);
             
             _textField3.frame = CGRectMake(472, 175, 97, 40);
             _variable3.frame = CGRectMake(372, 175, 95, 40);
@@ -228,8 +228,8 @@
             _unit4.frame = CGRectMake(590, 220, 77, 40);
             
             
-            _result.frame = CGRectMake(635, 345, 210, 45);
-            _resultUnit.frame = CGRectMake(850, 355, 85, 45);
+            _result.frame = CGRectMake(335, 345, 210, 45);
+            _resultUnit.frame = CGRectMake(550, 355, 85, 45);
             _resultBar.frame = CGRectMake(0, 350, 1025, 50);
             
             _calcButton.frame = CGRectMake(850, 300, 107, 50);
@@ -253,8 +253,8 @@
             _variable4.frame = CGRectMake(215, 330, 125, 40);
             _unit4.frame = CGRectMake(465, 330, 125, 40);
             
-            _result.frame = CGRectMake(360, 555 , 208, 45);
-            _resultUnit.frame = CGRectMake(590, 563, 85, 45);
+            _result.frame = CGRectMake(175, 555 , 208, 45);
+            _resultUnit.frame = CGRectMake(400, 563, 85, 45);
             _resultBar.frame = CGRectMake(0, 555, 768, 64);
             
             _calcButton.frame = CGRectMake(529, 500, 107, 50);
@@ -439,12 +439,12 @@
             self.interfaceOrientation == UIInterfaceOrientationLandscapeRight)
         { //Landscape Mode
             _textField1.frame = CGRectMake(472, 85, 97, 40);
-            _variable1.frame = CGRectMake(372, 85, 95, 40);
-            _unit1.frame = CGRectMake(590, 85, 77, 40);
+            _variable1.frame = CGRectMake(342, 85, 110, 40);
+            _unit1.frame = CGRectMake(590, 85, 110, 40);
             
             _textField2.frame = CGRectMake(472, 130, 97, 40);
-            _variable2.frame = CGRectMake(372, 130, 95, 40);
-            _unit2.frame = CGRectMake(590, 130, 77, 40);
+            _variable2.frame = CGRectMake(342, 130, 110, 40);
+            _unit2.frame = CGRectMake(590, 130, 110, 40);
             
             _textField3.frame = CGRectMake(472, 175, 97, 40);
             _variable3.frame = CGRectMake(372, 175, 95, 40);
@@ -455,8 +455,8 @@
             _unit4.frame = CGRectMake(590, 220, 77, 40);
             
             
-            _result.frame = CGRectMake(635, 345, 210, 45);
-            _resultUnit.frame = CGRectMake(850, 355, 85, 45);
+            _result.frame = CGRectMake(335, 345, 210, 45);
+            _resultUnit.frame = CGRectMake(550, 355, 85, 45);
             _resultBar.frame = CGRectMake(0, 350, 1025, 50);
             
             _calcButton.frame = CGRectMake(850, 300, 107, 50);
@@ -480,8 +480,8 @@
             _variable4.frame = CGRectMake(215, 330, 125, 40);
             _unit4.frame = CGRectMake(465, 330, 125, 40);
             
-            _result.frame = CGRectMake(360, 555 , 208, 45);
-            _resultUnit.frame = CGRectMake(590, 563, 85, 45);
+            _result.frame = CGRectMake(175, 555 , 208, 45);
+            _resultUnit.frame = CGRectMake(400, 563, 85, 45);
             _resultBar.frame = CGRectMake(0, 555, 768, 64);
             
             _calcButton.frame = CGRectMake(529, 500, 107, 50);

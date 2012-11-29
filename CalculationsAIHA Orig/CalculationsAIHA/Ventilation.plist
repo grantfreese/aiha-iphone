@@ -44,9 +44,9 @@
 		<key>variable1</key>
 		<string>Q</string>
 		<key>variable2</key>
-		<string>volume</string>
+		<string>Volume</string>
 		<key>unit1</key>
-		<string>cfm</string>
+		<string>CFM</string>
 		<key>unit2</key>
 		<string>feet3</string>
 		<key>method</key>
@@ -112,7 +112,7 @@
 		<key>method</key>
 		<string>flow:Rate:Adjustment:Formula:One:</string>
 		<key>resultUnit</key>
-		<string>L/min</string>
+		<string>L /min</string>
 		<key>imageName</key>
 		<string>Flow rate adjustment.png</string>
 		<key>imageNameIpad</key>
@@ -178,9 +178,9 @@
 		<key>variable4</key>
 		<string>N</string>
 		<key>unit1</key>
-		<string>cfm</string>
+		<string>CFM</string>
 		<key>unit2</key>
-		<string>cfm</string>
+		<string>CFM</string>
 		<key>unit3</key>
 		<string>minutes</string>
 		<key>unit4</key>
@@ -292,25 +292,25 @@
 		<key>variable1</key>
 		<string>Q1</string>
 		<key>variable2</key>
-		<string>size1</string>
+		<string>Size1</string>
 		<key>variable3</key>
-		<string>size2</string>
+		<string>Size2</string>
 		<key>variable4</key>
 		<string>RPM1</string>
 		<key>variable5</key>
 		<string>RPM2</string>
 		<key>unit1</key>
-		<string>cfm</string>
+		<string>CFM</string>
 		<key>unit2</key>
-		<string>inches</string>
+		<string>Inches</string>
 		<key>unit3</key>
-		<string>inches</string>
+		<string>Inches</string>
 		<key>unit4</key>
-		<string>rpm</string>
+		<string></string>
 		<key>unit5</key>
-		<string>rpm</string>
+		<string></string>
 		<key>resultUnit</key>
-		<string>cfm</string>
+		<string>CFM</string>
 		<key>method</key>
 		<string>fan:Laws:Formula:Five:Var:</string>
 		<key>imageName</key>

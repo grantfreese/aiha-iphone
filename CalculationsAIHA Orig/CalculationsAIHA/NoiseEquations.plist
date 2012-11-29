@@ -4,30 +4,6 @@
 <array>
 	<dict>
 		<key>name</key>
-		<string>Adding Sound pressure levels</string>
-		<key>formula</key>
-		<string>SPLt = 10log((N summation to i 10 SPLi/10))</string>
-		<key>number</key>
-		<string>2</string>
-		<key>variable1</key>
-		<string>N</string>
-		<key>variable2</key>
-		<string>SPLi</string>
-		<key>unit1</key>
-		<string>decibels</string>
-		<key>unit2</key>
-		<string>decibels</string>
-		<key>resultUnit</key>
-		<string>decibels</string>
-		<key>method</key>
-		<string>adding:SoundPressureLevels:</string>
-		<key>imageName</key>
-		<string>AddingSoundPressure.png</string>
-		<key>imageNameIpad</key>
-		<string>AddingSoundPressure_iPad.png</string>		
-	</dict>
-	<dict>
-		<key>name</key>
 		<string>Time Allowed</string>
 		<key>formula</key>
 		<string>T = 8/(2^((L-85)/3))</string>
@@ -44,7 +20,7 @@
 		<key>imageName</key>
 		<string>85dBA reached.png</string>
 		<key>imageNameIpad</key>
-		<string>85dBA reached_iPad.png</string>		
+		<string>85dBA reached_iPad.png</string>
 	</dict>
 	<dict>
 		<key>name</key>
@@ -72,7 +48,7 @@
 		<key>imageName</key>
 		<string>Inverse Square Law.png</string>
 		<key>imageNameIpad</key>
-		<string>Inverse Square Law_iPad.png</string>			
+		<string>Inverse Square Law_iPad.png</string>
 	</dict>
 	<dict>
 		<key>name</key>
@@ -82,9 +58,9 @@
 		<key>number</key>
 		<string>1</string>
 		<key>variable1</key>
-		<string>percent Dose</string>
+		<string>% Dose</string>
 		<key>unit1</key>
-		<string>%</string>
+		<string></string>
 		<key>resultUnit</key>
 		<string>decibels</string>
 		<key>method</key>
@@ -92,7 +68,7 @@
 		<key>imageName</key>
 		<string>TWA from %Dose.png</string>
 		<key>imageNameIpad</key>
-		<string>TWA from %Dose_iPad.png</string>		
+		<string>TWA from %Dose_iPad.png</string>
 	</dict>
 	<dict>
 		<key>name</key>
@@ -112,7 +88,7 @@
 		<key>imageName</key>
 		<string>AllowableExposureTime.png</string>
 		<key>imageNameIpad</key>
-		<string>AllowableExposureTime_iPad.png</string>		
+		<string>AllowableExposureTime_iPad.png</string>
 	</dict>
 </array>
 </plist>

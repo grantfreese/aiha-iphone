@@ -70,18 +70,14 @@ SoundPressureLevels:(NSNumber*)n_o
 }
 
 //
-+(NSNumber*) AllowableExposureTime:(NSNumber*) SPL_o
++(NSNumber*) allowableExposureTime:(NSNumber*) SPL_o
 {
     float SPL = [SPL_o floatValue];
     
     float temp = (SPL-90);
-    NSLog(@"%f HEY", temp);
     temp = temp/5;
-     NSLog(@"%f HEY 2", temp);
     temp = pow(2, temp);
-    NSLog(@"%f HEY 3", temp);
     temp = 8 / temp;
-    NSLog(@"%f HEY 4", temp);
     
     NSNumber *retVal = [NSNumber numberWithFloat:temp];
     return retVal;
@@ -96,21 +92,6 @@ SoundPressureLevels:(NSNumber*)n_o
     float temp = (soundPressure - 85.0);
     temp = temp/3;
     temp = pow(2, temp);
-    temp = 8 / temp;
-    NSNumber *retval = [NSNumber numberWithFloat:temp];
-    return retval;
-}
-
-//allowableExposureTime
-//Returns T
-+(NSNumber*) allowableExposureTime: (NSNumber*) SPL_o
-{
-    float SPL = [SPL_o floatValue];
-    //T = 8/((SPL - 90)/5)2)
-    //Assumes a 5dB doubling rate.
-    float temp = (SPL - 90.0);
-    temp = temp/5;
-    temp = temp * 2;
     temp = 8 / temp;
     NSNumber *retval = [NSNumber numberWithFloat:temp];
     return retval;
@@ -224,6 +205,8 @@ SoundPressureLevels:(NSNumber*)n_o
     float oxygenLevel = .209 * (roomVolume - displacedAir);
     
     float finalAns = (oxygenLevel / roomVolume);
+    //Make answer a percent.
+    finalAns = finalAns * 100;
     return finalAns;
 }
 
@@ -303,10 +286,15 @@ SoundPressureLevels:(NSNumber*)n_o
              RoomAirChanges:(float)N
 {
     float temp1 = (G / Q);
-    float retVal = -(N * (t/60.0));
+    float temp2 = (t/60.0);
+    float retVal = N * temp2;
+    retVal = -retVal;
+    
     retVal = powf(2.71828183, retVal);
     retVal = 1 - retVal;
-    retVal = temp1 * retVal * powf(10.0, 6.0);
+    
+    float pwr = powf(10.0, 6.0);
+    retVal = temp1 * retVal * pwr;
     
     return retVal;
 }
@@ -909,12 +897,10 @@ static __strong formulas *sharedFormulas;
     
     va_list argumentList;
     
-    NSLog(@"%d first arg", n);
     
     va_start(argumentList, n);
     for (int i = 0; i < n ; i++) {
         float f = va_arg(argumentList, double);
-        NSLog(@"%f %g %p arg %d", f, f, &f, i);
         [anInvocation setArgument:&f atIndex:i+2];
     }
     va_end(argumentList);
