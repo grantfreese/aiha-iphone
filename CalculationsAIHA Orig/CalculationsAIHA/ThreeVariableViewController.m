@@ -72,18 +72,18 @@
     {
         if (variable1 != 0)
         {
-            variable2 = variable1*2120;
+            variable2 = variable1*2118.88;
             variable3 = variable2*16.4;
         }
         else if(variable2 != 0)
         {
-            variable1 = variable2/2120;
+            variable1 = variable2/2118.88;
             variable3 = variable2*16.4;
         }
         else
         {
             variable2 = variable3/16.4;
-            variable1 = variable2/2120;
+            variable1 = variable2/2118.88;
         }
         
         self.textField1.text = [NSString stringWithFormat:@"%.4f", variable1];
@@ -332,6 +332,8 @@
         self.resultUnit.text = @"";
         self.result.text = @" ";
         self.formula.text = @"Flow Rate Conversions";
+        self.formulaImage.image = [UIImage imageNamed:@"flow rate 1.png"];
+        
     }
     else
     {

@@ -395,6 +395,7 @@
             _variable3.frame = CGRectMake(250, 270, 77, 40);
             _unit3.frame = CGRectMake(465, 270, 120, 40);
             
+            
             _textField4.frame = CGRectMake(345, 330, 97, 40);
             _variable4.frame = CGRectMake(250, 330, 77, 40);
             _unit4.frame = CGRectMake(465, 330, 120, 40);
@@ -552,11 +553,11 @@
         self.variable3.text = @" ";
         self.variable4.text = @" ";
         self.variable5.text = @" ";
-        self.unit1.text = @"Celsius    ";
-        self.unit2.text = @"Farenheit  ";
-        self.unit3.text = @"Kelvin            ";
-        self.unit4.text = @"Rankine    ";
-        self.unit5.text = @"Reaumur    ";
+        self.unit1.text = @"Celsius";
+        self.unit2.text = @"Farenheit";
+        self.unit3.text = @"Kelvin";
+        self.unit4.text = @"Rankine";
+        self.unit5.text = @"Reaumur";
         self.resultUnit.text = @" ";
         self.result.text = @" ";
         self.formula.text = @"Pressure Conversions";

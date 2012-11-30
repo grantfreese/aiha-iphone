@@ -346,6 +346,7 @@
         self.formula.text = @"Flow Rate Conversions";
         self.resultUnit.text = @" ";
         self.result.text = @" ";
+        self.formulaImage.image = [UIImage imageNamed:@"flow rate 2.png"];
     }
     
     else
