@@ -140,30 +140,6 @@
 	</dict>
 	<dict>
 		<key>name</key>
-		<string>Hood Static Pressure</string>
-		<key>formula</key>
-		<string>|SPh| = VPd + he</string>
-		<key>number</key>
-		<string>2</string>
-		<key>variable1</key>
-		<string>VPd</string>
-		<key>variable2</key>
-		<string>he</string>
-		<key>unit1</key>
-		<string>in. WC</string>
-		<key>unit2</key>
-		<string>in. WC</string>
-		<key>method</key>
-		<string>hood:StaticPressure:</string>
-		<key>resultUnit</key>
-		<string>in. WC</string>
-		<key>imageName</key>
-		<string>HoodStaticPressure.png</string>
-		<key>imageNameIpad</key>
-		<string>HoodStaticPressure_iPad.png</string>
-	</dict>
-	<dict>
-		<key>name</key>
 		<string>Dilution Ventilation Based On Room Air Changes</string>
 		<key>formula</key>
 		<string>C = (G/Q) * (1-e^ -(N * (t/60)) * 10^6</string>

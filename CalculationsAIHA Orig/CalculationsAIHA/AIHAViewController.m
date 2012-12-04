@@ -117,7 +117,6 @@
     }
     else
     {
-        
         if (self.interfaceOrientation == UIInterfaceOrientationLandscapeLeft ||
             self.interfaceOrientation == UIInterfaceOrientationLandscapeRight)
         {
