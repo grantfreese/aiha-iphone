@@ -60,19 +60,6 @@
     
     NSString *deviceType = [UIDevice currentDevice].model;
     
-    if([deviceType isEqualToString:@"iPhone"]||[deviceType isEqualToString:@"iPhone Simulator"])
-    {
-        if (self.interfaceOrientation == UIInterfaceOrientationLandscapeLeft ||
-            self.interfaceOrientation == UIInterfaceOrientationLandscapeRight)
-        {
-            self.scroll.frame = CGRectMake(0, 0, 480, 320);
-        }
-        else
-        {
-            self.scroll.frame = CGRectMake(0, 10, 320, 470);
-        }
-    }
-    
     if([deviceType isEqualToString:@"iPad"]||[deviceType isEqualToString:@"iPad Simulator"])
     {
         if (self.interfaceOrientation == UIInterfaceOrientationLandscapeLeft ||
@@ -83,6 +70,18 @@
         else
         {
             self.scroll.frame = CGRectMake(50, 200, 658, 324);
+        }
+    }
+    else
+    {
+        if (self.interfaceOrientation == UIInterfaceOrientationLandscapeLeft ||
+            self.interfaceOrientation == UIInterfaceOrientationLandscapeRight)
+        {
+            self.scroll.frame = CGRectMake(0, 0, 480, 320);
+        }
+        else
+        {
+            self.scroll.frame = CGRectMake(0, 10, 320, 470);
         }
     }
 }
@@ -92,19 +91,6 @@
 {
     NSString *deviceType = [UIDevice currentDevice].model;
     
-    if([deviceType isEqualToString:@"iPhone"]||[deviceType isEqualToString:@"iPhone Simulator"])
-    {
-        if (self.interfaceOrientation == UIInterfaceOrientationLandscapeLeft ||
-            self.interfaceOrientation == UIInterfaceOrientationLandscapeRight)
-        {
-            self.scroll.frame = CGRectMake(0, 0, 480, 320);
-        }
-        else
-        {
-            self.scroll.frame = CGRectMake(0, 10, 320, 470);
-        }
-    }
-    
     if([deviceType isEqualToString:@"iPad"]||[deviceType isEqualToString:@"iPad Simulator"])
     {
         if (self.interfaceOrientation == UIInterfaceOrientationLandscapeLeft ||
@@ -115,6 +101,18 @@
         else
         {
             self.scroll.frame = CGRectMake(50, 200, 658, 324);
+        }
+    }
+    else
+    {
+        if (self.interfaceOrientation == UIInterfaceOrientationLandscapeLeft ||
+            self.interfaceOrientation == UIInterfaceOrientationLandscapeRight)
+        {
+            self.scroll.frame = CGRectMake(0, 0, 480, 320);
+        }
+        else
+        {
+            self.scroll.frame = CGRectMake(0, 10, 320, 470);
         }
     }
 }
